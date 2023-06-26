@@ -1,0 +1,1580 @@
+{
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "index",
+          "type": "uint256"
+        }
+      ],
+      "name": "apkHashes",
+      "outputs": [
+        {
+          "internalType": "bytes32",
+          "name": "",
+          "type": "bytes32"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "index",
+          "type": "uint256"
+        }
+      ],
+      "name": "apkUpdateBlockNumbers",
+      "outputs": [
+        {
+          "internalType": "uint32",
+          "name": "",
+          "type": "uint32"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "index",
+          "type": "uint256"
+        }
+      ],
+      "name": "apkUpdates",
+      "outputs": [
+        {
+          "components": [
+            {
+              "internalType": "bytes32",
+              "name": "apkHash",
+              "type": "bytes32"
+            },
+            {
+              "internalType": "uint32",
+              "name": "blockNumber",
+              "type": "uint32"
+            }
+          ],
+          "internalType": "struct IBLSRegistry.ApkUpdate",
+          "name": "",
+          "type": "tuple"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "operator",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "blockNumber",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "stakeHistoryIndex",
+          "type": "uint256"
+        }
+      ],
+      "name": "checkOperatorActiveAtBlockNumber",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "operator",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "blockNumber",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "stakeHistoryIndex",
+          "type": "uint256"
+        }
+      ],
+      "name": "checkOperatorInactiveAtBlockNumber",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "index",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint32",
+          "name": "blockNumber",
+          "type": "uint32"
+        }
+      ],
+      "name": "getCorrectApkHash",
+      "outputs": [
+        {
+          "internalType": "bytes32",
+          "name": "",
+          "type": "bytes32"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "operator",
+          "type": "address"
+        }
+      ],
+      "name": "getFromTaskNumberForOperator",
+      "outputs": [
+        {
+          "internalType": "uint32",
+          "name": "",
+          "type": "uint32"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "getLengthOfTotalStakeHistory",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "operator",
+          "type": "address"
+        },
+        {
+          "internalType": "uint32",
+          "name": "blockNumber",
+          "type": "uint32"
+        },
+        {
+          "internalType": "uint32",
+          "name": "index",
+          "type": "uint32"
+        }
+      ],
+      "name": "getOperatorIndex",
+      "outputs": [
+        {
+          "internalType": "uint32",
+          "name": "",
+          "type": "uint32"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "operator",
+          "type": "address"
+        }
+      ],
+      "name": "getOperatorPubkeyHash",
+      "outputs": [
+        {
+          "internalType": "bytes32",
+          "name": "",
+          "type": "bytes32"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "pubkeyHash",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "uint256",
+          "name": "index",
+          "type": "uint256"
+        }
+      ],
+      "name": "getStakeFromPubkeyHashAndIndex",
+      "outputs": [
+        {
+          "components": [
+            {
+              "internalType": "uint32",
+              "name": "updateBlockNumber",
+              "type": "uint32"
+            },
+            {
+              "internalType": "uint32",
+              "name": "nextUpdateBlockNumber",
+              "type": "uint32"
+            },
+            {
+              "internalType": "uint96",
+              "name": "firstQuorumStake",
+              "type": "uint96"
+            },
+            {
+              "internalType": "uint96",
+              "name": "secondQuorumStake",
+              "type": "uint96"
+            }
+          ],
+          "internalType": "struct IQuorumRegistry.OperatorStake",
+          "name": "",
+          "type": "tuple"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint32",
+          "name": "blockNumber",
+          "type": "uint32"
+        },
+        {
+          "internalType": "uint32",
+          "name": "index",
+          "type": "uint32"
+        }
+      ],
+      "name": "getTotalOperators",
+      "outputs": [
+        {
+          "internalType": "uint32",
+          "name": "",
+          "type": "uint32"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "index",
+          "type": "uint256"
+        }
+      ],
+      "name": "getTotalStakeFromIndex",
+      "outputs": [
+        {
+          "components": [
+            {
+              "internalType": "uint32",
+              "name": "updateBlockNumber",
+              "type": "uint32"
+            },
+            {
+              "internalType": "uint32",
+              "name": "nextUpdateBlockNumber",
+              "type": "uint32"
+            },
+            {
+              "internalType": "uint96",
+              "name": "firstQuorumStake",
+              "type": "uint96"
+            },
+            {
+              "internalType": "uint96",
+              "name": "secondQuorumStake",
+              "type": "uint96"
+            }
+          ],
+          "internalType": "struct IQuorumRegistry.OperatorStake",
+          "name": "",
+          "type": "tuple"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "operator",
+          "type": "address"
+        }
+      ],
+      "name": "isActiveOperator",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "numOperators",
+      "outputs": [
+        {
+          "internalType": "uint32",
+          "name": "",
+          "type": "uint32"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "operator",
+          "type": "address"
+        }
+      ],
+      "name": "operatorStakes",
+      "outputs": [
+        {
+          "internalType": "uint96",
+          "name": "",
+          "type": "uint96"
+        },
+        {
+          "internalType": "uint96",
+          "name": "",
+          "type": "uint96"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "totalStake",
+      "outputs": [
+        {
+          "internalType": "uint96",
+          "name": "",
+          "type": "uint96"
+        },
+        {
+          "internalType": "uint96",
+          "name": "",
+          "type": "uint96"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "bytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "methodIdentifiers": {
+    "apkHashes(uint256)": "4dcc3afd",
+    "apkUpdateBlockNumbers(uint256)": "100bd46b",
+    "apkUpdates(uint256)": "10d8d746",
+    "checkOperatorActiveAtBlockNumber(address,uint256,uint256)": "629b312a",
+    "checkOperatorInactiveAtBlockNumber(address,uint256,uint256)": "e84ef3cb",
+    "getCorrectApkHash(uint256,uint32)": "3d74445d",
+    "getFromTaskNumberForOperator(address)": "ae124d40",
+    "getLengthOfTotalStakeHistory()": "ca06c782",
+    "getOperatorIndex(address,uint32,uint32)": "7210b0c9",
+    "getOperatorPubkeyHash(address)": "fd0d930a",
+    "getStakeFromPubkeyHashAndIndex(bytes32,uint256)": "2173fa23",
+    "getTotalOperators(uint32,uint32)": "b322bdc7",
+    "getTotalStakeFromIndex(uint256)": "102068d3",
+    "isActiveOperator(address)": "3367cca5",
+    "numOperators()": "bd820688",
+    "operatorStakes(address)": "1c9856ae",
+    "totalStake()": "8b0e9f3f"
+  },
+  "rawMetadata": "{\"compiler\":{\"version\":\"0.8.12+commit.f00d7308\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"index\",\"type\":\"uint256\"}],\"name\":\"apkHashes\",\"outputs\":[{\"internalType\":\"bytes32\",\"name\":\"\",\"type\":\"bytes32\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"index\",\"type\":\"uint256\"}],\"name\":\"apkUpdateBlockNumbers\",\"outputs\":[{\"internalType\":\"uint32\",\"name\":\"\",\"type\":\"uint32\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"index\",\"type\":\"uint256\"}],\"name\":\"apkUpdates\",\"outputs\":[{\"components\":[{\"internalType\":\"bytes32\",\"name\":\"apkHash\",\"type\":\"bytes32\"},{\"internalType\":\"uint32\",\"name\":\"blockNumber\",\"type\":\"uint32\"}],\"internalType\":\"struct IBLSRegistry.ApkUpdate\",\"name\":\"\",\"type\":\"tuple\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"operator\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"blockNumber\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"stakeHistoryIndex\",\"type\":\"uint256\"}],\"name\":\"checkOperatorActiveAtBlockNumber\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"operator\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"blockNumber\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"stakeHistoryIndex\",\"type\":\"uint256\"}],\"name\":\"checkOperatorInactiveAtBlockNumber\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"index\",\"type\":\"uint256\"},{\"internalType\":\"uint32\",\"name\":\"blockNumber\",\"type\":\"uint32\"}],\"name\":\"getCorrectApkHash\",\"outputs\":[{\"internalType\":\"bytes32\",\"name\":\"\",\"type\":\"bytes32\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"operator\",\"type\":\"address\"}],\"name\":\"getFromTaskNumberForOperator\",\"outputs\":[{\"internalType\":\"uint32\",\"name\":\"\",\"type\":\"uint32\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"getLengthOfTotalStakeHistory\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"operator\",\"type\":\"address\"},{\"internalType\":\"uint32\",\"name\":\"blockNumber\",\"type\":\"uint32\"},{\"internalType\":\"uint32\",\"name\":\"index\",\"type\":\"uint32\"}],\"name\":\"getOperatorIndex\",\"outputs\":[{\"internalType\":\"uint32\",\"name\":\"\",\"type\":\"uint32\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"operator\",\"type\":\"address\"}],\"name\":\"getOperatorPubkeyHash\",\"outputs\":[{\"internalType\":\"bytes32\",\"name\":\"\",\"type\":\"bytes32\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"pubkeyHash\",\"type\":\"bytes32\"},{\"internalType\":\"uint256\",\"name\":\"index\",\"type\":\"uint256\"}],\"name\":\"getStakeFromPubkeyHashAndIndex\",\"outputs\":[{\"components\":[{\"internalType\":\"uint32\",\"name\":\"updateBlockNumber\",\"type\":\"uint32\"},{\"internalType\":\"uint32\",\"name\":\"nextUpdateBlockNumber\",\"type\":\"uint32\"},{\"internalType\":\"uint96\",\"name\":\"firstQuorumStake\",\"type\":\"uint96\"},{\"internalType\":\"uint96\",\"name\":\"secondQuorumStake\",\"type\":\"uint96\"}],\"internalType\":\"struct IQuorumRegistry.OperatorStake\",\"name\":\"\",\"type\":\"tuple\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint32\",\"name\":\"blockNumber\",\"type\":\"uint32\"},{\"internalType\":\"uint32\",\"name\":\"index\",\"type\":\"uint32\"}],\"name\":\"getTotalOperators\",\"outputs\":[{\"internalType\":\"uint32\",\"name\":\"\",\"type\":\"uint32\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"index\",\"type\":\"uint256\"}],\"name\":\"getTotalStakeFromIndex\",\"outputs\":[{\"components\":[{\"internalType\":\"uint32\",\"name\":\"updateBlockNumber\",\"type\":\"uint32\"},{\"internalType\":\"uint32\",\"name\":\"nextUpdateBlockNumber\",\"type\":\"uint32\"},{\"internalType\":\"uint96\",\"name\":\"firstQuorumStake\",\"type\":\"uint96\"},{\"internalType\":\"uint96\",\"name\":\"secondQuorumStake\",\"type\":\"uint96\"}],\"internalType\":\"struct IQuorumRegistry.OperatorStake\",\"name\":\"\",\"type\":\"tuple\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"operator\",\"type\":\"address\"}],\"name\":\"isActiveOperator\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"numOperators\",\"outputs\":[{\"internalType\":\"uint32\",\"name\":\"\",\"type\":\"uint32\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"operator\",\"type\":\"address\"}],\"name\":\"operatorStakes\",\"outputs\":[{\"internalType\":\"uint96\",\"name\":\"\",\"type\":\"uint96\"},{\"internalType\":\"uint96\",\"name\":\"\",\"type\":\"uint96\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"totalStake\",\"outputs\":[{\"internalType\":\"uint96\",\"name\":\"\",\"type\":\"uint96\"},{\"internalType\":\"uint96\",\"name\":\"\",\"type\":\"uint96\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"author\":\"Layr Labs, Inc.\",\"kind\":\"dev\",\"methods\":{\"checkOperatorActiveAtBlockNumber(address,uint256,uint256)\":{\"details\":\"In order for this function to return 'true', the inputs must satisfy all of the following list: 1) `pubkeyHashToStakeHistory[pubkeyHash][index].updateBlockNumber <= blockNumber` 2) `pubkeyHashToStakeHistory[pubkeyHash][index].nextUpdateBlockNumber` must be either `0` (signifying no next update) or is must be strictly greater than `blockNumber` 3) `pubkeyHashToStakeHistory[pubkeyHash][index].firstQuorumStake > 0` or `pubkeyHashToStakeHistory[pubkeyHash][index].secondQuorumStake > 0`, i.e. the operator had nonzero stakeNote that a return value of 'false' does not guarantee that the `operator` was inactive at `blockNumber`, since a bad `stakeHistoryIndex` can be supplied in order to obtain a response of 'false'.\",\"params\":{\"blockNumber\":\"is the block number of interest\",\"operator\":\"is the operator of interest\",\"stakeHistoryIndex\":\"specifies an index in `pubkeyHashToStakeHistory[pubkeyHash]`, where `pubkeyHash` is looked up in `registry[operator].pubkeyHash`\"},\"returns\":{\"_0\":\"'true' if it is succesfully proven that  the `operator` was active at the `blockNumber`, and 'false' otherwise\"}},\"checkOperatorInactiveAtBlockNumber(address,uint256,uint256)\":{\"details\":\"In order for this function to return 'true', the inputs must satisfy all of the following list: 1) `pubkeyHashToStakeHistory[pubkeyHash][index].updateBlockNumber <= blockNumber` 2) `pubkeyHashToStakeHistory[pubkeyHash][index].nextUpdateBlockNumber` must be either `0` (signifying no next update) or is must be strictly greater than `blockNumber` 3) `pubkeyHashToStakeHistory[pubkeyHash][index].firstQuorumStake > 0` or `pubkeyHashToStakeHistory[pubkeyHash][index].secondQuorumStake > 0`, i.e. the operator had nonzero stakeNote that a return value of 'false' does not guarantee that the `operator` was active at `blockNumber`, since a bad `stakeHistoryIndex` can be supplied in order to obtain a response of 'false'.\",\"params\":{\"blockNumber\":\"is the block number of interest\",\"operator\":\"is the operator of interest\",\"stakeHistoryIndex\":\"specifies an index in `pubkeyHashToStakeHistory[pubkeyHash]`, where `pubkeyHash` is looked up in `registry[operator].pubkeyHash`\"},\"returns\":{\"_0\":\"'true' if it is succesfully proven that  the `operator` was inactive at the `blockNumber`, and 'false' otherwise\"}},\"getOperatorIndex(address,uint32,uint32)\":{\"details\":\"Function will revert in the event that the specified `index` input does not identify the appropriate entry in the array `pubkeyHashToIndexHistory[pubkeyHash]` to pull the info from.\",\"params\":{\"blockNumber\":\"Is the desired block number at which we wish to query the operator's position in the `operatorList` array\",\"index\":\"Used to specify the entry within the dynamic array `pubkeyHashToIndexHistory[pubkeyHash]` to  read data from, where `pubkeyHash` is looked up from `operator`'s registration info\"}},\"getStakeFromPubkeyHashAndIndex(bytes32,uint256)\":{\"details\":\"Function will revert if `index` is out-of-bounds.\",\"params\":{\"index\":\"Array index for lookup, within the dynamic array `pubkeyHashToStakeHistory[pubkeyHash]`.\",\"pubkeyHash\":\"Hash of the public key of the operator of interest.\"}},\"getTotalOperators(uint32,uint32)\":{\"details\":\"This function will revert if the provided `index` is out of bounds.\",\"params\":{\"index\":\"Input used to specify the entry within the dynamic array `totalOperatorsHistory` to read data from.\"}},\"getTotalStakeFromIndex(uint256)\":{\"details\":\"Function will revert in the event that `index` is out-of-bounds.\"},\"operatorStakes(address)\":{\"details\":\"Function returns weights of **0** in the event that the operator has no stake history\"}},\"title\":\"Minimal interface extension to `IQuorumRegistry`.\",\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{\"apkHashes(uint256)\":{\"notice\":\"returns the APK hash that resulted from the `index`th APK update\"},\"apkUpdateBlockNumbers(uint256)\":{\"notice\":\"returns the block number at which the `index`th APK update occurred\"},\"apkUpdates(uint256)\":{\"notice\":\"returns the `ApkUpdate` struct at `index` in the list of APK updates\"},\"checkOperatorActiveAtBlockNumber(address,uint256,uint256)\":{\"notice\":\"Checks that the `operator` was active at the `blockNumber`, using the specified `stakeHistoryIndex` as proof.\"},\"checkOperatorInactiveAtBlockNumber(address,uint256,uint256)\":{\"notice\":\"Checks that the `operator` was inactive at the `blockNumber`, using the specified `stakeHistoryIndex` as proof.\"},\"getCorrectApkHash(uint256,uint32)\":{\"notice\":\"get hash of a historical aggregated public key corresponding to a given index; called by checkSignatures in BLSSignatureChecker.sol.\"},\"getFromTaskNumberForOperator(address)\":{\"notice\":\"Returns task number from when `operator` has been registered.\"},\"getOperatorIndex(address,uint32,uint32)\":{\"notice\":\"Looks up the `operator`'s index in the dynamic array `operatorList` at the specified `blockNumber`.\"},\"getOperatorPubkeyHash(address)\":{\"notice\":\"Returns the stored pubkeyHash for the specified `operator`.\"},\"getStakeFromPubkeyHashAndIndex(bytes32,uint256)\":{\"notice\":\"Returns the stake weight corresponding to `pubkeyHash`, at the `index`-th entry in the `pubkeyHashToStakeHistory[pubkeyHash]` array.\"},\"getTotalOperators(uint32,uint32)\":{\"notice\":\"Looks up the number of total operators at the specified `blockNumber`.\"},\"getTotalStakeFromIndex(uint256)\":{\"notice\":\"Returns the `index`-th entry in the dynamic array of total stake, `totalStakeHistory`.\"},\"isActiveOperator(address)\":{\"notice\":\"Returns 'true' if `operator` is registered as an active operator, and 'false' otherwise.\"},\"numOperators()\":{\"notice\":\"Returns the current number of operators of this service.\"},\"operatorStakes(address)\":{\"notice\":\"Returns the most recent stake weights for the `operator`\"},\"totalStake()\":{\"notice\":\"Returns the stake amounts from the latest entry in `totalStakeHistory`.\"}},\"notice\":\"Adds BLS-specific functions to the base interface.\",\"version\":1}},\"settings\":{\"compilationTarget\":{\"src/contracts/interfaces/IBLSRegistry.sol\":\"IBLSRegistry\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[\":@openzeppelin-upgrades/=lib/openzeppelin-contracts-upgradeable/\",\":@openzeppelin/=lib/openzeppelin-contracts/\",\":ds-test/=lib/ds-test/src/\",\":forge-std/=lib/forge-std/src/\",\":openzeppelin-contracts-upgradeable/=lib/openzeppelin-contracts-upgradeable/\",\":openzeppelin-contracts/=lib/openzeppelin-contracts/contracts/\"]},\"sources\":{\"src/contracts/interfaces/IBLSRegistry.sol\":{\"keccak256\":\"0x05c58c23651c12931ed42e9546b4432dbea8f0bc405c2d32b1a5a574620aced0\",\"license\":\"UNLICENSED\",\"urls\":[\"bzz-raw://88a547bfebb5c49f3a5c58c756a75e1f62099f6059192aeb1f4ac2ed40ee38af\",\"dweb:/ipfs/QmcXFkWSmTsYavJsgh7ytvNEsV6RuyEdbWUUCZUqYfPd7o\"]},\"src/contracts/interfaces/IQuorumRegistry.sol\":{\"keccak256\":\"0xe666a9120ceaf3278c34cebd7c33ee27a14788752b70f08fccc252971a53d6e3\",\"license\":\"UNLICENSED\",\"urls\":[\"bzz-raw://3f3df7d1504adc6f3c4305150c980d27c35feea7d1b9119b86a5bdb442b8f36e\",\"dweb:/ipfs/QmQqwGVbZ8mV7aFwe9rQ9hiAcXonmtyD2Kq22eNfcXhnkw\"]},\"src/contracts/interfaces/IRegistry.sol\":{\"keccak256\":\"0x5bd8be0f70b0e69f94e069c52417079ba2b9e73acd5f659c09b22142dc6c59f5\",\"license\":\"UNLICENSED\",\"urls\":[\"bzz-raw://e32791f0147f40738d8a27c86e83c2207d5c1d1654c2f730629b3be587963cc4\",\"dweb:/ipfs/Qma4VYzA9jkLxWQCgCFm911rQodoSboaJxnNqi4AaSzftp\"]}},\"version\":1}",
+  "metadata": {
+    "compiler": {
+      "version": "0.8.12+commit.f00d7308"
+    },
+    "language": "Solidity",
+    "output": {
+      "abi": [
+        {
+          "inputs": [
+            {
+              "internalType": "uint256",
+              "name": "index",
+              "type": "uint256"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "apkHashes",
+          "outputs": [
+            {
+              "internalType": "bytes32",
+              "name": "",
+              "type": "bytes32"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "uint256",
+              "name": "index",
+              "type": "uint256"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "apkUpdateBlockNumbers",
+          "outputs": [
+            {
+              "internalType": "uint32",
+              "name": "",
+              "type": "uint32"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "uint256",
+              "name": "index",
+              "type": "uint256"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "apkUpdates",
+          "outputs": [
+            {
+              "internalType": "struct IBLSRegistry.ApkUpdate",
+              "name": "",
+              "type": "tuple",
+              "components": [
+                {
+                  "internalType": "bytes32",
+                  "name": "apkHash",
+                  "type": "bytes32"
+                },
+                {
+                  "internalType": "uint32",
+                  "name": "blockNumber",
+                  "type": "uint32"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "operator",
+              "type": "address"
+            },
+            {
+              "internalType": "uint256",
+              "name": "blockNumber",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "stakeHistoryIndex",
+              "type": "uint256"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "checkOperatorActiveAtBlockNumber",
+          "outputs": [
+            {
+              "internalType": "bool",
+              "name": "",
+              "type": "bool"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "operator",
+              "type": "address"
+            },
+            {
+              "internalType": "uint256",
+              "name": "blockNumber",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "stakeHistoryIndex",
+              "type": "uint256"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "checkOperatorInactiveAtBlockNumber",
+          "outputs": [
+            {
+              "internalType": "bool",
+              "name": "",
+              "type": "bool"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "uint256",
+              "name": "index",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint32",
+              "name": "blockNumber",
+              "type": "uint32"
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "getCorrectApkHash",
+          "outputs": [
+            {
+              "internalType": "bytes32",
+              "name": "",
+              "type": "bytes32"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "operator",
+              "type": "address"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "getFromTaskNumberForOperator",
+          "outputs": [
+            {
+              "internalType": "uint32",
+              "name": "",
+              "type": "uint32"
+            }
+          ]
+        },
+        {
+          "inputs": [],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "getLengthOfTotalStakeHistory",
+          "outputs": [
+            {
+              "internalType": "uint256",
+              "name": "",
+              "type": "uint256"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "operator",
+              "type": "address"
+            },
+            {
+              "internalType": "uint32",
+              "name": "blockNumber",
+              "type": "uint32"
+            },
+            {
+              "internalType": "uint32",
+              "name": "index",
+              "type": "uint32"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "getOperatorIndex",
+          "outputs": [
+            {
+              "internalType": "uint32",
+              "name": "",
+              "type": "uint32"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "operator",
+              "type": "address"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "getOperatorPubkeyHash",
+          "outputs": [
+            {
+              "internalType": "bytes32",
+              "name": "",
+              "type": "bytes32"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "bytes32",
+              "name": "pubkeyHash",
+              "type": "bytes32"
+            },
+            {
+              "internalType": "uint256",
+              "name": "index",
+              "type": "uint256"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "getStakeFromPubkeyHashAndIndex",
+          "outputs": [
+            {
+              "internalType": "struct IQuorumRegistry.OperatorStake",
+              "name": "",
+              "type": "tuple",
+              "components": [
+                {
+                  "internalType": "uint32",
+                  "name": "updateBlockNumber",
+                  "type": "uint32"
+                },
+                {
+                  "internalType": "uint32",
+                  "name": "nextUpdateBlockNumber",
+                  "type": "uint32"
+                },
+                {
+                  "internalType": "uint96",
+                  "name": "firstQuorumStake",
+                  "type": "uint96"
+                },
+                {
+                  "internalType": "uint96",
+                  "name": "secondQuorumStake",
+                  "type": "uint96"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "uint32",
+              "name": "blockNumber",
+              "type": "uint32"
+            },
+            {
+              "internalType": "uint32",
+              "name": "index",
+              "type": "uint32"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "getTotalOperators",
+          "outputs": [
+            {
+              "internalType": "uint32",
+              "name": "",
+              "type": "uint32"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "uint256",
+              "name": "index",
+              "type": "uint256"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "getTotalStakeFromIndex",
+          "outputs": [
+            {
+              "internalType": "struct IQuorumRegistry.OperatorStake",
+              "name": "",
+              "type": "tuple",
+              "components": [
+                {
+                  "internalType": "uint32",
+                  "name": "updateBlockNumber",
+                  "type": "uint32"
+                },
+                {
+                  "internalType": "uint32",
+                  "name": "nextUpdateBlockNumber",
+                  "type": "uint32"
+                },
+                {
+                  "internalType": "uint96",
+                  "name": "firstQuorumStake",
+                  "type": "uint96"
+                },
+                {
+                  "internalType": "uint96",
+                  "name": "secondQuorumStake",
+                  "type": "uint96"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "operator",
+              "type": "address"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "isActiveOperator",
+          "outputs": [
+            {
+              "internalType": "bool",
+              "name": "",
+              "type": "bool"
+            }
+          ]
+        },
+        {
+          "inputs": [],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "numOperators",
+          "outputs": [
+            {
+              "internalType": "uint32",
+              "name": "",
+              "type": "uint32"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "operator",
+              "type": "address"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "operatorStakes",
+          "outputs": [
+            {
+              "internalType": "uint96",
+              "name": "",
+              "type": "uint96"
+            },
+            {
+              "internalType": "uint96",
+              "name": "",
+              "type": "uint96"
+            }
+          ]
+        },
+        {
+          "inputs": [],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "totalStake",
+          "outputs": [
+            {
+              "internalType": "uint96",
+              "name": "",
+              "type": "uint96"
+            },
+            {
+              "internalType": "uint96",
+              "name": "",
+              "type": "uint96"
+            }
+          ]
+        }
+      ],
+      "devdoc": {
+        "kind": "dev",
+        "methods": {
+          "checkOperatorActiveAtBlockNumber(address,uint256,uint256)": {
+            "details": "In order for this function to return 'true', the inputs must satisfy all of the following list: 1) `pubkeyHashToStakeHistory[pubkeyHash][index].updateBlockNumber <= blockNumber` 2) `pubkeyHashToStakeHistory[pubkeyHash][index].nextUpdateBlockNumber` must be either `0` (signifying no next update) or is must be strictly greater than `blockNumber` 3) `pubkeyHashToStakeHistory[pubkeyHash][index].firstQuorumStake > 0` or `pubkeyHashToStakeHistory[pubkeyHash][index].secondQuorumStake > 0`, i.e. the operator had nonzero stakeNote that a return value of 'false' does not guarantee that the `operator` was inactive at `blockNumber`, since a bad `stakeHistoryIndex` can be supplied in order to obtain a response of 'false'.",
+            "params": {
+              "blockNumber": "is the block number of interest",
+              "operator": "is the operator of interest",
+              "stakeHistoryIndex": "specifies an index in `pubkeyHashToStakeHistory[pubkeyHash]`, where `pubkeyHash` is looked up in `registry[operator].pubkeyHash`"
+            },
+            "returns": {
+              "_0": "'true' if it is succesfully proven that  the `operator` was active at the `blockNumber`, and 'false' otherwise"
+            }
+          },
+          "checkOperatorInactiveAtBlockNumber(address,uint256,uint256)": {
+            "details": "In order for this function to return 'true', the inputs must satisfy all of the following list: 1) `pubkeyHashToStakeHistory[pubkeyHash][index].updateBlockNumber <= blockNumber` 2) `pubkeyHashToStakeHistory[pubkeyHash][index].nextUpdateBlockNumber` must be either `0` (signifying no next update) or is must be strictly greater than `blockNumber` 3) `pubkeyHashToStakeHistory[pubkeyHash][index].firstQuorumStake > 0` or `pubkeyHashToStakeHistory[pubkeyHash][index].secondQuorumStake > 0`, i.e. the operator had nonzero stakeNote that a return value of 'false' does not guarantee that the `operator` was active at `blockNumber`, since a bad `stakeHistoryIndex` can be supplied in order to obtain a response of 'false'.",
+            "params": {
+              "blockNumber": "is the block number of interest",
+              "operator": "is the operator of interest",
+              "stakeHistoryIndex": "specifies an index in `pubkeyHashToStakeHistory[pubkeyHash]`, where `pubkeyHash` is looked up in `registry[operator].pubkeyHash`"
+            },
+            "returns": {
+              "_0": "'true' if it is succesfully proven that  the `operator` was inactive at the `blockNumber`, and 'false' otherwise"
+            }
+          },
+          "getOperatorIndex(address,uint32,uint32)": {
+            "details": "Function will revert in the event that the specified `index` input does not identify the appropriate entry in the array `pubkeyHashToIndexHistory[pubkeyHash]` to pull the info from.",
+            "params": {
+              "blockNumber": "Is the desired block number at which we wish to query the operator's position in the `operatorList` array",
+              "index": "Used to specify the entry within the dynamic array `pubkeyHashToIndexHistory[pubkeyHash]` to  read data from, where `pubkeyHash` is looked up from `operator`'s registration info"
+            }
+          },
+          "getStakeFromPubkeyHashAndIndex(bytes32,uint256)": {
+            "details": "Function will revert if `index` is out-of-bounds.",
+            "params": {
+              "index": "Array index for lookup, within the dynamic array `pubkeyHashToStakeHistory[pubkeyHash]`.",
+              "pubkeyHash": "Hash of the public key of the operator of interest."
+            }
+          },
+          "getTotalOperators(uint32,uint32)": {
+            "details": "This function will revert if the provided `index` is out of bounds.",
+            "params": {
+              "index": "Input used to specify the entry within the dynamic array `totalOperatorsHistory` to read data from."
+            }
+          },
+          "getTotalStakeFromIndex(uint256)": {
+            "details": "Function will revert in the event that `index` is out-of-bounds."
+          },
+          "operatorStakes(address)": {
+            "details": "Function returns weights of **0** in the event that the operator has no stake history"
+          }
+        },
+        "version": 1
+      },
+      "userdoc": {
+        "kind": "user",
+        "methods": {
+          "apkHashes(uint256)": {
+            "notice": "returns the APK hash that resulted from the `index`th APK update"
+          },
+          "apkUpdateBlockNumbers(uint256)": {
+            "notice": "returns the block number at which the `index`th APK update occurred"
+          },
+          "apkUpdates(uint256)": {
+            "notice": "returns the `ApkUpdate` struct at `index` in the list of APK updates"
+          },
+          "checkOperatorActiveAtBlockNumber(address,uint256,uint256)": {
+            "notice": "Checks that the `operator` was active at the `blockNumber`, using the specified `stakeHistoryIndex` as proof."
+          },
+          "checkOperatorInactiveAtBlockNumber(address,uint256,uint256)": {
+            "notice": "Checks that the `operator` was inactive at the `blockNumber`, using the specified `stakeHistoryIndex` as proof."
+          },
+          "getCorrectApkHash(uint256,uint32)": {
+            "notice": "get hash of a historical aggregated public key corresponding to a given index; called by checkSignatures in BLSSignatureChecker.sol."
+          },
+          "getFromTaskNumberForOperator(address)": {
+            "notice": "Returns task number from when `operator` has been registered."
+          },
+          "getOperatorIndex(address,uint32,uint32)": {
+            "notice": "Looks up the `operator`'s index in the dynamic array `operatorList` at the specified `blockNumber`."
+          },
+          "getOperatorPubkeyHash(address)": {
+            "notice": "Returns the stored pubkeyHash for the specified `operator`."
+          },
+          "getStakeFromPubkeyHashAndIndex(bytes32,uint256)": {
+            "notice": "Returns the stake weight corresponding to `pubkeyHash`, at the `index`-th entry in the `pubkeyHashToStakeHistory[pubkeyHash]` array."
+          },
+          "getTotalOperators(uint32,uint32)": {
+            "notice": "Looks up the number of total operators at the specified `blockNumber`."
+          },
+          "getTotalStakeFromIndex(uint256)": {
+            "notice": "Returns the `index`-th entry in the dynamic array of total stake, `totalStakeHistory`."
+          },
+          "isActiveOperator(address)": {
+            "notice": "Returns 'true' if `operator` is registered as an active operator, and 'false' otherwise."
+          },
+          "numOperators()": {
+            "notice": "Returns the current number of operators of this service."
+          },
+          "operatorStakes(address)": {
+            "notice": "Returns the most recent stake weights for the `operator`"
+          },
+          "totalStake()": {
+            "notice": "Returns the stake amounts from the latest entry in `totalStakeHistory`."
+          }
+        },
+        "version": 1
+      }
+    },
+    "settings": {
+      "remappings": [
+        ":@openzeppelin-upgrades/=lib/openzeppelin-contracts-upgradeable/",
+        ":@openzeppelin/=lib/openzeppelin-contracts/",
+        ":ds-test/=lib/ds-test/src/",
+        ":forge-std/=lib/forge-std/src/",
+        ":openzeppelin-contracts-upgradeable/=lib/openzeppelin-contracts-upgradeable/",
+        ":openzeppelin-contracts/=lib/openzeppelin-contracts/contracts/"
+      ],
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "metadata": {
+        "bytecodeHash": "ipfs"
+      },
+      "compilationTarget": {
+        "src/contracts/interfaces/IBLSRegistry.sol": "IBLSRegistry"
+      },
+      "libraries": {}
+    },
+    "sources": {
+      "src/contracts/interfaces/IBLSRegistry.sol": {
+        "keccak256": "0x05c58c23651c12931ed42e9546b4432dbea8f0bc405c2d32b1a5a574620aced0",
+        "urls": [
+          "bzz-raw://88a547bfebb5c49f3a5c58c756a75e1f62099f6059192aeb1f4ac2ed40ee38af",
+          "dweb:/ipfs/QmcXFkWSmTsYavJsgh7ytvNEsV6RuyEdbWUUCZUqYfPd7o"
+        ],
+        "license": "UNLICENSED"
+      },
+      "src/contracts/interfaces/IQuorumRegistry.sol": {
+        "keccak256": "0xe666a9120ceaf3278c34cebd7c33ee27a14788752b70f08fccc252971a53d6e3",
+        "urls": [
+          "bzz-raw://3f3df7d1504adc6f3c4305150c980d27c35feea7d1b9119b86a5bdb442b8f36e",
+          "dweb:/ipfs/QmQqwGVbZ8mV7aFwe9rQ9hiAcXonmtyD2Kq22eNfcXhnkw"
+        ],
+        "license": "UNLICENSED"
+      },
+      "src/contracts/interfaces/IRegistry.sol": {
+        "keccak256": "0x5bd8be0f70b0e69f94e069c52417079ba2b9e73acd5f659c09b22142dc6c59f5",
+        "urls": [
+          "bzz-raw://e32791f0147f40738d8a27c86e83c2207d5c1d1654c2f730629b3be587963cc4",
+          "dweb:/ipfs/Qma4VYzA9jkLxWQCgCFm911rQodoSboaJxnNqi4AaSzftp"
+        ],
+        "license": "UNLICENSED"
+      }
+    },
+    "version": 1
+  },
+  "ast": {
+    "absolutePath": "src/contracts/interfaces/IBLSRegistry.sol",
+    "id": 30856,
+    "exportedSymbols": {
+      "IBLSRegistry": [
+        30855
+      ],
+      "IQuorumRegistry": [
+        31339
+      ],
+      "IRegistry": [
+        31351
+      ]
+    },
+    "nodeType": "SourceUnit",
+    "src": "39:1304:50",
+    "nodes": [
+      {
+        "id": 30810,
+        "nodeType": "PragmaDirective",
+        "src": "39:23:50",
+        "nodes": [],
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".9"
+        ]
+      },
+      {
+        "id": 30811,
+        "nodeType": "ImportDirective",
+        "src": "64:31:50",
+        "nodes": [],
+        "absolutePath": "src/contracts/interfaces/IQuorumRegistry.sol",
+        "file": "./IQuorumRegistry.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 30856,
+        "sourceUnit": 31340,
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "id": 30855,
+        "nodeType": "ContractDefinition",
+        "src": "254:1088:50",
+        "nodes": [
+          {
+            "id": 30819,
+            "nodeType": "StructDefinition",
+            "src": "404:183:50",
+            "nodes": [],
+            "canonicalName": "IBLSRegistry.ApkUpdate",
+            "members": [
+              {
+                "constant": false,
+                "id": 30816,
+                "mutability": "mutable",
+                "name": "apkHash",
+                "nameLocation": "492:7:50",
+                "nodeType": "VariableDeclaration",
+                "scope": 30819,
+                "src": "484:15:50",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_bytes32",
+                  "typeString": "bytes32"
+                },
+                "typeName": {
+                  "id": 30815,
+                  "name": "bytes32",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "484:7:50",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 30818,
+                "mutability": "mutable",
+                "name": "blockNumber",
+                "nameLocation": "569:11:50",
+                "nodeType": "VariableDeclaration",
+                "scope": 30819,
+                "src": "562:18:50",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint32",
+                  "typeString": "uint32"
+                },
+                "typeName": {
+                  "id": 30817,
+                  "name": "uint32",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "562:6:50",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint32",
+                    "typeString": "uint32"
+                  }
+                },
+                "visibility": "internal"
+              }
+            ],
+            "name": "ApkUpdate",
+            "nameLocation": "411:9:50",
+            "scope": 30855,
+            "visibility": "public"
+          },
+          {
+            "id": 30829,
+            "nodeType": "FunctionDefinition",
+            "src": "764:89:50",
+            "nodes": [],
+            "documentation": {
+              "id": 30820,
+              "nodeType": "StructuredDocumentation",
+              "src": "593:166:50",
+              "text": " @notice get hash of a historical aggregated public key corresponding to a given index;\n called by checkSignatures in BLSSignatureChecker.sol."
+            },
+            "functionSelector": "3d74445d",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getCorrectApkHash",
+            "nameLocation": "773:17:50",
+            "parameters": {
+              "id": 30825,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 30822,
+                  "mutability": "mutable",
+                  "name": "index",
+                  "nameLocation": "799:5:50",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 30829,
+                  "src": "791:13:50",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 30821,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "791:7:50",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 30824,
+                  "mutability": "mutable",
+                  "name": "blockNumber",
+                  "nameLocation": "813:11:50",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 30829,
+                  "src": "806:18:50",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint32",
+                    "typeString": "uint32"
+                  },
+                  "typeName": {
+                    "id": 30823,
+                    "name": "uint32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "806:6:50",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint32",
+                      "typeString": "uint32"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "790:35:50"
+            },
+            "returnParameters": {
+              "id": 30828,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 30827,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 30829,
+                  "src": "844:7:50",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 30826,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "844:7:50",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "843:9:50"
+            },
+            "scope": 30855,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 30838,
+            "nodeType": "FunctionDefinition",
+            "src": "944:76:50",
+            "nodes": [],
+            "documentation": {
+              "id": 30830,
+              "nodeType": "StructuredDocumentation",
+              "src": "859:80:50",
+              "text": "@notice returns the `ApkUpdate` struct at `index` in the list of APK updates"
+            },
+            "functionSelector": "10d8d746",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "apkUpdates",
+            "nameLocation": "953:10:50",
+            "parameters": {
+              "id": 30833,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 30832,
+                  "mutability": "mutable",
+                  "name": "index",
+                  "nameLocation": "972:5:50",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 30838,
+                  "src": "964:13:50",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 30831,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "964:7:50",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "963:15:50"
+            },
+            "returnParameters": {
+              "id": 30837,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 30836,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 30838,
+                  "src": "1002:16:50",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_struct$_ApkUpdate_$30819_memory_ptr",
+                    "typeString": "struct IBLSRegistry.ApkUpdate"
+                  },
+                  "typeName": {
+                    "id": 30835,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 30834,
+                      "name": "ApkUpdate",
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 30819,
+                      "src": "1002:9:50"
+                    },
+                    "referencedDeclaration": 30819,
+                    "src": "1002:9:50",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_ApkUpdate_$30819_storage_ptr",
+                      "typeString": "struct IBLSRegistry.ApkUpdate"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1001:18:50"
+            },
+            "scope": 30855,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 30846,
+            "nodeType": "FunctionDefinition",
+            "src": "1107:66:50",
+            "nodes": [],
+            "documentation": {
+              "id": 30839,
+              "nodeType": "StructuredDocumentation",
+              "src": "1026:76:50",
+              "text": "@notice returns the APK hash that resulted from the `index`th APK update"
+            },
+            "functionSelector": "4dcc3afd",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "apkHashes",
+            "nameLocation": "1116:9:50",
+            "parameters": {
+              "id": 30842,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 30841,
+                  "mutability": "mutable",
+                  "name": "index",
+                  "nameLocation": "1134:5:50",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 30846,
+                  "src": "1126:13:50",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 30840,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1126:7:50",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1125:15:50"
+            },
+            "returnParameters": {
+              "id": 30845,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 30844,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 30846,
+                  "src": "1164:7:50",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 30843,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1164:7:50",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1163:9:50"
+            },
+            "scope": 30855,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 30854,
+            "nodeType": "FunctionDefinition",
+            "src": "1263:77:50",
+            "nodes": [],
+            "documentation": {
+              "id": 30847,
+              "nodeType": "StructuredDocumentation",
+              "src": "1179:79:50",
+              "text": "@notice returns the block number at which the `index`th APK update occurred"
+            },
+            "functionSelector": "100bd46b",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "apkUpdateBlockNumbers",
+            "nameLocation": "1272:21:50",
+            "parameters": {
+              "id": 30850,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 30849,
+                  "mutability": "mutable",
+                  "name": "index",
+                  "nameLocation": "1302:5:50",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 30854,
+                  "src": "1294:13:50",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 30848,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1294:7:50",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1293:15:50"
+            },
+            "returnParameters": {
+              "id": 30853,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 30852,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 30854,
+                  "src": "1332:6:50",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint32",
+                    "typeString": "uint32"
+                  },
+                  "typeName": {
+                    "id": 30851,
+                    "name": "uint32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1332:6:50",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint32",
+                      "typeString": "uint32"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1331:8:50"
+            },
+            "scope": 30855,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "abstract": false,
+        "baseContracts": [
+          {
+            "baseName": {
+              "id": 30813,
+              "name": "IQuorumRegistry",
+              "nodeType": "IdentifierPath",
+              "referencedDeclaration": 31339,
+              "src": "280:15:50"
+            },
+            "id": 30814,
+            "nodeType": "InheritanceSpecifier",
+            "src": "280:15:50"
+          }
+        ],
+        "canonicalName": "IBLSRegistry",
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "documentation": {
+          "id": 30812,
+          "nodeType": "StructuredDocumentation",
+          "src": "97:156:50",
+          "text": " @title Minimal interface extension to `IQuorumRegistry`.\n @author Layr Labs, Inc.\n @notice Adds BLS-specific functions to the base interface."
+        },
+        "fullyImplemented": false,
+        "linearizedBaseContracts": [
+          30855,
+          31339,
+          31351
+        ],
+        "name": "IBLSRegistry",
+        "nameLocation": "264:12:50",
+        "scope": 30856,
+        "usedErrors": []
+      }
+    ],
+    "license": "UNLICENSED"
+  },
+  "id": 50
+}

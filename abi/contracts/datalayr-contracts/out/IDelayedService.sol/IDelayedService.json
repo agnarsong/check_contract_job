@@ -1,0 +1,217 @@
+{
+  "abi": [
+    {
+      "inputs": [],
+      "name": "BLOCK_STALE_MEASURE",
+      "outputs": [
+        {
+          "internalType": "uint32",
+          "name": "",
+          "type": "uint32"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "bytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "methodIdentifiers": {
+    "BLOCK_STALE_MEASURE()": "5e8b3f2d"
+  },
+  "rawMetadata": "{\"compiler\":{\"version\":\"0.8.12+commit.f00d7308\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"BLOCK_STALE_MEASURE\",\"outputs\":[{\"internalType\":\"uint32\",\"name\":\"\",\"type\":\"uint32\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"author\":\"Layr Labs, Inc.\",\"details\":\"To clarify edge cases, the middleware can look `BLOCK_STALE_MEASURE` blocks into the past, i.e. it may trust stakes from the interval [block.number - BLOCK_STALE_MEASURE, block.number] (specifically, *inclusive* of the block that is `BLOCK_STALE_MEASURE` before the current one)\",\"kind\":\"dev\",\"methods\":{},\"title\":\"Interface for a middleware / service that may look at past stake amounts.\",\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{\"BLOCK_STALE_MEASURE()\":{\"notice\":\"The maximum amount of blocks in the past that the service will consider stake amounts to still be 'valid'.\"}},\"notice\":\"Specifically, this interface is designed for services that consult stake amounts up to `BLOCK_STALE_MEASURE` blocks in the past. This may be necessary due to, e.g., network processing & communication delays, or to avoid race conditions that could be present with coordinating aggregate operator signatures while service operators are registering & de-registering.\",\"version\":1}},\"settings\":{\"compilationTarget\":{\"../eignlayr-contracts/src/contracts/interfaces/IDelayedService.sol\":\"IDelayedService\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[\":@eigenlayer/=../eignlayr-contracts/src/\",\":@openzeppelin-upgrades/=lib/openzeppelin-contracts-upgradeable/\",\":@openzeppelin/=lib/openzeppelin-contracts/\",\":ds-test/=lib/eignlayr-contracts/lib/ds-test/src/\",\":eignlayr-contracts/=lib/eignlayr-contracts/src/\",\":forge-std/=lib/forge-std/src/\",\":openzeppelin-contracts-upgradeable/=lib/eignlayr-contracts/lib/openzeppelin-contracts-upgradeable/\",\":openzeppelin-contracts/=lib/eignlayr-contracts/lib/openzeppelin-contracts/contracts/\"]},\"sources\":{\"../eignlayr-contracts/src/contracts/interfaces/IDelayedService.sol\":{\"keccak256\":\"0x4c9c1d5de05ad392b45244c373d137c7f49436618492ba165b2e3a241dee25cc\",\"license\":\"UNLICENSED\",\"urls\":[\"bzz-raw://1675794f6a64068df5d2362d85793b9c61c4ccffa6829bbb7cc0cc843fa3a359\",\"dweb:/ipfs/QmdZyC2W5rrEX2fSkF6YxsWCt3HgaAdm4HSpss8T9oVAJn\"]}},\"version\":1}",
+  "metadata": {
+    "compiler": {
+      "version": "0.8.12+commit.f00d7308"
+    },
+    "language": "Solidity",
+    "output": {
+      "abi": [
+        {
+          "inputs": [],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "BLOCK_STALE_MEASURE",
+          "outputs": [
+            {
+              "internalType": "uint32",
+              "name": "",
+              "type": "uint32"
+            }
+          ]
+        }
+      ],
+      "devdoc": {
+        "kind": "dev",
+        "methods": {},
+        "version": 1
+      },
+      "userdoc": {
+        "kind": "user",
+        "methods": {
+          "BLOCK_STALE_MEASURE()": {
+            "notice": "The maximum amount of blocks in the past that the service will consider stake amounts to still be 'valid'."
+          }
+        },
+        "version": 1
+      }
+    },
+    "settings": {
+      "remappings": [
+        ":@eigenlayer/=../eignlayr-contracts/src/",
+        ":@openzeppelin-upgrades/=lib/openzeppelin-contracts-upgradeable/",
+        ":@openzeppelin/=lib/openzeppelin-contracts/",
+        ":ds-test/=lib/eignlayr-contracts/lib/ds-test/src/",
+        ":eignlayr-contracts/=lib/eignlayr-contracts/src/",
+        ":forge-std/=lib/forge-std/src/",
+        ":openzeppelin-contracts-upgradeable/=lib/eignlayr-contracts/lib/openzeppelin-contracts-upgradeable/",
+        ":openzeppelin-contracts/=lib/eignlayr-contracts/lib/openzeppelin-contracts/contracts/"
+      ],
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "metadata": {
+        "bytecodeHash": "ipfs"
+      },
+      "compilationTarget": {
+        "../eignlayr-contracts/src/contracts/interfaces/IDelayedService.sol": "IDelayedService"
+      },
+      "libraries": {}
+    },
+    "sources": {
+      "../eignlayr-contracts/src/contracts/interfaces/IDelayedService.sol": {
+        "keccak256": "0x4c9c1d5de05ad392b45244c373d137c7f49436618492ba165b2e3a241dee25cc",
+        "urls": [
+          "bzz-raw://1675794f6a64068df5d2362d85793b9c61c4ccffa6829bbb7cc0cc843fa3a359",
+          "dweb:/ipfs/QmdZyC2W5rrEX2fSkF6YxsWCt3HgaAdm4HSpss8T9oVAJn"
+        ],
+        "license": "UNLICENSED"
+      }
+    },
+    "version": 1
+  },
+  "ast": {
+    "absolutePath": "../eignlayr-contracts/src/contracts/interfaces/IDelayedService.sol",
+    "id": 10,
+    "exportedSymbols": {
+      "IDelayedService": [
+        9
+      ]
+    },
+    "nodeType": "SourceUnit",
+    "src": "39:1038:6",
+    "nodes": [
+      {
+        "id": 1,
+        "nodeType": "PragmaDirective",
+        "src": "39:23:6",
+        "nodes": [],
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".9"
+        ]
+      },
+      {
+        "id": 9,
+        "nodeType": "ContractDefinition",
+        "src": "854:222:6",
+        "nodes": [
+          {
+            "id": 8,
+            "nodeType": "FunctionDefinition",
+            "src": "1009:61:6",
+            "nodes": [],
+            "documentation": {
+              "id": 3,
+              "nodeType": "StructuredDocumentation",
+              "src": "886:118:6",
+              "text": "@notice The maximum amount of blocks in the past that the service will consider stake amounts to still be 'valid'."
+            },
+            "functionSelector": "5e8b3f2d",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "BLOCK_STALE_MEASURE",
+            "nameLocation": "1018:19:6",
+            "parameters": {
+              "id": 4,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1037:2:6"
+            },
+            "returnParameters": {
+              "id": 7,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 6,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 8,
+                  "src": "1062:6:6",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint32",
+                    "typeString": "uint32"
+                  },
+                  "typeName": {
+                    "id": 5,
+                    "name": "uint32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1062:6:6",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint32",
+                      "typeString": "uint32"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1061:8:6"
+            },
+            "scope": 9,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "IDelayedService",
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "documentation": {
+          "id": 2,
+          "nodeType": "StructuredDocumentation",
+          "src": "64:789:6",
+          "text": " @title Interface for a middleware / service that may look at past stake amounts.\n @author Layr Labs, Inc.\n @notice Specifically, this interface is designed for services that consult stake amounts up to `BLOCK_STALE_MEASURE`\n blocks in the past. This may be necessary due to, e.g., network processing & communication delays, or to avoid race conditions\n that could be present with coordinating aggregate operator signatures while service operators are registering & de-registering.\n @dev To clarify edge cases, the middleware can look `BLOCK_STALE_MEASURE` blocks into the past, i.e. it may trust stakes from the interval\n [block.number - BLOCK_STALE_MEASURE, block.number] (specifically, *inclusive* of the block that is `BLOCK_STALE_MEASURE` before the current one)"
+        },
+        "fullyImplemented": false,
+        "linearizedBaseContracts": [
+          9
+        ],
+        "name": "IDelayedService",
+        "nameLocation": "864:15:6",
+        "scope": 10,
+        "usedErrors": []
+      }
+    ],
+    "license": "UNLICENSED"
+  },
+  "id": 6
+}

@@ -1,0 +1,1744 @@
+{
+  "abi": [
+    {
+      "inputs": [],
+      "name": "delegation",
+      "outputs": [
+        {
+          "internalType": "contract IEigenLayrDelegation",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "contract IInvestmentStrategy",
+          "name": "strategy",
+          "type": "address"
+        },
+        {
+          "internalType": "contract IERC20",
+          "name": "token",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "amount",
+          "type": "uint256"
+        }
+      ],
+      "name": "depositIntoStrategy",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "contract IInvestmentStrategy",
+          "name": "strategy",
+          "type": "address"
+        },
+        {
+          "internalType": "contract IERC20",
+          "name": "token",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "amount",
+          "type": "uint256"
+        },
+        {
+          "internalType": "address",
+          "name": "staker",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "expiry",
+          "type": "uint256"
+        },
+        {
+          "internalType": "bytes32",
+          "name": "r",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "bytes32",
+          "name": "vs",
+          "type": "bytes32"
+        }
+      ],
+      "name": "depositIntoStrategyOnBehalfOf",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "shares",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "depositor",
+          "type": "address"
+        }
+      ],
+      "name": "getDeposits",
+      "outputs": [
+        {
+          "internalType": "contract IInvestmentStrategy[]",
+          "name": "",
+          "type": "address[]"
+        },
+        {
+          "internalType": "uint256[]",
+          "name": "",
+          "type": "uint256[]"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "user",
+          "type": "address"
+        },
+        {
+          "internalType": "contract IInvestmentStrategy",
+          "name": "strategy",
+          "type": "address"
+        }
+      ],
+      "name": "investorStratShares",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "shares",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "staker",
+          "type": "address"
+        }
+      ],
+      "name": "investorStratsLength",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "bytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "methodIdentifiers": {
+    "delegation()": "df5cf723",
+    "depositIntoStrategy(address,address,uint256)": "e7a050aa",
+    "depositIntoStrategyOnBehalfOf(address,address,uint256,address,uint256,bytes32,bytes32)": "6876e790",
+    "getDeposits(address)": "94f649dd",
+    "investorStratShares(address,address)": "6be2343f",
+    "investorStratsLength(address)": "8e749873"
+  },
+  "rawMetadata": "{\"compiler\":{\"version\":\"0.8.12+commit.f00d7308\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"delegation\",\"outputs\":[{\"internalType\":\"contract IEigenLayrDelegation\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"contract IInvestmentStrategy\",\"name\":\"strategy\",\"type\":\"address\"},{\"internalType\":\"contract IERC20\",\"name\":\"token\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"amount\",\"type\":\"uint256\"}],\"name\":\"depositIntoStrategy\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"contract IInvestmentStrategy\",\"name\":\"strategy\",\"type\":\"address\"},{\"internalType\":\"contract IERC20\",\"name\":\"token\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"amount\",\"type\":\"uint256\"},{\"internalType\":\"address\",\"name\":\"staker\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"expiry\",\"type\":\"uint256\"},{\"internalType\":\"bytes32\",\"name\":\"r\",\"type\":\"bytes32\"},{\"internalType\":\"bytes32\",\"name\":\"vs\",\"type\":\"bytes32\"}],\"name\":\"depositIntoStrategyOnBehalfOf\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"shares\",\"type\":\"uint256\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"depositor\",\"type\":\"address\"}],\"name\":\"getDeposits\",\"outputs\":[{\"internalType\":\"contract IInvestmentStrategy[]\",\"name\":\"\",\"type\":\"address[]\"},{\"internalType\":\"uint256[]\",\"name\":\"\",\"type\":\"uint256[]\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"user\",\"type\":\"address\"},{\"internalType\":\"contract IInvestmentStrategy\",\"name\":\"strategy\",\"type\":\"address\"}],\"name\":\"investorStratShares\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"shares\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"staker\",\"type\":\"address\"}],\"name\":\"investorStratsLength\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"author\":\"Layr Labs, Inc.\",\"kind\":\"dev\",\"methods\":{\"depositIntoStrategy(address,address,uint256)\":{\"details\":\"The `msg.sender` must have previously approved this contract to transfer at least `amount` of `token` on their behalf.Cannot be called by an address that is 'frozen' (this function will revert if the `msg.sender` is frozen).\",\"params\":{\"amount\":\"is the amount of token to be invested in the strategy by the depositor\",\"strategy\":\"is the specified strategy where investment is to be made,\",\"token\":\"is the denomination in which the investment is to be made,\"}},\"depositIntoStrategyOnBehalfOf(address,address,uint256,address,uint256,bytes32,bytes32)\":{\"details\":\"The `msg.sender` must have previously approved this contract to transfer at least `amount` of `token` on their behalf.A signature is required for this function to eliminate the possibility of griefing attacks, specifically those targetting stakers who may be attempting to undelegate.Cannot be called on behalf of a staker that is 'frozen' (this function will revert if the `staker` is frozen).\",\"params\":{\"amount\":\"is the amount of token to be invested in the strategy by the depositor\",\"expiry\":\"the timestamp at which the signature expires\",\"r\":\"and @param vs are the elements of the ECDSA signature\",\"staker\":\"the staker that the assets will be deposited on behalf of\",\"strategy\":\"is the specified strategy where investment is to be made,\",\"token\":\"is the denomination in which the investment is to be made,\"}},\"getDeposits(address)\":{\"returns\":{\"_0\":\"(depositor's strategies, shares in these strategies)\"}}},\"title\":\"Interface for the primary entrypoint for funds into EigenLayr.\",\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{\"delegation()\":{\"notice\":\"Returns the single, central Delegation contract of EigenLayer\"},\"depositIntoStrategy(address,address,uint256)\":{\"notice\":\"Deposits `amount` of `token` into the specified `strategy`, with the resultant shares credited to `depositor`\"},\"depositIntoStrategyOnBehalfOf(address,address,uint256,address,uint256,bytes32,bytes32)\":{\"notice\":\"Used for investing an asset into the specified strategy with the resultant shared created to `staker`, who must sign off on the action\"},\"getDeposits(address)\":{\"notice\":\"Get all details on the depositor's investments and corresponding shares\"},\"investorStratShares(address,address)\":{\"notice\":\"Returns the current shares of `user` in `strategy`\"},\"investorStratsLength(address)\":{\"notice\":\"Simple getter function that returns `investorStrats[staker].length`.\"}},\"notice\":\"See the `InvestmentManager` contract itself for implementation details.\",\"version\":1}},\"settings\":{\"compilationTarget\":{\"src/contracts/interfaces/IInvestmentManager.sol\":\"IInvestmentManager\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[\":@openzeppelin-upgrades/=lib/openzeppelin-contracts-upgradeable/\",\":@openzeppelin/=lib/openzeppelin-contracts/\",\":ds-test/=lib/ds-test/src/\",\":forge-std/=lib/forge-std/src/\",\":openzeppelin-contracts-upgradeable/=lib/openzeppelin-contracts-upgradeable/\",\":openzeppelin-contracts/=lib/openzeppelin-contracts/contracts/\"]},\"sources\":{\"lib/openzeppelin-contracts/contracts/token/ERC20/IERC20.sol\":{\"keccak256\":\"0x9750c6b834f7b43000631af5cc30001c5f547b3ceb3635488f140f60e897ea6b\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://5a7d5b1ef5d8d5889ad2ed89d8619c09383b80b72ab226e0fe7bde1636481e34\",\"dweb:/ipfs/QmebXWgtEfumQGBdVeM6c71McLixYXQP5Bk6kKXuoY4Bmr\"]},\"src/contracts/interfaces/IEigenLayrDelegation.sol\":{\"keccak256\":\"0x9f11c0becde4111ac7d060dc11b9461888129076740cf78e07f292eefc92955e\",\"license\":\"UNLICENSED\",\"urls\":[\"bzz-raw://53bef92f10fd142e6b0af0f4f77a958c96ebea145492aa5328757e10fffd9c21\",\"dweb:/ipfs/QmUHG67pTyGxu6whsk95JNwevDJ7ooQMyeNT4kfwJtEzU5\"]},\"src/contracts/interfaces/IInvestmentManager.sol\":{\"keccak256\":\"0xed8f5ee05ffbedbfe649dc7547339b3bc118edfe02825074341b0c474f776100\",\"license\":\"UNLICENSED\",\"urls\":[\"bzz-raw://44e9b0705f113e63a867b59bc292c7d5287968017b39ade9ef4c2b90d7f7dd34\",\"dweb:/ipfs/Qmc46ncEfH6wXKRz7zYKvkTGRhQSSDh6traUrttRFcP2tw\"]},\"src/contracts/interfaces/IInvestmentStrategy.sol\":{\"keccak256\":\"0x69eb667cc856ee1fe783243b6db21a43a9dadd29bf6761727b334fca4366bceb\",\"license\":\"UNLICENSED\",\"urls\":[\"bzz-raw://224e8f6def4e53a1065f0c4ce26d8ffff15276944e2351753065aeb5bd265f52\",\"dweb:/ipfs/QmSu8iUPCnwza4SdE5jVSZLnQjMRXJg3VAGc8pHqbaMLob\"]},\"src/contracts/interfaces/IServiceManager.sol\":{\"keccak256\":\"0xded81693805764888f8d1daa8afb600969d4286f3d5ecfa92e99b9446b400ad4\",\"license\":\"UNLICENSED\",\"urls\":[\"bzz-raw://8e0d0704fa8e64543abce318eaf99c53f75215db76cf873e6a6311a4eb5274b2\",\"dweb:/ipfs/Qmd96t8WrNFRY5fqsPtkCaz28j3mvZj3fpc4qp6xXe9wgb\"]}},\"version\":1}",
+  "metadata": {
+    "compiler": {
+      "version": "0.8.12+commit.f00d7308"
+    },
+    "language": "Solidity",
+    "output": {
+      "abi": [
+        {
+          "inputs": [],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "delegation",
+          "outputs": [
+            {
+              "internalType": "contract IEigenLayrDelegation",
+              "name": "",
+              "type": "address"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "contract IInvestmentStrategy",
+              "name": "strategy",
+              "type": "address"
+            },
+            {
+              "internalType": "contract IERC20",
+              "name": "token",
+              "type": "address"
+            },
+            {
+              "internalType": "uint256",
+              "name": "amount",
+              "type": "uint256"
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "depositIntoStrategy",
+          "outputs": [
+            {
+              "internalType": "uint256",
+              "name": "",
+              "type": "uint256"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "contract IInvestmentStrategy",
+              "name": "strategy",
+              "type": "address"
+            },
+            {
+              "internalType": "contract IERC20",
+              "name": "token",
+              "type": "address"
+            },
+            {
+              "internalType": "uint256",
+              "name": "amount",
+              "type": "uint256"
+            },
+            {
+              "internalType": "address",
+              "name": "staker",
+              "type": "address"
+            },
+            {
+              "internalType": "uint256",
+              "name": "expiry",
+              "type": "uint256"
+            },
+            {
+              "internalType": "bytes32",
+              "name": "r",
+              "type": "bytes32"
+            },
+            {
+              "internalType": "bytes32",
+              "name": "vs",
+              "type": "bytes32"
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "depositIntoStrategyOnBehalfOf",
+          "outputs": [
+            {
+              "internalType": "uint256",
+              "name": "shares",
+              "type": "uint256"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "depositor",
+              "type": "address"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "getDeposits",
+          "outputs": [
+            {
+              "internalType": "contract IInvestmentStrategy[]",
+              "name": "",
+              "type": "address[]"
+            },
+            {
+              "internalType": "uint256[]",
+              "name": "",
+              "type": "uint256[]"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "user",
+              "type": "address"
+            },
+            {
+              "internalType": "contract IInvestmentStrategy",
+              "name": "strategy",
+              "type": "address"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "investorStratShares",
+          "outputs": [
+            {
+              "internalType": "uint256",
+              "name": "shares",
+              "type": "uint256"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "staker",
+              "type": "address"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "investorStratsLength",
+          "outputs": [
+            {
+              "internalType": "uint256",
+              "name": "",
+              "type": "uint256"
+            }
+          ]
+        }
+      ],
+      "devdoc": {
+        "kind": "dev",
+        "methods": {
+          "depositIntoStrategy(address,address,uint256)": {
+            "details": "The `msg.sender` must have previously approved this contract to transfer at least `amount` of `token` on their behalf.Cannot be called by an address that is 'frozen' (this function will revert if the `msg.sender` is frozen).",
+            "params": {
+              "amount": "is the amount of token to be invested in the strategy by the depositor",
+              "strategy": "is the specified strategy where investment is to be made,",
+              "token": "is the denomination in which the investment is to be made,"
+            }
+          },
+          "depositIntoStrategyOnBehalfOf(address,address,uint256,address,uint256,bytes32,bytes32)": {
+            "details": "The `msg.sender` must have previously approved this contract to transfer at least `amount` of `token` on their behalf.A signature is required for this function to eliminate the possibility of griefing attacks, specifically those targetting stakers who may be attempting to undelegate.Cannot be called on behalf of a staker that is 'frozen' (this function will revert if the `staker` is frozen).",
+            "params": {
+              "amount": "is the amount of token to be invested in the strategy by the depositor",
+              "expiry": "the timestamp at which the signature expires",
+              "r": "and @param vs are the elements of the ECDSA signature",
+              "staker": "the staker that the assets will be deposited on behalf of",
+              "strategy": "is the specified strategy where investment is to be made,",
+              "token": "is the denomination in which the investment is to be made,"
+            }
+          },
+          "getDeposits(address)": {
+            "returns": {
+              "_0": "(depositor's strategies, shares in these strategies)"
+            }
+          }
+        },
+        "version": 1
+      },
+      "userdoc": {
+        "kind": "user",
+        "methods": {
+          "delegation()": {
+            "notice": "Returns the single, central Delegation contract of EigenLayer"
+          },
+          "depositIntoStrategy(address,address,uint256)": {
+            "notice": "Deposits `amount` of `token` into the specified `strategy`, with the resultant shares credited to `depositor`"
+          },
+          "depositIntoStrategyOnBehalfOf(address,address,uint256,address,uint256,bytes32,bytes32)": {
+            "notice": "Used for investing an asset into the specified strategy with the resultant shared created to `staker`, who must sign off on the action"
+          },
+          "getDeposits(address)": {
+            "notice": "Get all details on the depositor's investments and corresponding shares"
+          },
+          "investorStratShares(address,address)": {
+            "notice": "Returns the current shares of `user` in `strategy`"
+          },
+          "investorStratsLength(address)": {
+            "notice": "Simple getter function that returns `investorStrats[staker].length`."
+          }
+        },
+        "version": 1
+      }
+    },
+    "settings": {
+      "remappings": [
+        ":@openzeppelin-upgrades/=lib/openzeppelin-contracts-upgradeable/",
+        ":@openzeppelin/=lib/openzeppelin-contracts/",
+        ":ds-test/=lib/ds-test/src/",
+        ":forge-std/=lib/forge-std/src/",
+        ":openzeppelin-contracts-upgradeable/=lib/openzeppelin-contracts-upgradeable/",
+        ":openzeppelin-contracts/=lib/openzeppelin-contracts/contracts/"
+      ],
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "metadata": {
+        "bytecodeHash": "ipfs"
+      },
+      "compilationTarget": {
+        "src/contracts/interfaces/IInvestmentManager.sol": "IInvestmentManager"
+      },
+      "libraries": {}
+    },
+    "sources": {
+      "lib/openzeppelin-contracts/contracts/token/ERC20/IERC20.sol": {
+        "keccak256": "0x9750c6b834f7b43000631af5cc30001c5f547b3ceb3635488f140f60e897ea6b",
+        "urls": [
+          "bzz-raw://5a7d5b1ef5d8d5889ad2ed89d8619c09383b80b72ab226e0fe7bde1636481e34",
+          "dweb:/ipfs/QmebXWgtEfumQGBdVeM6c71McLixYXQP5Bk6kKXuoY4Bmr"
+        ],
+        "license": "MIT"
+      },
+      "src/contracts/interfaces/IEigenLayrDelegation.sol": {
+        "keccak256": "0x9f11c0becde4111ac7d060dc11b9461888129076740cf78e07f292eefc92955e",
+        "urls": [
+          "bzz-raw://53bef92f10fd142e6b0af0f4f77a958c96ebea145492aa5328757e10fffd9c21",
+          "dweb:/ipfs/QmUHG67pTyGxu6whsk95JNwevDJ7ooQMyeNT4kfwJtEzU5"
+        ],
+        "license": "UNLICENSED"
+      },
+      "src/contracts/interfaces/IInvestmentManager.sol": {
+        "keccak256": "0xed8f5ee05ffbedbfe649dc7547339b3bc118edfe02825074341b0c474f776100",
+        "urls": [
+          "bzz-raw://44e9b0705f113e63a867b59bc292c7d5287968017b39ade9ef4c2b90d7f7dd34",
+          "dweb:/ipfs/Qmc46ncEfH6wXKRz7zYKvkTGRhQSSDh6traUrttRFcP2tw"
+        ],
+        "license": "UNLICENSED"
+      },
+      "src/contracts/interfaces/IInvestmentStrategy.sol": {
+        "keccak256": "0x69eb667cc856ee1fe783243b6db21a43a9dadd29bf6761727b334fca4366bceb",
+        "urls": [
+          "bzz-raw://224e8f6def4e53a1065f0c4ce26d8ffff15276944e2351753065aeb5bd265f52",
+          "dweb:/ipfs/QmSu8iUPCnwza4SdE5jVSZLnQjMRXJg3VAGc8pHqbaMLob"
+        ],
+        "license": "UNLICENSED"
+      },
+      "src/contracts/interfaces/IServiceManager.sol": {
+        "keccak256": "0xded81693805764888f8d1daa8afb600969d4286f3d5ecfa92e99b9446b400ad4",
+        "urls": [
+          "bzz-raw://8e0d0704fa8e64543abce318eaf99c53f75215db76cf873e6a6311a4eb5274b2",
+          "dweb:/ipfs/Qmd96t8WrNFRY5fqsPtkCaz28j3mvZj3fpc4qp6xXe9wgb"
+        ],
+        "license": "UNLICENSED"
+      }
+    },
+    "version": 1
+  },
+  "ast": {
+    "absolutePath": "src/contracts/interfaces/IInvestmentManager.sol",
+    "id": 31086,
+    "exportedSymbols": {
+      "IERC20": [
+        25366
+      ],
+      "IEigenLayrDelegation": [
+        30977
+      ],
+      "IInvestmentManager": [
+        31085
+      ],
+      "IInvestmentStrategy": [
+        31179
+      ],
+      "IServiceManager": [
+        31461
+      ]
+    },
+    "nodeType": "SourceUnit",
+    "src": "39:4183:53",
+    "nodes": [
+      {
+        "id": 30979,
+        "nodeType": "PragmaDirective",
+        "src": "39:23:53",
+        "nodes": [],
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".9"
+        ]
+      },
+      {
+        "id": 30980,
+        "nodeType": "ImportDirective",
+        "src": "64:35:53",
+        "nodes": [],
+        "absolutePath": "src/contracts/interfaces/IInvestmentStrategy.sol",
+        "file": "./IInvestmentStrategy.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 31086,
+        "sourceUnit": 31180,
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "id": 30981,
+        "nodeType": "ImportDirective",
+        "src": "100:36:53",
+        "nodes": [],
+        "absolutePath": "src/contracts/interfaces/IEigenLayrDelegation.sol",
+        "file": "./IEigenLayrDelegation.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 31086,
+        "sourceUnit": 30978,
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "id": 30982,
+        "nodeType": "ImportDirective",
+        "src": "137:31:53",
+        "nodes": [],
+        "absolutePath": "src/contracts/interfaces/IServiceManager.sol",
+        "file": "./IServiceManager.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 31086,
+        "sourceUnit": 31462,
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "id": 31085,
+        "nodeType": "ContractDefinition",
+        "src": "361:3860:53",
+        "nodes": [
+          {
+            "id": 30988,
+            "nodeType": "StructDefinition",
+            "src": "440:83:53",
+            "nodes": [],
+            "canonicalName": "IInvestmentManager.WithdrawerAndNonce",
+            "members": [
+              {
+                "constant": false,
+                "id": 30985,
+                "mutability": "mutable",
+                "name": "withdrawer",
+                "nameLocation": "484:10:53",
+                "nodeType": "VariableDeclaration",
+                "scope": 30988,
+                "src": "476:18:53",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_address",
+                  "typeString": "address"
+                },
+                "typeName": {
+                  "id": 30984,
+                  "name": "address",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "476:7:53",
+                  "stateMutability": "nonpayable",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 30987,
+                "mutability": "mutable",
+                "name": "nonce",
+                "nameLocation": "511:5:53",
+                "nodeType": "VariableDeclaration",
+                "scope": 30988,
+                "src": "504:12:53",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint96",
+                  "typeString": "uint96"
+                },
+                "typeName": {
+                  "id": 30986,
+                  "name": "uint96",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "504:6:53",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint96",
+                    "typeString": "uint96"
+                  }
+                },
+                "visibility": "internal"
+              }
+            ],
+            "name": "WithdrawerAndNonce",
+            "nameLocation": "447:18:53",
+            "scope": 31085,
+            "visibility": "public"
+          },
+          {
+            "id": 31009,
+            "nodeType": "StructDefinition",
+            "src": "1020:269:53",
+            "nodes": [],
+            "canonicalName": "IInvestmentManager.QueuedWithdrawal",
+            "members": [
+              {
+                "constant": false,
+                "id": 30992,
+                "mutability": "mutable",
+                "name": "strategies",
+                "nameLocation": "1076:10:53",
+                "nodeType": "VariableDeclaration",
+                "scope": 31009,
+                "src": "1054:32:53",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_array$_t_contract$_IInvestmentStrategy_$31179_$dyn_storage_ptr",
+                  "typeString": "contract IInvestmentStrategy[]"
+                },
+                "typeName": {
+                  "baseType": {
+                    "id": 30990,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 30989,
+                      "name": "IInvestmentStrategy",
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 31179,
+                      "src": "1054:19:53"
+                    },
+                    "referencedDeclaration": 31179,
+                    "src": "1054:19:53",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_IInvestmentStrategy_$31179",
+                      "typeString": "contract IInvestmentStrategy"
+                    }
+                  },
+                  "id": 30991,
+                  "nodeType": "ArrayTypeName",
+                  "src": "1054:21:53",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_contract$_IInvestmentStrategy_$31179_$dyn_storage_ptr",
+                    "typeString": "contract IInvestmentStrategy[]"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 30996,
+                "mutability": "mutable",
+                "name": "tokens",
+                "nameLocation": "1105:6:53",
+                "nodeType": "VariableDeclaration",
+                "scope": 31009,
+                "src": "1096:15:53",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_array$_t_contract$_IERC20_$25366_$dyn_storage_ptr",
+                  "typeString": "contract IERC20[]"
+                },
+                "typeName": {
+                  "baseType": {
+                    "id": 30994,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 30993,
+                      "name": "IERC20",
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 25366,
+                      "src": "1096:6:53"
+                    },
+                    "referencedDeclaration": 25366,
+                    "src": "1096:6:53",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_IERC20_$25366",
+                      "typeString": "contract IERC20"
+                    }
+                  },
+                  "id": 30995,
+                  "nodeType": "ArrayTypeName",
+                  "src": "1096:8:53",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_contract$_IERC20_$25366_$dyn_storage_ptr",
+                    "typeString": "contract IERC20[]"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 30999,
+                "mutability": "mutable",
+                "name": "shares",
+                "nameLocation": "1131:6:53",
+                "nodeType": "VariableDeclaration",
+                "scope": 31009,
+                "src": "1121:16:53",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_array$_t_uint256_$dyn_storage_ptr",
+                  "typeString": "uint256[]"
+                },
+                "typeName": {
+                  "baseType": {
+                    "id": 30997,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1121:7:53",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "id": 30998,
+                  "nodeType": "ArrayTypeName",
+                  "src": "1121:9:53",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_uint256_$dyn_storage_ptr",
+                    "typeString": "uint256[]"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 31001,
+                "mutability": "mutable",
+                "name": "depositor",
+                "nameLocation": "1155:9:53",
+                "nodeType": "VariableDeclaration",
+                "scope": 31009,
+                "src": "1147:17:53",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_address",
+                  "typeString": "address"
+                },
+                "typeName": {
+                  "id": 31000,
+                  "name": "address",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "1147:7:53",
+                  "stateMutability": "nonpayable",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 31004,
+                "mutability": "mutable",
+                "name": "withdrawerAndNonce",
+                "nameLocation": "1193:18:53",
+                "nodeType": "VariableDeclaration",
+                "scope": 31009,
+                "src": "1174:37:53",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_struct$_WithdrawerAndNonce_$30988_storage_ptr",
+                  "typeString": "struct IInvestmentManager.WithdrawerAndNonce"
+                },
+                "typeName": {
+                  "id": 31003,
+                  "nodeType": "UserDefinedTypeName",
+                  "pathNode": {
+                    "id": 31002,
+                    "name": "WithdrawerAndNonce",
+                    "nodeType": "IdentifierPath",
+                    "referencedDeclaration": 30988,
+                    "src": "1174:18:53"
+                  },
+                  "referencedDeclaration": 30988,
+                  "src": "1174:18:53",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_struct$_WithdrawerAndNonce_$30988_storage_ptr",
+                    "typeString": "struct IInvestmentManager.WithdrawerAndNonce"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 31006,
+                "mutability": "mutable",
+                "name": "withdrawalStartBlock",
+                "nameLocation": "1228:20:53",
+                "nodeType": "VariableDeclaration",
+                "scope": 31009,
+                "src": "1221:27:53",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint32",
+                  "typeString": "uint32"
+                },
+                "typeName": {
+                  "id": 31005,
+                  "name": "uint32",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "1221:6:53",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint32",
+                    "typeString": "uint32"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 31008,
+                "mutability": "mutable",
+                "name": "delegatedAddress",
+                "nameLocation": "1266:16:53",
+                "nodeType": "VariableDeclaration",
+                "scope": 31009,
+                "src": "1258:24:53",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_address",
+                  "typeString": "address"
+                },
+                "typeName": {
+                  "id": 31007,
+                  "name": "address",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "1258:7:53",
+                  "stateMutability": "nonpayable",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  }
+                },
+                "visibility": "internal"
+              }
+            ],
+            "name": "QueuedWithdrawal",
+            "nameLocation": "1027:16:53",
+            "scope": 31085,
+            "visibility": "public"
+          },
+          {
+            "id": 31023,
+            "nodeType": "FunctionDefinition",
+            "src": "1938:132:53",
+            "nodes": [],
+            "documentation": {
+              "id": 31010,
+              "nodeType": "StructuredDocumentation",
+              "src": "1295:638:53",
+              "text": " @notice Deposits `amount` of `token` into the specified `strategy`, with the resultant shares credited to `depositor`\n @param strategy is the specified strategy where investment is to be made,\n @param token is the denomination in which the investment is to be made,\n @param amount is the amount of token to be invested in the strategy by the depositor\n @dev The `msg.sender` must have previously approved this contract to transfer at least `amount` of `token` on their behalf.\n @dev Cannot be called by an address that is 'frozen' (this function will revert if the `msg.sender` is frozen)."
+            },
+            "functionSelector": "e7a050aa",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "depositIntoStrategy",
+            "nameLocation": "1947:19:53",
+            "parameters": {
+              "id": 31019,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 31013,
+                  "mutability": "mutable",
+                  "name": "strategy",
+                  "nameLocation": "1987:8:53",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 31023,
+                  "src": "1967:28:53",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_contract$_IInvestmentStrategy_$31179",
+                    "typeString": "contract IInvestmentStrategy"
+                  },
+                  "typeName": {
+                    "id": 31012,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 31011,
+                      "name": "IInvestmentStrategy",
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 31179,
+                      "src": "1967:19:53"
+                    },
+                    "referencedDeclaration": 31179,
+                    "src": "1967:19:53",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_IInvestmentStrategy_$31179",
+                      "typeString": "contract IInvestmentStrategy"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 31016,
+                  "mutability": "mutable",
+                  "name": "token",
+                  "nameLocation": "2004:5:53",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 31023,
+                  "src": "1997:12:53",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_contract$_IERC20_$25366",
+                    "typeString": "contract IERC20"
+                  },
+                  "typeName": {
+                    "id": 31015,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 31014,
+                      "name": "IERC20",
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 25366,
+                      "src": "1997:6:53"
+                    },
+                    "referencedDeclaration": 25366,
+                    "src": "1997:6:53",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_IERC20_$25366",
+                      "typeString": "contract IERC20"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 31018,
+                  "mutability": "mutable",
+                  "name": "amount",
+                  "nameLocation": "2019:6:53",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 31023,
+                  "src": "2011:14:53",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 31017,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2011:7:53",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1966:60:53"
+            },
+            "returnParameters": {
+              "id": 31022,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 31021,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 31023,
+                  "src": "2061:7:53",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 31020,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2061:7:53",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "2060:9:53"
+            },
+            "scope": 31085,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 31045,
+            "nodeType": "FunctionDefinition",
+            "src": "3159:266:53",
+            "nodes": [],
+            "documentation": {
+              "id": 31024,
+              "nodeType": "StructuredDocumentation",
+              "src": "2079:1075:53",
+              "text": " @notice Used for investing an asset into the specified strategy with the resultant shared created to `staker`,\n who must sign off on the action\n @param strategy is the specified strategy where investment is to be made,\n @param token is the denomination in which the investment is to be made,\n @param amount is the amount of token to be invested in the strategy by the depositor\n @param staker the staker that the assets will be deposited on behalf of\n @param expiry the timestamp at which the signature expires\n @param r and @param vs are the elements of the ECDSA signature\n @dev The `msg.sender` must have previously approved this contract to transfer at least `amount` of `token` on their behalf.\n @dev A signature is required for this function to eliminate the possibility of griefing attacks, specifically those\n targetting stakers who may be attempting to undelegate.\n @dev Cannot be called on behalf of a staker that is 'frozen' (this function will revert if the `staker` is frozen)."
+            },
+            "functionSelector": "6876e790",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "depositIntoStrategyOnBehalfOf",
+            "nameLocation": "3168:29:53",
+            "parameters": {
+              "id": 31041,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 31027,
+                  "mutability": "mutable",
+                  "name": "strategy",
+                  "nameLocation": "3227:8:53",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 31045,
+                  "src": "3207:28:53",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_contract$_IInvestmentStrategy_$31179",
+                    "typeString": "contract IInvestmentStrategy"
+                  },
+                  "typeName": {
+                    "id": 31026,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 31025,
+                      "name": "IInvestmentStrategy",
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 31179,
+                      "src": "3207:19:53"
+                    },
+                    "referencedDeclaration": 31179,
+                    "src": "3207:19:53",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_IInvestmentStrategy_$31179",
+                      "typeString": "contract IInvestmentStrategy"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 31030,
+                  "mutability": "mutable",
+                  "name": "token",
+                  "nameLocation": "3252:5:53",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 31045,
+                  "src": "3245:12:53",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_contract$_IERC20_$25366",
+                    "typeString": "contract IERC20"
+                  },
+                  "typeName": {
+                    "id": 31029,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 31028,
+                      "name": "IERC20",
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 25366,
+                      "src": "3245:6:53"
+                    },
+                    "referencedDeclaration": 25366,
+                    "src": "3245:6:53",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_IERC20_$25366",
+                      "typeString": "contract IERC20"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 31032,
+                  "mutability": "mutable",
+                  "name": "amount",
+                  "nameLocation": "3275:6:53",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 31045,
+                  "src": "3267:14:53",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 31031,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "3267:7:53",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 31034,
+                  "mutability": "mutable",
+                  "name": "staker",
+                  "nameLocation": "3299:6:53",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 31045,
+                  "src": "3291:14:53",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 31033,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "3291:7:53",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 31036,
+                  "mutability": "mutable",
+                  "name": "expiry",
+                  "nameLocation": "3323:6:53",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 31045,
+                  "src": "3315:14:53",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 31035,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "3315:7:53",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 31038,
+                  "mutability": "mutable",
+                  "name": "r",
+                  "nameLocation": "3347:1:53",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 31045,
+                  "src": "3339:9:53",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 31037,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "3339:7:53",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 31040,
+                  "mutability": "mutable",
+                  "name": "vs",
+                  "nameLocation": "3366:2:53",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 31045,
+                  "src": "3358:10:53",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 31039,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "3358:7:53",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "3197:177:53"
+            },
+            "returnParameters": {
+              "id": 31044,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 31043,
+                  "mutability": "mutable",
+                  "name": "shares",
+                  "nameLocation": "3417:6:53",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 31045,
+                  "src": "3409:14:53",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 31042,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "3409:7:53",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "3408:16:53"
+            },
+            "scope": 31085,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 31056,
+            "nodeType": "FunctionDefinition",
+            "src": "3498:112:53",
+            "nodes": [],
+            "documentation": {
+              "id": 31046,
+              "nodeType": "StructuredDocumentation",
+              "src": "3431:62:53",
+              "text": "@notice Returns the current shares of `user` in `strategy`"
+            },
+            "functionSelector": "6be2343f",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "investorStratShares",
+            "nameLocation": "3507:19:53",
+            "parameters": {
+              "id": 31052,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 31048,
+                  "mutability": "mutable",
+                  "name": "user",
+                  "nameLocation": "3535:4:53",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 31056,
+                  "src": "3527:12:53",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 31047,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "3527:7:53",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 31051,
+                  "mutability": "mutable",
+                  "name": "strategy",
+                  "nameLocation": "3561:8:53",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 31056,
+                  "src": "3541:28:53",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_contract$_IInvestmentStrategy_$31179",
+                    "typeString": "contract IInvestmentStrategy"
+                  },
+                  "typeName": {
+                    "id": 31050,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 31049,
+                      "name": "IInvestmentStrategy",
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 31179,
+                      "src": "3541:19:53"
+                    },
+                    "referencedDeclaration": 31179,
+                    "src": "3541:19:53",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_IInvestmentStrategy_$31179",
+                      "typeString": "contract IInvestmentStrategy"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "3526:44:53"
+            },
+            "returnParameters": {
+              "id": 31055,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 31054,
+                  "mutability": "mutable",
+                  "name": "shares",
+                  "nameLocation": "3602:6:53",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 31056,
+                  "src": "3594:14:53",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 31053,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "3594:7:53",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "3593:16:53"
+            },
+            "scope": 31085,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 31069,
+            "nodeType": "FunctionDefinition",
+            "src": "3787:111:53",
+            "nodes": [],
+            "documentation": {
+              "id": 31057,
+              "nodeType": "StructuredDocumentation",
+              "src": "3616:166:53",
+              "text": " @notice Get all details on the depositor's investments and corresponding shares\n @return (depositor's strategies, shares in these strategies)"
+            },
+            "functionSelector": "94f649dd",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getDeposits",
+            "nameLocation": "3796:11:53",
+            "parameters": {
+              "id": 31060,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 31059,
+                  "mutability": "mutable",
+                  "name": "depositor",
+                  "nameLocation": "3816:9:53",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 31069,
+                  "src": "3808:17:53",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 31058,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "3808:7:53",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "3807:19:53"
+            },
+            "returnParameters": {
+              "id": 31068,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 31064,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 31069,
+                  "src": "3850:28:53",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_contract$_IInvestmentStrategy_$31179_$dyn_memory_ptr",
+                    "typeString": "contract IInvestmentStrategy[]"
+                  },
+                  "typeName": {
+                    "baseType": {
+                      "id": 31062,
+                      "nodeType": "UserDefinedTypeName",
+                      "pathNode": {
+                        "id": 31061,
+                        "name": "IInvestmentStrategy",
+                        "nodeType": "IdentifierPath",
+                        "referencedDeclaration": 31179,
+                        "src": "3850:19:53"
+                      },
+                      "referencedDeclaration": 31179,
+                      "src": "3850:19:53",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_contract$_IInvestmentStrategy_$31179",
+                        "typeString": "contract IInvestmentStrategy"
+                      }
+                    },
+                    "id": 31063,
+                    "nodeType": "ArrayTypeName",
+                    "src": "3850:21:53",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_array$_t_contract$_IInvestmentStrategy_$31179_$dyn_storage_ptr",
+                      "typeString": "contract IInvestmentStrategy[]"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 31067,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 31069,
+                  "src": "3880:16:53",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_uint256_$dyn_memory_ptr",
+                    "typeString": "uint256[]"
+                  },
+                  "typeName": {
+                    "baseType": {
+                      "id": 31065,
+                      "name": "uint256",
+                      "nodeType": "ElementaryTypeName",
+                      "src": "3880:7:53",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "id": 31066,
+                    "nodeType": "ArrayTypeName",
+                    "src": "3880:9:53",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_array$_t_uint256_$dyn_storage_ptr",
+                      "typeString": "uint256[]"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "3849:48:53"
+            },
+            "scope": 31085,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 31077,
+            "nodeType": "FunctionDefinition",
+            "src": "3989:78:53",
+            "nodes": [],
+            "documentation": {
+              "id": 31070,
+              "nodeType": "StructuredDocumentation",
+              "src": "3904:80:53",
+              "text": "@notice Simple getter function that returns `investorStrats[staker].length`."
+            },
+            "functionSelector": "8e749873",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "investorStratsLength",
+            "nameLocation": "3998:20:53",
+            "parameters": {
+              "id": 31073,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 31072,
+                  "mutability": "mutable",
+                  "name": "staker",
+                  "nameLocation": "4027:6:53",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 31077,
+                  "src": "4019:14:53",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 31071,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "4019:7:53",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "4018:16:53"
+            },
+            "returnParameters": {
+              "id": 31076,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 31075,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 31077,
+                  "src": "4058:7:53",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 31074,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "4058:7:53",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "4057:9:53"
+            },
+            "scope": 31085,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 31084,
+            "nodeType": "FunctionDefinition",
+            "src": "4151:67:53",
+            "nodes": [],
+            "documentation": {
+              "id": 31078,
+              "nodeType": "StructuredDocumentation",
+              "src": "4073:73:53",
+              "text": "@notice Returns the single, central Delegation contract of EigenLayer"
+            },
+            "functionSelector": "df5cf723",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "delegation",
+            "nameLocation": "4160:10:53",
+            "parameters": {
+              "id": 31079,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "4170:2:53"
+            },
+            "returnParameters": {
+              "id": 31083,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 31082,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 31084,
+                  "src": "4196:20:53",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_contract$_IEigenLayrDelegation_$30977",
+                    "typeString": "contract IEigenLayrDelegation"
+                  },
+                  "typeName": {
+                    "id": 31081,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 31080,
+                      "name": "IEigenLayrDelegation",
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 30977,
+                      "src": "4196:20:53"
+                    },
+                    "referencedDeclaration": 30977,
+                    "src": "4196:20:53",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_IEigenLayrDelegation_$30977",
+                      "typeString": "contract IEigenLayrDelegation"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "4195:22:53"
+            },
+            "scope": 31085,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "IInvestmentManager",
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "documentation": {
+          "id": 30983,
+          "nodeType": "StructuredDocumentation",
+          "src": "170:190:53",
+          "text": " @title Interface for the primary entrypoint for funds into EigenLayr.\n @author Layr Labs, Inc.\n @notice See the `InvestmentManager` contract itself for implementation details."
+        },
+        "fullyImplemented": false,
+        "linearizedBaseContracts": [
+          31085
+        ],
+        "name": "IInvestmentManager",
+        "nameLocation": "371:18:53",
+        "scope": 31086,
+        "usedErrors": []
+      }
+    ],
+    "license": "UNLICENSED"
+  },
+  "id": 53
+}

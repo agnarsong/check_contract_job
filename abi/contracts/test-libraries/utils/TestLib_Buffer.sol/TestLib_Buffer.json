@@ -1,0 +1,165 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "uint40",
+        "name": "_index",
+        "type": "uint40"
+      },
+      {
+        "internalType": "bytes27",
+        "name": "_extraData",
+        "type": "bytes27"
+      }
+    ],
+    "name": "deleteElementsAfterInclusive",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint40",
+        "name": "_index",
+        "type": "uint40"
+      }
+    ],
+    "name": "deleteElementsAfterInclusive",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "_index",
+        "type": "uint256"
+      }
+    ],
+    "name": "get",
+    "outputs": [
+      {
+        "internalType": "bytes32",
+        "name": "",
+        "type": "bytes32"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getContext",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint40",
+            "name": "length",
+            "type": "uint40"
+          },
+          {
+            "internalType": "bytes27",
+            "name": "extraData",
+            "type": "bytes27"
+          }
+        ],
+        "internalType": "struct Lib_Buffer.BufferContext",
+        "name": "",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getExtraData",
+    "outputs": [
+      {
+        "internalType": "bytes27",
+        "name": "",
+        "type": "bytes27"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getLength",
+    "outputs": [
+      {
+        "internalType": "uint40",
+        "name": "",
+        "type": "uint40"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "_value",
+        "type": "bytes32"
+      },
+      {
+        "internalType": "bytes27",
+        "name": "_extraData",
+        "type": "bytes27"
+      }
+    ],
+    "name": "push",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "_value",
+        "type": "bytes32"
+      }
+    ],
+    "name": "push",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint40",
+        "name": "_index",
+        "type": "uint40"
+      },
+      {
+        "internalType": "bytes27",
+        "name": "_extraData",
+        "type": "bytes27"
+      }
+    ],
+    "name": "setContext",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes27",
+        "name": "_extraData",
+        "type": "bytes27"
+      }
+    ],
+    "name": "setExtraData",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  }
+]

@@ -1,0 +1,311 @@
+{
+  "abi": [
+    {
+      "inputs": [],
+      "name": "pauser",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "unpauser",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "bytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "methodIdentifiers": {
+    "pauser()": "9fd0506d",
+    "unpauser()": "eab66d7a"
+  },
+  "rawMetadata": "{\"compiler\":{\"version\":\"0.8.12+commit.f00d7308\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"pauser\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"unpauser\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"author\":\"Layr Labs, Inc.\",\"kind\":\"dev\",\"methods\":{},\"title\":\"Interface for the `PauserRegistry` contract.\",\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{\"pauser()\":{\"notice\":\"Unique address that holds the pauser role.\"},\"unpauser()\":{\"notice\":\"Unique address that holds the unpauser role. Capable of changing *both* the pauser and unpauser addresses.\"}},\"version\":1}},\"settings\":{\"compilationTarget\":{\"../eignlayr-contracts/src/contracts/interfaces/IPauserRegistry.sol\":\"IPauserRegistry\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[\":@eigenlayer/=../eignlayr-contracts/src/\",\":@openzeppelin-upgrades/=lib/openzeppelin-contracts-upgradeable/\",\":@openzeppelin/=lib/openzeppelin-contracts/\",\":ds-test/=lib/eignlayr-contracts/lib/ds-test/src/\",\":eignlayr-contracts/=lib/eignlayr-contracts/src/\",\":forge-std/=lib/forge-std/src/\",\":openzeppelin-contracts-upgradeable/=lib/eignlayr-contracts/lib/openzeppelin-contracts-upgradeable/\",\":openzeppelin-contracts/=lib/eignlayr-contracts/lib/openzeppelin-contracts/contracts/\"]},\"sources\":{\"../eignlayr-contracts/src/contracts/interfaces/IPauserRegistry.sol\":{\"keccak256\":\"0xa74815553054d6feff0cbe94301e3b84127015ca419c256d9121569ccf4e5975\",\"license\":\"UNLICENSED\",\"urls\":[\"bzz-raw://b51815ca5271277622757aa7ca0e9ebdcb4fe47e62ef5b7ff9156d51fc60ad8c\",\"dweb:/ipfs/QmcfnujqU537GjYSmd7moKbVRn5AfhHTyhh7KXAAXbDyC3\"]}},\"version\":1}",
+  "metadata": {
+    "compiler": {
+      "version": "0.8.12+commit.f00d7308"
+    },
+    "language": "Solidity",
+    "output": {
+      "abi": [
+        {
+          "inputs": [],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "pauser",
+          "outputs": [
+            {
+              "internalType": "address",
+              "name": "",
+              "type": "address"
+            }
+          ]
+        },
+        {
+          "inputs": [],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "unpauser",
+          "outputs": [
+            {
+              "internalType": "address",
+              "name": "",
+              "type": "address"
+            }
+          ]
+        }
+      ],
+      "devdoc": {
+        "kind": "dev",
+        "methods": {},
+        "version": 1
+      },
+      "userdoc": {
+        "kind": "user",
+        "methods": {
+          "pauser()": {
+            "notice": "Unique address that holds the pauser role."
+          },
+          "unpauser()": {
+            "notice": "Unique address that holds the unpauser role. Capable of changing *both* the pauser and unpauser addresses."
+          }
+        },
+        "version": 1
+      }
+    },
+    "settings": {
+      "remappings": [
+        ":@eigenlayer/=../eignlayr-contracts/src/",
+        ":@openzeppelin-upgrades/=lib/openzeppelin-contracts-upgradeable/",
+        ":@openzeppelin/=lib/openzeppelin-contracts/",
+        ":ds-test/=lib/eignlayr-contracts/lib/ds-test/src/",
+        ":eignlayr-contracts/=lib/eignlayr-contracts/src/",
+        ":forge-std/=lib/forge-std/src/",
+        ":openzeppelin-contracts-upgradeable/=lib/eignlayr-contracts/lib/openzeppelin-contracts-upgradeable/",
+        ":openzeppelin-contracts/=lib/eignlayr-contracts/lib/openzeppelin-contracts/contracts/"
+      ],
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "metadata": {
+        "bytecodeHash": "ipfs"
+      },
+      "compilationTarget": {
+        "../eignlayr-contracts/src/contracts/interfaces/IPauserRegistry.sol": "IPauserRegistry"
+      },
+      "libraries": {}
+    },
+    "sources": {
+      "../eignlayr-contracts/src/contracts/interfaces/IPauserRegistry.sol": {
+        "keccak256": "0xa74815553054d6feff0cbe94301e3b84127015ca419c256d9121569ccf4e5975",
+        "urls": [
+          "bzz-raw://b51815ca5271277622757aa7ca0e9ebdcb4fe47e62ef5b7ff9156d51fc60ad8c",
+          "dweb:/ipfs/QmcfnujqU537GjYSmd7moKbVRn5AfhHTyhh7KXAAXbDyC3"
+        ],
+        "license": "UNLICENSED"
+      }
+    },
+    "version": 1
+  },
+  "ast": {
+    "absolutePath": "../eignlayr-contracts/src/contracts/interfaces/IPauserRegistry.sol",
+    "id": 56112,
+    "exportedSymbols": {
+      "IPauserRegistry": [
+        56111
+      ]
+    },
+    "nodeType": "SourceUnit",
+    "src": "39:440:10",
+    "nodes": [
+      {
+        "id": 56097,
+        "nodeType": "PragmaDirective",
+        "src": "39:23:10",
+        "nodes": [],
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".9"
+        ]
+      },
+      {
+        "id": 56111,
+        "nodeType": "ContractDefinition",
+        "src": "154:324:10",
+        "nodes": [
+          {
+            "id": 56104,
+            "nodeType": "FunctionDefinition",
+            "src": "245:50:10",
+            "nodes": [],
+            "documentation": {
+              "id": 56099,
+              "nodeType": "StructuredDocumentation",
+              "src": "186:54:10",
+              "text": "@notice Unique address that holds the pauser role."
+            },
+            "functionSelector": "9fd0506d",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "pauser",
+            "nameLocation": "254:6:10",
+            "parameters": {
+              "id": 56100,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "260:2:10"
+            },
+            "returnParameters": {
+              "id": 56103,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 56102,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 56104,
+                  "src": "286:7:10",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 56101,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "286:7:10",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "285:9:10"
+            },
+            "scope": 56111,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 56110,
+            "nodeType": "FunctionDefinition",
+            "src": "424:52:10",
+            "nodes": [],
+            "documentation": {
+              "id": 56105,
+              "nodeType": "StructuredDocumentation",
+              "src": "301:118:10",
+              "text": "@notice Unique address that holds the unpauser role. Capable of changing *both* the pauser and unpauser addresses."
+            },
+            "functionSelector": "eab66d7a",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "unpauser",
+            "nameLocation": "433:8:10",
+            "parameters": {
+              "id": 56106,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "441:2:10"
+            },
+            "returnParameters": {
+              "id": 56109,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 56108,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 56110,
+                  "src": "467:7:10",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 56107,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "467:7:10",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "466:9:10"
+            },
+            "scope": 56111,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "IPauserRegistry",
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "documentation": {
+          "id": 56098,
+          "nodeType": "StructuredDocumentation",
+          "src": "64:89:10",
+          "text": " @title Interface for the `PauserRegistry` contract.\n @author Layr Labs, Inc."
+        },
+        "fullyImplemented": false,
+        "linearizedBaseContracts": [
+          56111
+        ],
+        "name": "IPauserRegistry",
+        "nameLocation": "164:15:10",
+        "scope": 56112,
+        "usedErrors": []
+      }
+    ],
+    "license": "UNLICENSED"
+  },
+  "id": 10
+}

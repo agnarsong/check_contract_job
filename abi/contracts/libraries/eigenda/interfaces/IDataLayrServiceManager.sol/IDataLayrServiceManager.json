@@ -1,0 +1,472 @@
+[
+  {
+    "inputs": [],
+    "name": "BLOCK_STALE_MEASURE",
+    "outputs": [
+      {
+        "internalType": "uint32",
+        "name": "",
+        "type": "uint32"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "DURATION_SCALE",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "MAX_DATASTORE_DURATION",
+    "outputs": [
+      {
+        "internalType": "uint8",
+        "name": "",
+        "type": "uint8"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "collateralToken",
+    "outputs": [
+      {
+        "internalType": "contract IERC20",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes",
+        "name": "data",
+        "type": "bytes"
+      },
+      {
+        "components": [
+          {
+            "components": [
+              {
+                "internalType": "bytes32",
+                "name": "headerHash",
+                "type": "bytes32"
+              },
+              {
+                "internalType": "uint32",
+                "name": "durationDataStoreId",
+                "type": "uint32"
+              },
+              {
+                "internalType": "uint32",
+                "name": "globalDataStoreId",
+                "type": "uint32"
+              },
+              {
+                "internalType": "uint32",
+                "name": "referenceBlockNumber",
+                "type": "uint32"
+              },
+              {
+                "internalType": "uint32",
+                "name": "blockNumber",
+                "type": "uint32"
+              },
+              {
+                "internalType": "uint96",
+                "name": "fee",
+                "type": "uint96"
+              },
+              {
+                "internalType": "address",
+                "name": "confirmer",
+                "type": "address"
+              },
+              {
+                "internalType": "bytes32",
+                "name": "signatoryRecordHash",
+                "type": "bytes32"
+              }
+            ],
+            "internalType": "struct IDataLayrServiceManager.DataStoreMetadata",
+            "name": "metadata",
+            "type": "tuple"
+          },
+          {
+            "internalType": "uint8",
+            "name": "duration",
+            "type": "uint8"
+          },
+          {
+            "internalType": "uint256",
+            "name": "timestamp",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint32",
+            "name": "index",
+            "type": "uint32"
+          }
+        ],
+        "internalType": "struct IDataLayrServiceManager.DataStoreSearchData",
+        "name": "searchData",
+        "type": "tuple"
+      }
+    ],
+    "name": "confirmDataStore",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "dataLayrPaymentManager",
+    "outputs": [
+      {
+        "internalType": "contract IDataLayrPaymentManager",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "eigenLayrDelegation",
+    "outputs": [
+      {
+        "internalType": "contract IEigenLayrDelegation",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "operator",
+        "type": "address"
+      }
+    ],
+    "name": "freezeOperator",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint8",
+        "name": "duration",
+        "type": "uint8"
+      },
+      {
+        "internalType": "uint256",
+        "name": "timestamp",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint32",
+        "name": "index",
+        "type": "uint32"
+      }
+    ],
+    "name": "getDataStoreHashesForDurationAtTimestamp",
+    "outputs": [
+      {
+        "internalType": "bytes32",
+        "name": "",
+        "type": "bytes32"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint8",
+        "name": "duration",
+        "type": "uint8"
+      }
+    ],
+    "name": "getNumDataStoresForDuration",
+    "outputs": [
+      {
+        "internalType": "uint32",
+        "name": "",
+        "type": "uint32"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "feePayer",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "confirmer",
+        "type": "address"
+      },
+      {
+        "internalType": "uint8",
+        "name": "duration",
+        "type": "uint8"
+      },
+      {
+        "internalType": "uint32",
+        "name": "blockNumber",
+        "type": "uint32"
+      },
+      {
+        "internalType": "uint32",
+        "name": "totalOperatorsIndex",
+        "type": "uint32"
+      },
+      {
+        "internalType": "bytes",
+        "name": "header",
+        "type": "bytes"
+      }
+    ],
+    "name": "initDataStore",
+    "outputs": [
+      {
+        "internalType": "uint32",
+        "name": "",
+        "type": "uint32"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "latestTime",
+    "outputs": [
+      {
+        "internalType": "uint32",
+        "name": "",
+        "type": "uint32"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "log2NumPowersOfTau",
+    "outputs": [
+      {
+        "internalType": "uint48",
+        "name": "",
+        "type": "uint48"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "numPowersOfTau",
+    "outputs": [
+      {
+        "internalType": "uint48",
+        "name": "",
+        "type": "uint48"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "owner",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "operator",
+        "type": "address"
+      },
+      {
+        "internalType": "uint32",
+        "name": "serveUntil",
+        "type": "uint32"
+      }
+    ],
+    "name": "recordFirstStakeUpdate",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "operator",
+        "type": "address"
+      },
+      {
+        "internalType": "uint32",
+        "name": "serveUntil",
+        "type": "uint32"
+      }
+    ],
+    "name": "recordLastStakeUpdateAndRevokeSlashingAbility",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "operator",
+        "type": "address"
+      },
+      {
+        "internalType": "uint32",
+        "name": "updateBlock",
+        "type": "uint32"
+      },
+      {
+        "internalType": "uint32",
+        "name": "serveUntil",
+        "type": "uint32"
+      },
+      {
+        "internalType": "uint256",
+        "name": "prevElement",
+        "type": "uint256"
+      }
+    ],
+    "name": "recordStakeUpdate",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "taskNumber",
+    "outputs": [
+      {
+        "internalType": "uint32",
+        "name": "",
+        "type": "uint32"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint8",
+        "name": "duration",
+        "type": "uint8"
+      },
+      {
+        "internalType": "uint256",
+        "name": "timestamp",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint32",
+        "name": "index",
+        "type": "uint32"
+      },
+      {
+        "components": [
+          {
+            "internalType": "bytes32",
+            "name": "headerHash",
+            "type": "bytes32"
+          },
+          {
+            "internalType": "uint32",
+            "name": "durationDataStoreId",
+            "type": "uint32"
+          },
+          {
+            "internalType": "uint32",
+            "name": "globalDataStoreId",
+            "type": "uint32"
+          },
+          {
+            "internalType": "uint32",
+            "name": "referenceBlockNumber",
+            "type": "uint32"
+          },
+          {
+            "internalType": "uint32",
+            "name": "blockNumber",
+            "type": "uint32"
+          },
+          {
+            "internalType": "uint96",
+            "name": "fee",
+            "type": "uint96"
+          },
+          {
+            "internalType": "address",
+            "name": "confirmer",
+            "type": "address"
+          },
+          {
+            "internalType": "bytes32",
+            "name": "signatoryRecordHash",
+            "type": "bytes32"
+          }
+        ],
+        "internalType": "struct IDataLayrServiceManager.DataStoreMetadata",
+        "name": "metadata",
+        "type": "tuple"
+      }
+    ],
+    "name": "verifyDataStoreMetadata",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  }
+]

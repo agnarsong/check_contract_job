@@ -1,0 +1,551 @@
+{
+  "abi": [
+    {
+      "inputs": [],
+      "name": "eigenLayrDelegation",
+      "outputs": [
+        {
+          "internalType": "contract IEigenLayrDelegation",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "latestTime",
+      "outputs": [
+        {
+          "internalType": "uint32",
+          "name": "",
+          "type": "uint32"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "owner",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "taskNumber",
+      "outputs": [
+        {
+          "internalType": "uint32",
+          "name": "",
+          "type": "uint32"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "bytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "methodIdentifiers": {
+    "eigenLayrDelegation()": "33d2433a",
+    "latestTime()": "7dfd16d7",
+    "owner()": "8da5cb5b",
+    "taskNumber()": "72d18e8d"
+  },
+  "rawMetadata": "{\"compiler\":{\"version\":\"0.8.12+commit.f00d7308\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"eigenLayrDelegation\",\"outputs\":[{\"internalType\":\"contract IEigenLayrDelegation\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"latestTime\",\"outputs\":[{\"internalType\":\"uint32\",\"name\":\"\",\"type\":\"uint32\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"owner\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"taskNumber\",\"outputs\":[{\"internalType\":\"uint32\",\"name\":\"\",\"type\":\"uint32\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"author\":\"Layr Labs, Inc.\",\"kind\":\"dev\",\"methods\":{},\"title\":\"Interface for a `ServiceManager`-type contract.\",\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{\"eigenLayrDelegation()\":{\"notice\":\"The Delegation contract of EigenLayer.\"},\"latestTime()\":{\"notice\":\"Returns the `latestTime` until which operators must serve.\"},\"taskNumber()\":{\"notice\":\"Returns the current 'taskNumber' for the middleware\"}},\"version\":1}},\"settings\":{\"compilationTarget\":{\"../eignlayr-contracts/src/contracts/interfaces/IServiceManager.sol\":\"IServiceManager\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[\":@eigenlayer/=../eignlayr-contracts/src/\",\":@openzeppelin-upgrades/=lib/openzeppelin-contracts-upgradeable/\",\":@openzeppelin/=lib/openzeppelin-contracts/\",\":ds-test/=lib/eignlayr-contracts/lib/ds-test/src/\",\":eignlayr-contracts/=lib/eignlayr-contracts/src/\",\":forge-std/=lib/forge-std/src/\",\":openzeppelin-contracts-upgradeable/=lib/eignlayr-contracts/lib/openzeppelin-contracts-upgradeable/\",\":openzeppelin-contracts/=lib/eignlayr-contracts/lib/openzeppelin-contracts/contracts/\"]},\"sources\":{\"../eignlayr-contracts/src/contracts/interfaces/IEigenLayrDelegation.sol\":{\"keccak256\":\"0x9f11c0becde4111ac7d060dc11b9461888129076740cf78e07f292eefc92955e\",\"license\":\"UNLICENSED\",\"urls\":[\"bzz-raw://53bef92f10fd142e6b0af0f4f77a958c96ebea145492aa5328757e10fffd9c21\",\"dweb:/ipfs/QmUHG67pTyGxu6whsk95JNwevDJ7ooQMyeNT4kfwJtEzU5\"]},\"../eignlayr-contracts/src/contracts/interfaces/IInvestmentStrategy.sol\":{\"keccak256\":\"0x69eb667cc856ee1fe783243b6db21a43a9dadd29bf6761727b334fca4366bceb\",\"license\":\"UNLICENSED\",\"urls\":[\"bzz-raw://224e8f6def4e53a1065f0c4ce26d8ffff15276944e2351753065aeb5bd265f52\",\"dweb:/ipfs/QmSu8iUPCnwza4SdE5jVSZLnQjMRXJg3VAGc8pHqbaMLob\"]},\"../eignlayr-contracts/src/contracts/interfaces/IServiceManager.sol\":{\"keccak256\":\"0xded81693805764888f8d1daa8afb600969d4286f3d5ecfa92e99b9446b400ad4\",\"license\":\"UNLICENSED\",\"urls\":[\"bzz-raw://8e0d0704fa8e64543abce318eaf99c53f75215db76cf873e6a6311a4eb5274b2\",\"dweb:/ipfs/Qmd96t8WrNFRY5fqsPtkCaz28j3mvZj3fpc4qp6xXe9wgb\"]},\"lib/openzeppelin-contracts/contracts/token/ERC20/IERC20.sol\":{\"keccak256\":\"0x9750c6b834f7b43000631af5cc30001c5f547b3ceb3635488f140f60e897ea6b\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://5a7d5b1ef5d8d5889ad2ed89d8619c09383b80b72ab226e0fe7bde1636481e34\",\"dweb:/ipfs/QmebXWgtEfumQGBdVeM6c71McLixYXQP5Bk6kKXuoY4Bmr\"]}},\"version\":1}",
+  "metadata": {
+    "compiler": {
+      "version": "0.8.12+commit.f00d7308"
+    },
+    "language": "Solidity",
+    "output": {
+      "abi": [
+        {
+          "inputs": [],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "eigenLayrDelegation",
+          "outputs": [
+            {
+              "internalType": "contract IEigenLayrDelegation",
+              "name": "",
+              "type": "address"
+            }
+          ]
+        },
+        {
+          "inputs": [],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "latestTime",
+          "outputs": [
+            {
+              "internalType": "uint32",
+              "name": "",
+              "type": "uint32"
+            }
+          ]
+        },
+        {
+          "inputs": [],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "owner",
+          "outputs": [
+            {
+              "internalType": "address",
+              "name": "",
+              "type": "address"
+            }
+          ]
+        },
+        {
+          "inputs": [],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "taskNumber",
+          "outputs": [
+            {
+              "internalType": "uint32",
+              "name": "",
+              "type": "uint32"
+            }
+          ]
+        }
+      ],
+      "devdoc": {
+        "kind": "dev",
+        "methods": {},
+        "version": 1
+      },
+      "userdoc": {
+        "kind": "user",
+        "methods": {
+          "eigenLayrDelegation()": {
+            "notice": "The Delegation contract of EigenLayer."
+          },
+          "latestTime()": {
+            "notice": "Returns the `latestTime` until which operators must serve."
+          },
+          "taskNumber()": {
+            "notice": "Returns the current 'taskNumber' for the middleware"
+          }
+        },
+        "version": 1
+      }
+    },
+    "settings": {
+      "remappings": [
+        ":@eigenlayer/=../eignlayr-contracts/src/",
+        ":@openzeppelin-upgrades/=lib/openzeppelin-contracts-upgradeable/",
+        ":@openzeppelin/=lib/openzeppelin-contracts/",
+        ":ds-test/=lib/eignlayr-contracts/lib/ds-test/src/",
+        ":eignlayr-contracts/=lib/eignlayr-contracts/src/",
+        ":forge-std/=lib/forge-std/src/",
+        ":openzeppelin-contracts-upgradeable/=lib/eignlayr-contracts/lib/openzeppelin-contracts-upgradeable/",
+        ":openzeppelin-contracts/=lib/eignlayr-contracts/lib/openzeppelin-contracts/contracts/"
+      ],
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "metadata": {
+        "bytecodeHash": "ipfs"
+      },
+      "compilationTarget": {
+        "../eignlayr-contracts/src/contracts/interfaces/IServiceManager.sol": "IServiceManager"
+      },
+      "libraries": {}
+    },
+    "sources": {
+      "../eignlayr-contracts/src/contracts/interfaces/IEigenLayrDelegation.sol": {
+        "keccak256": "0x9f11c0becde4111ac7d060dc11b9461888129076740cf78e07f292eefc92955e",
+        "urls": [
+          "bzz-raw://53bef92f10fd142e6b0af0f4f77a958c96ebea145492aa5328757e10fffd9c21",
+          "dweb:/ipfs/QmUHG67pTyGxu6whsk95JNwevDJ7ooQMyeNT4kfwJtEzU5"
+        ],
+        "license": "UNLICENSED"
+      },
+      "../eignlayr-contracts/src/contracts/interfaces/IInvestmentStrategy.sol": {
+        "keccak256": "0x69eb667cc856ee1fe783243b6db21a43a9dadd29bf6761727b334fca4366bceb",
+        "urls": [
+          "bzz-raw://224e8f6def4e53a1065f0c4ce26d8ffff15276944e2351753065aeb5bd265f52",
+          "dweb:/ipfs/QmSu8iUPCnwza4SdE5jVSZLnQjMRXJg3VAGc8pHqbaMLob"
+        ],
+        "license": "UNLICENSED"
+      },
+      "../eignlayr-contracts/src/contracts/interfaces/IServiceManager.sol": {
+        "keccak256": "0xded81693805764888f8d1daa8afb600969d4286f3d5ecfa92e99b9446b400ad4",
+        "urls": [
+          "bzz-raw://8e0d0704fa8e64543abce318eaf99c53f75215db76cf873e6a6311a4eb5274b2",
+          "dweb:/ipfs/Qmd96t8WrNFRY5fqsPtkCaz28j3mvZj3fpc4qp6xXe9wgb"
+        ],
+        "license": "UNLICENSED"
+      },
+      "lib/openzeppelin-contracts/contracts/token/ERC20/IERC20.sol": {
+        "keccak256": "0x9750c6b834f7b43000631af5cc30001c5f547b3ceb3635488f140f60e897ea6b",
+        "urls": [
+          "bzz-raw://5a7d5b1ef5d8d5889ad2ed89d8619c09383b80b72ab226e0fe7bde1636481e34",
+          "dweb:/ipfs/QmebXWgtEfumQGBdVeM6c71McLixYXQP5Bk6kKXuoY4Bmr"
+        ],
+        "license": "MIT"
+      }
+    },
+    "version": 1
+  },
+  "ast": {
+    "absolutePath": "../eignlayr-contracts/src/contracts/interfaces/IServiceManager.sol",
+    "id": 578,
+    "exportedSymbols": {
+      "IERC20": [
+        40863
+      ],
+      "IEigenLayrDelegation": [
+        121
+      ],
+      "IInvestmentStrategy": [
+        323
+      ],
+      "IServiceManager": [
+        577
+      ]
+    },
+    "nodeType": "SourceUnit",
+    "src": "39:741:14",
+    "nodes": [
+      {
+        "id": 549,
+        "nodeType": "PragmaDirective",
+        "src": "39:23:14",
+        "nodes": [],
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".9"
+        ]
+      },
+      {
+        "id": 550,
+        "nodeType": "ImportDirective",
+        "src": "64:56:14",
+        "nodes": [],
+        "absolutePath": "lib/openzeppelin-contracts/contracts/token/ERC20/IERC20.sol",
+        "file": "@openzeppelin/contracts/token/ERC20/IERC20.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 578,
+        "sourceUnit": 40864,
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "id": 551,
+        "nodeType": "ImportDirective",
+        "src": "121:36:14",
+        "nodes": [],
+        "absolutePath": "../eignlayr-contracts/src/contracts/interfaces/IEigenLayrDelegation.sol",
+        "file": "./IEigenLayrDelegation.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 578,
+        "sourceUnit": 122,
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "id": 577,
+        "nodeType": "ContractDefinition",
+        "src": "298:481:14",
+        "nodes": [
+          {
+            "id": 558,
+            "nodeType": "FunctionDefinition",
+            "src": "398:53:14",
+            "nodes": [],
+            "documentation": {
+              "id": 553,
+              "nodeType": "StructuredDocumentation",
+              "src": "330:63:14",
+              "text": "@notice Returns the current 'taskNumber' for the middleware"
+            },
+            "functionSelector": "72d18e8d",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "taskNumber",
+            "nameLocation": "407:10:14",
+            "parameters": {
+              "id": 554,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "417:2:14"
+            },
+            "returnParameters": {
+              "id": 557,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 556,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 558,
+                  "src": "443:6:14",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint32",
+                    "typeString": "uint32"
+                  },
+                  "typeName": {
+                    "id": 555,
+                    "name": "uint32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "443:6:14",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint32",
+                      "typeString": "uint32"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "442:8:14"
+            },
+            "scope": 577,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 565,
+            "nodeType": "FunctionDefinition",
+            "src": "512:76:14",
+            "nodes": [],
+            "documentation": {
+              "id": 559,
+              "nodeType": "StructuredDocumentation",
+              "src": "457:50:14",
+              "text": "@notice The Delegation contract of EigenLayer."
+            },
+            "functionSelector": "33d2433a",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "eigenLayrDelegation",
+            "nameLocation": "521:19:14",
+            "parameters": {
+              "id": 560,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "540:2:14"
+            },
+            "returnParameters": {
+              "id": 564,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 563,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 565,
+                  "src": "566:20:14",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_contract$_IEigenLayrDelegation_$121",
+                    "typeString": "contract IEigenLayrDelegation"
+                  },
+                  "typeName": {
+                    "id": 562,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 561,
+                      "name": "IEigenLayrDelegation",
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 121,
+                      "src": "566:20:14"
+                    },
+                    "referencedDeclaration": 121,
+                    "src": "566:20:14",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_IEigenLayrDelegation_$121",
+                      "typeString": "contract IEigenLayrDelegation"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "565:22:14"
+            },
+            "scope": 577,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 571,
+            "nodeType": "FunctionDefinition",
+            "src": "669:53:14",
+            "nodes": [],
+            "documentation": {
+              "id": 566,
+              "nodeType": "StructuredDocumentation",
+              "src": "594:70:14",
+              "text": "@notice Returns the `latestTime` until which operators must serve."
+            },
+            "functionSelector": "7dfd16d7",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "latestTime",
+            "nameLocation": "678:10:14",
+            "parameters": {
+              "id": 567,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "688:2:14"
+            },
+            "returnParameters": {
+              "id": 570,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 569,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 571,
+                  "src": "714:6:14",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint32",
+                    "typeString": "uint32"
+                  },
+                  "typeName": {
+                    "id": 568,
+                    "name": "uint32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "714:6:14",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint32",
+                      "typeString": "uint32"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "713:8:14"
+            },
+            "scope": 577,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 576,
+            "nodeType": "FunctionDefinition",
+            "src": "728:49:14",
+            "nodes": [],
+            "functionSelector": "8da5cb5b",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "owner",
+            "nameLocation": "737:5:14",
+            "parameters": {
+              "id": 572,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "742:2:14"
+            },
+            "returnParameters": {
+              "id": 575,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 574,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 576,
+                  "src": "768:7:14",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 573,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "768:7:14",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "767:9:14"
+            },
+            "scope": 577,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "IServiceManager",
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "documentation": {
+          "id": 552,
+          "nodeType": "StructuredDocumentation",
+          "src": "159:92:14",
+          "text": " @title Interface for a `ServiceManager`-type contract.\n @author Layr Labs, Inc."
+        },
+        "fullyImplemented": false,
+        "linearizedBaseContracts": [
+          577
+        ],
+        "name": "IServiceManager",
+        "nameLocation": "308:15:14",
+        "scope": 578,
+        "usedErrors": []
+      }
+    ],
+    "license": "UNLICENSED"
+  },
+  "id": 14
+}

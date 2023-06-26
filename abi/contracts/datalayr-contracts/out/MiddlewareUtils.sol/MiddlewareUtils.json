@@ -1,0 +1,460 @@
+{
+  "abi": [],
+  "bytecode": {
+    "object": "0x60566037600b82828239805160001a607314602a57634e487b7160e01b600052600060045260246000fd5b30600052607381538281f3fe73000000000000000000000000000000000000000030146080604052600080fdfea2646970667358221220943517aef48926d85fc0e14553496508206a1b201b9b1f8958e25f42926cd2d164736f6c634300080c0033",
+    "sourceMap": "155:504:52:-:0;;;;;;;;;;;;;;;-1:-1:-1;;;155:504:52;;;;;;;;;;;;;;;;;",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x73000000000000000000000000000000000000000030146080604052600080fdfea2646970667358221220943517aef48926d85fc0e14553496508206a1b201b9b1f8958e25f42926cd2d164736f6c634300080c0033",
+    "sourceMap": "155:504:52:-:0;;;;;;;;",
+    "linkReferences": {}
+  },
+  "methodIdentifiers": {},
+  "rawMetadata": "{\"compiler\":{\"version\":\"0.8.12+commit.f00d7308\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"author\":\"Layr Labs, Inc.\",\"kind\":\"dev\",\"methods\":{},\"title\":\"Library of functions shared across DataLayr.\",\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"/Users/dl00038ml/PKG/projects/blockChain/e_Tools/rde/mantle/datalayr/contracts/eignlayr-contracts/src/contracts/libraries/MiddlewareUtils.sol\":\"MiddlewareUtils\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[\":@eigenlayer/=../eignlayr-contracts/src/\",\":@openzeppelin-upgrades/=lib/openzeppelin-contracts-upgradeable/\",\":@openzeppelin/=lib/openzeppelin-contracts/\",\":ds-test/=lib/eignlayr-contracts/lib/ds-test/src/\",\":eignlayr-contracts/=lib/eignlayr-contracts/src/\",\":forge-std/=lib/forge-std/src/\",\":openzeppelin-contracts-upgradeable/=lib/eignlayr-contracts/lib/openzeppelin-contracts-upgradeable/\",\":openzeppelin-contracts/=lib/eignlayr-contracts/lib/openzeppelin-contracts/contracts/\"]},\"sources\":{\"/Users/dl00038ml/PKG/projects/blockChain/e_Tools/rde/mantle/datalayr/contracts/eignlayr-contracts/src/contracts/libraries/MiddlewareUtils.sol\":{\"keccak256\":\"0x155f1a0a3397c3306fc1083b716f26fa99ccf0552ad8f58e0ebc608aceaedf26\",\"license\":\"UNLICENSED\",\"urls\":[\"bzz-raw://cd91af159c0873edc0466c12cb084360de8274a5e9789cc21e91abbf0654cfcb\",\"dweb:/ipfs/QmTaYrDrtetTMA3AtVyzyhEFPWAtuyeZf2mKMBWSNtpGvv\"]}},\"version\":1}",
+  "metadata": {
+    "compiler": {
+      "version": "0.8.12+commit.f00d7308"
+    },
+    "language": "Solidity",
+    "output": {
+      "abi": [],
+      "devdoc": {
+        "kind": "dev",
+        "methods": {},
+        "version": 1
+      },
+      "userdoc": {
+        "kind": "user",
+        "methods": {},
+        "version": 1
+      }
+    },
+    "settings": {
+      "remappings": [
+        ":@eigenlayer/=../eignlayr-contracts/src/",
+        ":@openzeppelin-upgrades/=lib/openzeppelin-contracts-upgradeable/",
+        ":@openzeppelin/=lib/openzeppelin-contracts/",
+        ":ds-test/=lib/eignlayr-contracts/lib/ds-test/src/",
+        ":eignlayr-contracts/=lib/eignlayr-contracts/src/",
+        ":forge-std/=lib/forge-std/src/",
+        ":openzeppelin-contracts-upgradeable/=lib/eignlayr-contracts/lib/openzeppelin-contracts-upgradeable/",
+        ":openzeppelin-contracts/=lib/eignlayr-contracts/lib/openzeppelin-contracts/contracts/"
+      ],
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "metadata": {
+        "bytecodeHash": "ipfs"
+      },
+      "compilationTarget": {
+        "/Users/dl00038ml/PKG/projects/blockChain/e_Tools/rde/mantle/datalayr/contracts/eignlayr-contracts/src/contracts/libraries/MiddlewareUtils.sol": "MiddlewareUtils"
+      },
+      "libraries": {}
+    },
+    "sources": {
+      "/Users/dl00038ml/PKG/projects/blockChain/e_Tools/rde/mantle/datalayr/contracts/eignlayr-contracts/src/contracts/libraries/MiddlewareUtils.sol": {
+        "keccak256": "0x155f1a0a3397c3306fc1083b716f26fa99ccf0552ad8f58e0ebc608aceaedf26",
+        "urls": [
+          "bzz-raw://cd91af159c0873edc0466c12cb084360de8274a5e9789cc21e91abbf0654cfcb",
+          "dweb:/ipfs/QmTaYrDrtetTMA3AtVyzyhEFPWAtuyeZf2mKMBWSNtpGvv"
+        ],
+        "license": "UNLICENSED"
+      }
+    },
+    "version": 1
+  },
+  "ast": {
+    "absolutePath": "/Users/dl00038ml/PKG/projects/blockChain/e_Tools/rde/mantle/datalayr/contracts/eignlayr-contracts/src/contracts/libraries/MiddlewareUtils.sol",
+    "id": 8914,
+    "exportedSymbols": {
+      "MiddlewareUtils": [
+        8913
+      ]
+    },
+    "nodeType": "SourceUnit",
+    "src": "40:620:52",
+    "nodes": [
+      {
+        "id": 8885,
+        "nodeType": "PragmaDirective",
+        "src": "40:23:52",
+        "nodes": [],
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".9"
+        ]
+      },
+      {
+        "id": 8913,
+        "nodeType": "ContractDefinition",
+        "src": "155:504:52",
+        "nodes": [
+          {
+            "id": 8912,
+            "nodeType": "FunctionDefinition",
+            "src": "256:401:52",
+            "nodes": [],
+            "body": {
+              "id": 8911,
+              "nodeType": "Block",
+              "src": "493:164:52",
+              "nodes": [],
+              "statements": [
+                {
+                  "expression": {
+                    "arguments": [
+                      {
+                        "arguments": [
+                          {
+                            "id": 8904,
+                            "name": "globalDataStoreId",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 8889,
+                            "src": "550:17:52",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_uint32",
+                              "typeString": "uint32"
+                            }
+                          },
+                          {
+                            "id": 8905,
+                            "name": "nonSignerPubkeyHashes",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 8892,
+                            "src": "569:21:52",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_array$_t_bytes32_$dyn_memory_ptr",
+                              "typeString": "bytes32[] memory"
+                            }
+                          },
+                          {
+                            "id": 8906,
+                            "name": "signedStakeFirstQuorum",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 8894,
+                            "src": "592:22:52",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_uint256",
+                              "typeString": "uint256"
+                            }
+                          },
+                          {
+                            "id": 8907,
+                            "name": "signedStakeSecondQuorum",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 8896,
+                            "src": "616:23:52",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_uint256",
+                              "typeString": "uint256"
+                            }
+                          }
+                        ],
+                        "expression": {
+                          "argumentTypes": [
+                            {
+                              "typeIdentifier": "t_uint32",
+                              "typeString": "uint32"
+                            },
+                            {
+                              "typeIdentifier": "t_array$_t_bytes32_$dyn_memory_ptr",
+                              "typeString": "bytes32[] memory"
+                            },
+                            {
+                              "typeIdentifier": "t_uint256",
+                              "typeString": "uint256"
+                            },
+                            {
+                              "typeIdentifier": "t_uint256",
+                              "typeString": "uint256"
+                            }
+                          ],
+                          "expression": {
+                            "id": 8902,
+                            "name": "abi",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": -1,
+                            "src": "533:3:52",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_magic_abi",
+                              "typeString": "abi"
+                            }
+                          },
+                          "id": 8903,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": true,
+                          "lValueRequested": false,
+                          "memberName": "encodePacked",
+                          "nodeType": "MemberAccess",
+                          "src": "533:16:52",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_function_abiencodepacked_pure$__$returns$_t_bytes_memory_ptr_$",
+                            "typeString": "function () pure returns (bytes memory)"
+                          }
+                        },
+                        "id": 8908,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "kind": "functionCall",
+                        "lValueRequested": false,
+                        "names": [],
+                        "nodeType": "FunctionCall",
+                        "src": "533:107:52",
+                        "tryCall": false,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bytes_memory_ptr",
+                          "typeString": "bytes memory"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_bytes_memory_ptr",
+                          "typeString": "bytes memory"
+                        }
+                      ],
+                      "id": 8901,
+                      "name": "keccak256",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": -8,
+                      "src": "510:9:52",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_keccak256_pure$_t_bytes_memory_ptr_$returns$_t_bytes32_$",
+                        "typeString": "function (bytes memory) pure returns (bytes32)"
+                      }
+                    },
+                    "id": 8909,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "510:140:52",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "functionReturnParameters": 8900,
+                  "id": 8910,
+                  "nodeType": "Return",
+                  "src": "503:147:52"
+                }
+              ]
+            },
+            "documentation": {
+              "id": 8887,
+              "nodeType": "StructuredDocumentation",
+              "src": "185:66:52",
+              "text": "@notice Finds the `signatoryRecordHash`, used for fraudproofs."
+            },
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "computeSignatoryRecordHash",
+            "nameLocation": "265:26:52",
+            "parameters": {
+              "id": 8897,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 8889,
+                  "mutability": "mutable",
+                  "name": "globalDataStoreId",
+                  "nameLocation": "308:17:52",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 8912,
+                  "src": "301:24:52",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint32",
+                    "typeString": "uint32"
+                  },
+                  "typeName": {
+                    "id": 8888,
+                    "name": "uint32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "301:6:52",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint32",
+                      "typeString": "uint32"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 8892,
+                  "mutability": "mutable",
+                  "name": "nonSignerPubkeyHashes",
+                  "nameLocation": "352:21:52",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 8912,
+                  "src": "335:38:52",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_bytes32_$dyn_memory_ptr",
+                    "typeString": "bytes32[]"
+                  },
+                  "typeName": {
+                    "baseType": {
+                      "id": 8890,
+                      "name": "bytes32",
+                      "nodeType": "ElementaryTypeName",
+                      "src": "335:7:52",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bytes32",
+                        "typeString": "bytes32"
+                      }
+                    },
+                    "id": 8891,
+                    "nodeType": "ArrayTypeName",
+                    "src": "335:9:52",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_array$_t_bytes32_$dyn_storage_ptr",
+                      "typeString": "bytes32[]"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 8894,
+                  "mutability": "mutable",
+                  "name": "signedStakeFirstQuorum",
+                  "nameLocation": "391:22:52",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 8912,
+                  "src": "383:30:52",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 8893,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "383:7:52",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 8896,
+                  "mutability": "mutable",
+                  "name": "signedStakeSecondQuorum",
+                  "nameLocation": "431:23:52",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 8912,
+                  "src": "423:31:52",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 8895,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "423:7:52",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "291:169:52"
+            },
+            "returnParameters": {
+              "id": 8900,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 8899,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 8912,
+                  "src": "484:7:52",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 8898,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "484:7:52",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "483:9:52"
+            },
+            "scope": 8913,
+            "stateMutability": "pure",
+            "virtual": false,
+            "visibility": "internal"
+          }
+        ],
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "MiddlewareUtils",
+        "contractDependencies": [],
+        "contractKind": "library",
+        "documentation": {
+          "id": 8886,
+          "nodeType": "StructuredDocumentation",
+          "src": "65:89:52",
+          "text": " @title Library of functions shared across DataLayr.\n @author Layr Labs, Inc."
+        },
+        "fullyImplemented": true,
+        "linearizedBaseContracts": [
+          8913
+        ],
+        "name": "MiddlewareUtils",
+        "nameLocation": "163:15:52",
+        "scope": 8914,
+        "usedErrors": []
+      }
+    ],
+    "license": "UNLICENSED"
+  },
+  "id": 52
+}

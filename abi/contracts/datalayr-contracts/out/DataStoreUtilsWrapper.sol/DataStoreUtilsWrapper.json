@@ -1,0 +1,1627 @@
+{
+  "abi": [
+    {
+      "inputs": [
+        {
+          "components": [
+            {
+              "internalType": "bytes32",
+              "name": "headerHash",
+              "type": "bytes32"
+            },
+            {
+              "internalType": "uint32",
+              "name": "durationDataStoreId",
+              "type": "uint32"
+            },
+            {
+              "internalType": "uint32",
+              "name": "globalDataStoreId",
+              "type": "uint32"
+            },
+            {
+              "internalType": "uint32",
+              "name": "referenceBlockNumber",
+              "type": "uint32"
+            },
+            {
+              "internalType": "uint32",
+              "name": "blockNumber",
+              "type": "uint32"
+            },
+            {
+              "internalType": "uint96",
+              "name": "fee",
+              "type": "uint96"
+            },
+            {
+              "internalType": "address",
+              "name": "confirmer",
+              "type": "address"
+            },
+            {
+              "internalType": "bytes32",
+              "name": "signatoryRecordHash",
+              "type": "bytes32"
+            }
+          ],
+          "internalType": "struct IDataLayrServiceManager.DataStoreMetadata",
+          "name": "metadata",
+          "type": "tuple"
+        }
+      ],
+      "name": "packDataStoreMetadataExternal",
+      "outputs": [
+        {
+          "internalType": "bytes",
+          "name": "",
+          "type": "bytes"
+        }
+      ],
+      "stateMutability": "pure",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "components": [
+            {
+              "components": [
+                {
+                  "internalType": "bytes32",
+                  "name": "headerHash",
+                  "type": "bytes32"
+                },
+                {
+                  "internalType": "uint32",
+                  "name": "durationDataStoreId",
+                  "type": "uint32"
+                },
+                {
+                  "internalType": "uint32",
+                  "name": "globalDataStoreId",
+                  "type": "uint32"
+                },
+                {
+                  "internalType": "uint32",
+                  "name": "referenceBlockNumber",
+                  "type": "uint32"
+                },
+                {
+                  "internalType": "uint32",
+                  "name": "blockNumber",
+                  "type": "uint32"
+                },
+                {
+                  "internalType": "uint96",
+                  "name": "fee",
+                  "type": "uint96"
+                },
+                {
+                  "internalType": "address",
+                  "name": "confirmer",
+                  "type": "address"
+                },
+                {
+                  "internalType": "bytes32",
+                  "name": "signatoryRecordHash",
+                  "type": "bytes32"
+                }
+              ],
+              "internalType": "struct IDataLayrServiceManager.DataStoreMetadata",
+              "name": "metadata",
+              "type": "tuple"
+            },
+            {
+              "internalType": "uint8",
+              "name": "duration",
+              "type": "uint8"
+            },
+            {
+              "internalType": "uint256",
+              "name": "timestamp",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint32",
+              "name": "index",
+              "type": "uint32"
+            }
+          ],
+          "internalType": "struct IDataLayrServiceManager.DataStoreSearchData",
+          "name": "searchData",
+          "type": "tuple"
+        }
+      ],
+      "name": "packDataStoreSearchDataExternal",
+      "outputs": [
+        {
+          "internalType": "bytes",
+          "name": "",
+          "type": "bytes"
+        }
+      ],
+      "stateMutability": "pure",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes",
+          "name": "packedMetadata",
+          "type": "bytes"
+        }
+      ],
+      "name": "unpackDataStoreMetadataExternal",
+      "outputs": [
+        {
+          "components": [
+            {
+              "internalType": "bytes32",
+              "name": "headerHash",
+              "type": "bytes32"
+            },
+            {
+              "internalType": "uint32",
+              "name": "durationDataStoreId",
+              "type": "uint32"
+            },
+            {
+              "internalType": "uint32",
+              "name": "globalDataStoreId",
+              "type": "uint32"
+            },
+            {
+              "internalType": "uint32",
+              "name": "referenceBlockNumber",
+              "type": "uint32"
+            },
+            {
+              "internalType": "uint32",
+              "name": "blockNumber",
+              "type": "uint32"
+            },
+            {
+              "internalType": "uint96",
+              "name": "fee",
+              "type": "uint96"
+            },
+            {
+              "internalType": "address",
+              "name": "confirmer",
+              "type": "address"
+            },
+            {
+              "internalType": "bytes32",
+              "name": "signatoryRecordHash",
+              "type": "bytes32"
+            }
+          ],
+          "internalType": "struct IDataLayrServiceManager.DataStoreMetadata",
+          "name": "metadata",
+          "type": "tuple"
+        }
+      ],
+      "stateMutability": "pure",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes",
+          "name": "packedSearchData",
+          "type": "bytes"
+        }
+      ],
+      "name": "unpackDataStoreSearchDataExternal",
+      "outputs": [
+        {
+          "components": [
+            {
+              "components": [
+                {
+                  "internalType": "bytes32",
+                  "name": "headerHash",
+                  "type": "bytes32"
+                },
+                {
+                  "internalType": "uint32",
+                  "name": "durationDataStoreId",
+                  "type": "uint32"
+                },
+                {
+                  "internalType": "uint32",
+                  "name": "globalDataStoreId",
+                  "type": "uint32"
+                },
+                {
+                  "internalType": "uint32",
+                  "name": "referenceBlockNumber",
+                  "type": "uint32"
+                },
+                {
+                  "internalType": "uint32",
+                  "name": "blockNumber",
+                  "type": "uint32"
+                },
+                {
+                  "internalType": "uint96",
+                  "name": "fee",
+                  "type": "uint96"
+                },
+                {
+                  "internalType": "address",
+                  "name": "confirmer",
+                  "type": "address"
+                },
+                {
+                  "internalType": "bytes32",
+                  "name": "signatoryRecordHash",
+                  "type": "bytes32"
+                }
+              ],
+              "internalType": "struct IDataLayrServiceManager.DataStoreMetadata",
+              "name": "metadata",
+              "type": "tuple"
+            },
+            {
+              "internalType": "uint8",
+              "name": "duration",
+              "type": "uint8"
+            },
+            {
+              "internalType": "uint256",
+              "name": "timestamp",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint32",
+              "name": "index",
+              "type": "uint32"
+            }
+          ],
+          "internalType": "struct IDataLayrServiceManager.DataStoreSearchData",
+          "name": "searchData",
+          "type": "tuple"
+        }
+      ],
+      "stateMutability": "pure",
+      "type": "function"
+    }
+  ],
+  "bytecode": {
+    "object": "0x608060405234801561001057600080fd5b506106ff806100206000396000f3fe608060405234801561001057600080fd5b506004361061004c5760003560e01c806305e1792a146100515780636c6da21b1461007a578063d52b31961461009a578063dd35e353146100ba575b600080fd5b61006461005f366004610322565b6100cd565b6040516100719190610408565b60405180910390f35b61008d610088366004610529565b6100e8565b60405161007191906105ea565b6100ad6100a8366004610322565b6100f3565b604051610071919061061d565b61008d6100c8366004610660565b610105565b6100d56102b0565b6100df8383610110565b90505b92915050565b60606100e282610180565b6100fb6102f4565b6100df83836101c7565b60606100e282610204565b6101186102b0565b600083905080358252602081013560e01c6020830152602481013560e01c6040830152602881013560e01c6060830152602c81013560e01c6080830152603081013560a01c60a0830152603c81013560601c60c0830152605081013560e08301525092915050565b606061018f8260000151610204565b8260200151836040015184606001516040516020016101b1949392919061067d565b6040516020818303038152906040529050919050565b6101cf6102f4565b6101d98383610110565b8152607083013560f81c60208201526071830135604082015260919092013560e01c60608301525090565b6060816000015182602001518360400151846060015185608001518660a001518760c001518860e001516040516020016101b198979695949392919097885260e096871b6001600160e01b031990811660208a015295871b8616602489015293861b851660288801529190941b909216602c85015260a09290921b6001600160a01b031916603084015260601b6bffffffffffffffffffffffff1916603c830152605082015260700190565b6040805161010081018252600080825260208201819052918101829052606081018290526080810182905260a0810182905260c0810182905260e081019190915290565b60405180608001604052806103076102b0565b81526000602082018190526040820181905260609091015290565b6000806020838503121561033557600080fd5b823567ffffffffffffffff8082111561034d57600080fd5b818501915085601f83011261036157600080fd5b81358181111561037057600080fd5b86602082850101111561038257600080fd5b60209290920196919550909350505050565b80518252602081015163ffffffff808216602085015280604084015116604085015280606084015116606085015280608084015116608085015250506bffffffffffffffffffffffff60a08201511660a083015260018060a01b0360c08201511660c083015260e081015160e08301525050565b61010081016100e28284610394565b604051610100810167ffffffffffffffff8111828210171561044957634e487b7160e01b600052604160045260246000fd5b60405290565b803563ffffffff8116811461046357600080fd5b919050565b80356001600160a01b038116811461046357600080fd5b6000610100828403121561049257600080fd5b61049a610417565b9050813581526104ac6020830161044f565b60208201526104bd6040830161044f565b60408201526104ce6060830161044f565b60608201526104df6080830161044f565b608082015260a08201356bffffffffffffffffffffffff8116811461050357600080fd5b60a082015261051460c08301610468565b60c082015260e082013560e082015292915050565b6000610160828403121561053c57600080fd5b6040516080810181811067ffffffffffffffff8211171561056d57634e487b7160e01b600052604160045260246000fd5b60405261057a848461047f565b815261010083013560ff8116811461059157600080fd5b602082015261012083013560408201526105ae610140840161044f565b60608201529392505050565b60005b838110156105d55781810151838201526020016105bd565b838111156105e4576000848401525b50505050565b60208152600082518060208401526106098160408501602087016105ba565b601f01601f19169190910160400192915050565b600061016082019050610631828451610394565b602083015160ff16610100830152604083015161012083015260609092015163ffffffff166101409091015290565b6000610100828403121561067357600080fd5b6100df838361047f565b6000855161068f818460208a016105ba565b60f89590951b6001600160f81b03191691909401908152600181019290925260e01b6001600160e01b03191660218201526025019291505056fea2646970667358221220b7e923d20da69c49811db1d7b88ed010bfab5bed670e0c287983518ea8726fae64736f6c634300080c0033",
+    "sourceMap": "262:1297:125:-:0;;;;;;;;;;;;;;;;;;;",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x608060405234801561001057600080fd5b506004361061004c5760003560e01c806305e1792a146100515780636c6da21b1461007a578063d52b31961461009a578063dd35e353146100ba575b600080fd5b61006461005f366004610322565b6100cd565b6040516100719190610408565b60405180910390f35b61008d610088366004610529565b6100e8565b60405161007191906105ea565b6100ad6100a8366004610322565b6100f3565b604051610071919061061d565b61008d6100c8366004610660565b610105565b6100d56102b0565b6100df8383610110565b90505b92915050565b60606100e282610180565b6100fb6102f4565b6100df83836101c7565b60606100e282610204565b6101186102b0565b600083905080358252602081013560e01c6020830152602481013560e01c6040830152602881013560e01c6060830152602c81013560e01c6080830152603081013560a01c60a0830152603c81013560601c60c0830152605081013560e08301525092915050565b606061018f8260000151610204565b8260200151836040015184606001516040516020016101b1949392919061067d565b6040516020818303038152906040529050919050565b6101cf6102f4565b6101d98383610110565b8152607083013560f81c60208201526071830135604082015260919092013560e01c60608301525090565b6060816000015182602001518360400151846060015185608001518660a001518760c001518860e001516040516020016101b198979695949392919097885260e096871b6001600160e01b031990811660208a015295871b8616602489015293861b851660288801529190941b909216602c85015260a09290921b6001600160a01b031916603084015260601b6bffffffffffffffffffffffff1916603c830152605082015260700190565b6040805161010081018252600080825260208201819052918101829052606081018290526080810182905260a0810182905260c0810182905260e081019190915290565b60405180608001604052806103076102b0565b81526000602082018190526040820181905260609091015290565b6000806020838503121561033557600080fd5b823567ffffffffffffffff8082111561034d57600080fd5b818501915085601f83011261036157600080fd5b81358181111561037057600080fd5b86602082850101111561038257600080fd5b60209290920196919550909350505050565b80518252602081015163ffffffff808216602085015280604084015116604085015280606084015116606085015280608084015116608085015250506bffffffffffffffffffffffff60a08201511660a083015260018060a01b0360c08201511660c083015260e081015160e08301525050565b61010081016100e28284610394565b604051610100810167ffffffffffffffff8111828210171561044957634e487b7160e01b600052604160045260246000fd5b60405290565b803563ffffffff8116811461046357600080fd5b919050565b80356001600160a01b038116811461046357600080fd5b6000610100828403121561049257600080fd5b61049a610417565b9050813581526104ac6020830161044f565b60208201526104bd6040830161044f565b60408201526104ce6060830161044f565b60608201526104df6080830161044f565b608082015260a08201356bffffffffffffffffffffffff8116811461050357600080fd5b60a082015261051460c08301610468565b60c082015260e082013560e082015292915050565b6000610160828403121561053c57600080fd5b6040516080810181811067ffffffffffffffff8211171561056d57634e487b7160e01b600052604160045260246000fd5b60405261057a848461047f565b815261010083013560ff8116811461059157600080fd5b602082015261012083013560408201526105ae610140840161044f565b60608201529392505050565b60005b838110156105d55781810151838201526020016105bd565b838111156105e4576000848401525b50505050565b60208152600082518060208401526106098160408501602087016105ba565b601f01601f19169190910160400192915050565b600061016082019050610631828451610394565b602083015160ff16610100830152604083015161012083015260609092015163ffffffff166101409091015290565b6000610100828403121561067357600080fd5b6100df838361047f565b6000855161068f818460208a016105ba565b60f89590951b6001600160f81b03191691909401908152600181019290925260e01b6001600160e01b03191660218201526025019291505056fea2646970667358221220b7e923d20da69c49811db1d7b88ed010bfab5bed670e0c287983518ea8726fae64736f6c634300080c0033",
+    "sourceMap": "262:1297:125:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;770:260;;;;;;:::i;:::-;;:::i;:::-;;;;;;;:::i;:::-;;;;;;;;1036:243;;;;;;:::i;:::-;;:::i;:::-;;;;;;;:::i;1285:272::-;;;;;;:::i;:::-;;:::i;:::-;;;;;;;:::i;531:233::-;;;;;;:::i;:::-;;:::i;770:260::-;889:57;;:::i;:::-;969:54;1008:14;;969:38;:54::i;:::-;962:61;;770:260;;;;;:::o;1036:243::-;1187:12;1222:50;1261:10;1222:38;:50::i;1285:272::-;1408:61;;:::i;:::-;1492:58;1533:16;;1492:40;:58::i;531:233::-;676:12;711:46;748:8;711:36;:46::i;10170:3141:117:-;10281:57;;:::i;:::-;10354:15;10479:21;10468:32;;10735:7;10722:21;10610:8;10513:244;11098:35;11089:7;11085:49;11072:63;11041:29;11037:99;10890:33;10880:8;10876:48;10770:380;11483:33;11474:7;11470:47;11457:61;11428:27;11424:95;11281:31;11271:8;11267:46;11163:370;11851:36;11842:7;11838:50;11825:64;11802:21;11798:92;11658:34;11648:8;11644:49;11546:358;12213:27;12204:7;12200:41;12187:55;12164:21;12160:83;12029:25;12019:8;12015:40;11917:340;12534:19;12525:7;12521:33;12508:47;12493:13;12489:67;12374:17;12364:8;12360:32;12270:300;12871:25;12862:7;12858:39;12845:53;12824:19;12820:79;12693:23;12683:8;12679:38;12583:330;13219:35;13210:7;13206:49;13193:63;13046:33;13036:8;13032:48;12926:344;13289:15;10170:3141;;;;:::o;3923:360::-;4066:12;4149:42;4171:10;:19;;;4149:21;:42::i;:::-;4193:10;:19;;;4214:10;:20;;;4236:10;:16;;;4115:151;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;4094:182;;3923:360;;;:::o;13520:1456::-;13635:61;;:::i;:::-;13735:41;13759:16;;13735:23;:41::i;:::-;13712:65;;14240:24;14227:38;;14214:52;14194:18;14190:77;14063:22;14047:39;;13950:331;14563:25;14550:39;;14537:53;14408:23;14392:40;;14294:310;14895:21;14882:35;;;14869:49;14852:15;14848:71;14727:19;14711:36;;14617:316;-1:-1:-1;13712:65:117;13520:1456::o;3260:557::-;3397:12;3480:8;:19;;;3517:8;:28;;;3563:8;:26;;;3607:8;:29;;;3654:8;:20;;;3692:8;:12;;;3722:8;:18;;;3758:8;:28;;;3446:354;;;;;;;;;;;;;;6287:19:128;;;6329:3;6379:16;;;-1:-1:-1;;;;;;6375:25:128;;;6370:2;6361:12;;6354:47;6435:16;;;6431:25;;6426:2;6417:12;;6410:47;6491:16;;;6487:25;;6482:2;6473:12;;6466:47;6547:16;;;;6543:25;;;6538:2;6529:12;;6522:47;6625:3;6603:16;;;;-1:-1:-1;;;;;;6599:59:128;6594:2;6585:12;;6578:81;6697:2;6693:15;-1:-1:-1;;6689:53:128;6684:2;6675:12;;6668:75;6768:2;6759:12;;6752:28;6805:3;6796:13;;5972:843;-1:-1:-1;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o;:::-;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;:::o;14:591:128:-;84:6;92;145:2;133:9;124:7;120:23;116:32;113:52;;;161:1;158;151:12;113:52;201:9;188:23;230:18;271:2;263:6;260:14;257:34;;;287:1;284;277:12;257:34;325:6;314:9;310:22;300:32;;370:7;363:4;359:2;355:13;351:27;341:55;;392:1;389;382:12;341:55;432:2;419:16;458:2;450:6;447:14;444:34;;;474:1;471;464:12;444:34;519:7;514:2;505:6;501:2;497:15;493:24;490:37;487:57;;;540:1;537;530:12;487:57;571:2;563:11;;;;;593:6;;-1:-1:-1;14:591:128;;-1:-1:-1;;;;14:591:128:o;610:659::-;699:5;693:12;688:3;681:25;752:4;745:5;741:16;735:23;777:10;837:2;823:12;819:21;812:4;807:3;803:14;796:45;902:2;894:4;887:5;883:16;877:23;873:32;866:4;861:3;857:14;850:56;967:2;959:4;952:5;948:16;942:23;938:32;931:4;926:3;922:14;915:56;1032:2;1024:4;1017:5;1013:16;1007:23;1003:32;996:4;991:3;987:14;980:56;;;1097:26;1089:4;1082:5;1078:16;1072:23;1068:56;1061:4;1056:3;1052:14;1045:80;1203:1;1199;1194:3;1190:11;1186:19;1178:4;1171:5;1167:16;1161:23;1157:49;1150:4;1145:3;1141:14;1134:73;1256:4;1249:5;1245:16;1239:23;1232:4;1227:3;1223:14;1216:47;610:659;;:::o;1274:279::-;1480:3;1465:19;;1493:54;1469:9;1529:6;1493:54;:::i;1558:347::-;1625:2;1619:9;1667:6;1655:19;;1704:18;1689:34;;1725:22;;;1686:62;1683:185;;;1790:10;1785:3;1781:20;1778:1;1771:31;1825:4;1822:1;1815:15;1853:4;1850:1;1843:15;1683:185;1884:2;1877:22;1558:347;:::o;1910:163::-;1977:20;;2037:10;2026:22;;2016:33;;2006:61;;2063:1;2060;2053:12;2006:61;1910:163;;;:::o;2078:173::-;2146:20;;-1:-1:-1;;;;;2195:31:128;;2185:42;;2175:70;;2241:1;2238;2231:12;2256:834;2320:5;2368:6;2356:9;2351:3;2347:19;2343:32;2340:52;;;2388:1;2385;2378:12;2340:52;2410:17;;:::i;:::-;2401:26;;2463:9;2450:23;2443:5;2436:38;2506:37;2539:2;2528:9;2524:18;2506:37;:::i;:::-;2501:2;2494:5;2490:14;2483:61;2576:37;2609:2;2598:9;2594:18;2576:37;:::i;:::-;2571:2;2564:5;2560:14;2553:61;2646:37;2679:2;2668:9;2664:18;2646:37;:::i;:::-;2641:2;2634:5;2630:14;2623:61;2717:38;2750:3;2739:9;2735:19;2717:38;:::i;:::-;2711:3;2704:5;2700:15;2693:63;2808:3;2797:9;2793:19;2780:33;2857:26;2848:7;2844:40;2835:7;2832:53;2822:81;;2899:1;2896;2889:12;2822:81;2930:3;2919:15;;2912:32;2977:39;3011:3;2996:19;;2977:39;:::i;:::-;2971:3;2964:5;2960:15;2953:64;3078:3;3067:9;3063:19;3050:33;3044:3;3037:5;3033:15;3026:58;2256:834;;;;:::o;3095:884::-;3192:6;3245:3;3233:9;3224:7;3220:23;3216:33;3213:53;;;3262:1;3259;3252:12;3213:53;3295:2;3289:9;3337:4;3329:6;3325:17;3408:6;3396:10;3393:22;3372:18;3360:10;3357:34;3354:62;3351:185;;;3458:10;3453:3;3449:20;3446:1;3439:31;3493:4;3490:1;3483:15;3521:4;3518:1;3511:15;3351:185;3552:2;3545:22;3591:55;3638:7;3627:9;3591:55;:::i;:::-;3583:6;3576:71;3697:3;3686:9;3682:19;3669:33;3742:4;3735:5;3731:16;3724:5;3721:27;3711:55;;3762:1;3759;3752:12;3711:55;3794:4;3782:17;;3775:32;3868:3;3853:19;;3840:33;3835:2;3823:15;;3816:58;3909:38;3942:3;3927:19;;3909:38;:::i;:::-;3902:4;3890:17;;3883:65;3894:6;3095:884;-1:-1:-1;;;3095:884:128:o;3984:258::-;4056:1;4066:113;4080:6;4077:1;4074:13;4066:113;;;4156:11;;;4150:18;4137:11;;;4130:39;4102:2;4095:10;4066:113;;;4197:6;4194:1;4191:13;4188:48;;;4232:1;4223:6;4218:3;4214:16;4207:27;4188:48;;3984:258;;;:::o;4247:381::-;4394:2;4383:9;4376:21;4357:4;4426:6;4420:13;4469:6;4464:2;4453:9;4449:18;4442:34;4485:66;4544:6;4539:2;4528:9;4524:18;4519:2;4511:6;4507:15;4485:66;:::i;:::-;4612:2;4591:15;-1:-1:-1;;4587:29:128;4572:45;;;;4619:2;4568:54;;4247:381;-1:-1:-1;;4247:381:128:o;4633:513::-;4801:4;4843:3;4832:9;4828:19;4820:27;;4856:61;4907:9;4898:6;4892:13;4856:61;:::i;:::-;4979:4;4967:17;;4961:24;4987:4;4957:35;4948:6;4933:22;;4926:67;5051:4;5039:17;;5033:24;5024:6;5009:22;;5002:56;5120:4;5108:17;;;5102:24;5128:10;5098:41;5089:6;5074:22;;;5067:73;4633:513;:::o;5151:249::-;5246:6;5299:3;5287:9;5278:7;5274:23;5270:33;5267:53;;;5316:1;5313;5306:12;5267:53;5339:55;5386:7;5375:9;5339:55;:::i;5405:562::-;5612:3;5650:6;5644:13;5666:53;5712:6;5707:3;5700:4;5692:6;5688:17;5666:53;:::i;:::-;5806:3;5784:16;;;;-1:-1:-1;;;;;;5780:36:128;5741:16;;;;5766:51;;;5844:1;5833:13;;5826:29;;;;5913:3;5891:16;-1:-1:-1;;;;;;5887:43:128;5882:2;5871:14;;5864:67;5958:2;5947:14;;5405:562;-1:-1:-1;;5405:562:128:o",
+    "linkReferences": {}
+  },
+  "methodIdentifiers": {
+    "packDataStoreMetadataExternal((bytes32,uint32,uint32,uint32,uint32,uint96,address,bytes32))": "dd35e353",
+    "packDataStoreSearchDataExternal(((bytes32,uint32,uint32,uint32,uint32,uint96,address,bytes32),uint8,uint256,uint32))": "6c6da21b",
+    "unpackDataStoreMetadataExternal(bytes)": "05e1792a",
+    "unpackDataStoreSearchDataExternal(bytes)": "d52b3196"
+  },
+  "rawMetadata": "{\"compiler\":{\"version\":\"0.8.12+commit.f00d7308\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"components\":[{\"internalType\":\"bytes32\",\"name\":\"headerHash\",\"type\":\"bytes32\"},{\"internalType\":\"uint32\",\"name\":\"durationDataStoreId\",\"type\":\"uint32\"},{\"internalType\":\"uint32\",\"name\":\"globalDataStoreId\",\"type\":\"uint32\"},{\"internalType\":\"uint32\",\"name\":\"referenceBlockNumber\",\"type\":\"uint32\"},{\"internalType\":\"uint32\",\"name\":\"blockNumber\",\"type\":\"uint32\"},{\"internalType\":\"uint96\",\"name\":\"fee\",\"type\":\"uint96\"},{\"internalType\":\"address\",\"name\":\"confirmer\",\"type\":\"address\"},{\"internalType\":\"bytes32\",\"name\":\"signatoryRecordHash\",\"type\":\"bytes32\"}],\"internalType\":\"struct IDataLayrServiceManager.DataStoreMetadata\",\"name\":\"metadata\",\"type\":\"tuple\"}],\"name\":\"packDataStoreMetadataExternal\",\"outputs\":[{\"internalType\":\"bytes\",\"name\":\"\",\"type\":\"bytes\"}],\"stateMutability\":\"pure\",\"type\":\"function\"},{\"inputs\":[{\"components\":[{\"components\":[{\"internalType\":\"bytes32\",\"name\":\"headerHash\",\"type\":\"bytes32\"},{\"internalType\":\"uint32\",\"name\":\"durationDataStoreId\",\"type\":\"uint32\"},{\"internalType\":\"uint32\",\"name\":\"globalDataStoreId\",\"type\":\"uint32\"},{\"internalType\":\"uint32\",\"name\":\"referenceBlockNumber\",\"type\":\"uint32\"},{\"internalType\":\"uint32\",\"name\":\"blockNumber\",\"type\":\"uint32\"},{\"internalType\":\"uint96\",\"name\":\"fee\",\"type\":\"uint96\"},{\"internalType\":\"address\",\"name\":\"confirmer\",\"type\":\"address\"},{\"internalType\":\"bytes32\",\"name\":\"signatoryRecordHash\",\"type\":\"bytes32\"}],\"internalType\":\"struct IDataLayrServiceManager.DataStoreMetadata\",\"name\":\"metadata\",\"type\":\"tuple\"},{\"internalType\":\"uint8\",\"name\":\"duration\",\"type\":\"uint8\"},{\"internalType\":\"uint256\",\"name\":\"timestamp\",\"type\":\"uint256\"},{\"internalType\":\"uint32\",\"name\":\"index\",\"type\":\"uint32\"}],\"internalType\":\"struct IDataLayrServiceManager.DataStoreSearchData\",\"name\":\"searchData\",\"type\":\"tuple\"}],\"name\":\"packDataStoreSearchDataExternal\",\"outputs\":[{\"internalType\":\"bytes\",\"name\":\"\",\"type\":\"bytes\"}],\"stateMutability\":\"pure\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes\",\"name\":\"packedMetadata\",\"type\":\"bytes\"}],\"name\":\"unpackDataStoreMetadataExternal\",\"outputs\":[{\"components\":[{\"internalType\":\"bytes32\",\"name\":\"headerHash\",\"type\":\"bytes32\"},{\"internalType\":\"uint32\",\"name\":\"durationDataStoreId\",\"type\":\"uint32\"},{\"internalType\":\"uint32\",\"name\":\"globalDataStoreId\",\"type\":\"uint32\"},{\"internalType\":\"uint32\",\"name\":\"referenceBlockNumber\",\"type\":\"uint32\"},{\"internalType\":\"uint32\",\"name\":\"blockNumber\",\"type\":\"uint32\"},{\"internalType\":\"uint96\",\"name\":\"fee\",\"type\":\"uint96\"},{\"internalType\":\"address\",\"name\":\"confirmer\",\"type\":\"address\"},{\"internalType\":\"bytes32\",\"name\":\"signatoryRecordHash\",\"type\":\"bytes32\"}],\"internalType\":\"struct IDataLayrServiceManager.DataStoreMetadata\",\"name\":\"metadata\",\"type\":\"tuple\"}],\"stateMutability\":\"pure\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes\",\"name\":\"packedSearchData\",\"type\":\"bytes\"}],\"name\":\"unpackDataStoreSearchDataExternal\",\"outputs\":[{\"components\":[{\"components\":[{\"internalType\":\"bytes32\",\"name\":\"headerHash\",\"type\":\"bytes32\"},{\"internalType\":\"uint32\",\"name\":\"durationDataStoreId\",\"type\":\"uint32\"},{\"internalType\":\"uint32\",\"name\":\"globalDataStoreId\",\"type\":\"uint32\"},{\"internalType\":\"uint32\",\"name\":\"referenceBlockNumber\",\"type\":\"uint32\"},{\"internalType\":\"uint32\",\"name\":\"blockNumber\",\"type\":\"uint32\"},{\"internalType\":\"uint96\",\"name\":\"fee\",\"type\":\"uint96\"},{\"internalType\":\"address\",\"name\":\"confirmer\",\"type\":\"address\"},{\"internalType\":\"bytes32\",\"name\":\"signatoryRecordHash\",\"type\":\"bytes32\"}],\"internalType\":\"struct IDataLayrServiceManager.DataStoreMetadata\",\"name\":\"metadata\",\"type\":\"tuple\"},{\"internalType\":\"uint8\",\"name\":\"duration\",\"type\":\"uint8\"},{\"internalType\":\"uint256\",\"name\":\"timestamp\",\"type\":\"uint256\"},{\"internalType\":\"uint32\",\"name\":\"index\",\"type\":\"uint32\"}],\"internalType\":\"struct IDataLayrServiceManager.DataStoreSearchData\",\"name\":\"searchData\",\"type\":\"tuple\"}],\"stateMutability\":\"pure\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"src/test/utils/DataStoreUtilsWrapper.sol\":\"DataStoreUtilsWrapper\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[\":@eigenlayer/=../eignlayr-contracts/src/\",\":@openzeppelin-upgrades/=lib/openzeppelin-contracts-upgradeable/\",\":@openzeppelin/=lib/openzeppelin-contracts/\",\":ds-test/=lib/eignlayr-contracts/lib/ds-test/src/\",\":eignlayr-contracts/=lib/eignlayr-contracts/src/\",\":forge-std/=lib/forge-std/src/\",\":openzeppelin-contracts-upgradeable/=lib/eignlayr-contracts/lib/openzeppelin-contracts-upgradeable/\",\":openzeppelin-contracts/=lib/eignlayr-contracts/lib/openzeppelin-contracts/contracts/\"]},\"sources\":{\"../eignlayr-contracts/src/contracts/interfaces/IDelayedService.sol\":{\"keccak256\":\"0x4c9c1d5de05ad392b45244c373d137c7f49436618492ba165b2e3a241dee25cc\",\"license\":\"UNLICENSED\",\"urls\":[\"bzz-raw://1675794f6a64068df5d2362d85793b9c61c4ccffa6829bbb7cc0cc843fa3a359\",\"dweb:/ipfs/QmdZyC2W5rrEX2fSkF6YxsWCt3HgaAdm4HSpss8T9oVAJn\"]},\"../eignlayr-contracts/src/contracts/interfaces/IEigenLayrDelegation.sol\":{\"keccak256\":\"0x9f11c0becde4111ac7d060dc11b9461888129076740cf78e07f292eefc92955e\",\"license\":\"UNLICENSED\",\"urls\":[\"bzz-raw://53bef92f10fd142e6b0af0f4f77a958c96ebea145492aa5328757e10fffd9c21\",\"dweb:/ipfs/QmUHG67pTyGxu6whsk95JNwevDJ7ooQMyeNT4kfwJtEzU5\"]},\"../eignlayr-contracts/src/contracts/interfaces/IInvestmentStrategy.sol\":{\"keccak256\":\"0x69eb667cc856ee1fe783243b6db21a43a9dadd29bf6761727b334fca4366bceb\",\"license\":\"UNLICENSED\",\"urls\":[\"bzz-raw://224e8f6def4e53a1065f0c4ce26d8ffff15276944e2351753065aeb5bd265f52\",\"dweb:/ipfs/QmSu8iUPCnwza4SdE5jVSZLnQjMRXJg3VAGc8pHqbaMLob\"]},\"../eignlayr-contracts/src/contracts/interfaces/IServiceManager.sol\":{\"keccak256\":\"0xded81693805764888f8d1daa8afb600969d4286f3d5ecfa92e99b9446b400ad4\",\"license\":\"UNLICENSED\",\"urls\":[\"bzz-raw://8e0d0704fa8e64543abce318eaf99c53f75215db76cf873e6a6311a4eb5274b2\",\"dweb:/ipfs/Qmd96t8WrNFRY5fqsPtkCaz28j3mvZj3fpc4qp6xXe9wgb\"]},\"lib/openzeppelin-contracts/contracts/token/ERC20/IERC20.sol\":{\"keccak256\":\"0x9750c6b834f7b43000631af5cc30001c5f547b3ceb3635488f140f60e897ea6b\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://5a7d5b1ef5d8d5889ad2ed89d8619c09383b80b72ab226e0fe7bde1636481e34\",\"dweb:/ipfs/QmebXWgtEfumQGBdVeM6c71McLixYXQP5Bk6kKXuoY4Bmr\"]},\"src/contracts/interfaces/IDataLayrServiceManager.sol\":{\"keccak256\":\"0x5d49a50c80b5a38ff6d8ae09494793d52fd05c4233b4c55940da54202a4dfe89\",\"license\":\"UNLICENSED\",\"urls\":[\"bzz-raw://a5a1d28d3217eb8154bb62c58d97beec073bffdcff779000390ca0af7dc5bf88\",\"dweb:/ipfs/QmR9aHtgFsyMTZZu86dPyZbP3QE88L8g6e6N2iZDvdUiZA\"]},\"src/contracts/libraries/DataStoreUtils.sol\":{\"keccak256\":\"0xc121f108b4d714d7623536aeea7e1ba298e671a5758d4c8a2d22816e9dbed41f\",\"license\":\"UNLICENSED\",\"urls\":[\"bzz-raw://e3efef70832be4bfce0a72885730c92adab53015bacd41a79eddb88c399265c0\",\"dweb:/ipfs/QmTAmg9VvtvKzBHeiQexwQXNJYKtVs1Gdry2dKhrcR3xWz\"]},\"src/test/utils/DataStoreUtilsWrapper.sol\":{\"keccak256\":\"0x0a9e37793c8d0049d20434751f65de820b3626bba28988d469131fb0151c644a\",\"license\":\"UNLICENSED\",\"urls\":[\"bzz-raw://3bb1690fa1a9c7bc0f864a707ae66ad2e24fd536385a9587b8e27667aebf82a9\",\"dweb:/ipfs/QmSj5tVXZLKNe5ZE2RkVEw2BVD9NeRW58hHrnien5gGi4w\"]}},\"version\":1}",
+  "metadata": {
+    "compiler": {
+      "version": "0.8.12+commit.f00d7308"
+    },
+    "language": "Solidity",
+    "output": {
+      "abi": [
+        {
+          "inputs": [
+            {
+              "internalType": "struct IDataLayrServiceManager.DataStoreMetadata",
+              "name": "metadata",
+              "type": "tuple",
+              "components": [
+                {
+                  "internalType": "bytes32",
+                  "name": "headerHash",
+                  "type": "bytes32"
+                },
+                {
+                  "internalType": "uint32",
+                  "name": "durationDataStoreId",
+                  "type": "uint32"
+                },
+                {
+                  "internalType": "uint32",
+                  "name": "globalDataStoreId",
+                  "type": "uint32"
+                },
+                {
+                  "internalType": "uint32",
+                  "name": "referenceBlockNumber",
+                  "type": "uint32"
+                },
+                {
+                  "internalType": "uint32",
+                  "name": "blockNumber",
+                  "type": "uint32"
+                },
+                {
+                  "internalType": "uint96",
+                  "name": "fee",
+                  "type": "uint96"
+                },
+                {
+                  "internalType": "address",
+                  "name": "confirmer",
+                  "type": "address"
+                },
+                {
+                  "internalType": "bytes32",
+                  "name": "signatoryRecordHash",
+                  "type": "bytes32"
+                }
+              ]
+            }
+          ],
+          "stateMutability": "pure",
+          "type": "function",
+          "name": "packDataStoreMetadataExternal",
+          "outputs": [
+            {
+              "internalType": "bytes",
+              "name": "",
+              "type": "bytes"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "struct IDataLayrServiceManager.DataStoreSearchData",
+              "name": "searchData",
+              "type": "tuple",
+              "components": [
+                {
+                  "internalType": "struct IDataLayrServiceManager.DataStoreMetadata",
+                  "name": "metadata",
+                  "type": "tuple",
+                  "components": [
+                    {
+                      "internalType": "bytes32",
+                      "name": "headerHash",
+                      "type": "bytes32"
+                    },
+                    {
+                      "internalType": "uint32",
+                      "name": "durationDataStoreId",
+                      "type": "uint32"
+                    },
+                    {
+                      "internalType": "uint32",
+                      "name": "globalDataStoreId",
+                      "type": "uint32"
+                    },
+                    {
+                      "internalType": "uint32",
+                      "name": "referenceBlockNumber",
+                      "type": "uint32"
+                    },
+                    {
+                      "internalType": "uint32",
+                      "name": "blockNumber",
+                      "type": "uint32"
+                    },
+                    {
+                      "internalType": "uint96",
+                      "name": "fee",
+                      "type": "uint96"
+                    },
+                    {
+                      "internalType": "address",
+                      "name": "confirmer",
+                      "type": "address"
+                    },
+                    {
+                      "internalType": "bytes32",
+                      "name": "signatoryRecordHash",
+                      "type": "bytes32"
+                    }
+                  ]
+                },
+                {
+                  "internalType": "uint8",
+                  "name": "duration",
+                  "type": "uint8"
+                },
+                {
+                  "internalType": "uint256",
+                  "name": "timestamp",
+                  "type": "uint256"
+                },
+                {
+                  "internalType": "uint32",
+                  "name": "index",
+                  "type": "uint32"
+                }
+              ]
+            }
+          ],
+          "stateMutability": "pure",
+          "type": "function",
+          "name": "packDataStoreSearchDataExternal",
+          "outputs": [
+            {
+              "internalType": "bytes",
+              "name": "",
+              "type": "bytes"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "bytes",
+              "name": "packedMetadata",
+              "type": "bytes"
+            }
+          ],
+          "stateMutability": "pure",
+          "type": "function",
+          "name": "unpackDataStoreMetadataExternal",
+          "outputs": [
+            {
+              "internalType": "struct IDataLayrServiceManager.DataStoreMetadata",
+              "name": "metadata",
+              "type": "tuple",
+              "components": [
+                {
+                  "internalType": "bytes32",
+                  "name": "headerHash",
+                  "type": "bytes32"
+                },
+                {
+                  "internalType": "uint32",
+                  "name": "durationDataStoreId",
+                  "type": "uint32"
+                },
+                {
+                  "internalType": "uint32",
+                  "name": "globalDataStoreId",
+                  "type": "uint32"
+                },
+                {
+                  "internalType": "uint32",
+                  "name": "referenceBlockNumber",
+                  "type": "uint32"
+                },
+                {
+                  "internalType": "uint32",
+                  "name": "blockNumber",
+                  "type": "uint32"
+                },
+                {
+                  "internalType": "uint96",
+                  "name": "fee",
+                  "type": "uint96"
+                },
+                {
+                  "internalType": "address",
+                  "name": "confirmer",
+                  "type": "address"
+                },
+                {
+                  "internalType": "bytes32",
+                  "name": "signatoryRecordHash",
+                  "type": "bytes32"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "bytes",
+              "name": "packedSearchData",
+              "type": "bytes"
+            }
+          ],
+          "stateMutability": "pure",
+          "type": "function",
+          "name": "unpackDataStoreSearchDataExternal",
+          "outputs": [
+            {
+              "internalType": "struct IDataLayrServiceManager.DataStoreSearchData",
+              "name": "searchData",
+              "type": "tuple",
+              "components": [
+                {
+                  "internalType": "struct IDataLayrServiceManager.DataStoreMetadata",
+                  "name": "metadata",
+                  "type": "tuple",
+                  "components": [
+                    {
+                      "internalType": "bytes32",
+                      "name": "headerHash",
+                      "type": "bytes32"
+                    },
+                    {
+                      "internalType": "uint32",
+                      "name": "durationDataStoreId",
+                      "type": "uint32"
+                    },
+                    {
+                      "internalType": "uint32",
+                      "name": "globalDataStoreId",
+                      "type": "uint32"
+                    },
+                    {
+                      "internalType": "uint32",
+                      "name": "referenceBlockNumber",
+                      "type": "uint32"
+                    },
+                    {
+                      "internalType": "uint32",
+                      "name": "blockNumber",
+                      "type": "uint32"
+                    },
+                    {
+                      "internalType": "uint96",
+                      "name": "fee",
+                      "type": "uint96"
+                    },
+                    {
+                      "internalType": "address",
+                      "name": "confirmer",
+                      "type": "address"
+                    },
+                    {
+                      "internalType": "bytes32",
+                      "name": "signatoryRecordHash",
+                      "type": "bytes32"
+                    }
+                  ]
+                },
+                {
+                  "internalType": "uint8",
+                  "name": "duration",
+                  "type": "uint8"
+                },
+                {
+                  "internalType": "uint256",
+                  "name": "timestamp",
+                  "type": "uint256"
+                },
+                {
+                  "internalType": "uint32",
+                  "name": "index",
+                  "type": "uint32"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "devdoc": {
+        "kind": "dev",
+        "methods": {},
+        "version": 1
+      },
+      "userdoc": {
+        "kind": "user",
+        "methods": {},
+        "version": 1
+      }
+    },
+    "settings": {
+      "remappings": [
+        ":@eigenlayer/=../eignlayr-contracts/src/",
+        ":@openzeppelin-upgrades/=lib/openzeppelin-contracts-upgradeable/",
+        ":@openzeppelin/=lib/openzeppelin-contracts/",
+        ":ds-test/=lib/eignlayr-contracts/lib/ds-test/src/",
+        ":eignlayr-contracts/=lib/eignlayr-contracts/src/",
+        ":forge-std/=lib/forge-std/src/",
+        ":openzeppelin-contracts-upgradeable/=lib/eignlayr-contracts/lib/openzeppelin-contracts-upgradeable/",
+        ":openzeppelin-contracts/=lib/eignlayr-contracts/lib/openzeppelin-contracts/contracts/"
+      ],
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "metadata": {
+        "bytecodeHash": "ipfs"
+      },
+      "compilationTarget": {
+        "src/test/utils/DataStoreUtilsWrapper.sol": "DataStoreUtilsWrapper"
+      },
+      "libraries": {}
+    },
+    "sources": {
+      "../eignlayr-contracts/src/contracts/interfaces/IDelayedService.sol": {
+        "keccak256": "0x4c9c1d5de05ad392b45244c373d137c7f49436618492ba165b2e3a241dee25cc",
+        "urls": [
+          "bzz-raw://1675794f6a64068df5d2362d85793b9c61c4ccffa6829bbb7cc0cc843fa3a359",
+          "dweb:/ipfs/QmdZyC2W5rrEX2fSkF6YxsWCt3HgaAdm4HSpss8T9oVAJn"
+        ],
+        "license": "UNLICENSED"
+      },
+      "../eignlayr-contracts/src/contracts/interfaces/IEigenLayrDelegation.sol": {
+        "keccak256": "0x9f11c0becde4111ac7d060dc11b9461888129076740cf78e07f292eefc92955e",
+        "urls": [
+          "bzz-raw://53bef92f10fd142e6b0af0f4f77a958c96ebea145492aa5328757e10fffd9c21",
+          "dweb:/ipfs/QmUHG67pTyGxu6whsk95JNwevDJ7ooQMyeNT4kfwJtEzU5"
+        ],
+        "license": "UNLICENSED"
+      },
+      "../eignlayr-contracts/src/contracts/interfaces/IInvestmentStrategy.sol": {
+        "keccak256": "0x69eb667cc856ee1fe783243b6db21a43a9dadd29bf6761727b334fca4366bceb",
+        "urls": [
+          "bzz-raw://224e8f6def4e53a1065f0c4ce26d8ffff15276944e2351753065aeb5bd265f52",
+          "dweb:/ipfs/QmSu8iUPCnwza4SdE5jVSZLnQjMRXJg3VAGc8pHqbaMLob"
+        ],
+        "license": "UNLICENSED"
+      },
+      "../eignlayr-contracts/src/contracts/interfaces/IServiceManager.sol": {
+        "keccak256": "0xded81693805764888f8d1daa8afb600969d4286f3d5ecfa92e99b9446b400ad4",
+        "urls": [
+          "bzz-raw://8e0d0704fa8e64543abce318eaf99c53f75215db76cf873e6a6311a4eb5274b2",
+          "dweb:/ipfs/Qmd96t8WrNFRY5fqsPtkCaz28j3mvZj3fpc4qp6xXe9wgb"
+        ],
+        "license": "UNLICENSED"
+      },
+      "lib/openzeppelin-contracts/contracts/token/ERC20/IERC20.sol": {
+        "keccak256": "0x9750c6b834f7b43000631af5cc30001c5f547b3ceb3635488f140f60e897ea6b",
+        "urls": [
+          "bzz-raw://5a7d5b1ef5d8d5889ad2ed89d8619c09383b80b72ab226e0fe7bde1636481e34",
+          "dweb:/ipfs/QmebXWgtEfumQGBdVeM6c71McLixYXQP5Bk6kKXuoY4Bmr"
+        ],
+        "license": "MIT"
+      },
+      "src/contracts/interfaces/IDataLayrServiceManager.sol": {
+        "keccak256": "0x5d49a50c80b5a38ff6d8ae09494793d52fd05c4233b4c55940da54202a4dfe89",
+        "urls": [
+          "bzz-raw://a5a1d28d3217eb8154bb62c58d97beec073bffdcff779000390ca0af7dc5bf88",
+          "dweb:/ipfs/QmR9aHtgFsyMTZZu86dPyZbP3QE88L8g6e6N2iZDvdUiZA"
+        ],
+        "license": "UNLICENSED"
+      },
+      "src/contracts/libraries/DataStoreUtils.sol": {
+        "keccak256": "0xc121f108b4d714d7623536aeea7e1ba298e671a5758d4c8a2d22816e9dbed41f",
+        "urls": [
+          "bzz-raw://e3efef70832be4bfce0a72885730c92adab53015bacd41a79eddb88c399265c0",
+          "dweb:/ipfs/QmTAmg9VvtvKzBHeiQexwQXNJYKtVs1Gdry2dKhrcR3xWz"
+        ],
+        "license": "UNLICENSED"
+      },
+      "src/test/utils/DataStoreUtilsWrapper.sol": {
+        "keccak256": "0x0a9e37793c8d0049d20434751f65de820b3626bba28988d469131fb0151c644a",
+        "urls": [
+          "bzz-raw://3bb1690fa1a9c7bc0f864a707ae66ad2e24fd536385a9587b8e27667aebf82a9",
+          "dweb:/ipfs/QmSj5tVXZLKNe5ZE2RkVEw2BVD9NeRW58hHrnien5gGi4w"
+        ],
+        "license": "UNLICENSED"
+      }
+    },
+    "version": 1
+  },
+  "ast": {
+    "absolutePath": "src/test/utils/DataStoreUtilsWrapper.sol",
+    "id": 53849,
+    "exportedSymbols": {
+      "DataStoreUtils": [
+        49039
+      ],
+      "DataStoreUtilsWrapper": [
+        53848
+      ],
+      "IDataLayrServiceManager": [
+        48672
+      ],
+      "IDelayedService": [
+        9
+      ],
+      "IERC20": [
+        40863
+      ],
+      "IEigenLayrDelegation": [
+        121
+      ],
+      "IInvestmentStrategy": [
+        323
+      ],
+      "IServiceManager": [
+        577
+      ]
+    },
+    "nodeType": "SourceUnit",
+    "src": "39:1521:125",
+    "nodes": [
+      {
+        "id": 53776,
+        "nodeType": "PragmaDirective",
+        "src": "39:23:125",
+        "nodes": [],
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".9"
+        ]
+      },
+      {
+        "id": 53777,
+        "nodeType": "ImportDirective",
+        "src": "64:54:125",
+        "nodes": [],
+        "absolutePath": "src/contracts/libraries/DataStoreUtils.sol",
+        "file": "../../contracts/libraries/DataStoreUtils.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 53849,
+        "sourceUnit": 49040,
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "id": 53848,
+        "nodeType": "ContractDefinition",
+        "src": "262:1297:125",
+        "nodes": [
+          {
+            "id": 53791,
+            "nodeType": "FunctionDefinition",
+            "src": "299:226:125",
+            "nodes": [],
+            "body": {
+              "id": 53790,
+              "nodeType": "Block",
+              "src": "456:69:125",
+              "nodes": [],
+              "statements": [
+                {
+                  "expression": {
+                    "arguments": [
+                      {
+                        "id": 53787,
+                        "name": "metadata",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 53780,
+                        "src": "509:8:125",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_DataStoreMetadata_$48527_memory_ptr",
+                          "typeString": "struct IDataLayrServiceManager.DataStoreMetadata memory"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_struct$_DataStoreMetadata_$48527_memory_ptr",
+                          "typeString": "struct IDataLayrServiceManager.DataStoreMetadata memory"
+                        }
+                      ],
+                      "expression": {
+                        "id": 53785,
+                        "name": "DataStoreUtils",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 49039,
+                        "src": "473:14:125",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_type$_t_contract$_DataStoreUtils_$49039_$",
+                          "typeString": "type(library DataStoreUtils)"
+                        }
+                      },
+                      "id": 53786,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "computeDataStoreHash",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 48808,
+                      "src": "473:35:125",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_pure$_t_struct$_DataStoreMetadata_$48527_memory_ptr_$returns$_t_bytes32_$",
+                        "typeString": "function (struct IDataLayrServiceManager.DataStoreMetadata memory) pure returns (bytes32)"
+                      }
+                    },
+                    "id": 53788,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "473:45:125",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "functionReturnParameters": 53784,
+                  "id": 53789,
+                  "nodeType": "Return",
+                  "src": "466:52:125"
+                }
+              ]
+            },
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "computeDataStoreHashExternal",
+            "nameLocation": "308:28:125",
+            "parameters": {
+              "id": 53781,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 53780,
+                  "mutability": "mutable",
+                  "name": "metadata",
+                  "nameLocation": "386:8:125",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 53791,
+                  "src": "337:57:125",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_struct$_DataStoreMetadata_$48527_memory_ptr",
+                    "typeString": "struct IDataLayrServiceManager.DataStoreMetadata"
+                  },
+                  "typeName": {
+                    "id": 53779,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 53778,
+                      "name": "IDataLayrServiceManager.DataStoreMetadata",
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 48527,
+                      "src": "337:41:125"
+                    },
+                    "referencedDeclaration": 48527,
+                    "src": "337:41:125",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_DataStoreMetadata_$48527_storage_ptr",
+                      "typeString": "struct IDataLayrServiceManager.DataStoreMetadata"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "336:59:125"
+            },
+            "returnParameters": {
+              "id": 53784,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 53783,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 53791,
+                  "src": "443:7:125",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 53782,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "443:7:125",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "442:9:125"
+            },
+            "scope": 53848,
+            "stateMutability": "pure",
+            "virtual": false,
+            "visibility": "internal"
+          },
+          {
+            "id": 53805,
+            "nodeType": "FunctionDefinition",
+            "src": "531:233:125",
+            "nodes": [],
+            "body": {
+              "id": 53804,
+              "nodeType": "Block",
+              "src": "694:70:125",
+              "nodes": [],
+              "statements": [
+                {
+                  "expression": {
+                    "arguments": [
+                      {
+                        "id": 53801,
+                        "name": "metadata",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 53794,
+                        "src": "748:8:125",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_DataStoreMetadata_$48527_memory_ptr",
+                          "typeString": "struct IDataLayrServiceManager.DataStoreMetadata memory"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_struct$_DataStoreMetadata_$48527_memory_ptr",
+                          "typeString": "struct IDataLayrServiceManager.DataStoreMetadata memory"
+                        }
+                      ],
+                      "expression": {
+                        "id": 53799,
+                        "name": "DataStoreUtils",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 49039,
+                        "src": "711:14:125",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_type$_t_contract$_DataStoreUtils_$49039_$",
+                          "typeString": "type(library DataStoreUtils)"
+                        }
+                      },
+                      "id": 53800,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "packDataStoreMetadata",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 48839,
+                      "src": "711:36:125",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_pure$_t_struct$_DataStoreMetadata_$48527_memory_ptr_$returns$_t_bytes_memory_ptr_$",
+                        "typeString": "function (struct IDataLayrServiceManager.DataStoreMetadata memory) pure returns (bytes memory)"
+                      }
+                    },
+                    "id": 53802,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "711:46:125",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes_memory_ptr",
+                      "typeString": "bytes memory"
+                    }
+                  },
+                  "functionReturnParameters": 53798,
+                  "id": 53803,
+                  "nodeType": "Return",
+                  "src": "704:53:125"
+                }
+              ]
+            },
+            "functionSelector": "dd35e353",
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "packDataStoreMetadataExternal",
+            "nameLocation": "540:29:125",
+            "parameters": {
+              "id": 53795,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 53794,
+                  "mutability": "mutable",
+                  "name": "metadata",
+                  "nameLocation": "619:8:125",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 53805,
+                  "src": "570:57:125",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_struct$_DataStoreMetadata_$48527_memory_ptr",
+                    "typeString": "struct IDataLayrServiceManager.DataStoreMetadata"
+                  },
+                  "typeName": {
+                    "id": 53793,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 53792,
+                      "name": "IDataLayrServiceManager.DataStoreMetadata",
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 48527,
+                      "src": "570:41:125"
+                    },
+                    "referencedDeclaration": 48527,
+                    "src": "570:41:125",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_DataStoreMetadata_$48527_storage_ptr",
+                      "typeString": "struct IDataLayrServiceManager.DataStoreMetadata"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "569:59:125"
+            },
+            "returnParameters": {
+              "id": 53798,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 53797,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 53805,
+                  "src": "676:12:125",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes_memory_ptr",
+                    "typeString": "bytes"
+                  },
+                  "typeName": {
+                    "id": 53796,
+                    "name": "bytes",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "676:5:125",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes_storage_ptr",
+                      "typeString": "bytes"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "675:14:125"
+            },
+            "scope": 53848,
+            "stateMutability": "pure",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 53819,
+            "nodeType": "FunctionDefinition",
+            "src": "770:260:125",
+            "nodes": [],
+            "body": {
+              "id": 53818,
+              "nodeType": "Block",
+              "src": "952:78:125",
+              "nodes": [],
+              "statements": [
+                {
+                  "expression": {
+                    "arguments": [
+                      {
+                        "id": 53815,
+                        "name": "packedMetadata",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 53807,
+                        "src": "1008:14:125",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bytes_calldata_ptr",
+                          "typeString": "bytes calldata"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_bytes_calldata_ptr",
+                          "typeString": "bytes calldata"
+                        }
+                      ],
+                      "expression": {
+                        "id": 53813,
+                        "name": "DataStoreUtils",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 49039,
+                        "src": "969:14:125",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_type$_t_contract$_DataStoreUtils_$49039_$",
+                          "typeString": "type(library DataStoreUtils)"
+                        }
+                      },
+                      "id": 53814,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "unpackDataStoreMetadata",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 49013,
+                      "src": "969:38:125",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_pure$_t_bytes_calldata_ptr_$returns$_t_struct$_DataStoreMetadata_$48527_memory_ptr_$",
+                        "typeString": "function (bytes calldata) pure returns (struct IDataLayrServiceManager.DataStoreMetadata memory)"
+                      }
+                    },
+                    "id": 53816,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "969:54:125",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_DataStoreMetadata_$48527_memory_ptr",
+                      "typeString": "struct IDataLayrServiceManager.DataStoreMetadata memory"
+                    }
+                  },
+                  "functionReturnParameters": 53812,
+                  "id": 53817,
+                  "nodeType": "Return",
+                  "src": "962:61:125"
+                }
+              ]
+            },
+            "functionSelector": "05e1792a",
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "unpackDataStoreMetadataExternal",
+            "nameLocation": "779:31:125",
+            "parameters": {
+              "id": 53808,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 53807,
+                  "mutability": "mutable",
+                  "name": "packedMetadata",
+                  "nameLocation": "826:14:125",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 53819,
+                  "src": "811:29:125",
+                  "stateVariable": false,
+                  "storageLocation": "calldata",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes_calldata_ptr",
+                    "typeString": "bytes"
+                  },
+                  "typeName": {
+                    "id": 53806,
+                    "name": "bytes",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "811:5:125",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes_storage_ptr",
+                      "typeString": "bytes"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "810:31:125"
+            },
+            "returnParameters": {
+              "id": 53812,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 53811,
+                  "mutability": "mutable",
+                  "name": "metadata",
+                  "nameLocation": "938:8:125",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 53819,
+                  "src": "889:57:125",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_struct$_DataStoreMetadata_$48527_memory_ptr",
+                    "typeString": "struct IDataLayrServiceManager.DataStoreMetadata"
+                  },
+                  "typeName": {
+                    "id": 53810,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 53809,
+                      "name": "IDataLayrServiceManager.DataStoreMetadata",
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 48527,
+                      "src": "889:41:125"
+                    },
+                    "referencedDeclaration": 48527,
+                    "src": "889:41:125",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_DataStoreMetadata_$48527_storage_ptr",
+                      "typeString": "struct IDataLayrServiceManager.DataStoreMetadata"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "888:59:125"
+            },
+            "scope": 53848,
+            "stateMutability": "pure",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 53833,
+            "nodeType": "FunctionDefinition",
+            "src": "1036:243:125",
+            "nodes": [],
+            "body": {
+              "id": 53832,
+              "nodeType": "Block",
+              "src": "1205:74:125",
+              "nodes": [],
+              "statements": [
+                {
+                  "expression": {
+                    "arguments": [
+                      {
+                        "id": 53829,
+                        "name": "searchData",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 53822,
+                        "src": "1261:10:125",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_DataStoreSearchData_$48537_memory_ptr",
+                          "typeString": "struct IDataLayrServiceManager.DataStoreSearchData memory"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_struct$_DataStoreSearchData_$48537_memory_ptr",
+                          "typeString": "struct IDataLayrServiceManager.DataStoreSearchData memory"
+                        }
+                      ],
+                      "expression": {
+                        "id": 53827,
+                        "name": "DataStoreUtils",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 49039,
+                        "src": "1222:14:125",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_type$_t_contract$_DataStoreUtils_$49039_$",
+                          "typeString": "type(library DataStoreUtils)"
+                        }
+                      },
+                      "id": 53828,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "packDataStoreSearchData",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 48864,
+                      "src": "1222:38:125",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_pure$_t_struct$_DataStoreSearchData_$48537_memory_ptr_$returns$_t_bytes_memory_ptr_$",
+                        "typeString": "function (struct IDataLayrServiceManager.DataStoreSearchData memory) pure returns (bytes memory)"
+                      }
+                    },
+                    "id": 53830,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "1222:50:125",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes_memory_ptr",
+                      "typeString": "bytes memory"
+                    }
+                  },
+                  "functionReturnParameters": 53826,
+                  "id": 53831,
+                  "nodeType": "Return",
+                  "src": "1215:57:125"
+                }
+              ]
+            },
+            "functionSelector": "6c6da21b",
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "packDataStoreSearchDataExternal",
+            "nameLocation": "1045:31:125",
+            "parameters": {
+              "id": 53823,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 53822,
+                  "mutability": "mutable",
+                  "name": "searchData",
+                  "nameLocation": "1128:10:125",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 53833,
+                  "src": "1077:61:125",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_struct$_DataStoreSearchData_$48537_memory_ptr",
+                    "typeString": "struct IDataLayrServiceManager.DataStoreSearchData"
+                  },
+                  "typeName": {
+                    "id": 53821,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 53820,
+                      "name": "IDataLayrServiceManager.DataStoreSearchData",
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 48537,
+                      "src": "1077:43:125"
+                    },
+                    "referencedDeclaration": 48537,
+                    "src": "1077:43:125",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_DataStoreSearchData_$48537_storage_ptr",
+                      "typeString": "struct IDataLayrServiceManager.DataStoreSearchData"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1076:63:125"
+            },
+            "returnParameters": {
+              "id": 53826,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 53825,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 53833,
+                  "src": "1187:12:125",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes_memory_ptr",
+                    "typeString": "bytes"
+                  },
+                  "typeName": {
+                    "id": 53824,
+                    "name": "bytes",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1187:5:125",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes_storage_ptr",
+                      "typeString": "bytes"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1186:14:125"
+            },
+            "scope": 53848,
+            "stateMutability": "pure",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 53847,
+            "nodeType": "FunctionDefinition",
+            "src": "1285:272:125",
+            "nodes": [],
+            "body": {
+              "id": 53846,
+              "nodeType": "Block",
+              "src": "1475:82:125",
+              "nodes": [],
+              "statements": [
+                {
+                  "expression": {
+                    "arguments": [
+                      {
+                        "id": 53843,
+                        "name": "packedSearchData",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 53835,
+                        "src": "1533:16:125",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bytes_calldata_ptr",
+                          "typeString": "bytes calldata"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_bytes_calldata_ptr",
+                          "typeString": "bytes calldata"
+                        }
+                      ],
+                      "expression": {
+                        "id": 53841,
+                        "name": "DataStoreUtils",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 49039,
+                        "src": "1492:14:125",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_type$_t_contract$_DataStoreUtils_$49039_$",
+                          "typeString": "type(library DataStoreUtils)"
+                        }
+                      },
+                      "id": 53842,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "unpackDataStoreSearchData",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 49038,
+                      "src": "1492:40:125",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_pure$_t_bytes_calldata_ptr_$returns$_t_struct$_DataStoreSearchData_$48537_memory_ptr_$",
+                        "typeString": "function (bytes calldata) pure returns (struct IDataLayrServiceManager.DataStoreSearchData memory)"
+                      }
+                    },
+                    "id": 53844,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "1492:58:125",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_DataStoreSearchData_$48537_memory_ptr",
+                      "typeString": "struct IDataLayrServiceManager.DataStoreSearchData memory"
+                    }
+                  },
+                  "functionReturnParameters": 53840,
+                  "id": 53845,
+                  "nodeType": "Return",
+                  "src": "1485:65:125"
+                }
+              ]
+            },
+            "functionSelector": "d52b3196",
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "unpackDataStoreSearchDataExternal",
+            "nameLocation": "1294:33:125",
+            "parameters": {
+              "id": 53836,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 53835,
+                  "mutability": "mutable",
+                  "name": "packedSearchData",
+                  "nameLocation": "1343:16:125",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 53847,
+                  "src": "1328:31:125",
+                  "stateVariable": false,
+                  "storageLocation": "calldata",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes_calldata_ptr",
+                    "typeString": "bytes"
+                  },
+                  "typeName": {
+                    "id": 53834,
+                    "name": "bytes",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1328:5:125",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes_storage_ptr",
+                      "typeString": "bytes"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1327:33:125"
+            },
+            "returnParameters": {
+              "id": 53840,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 53839,
+                  "mutability": "mutable",
+                  "name": "searchData",
+                  "nameLocation": "1459:10:125",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 53847,
+                  "src": "1408:61:125",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_struct$_DataStoreSearchData_$48537_memory_ptr",
+                    "typeString": "struct IDataLayrServiceManager.DataStoreSearchData"
+                  },
+                  "typeName": {
+                    "id": 53838,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 53837,
+                      "name": "IDataLayrServiceManager.DataStoreSearchData",
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 48537,
+                      "src": "1408:43:125"
+                    },
+                    "referencedDeclaration": 48537,
+                    "src": "1408:43:125",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_DataStoreSearchData_$48537_storage_ptr",
+                      "typeString": "struct IDataLayrServiceManager.DataStoreSearchData"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1407:63:125"
+            },
+            "scope": 53848,
+            "stateMutability": "pure",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "DataStoreUtilsWrapper",
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "fullyImplemented": true,
+        "linearizedBaseContracts": [
+          53848
+        ],
+        "name": "DataStoreUtilsWrapper",
+        "nameLocation": "271:21:125",
+        "scope": 53849,
+        "usedErrors": []
+      }
+    ],
+    "license": "UNLICENSED"
+  },
+  "id": 125
+}

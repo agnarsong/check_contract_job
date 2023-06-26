@@ -1,0 +1,1617 @@
+{
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "contract IERC20",
+          "name": "token",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "amount",
+          "type": "uint256"
+        }
+      ],
+      "name": "deposit",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "explanation",
+      "outputs": [
+        {
+          "internalType": "string",
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "amountShares",
+          "type": "uint256"
+        }
+      ],
+      "name": "sharesToUnderlying",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "amountShares",
+          "type": "uint256"
+        }
+      ],
+      "name": "sharesToUnderlyingView",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "totalShares",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "amountUnderlying",
+          "type": "uint256"
+        }
+      ],
+      "name": "underlyingToShares",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "amountUnderlying",
+          "type": "uint256"
+        }
+      ],
+      "name": "underlyingToSharesView",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "underlyingToken",
+      "outputs": [
+        {
+          "internalType": "contract IERC20",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "user",
+          "type": "address"
+        }
+      ],
+      "name": "userUnderlying",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "user",
+          "type": "address"
+        }
+      ],
+      "name": "userUnderlyingView",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "depositor",
+          "type": "address"
+        },
+        {
+          "internalType": "contract IERC20",
+          "name": "token",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "amountShares",
+          "type": "uint256"
+        }
+      ],
+      "name": "withdraw",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "bytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "methodIdentifiers": {
+    "deposit(address,uint256)": "47e7ef24",
+    "explanation()": "ab5921e1",
+    "sharesToUnderlying(uint256)": "f3e73875",
+    "sharesToUnderlyingView(uint256)": "7a8b2637",
+    "totalShares()": "3a98ef39",
+    "underlyingToShares(uint256)": "8c871019",
+    "underlyingToSharesView(uint256)": "e3dae51c",
+    "underlyingToken()": "2495a599",
+    "userUnderlying(address)": "8f6a6240",
+    "userUnderlyingView(address)": "553ca5f8",
+    "withdraw(address,address,uint256)": "d9caed12"
+  },
+  "rawMetadata": "{\"compiler\":{\"version\":\"0.8.12+commit.f00d7308\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"contract IERC20\",\"name\":\"token\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"amount\",\"type\":\"uint256\"}],\"name\":\"deposit\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"explanation\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"amountShares\",\"type\":\"uint256\"}],\"name\":\"sharesToUnderlying\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"amountShares\",\"type\":\"uint256\"}],\"name\":\"sharesToUnderlyingView\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"totalShares\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"amountUnderlying\",\"type\":\"uint256\"}],\"name\":\"underlyingToShares\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"amountUnderlying\",\"type\":\"uint256\"}],\"name\":\"underlyingToSharesView\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"underlyingToken\",\"outputs\":[{\"internalType\":\"contract IERC20\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"user\",\"type\":\"address\"}],\"name\":\"userUnderlying\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"user\",\"type\":\"address\"}],\"name\":\"userUnderlyingView\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"depositor\",\"type\":\"address\"},{\"internalType\":\"contract IERC20\",\"name\":\"token\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"amountShares\",\"type\":\"uint256\"}],\"name\":\"withdraw\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"author\":\"Layr Labs, Inc.\",\"kind\":\"dev\",\"methods\":{\"deposit(address,uint256)\":{\"details\":\"This function is only callable by the investmentManager contract. It is invoked inside of the investmentManager's `depositIntoStrategy` function, and individual share balances are recorded in the investmentManager as well.\",\"params\":{\"amount\":\"is the amount of token being deposited\",\"token\":\"is the ERC20 token being deposited\"},\"returns\":{\"_0\":\"newShares is the number of new shares issued at the current exchange ratio.\"}},\"sharesToUnderlying(uint256)\":{\"details\":\"Implementation for these functions in particular may vary signifcantly for different strategies\",\"params\":{\"amountShares\":\"is the amount of shares to calculate its conversion into the underlying token\"}},\"sharesToUnderlyingView(uint256)\":{\"details\":\"Implementation for these functions in particular may vary signifcantly for different strategies\",\"params\":{\"amountShares\":\"is the amount of shares to calculate its conversion into the underlying token\"}},\"underlyingToShares(uint256)\":{\"details\":\"Implementation for these functions in particular may vary signifcantly for different strategies\",\"params\":{\"amountUnderlying\":\"is the amount of `underlyingToken` to calculate its conversion into strategy shares\"}},\"underlyingToSharesView(uint256)\":{\"details\":\"Implementation for these functions in particular may vary signifcantly for different strategies\",\"params\":{\"amountUnderlying\":\"is the amount of `underlyingToken` to calculate its conversion into strategy shares\"}},\"withdraw(address,address,uint256)\":{\"details\":\"This function is only callable by the investmentManager contract. It is invoked inside of the investmentManager's other functions, and individual share balances are recorded in the investmentManager as well.\",\"params\":{\"amountShares\":\"is the amount of shares being withdrawn\",\"token\":\"is the ERC20 token being transferred out\"}}},\"title\":\"Minimal interface for an `InvestmentStrategy` contract.\",\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{\"deposit(address,uint256)\":{\"notice\":\"Used to deposit tokens into this InvestmentStrategy\"},\"explanation()\":{\"notice\":\"Returns either a brief string explaining the strategy's goal & purpose, or a link to metadata that explains in more detail.\"},\"sharesToUnderlying(uint256)\":{\"notice\":\"Used to convert a number of shares to the equivalent amount of underlying tokens for this strategy.In contrast to `sharesToUnderlyingView`, this function **may** make state modifications\"},\"sharesToUnderlyingView(uint256)\":{\"notice\":\"Used to convert a number of shares to the equivalent amount of underlying tokens for this strategy.In contrast to `sharesToUnderlying`, this function guarantees no state modifications\"},\"totalShares()\":{\"notice\":\"The total number of extant shares in thie InvestmentStrategy\"},\"underlyingToShares(uint256)\":{\"notice\":\"Used to convert an amount of underlying tokens to the equivalent amount of shares in this strategy.In contrast to `underlyingToSharesView`, this function **may** make state modifications\"},\"underlyingToSharesView(uint256)\":{\"notice\":\"Used to convert an amount of underlying tokens to the equivalent amount of shares in this strategy.In contrast to `underlyingToShares`, this function guarantees no state modifications\"},\"underlyingToken()\":{\"notice\":\"The underyling token for shares in this InvestmentStrategy\"},\"userUnderlying(address)\":{\"notice\":\"convenience function for fetching the current underlying value of all of the `user`'s shares in this strategy. In contrast to `userUnderlyingView`, this function **may** make state modifications\"},\"userUnderlyingView(address)\":{\"notice\":\"convenience function for fetching the current underlying value of all of the `user`'s shares in this strategy. In contrast to `userUnderlying`, this function guarantees no state modifications\"},\"withdraw(address,address,uint256)\":{\"notice\":\"Used to withdraw tokens from this InvestmentStrategy, to the `depositor`'s address\"}},\"notice\":\"Custom `InvestmentStrategy` implementations may expand extensively on this interface.\",\"version\":1}},\"settings\":{\"compilationTarget\":{\"/Users/dl00038ml/PKG/projects/blockChain/e_Tools/rde/mantle/datalayr/contracts/eignlayr-contracts/src/contracts/interfaces/IInvestmentStrategy.sol\":\"IInvestmentStrategy\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[\":@eigenlayer/=../eignlayr-contracts/src/\",\":@openzeppelin-upgrades/=lib/openzeppelin-contracts-upgradeable/\",\":@openzeppelin/=lib/openzeppelin-contracts/\",\":ds-test/=lib/eignlayr-contracts/lib/ds-test/src/\",\":eignlayr-contracts/=lib/eignlayr-contracts/src/\",\":forge-std/=lib/forge-std/src/\",\":openzeppelin-contracts-upgradeable/=lib/eignlayr-contracts/lib/openzeppelin-contracts-upgradeable/\",\":openzeppelin-contracts/=lib/eignlayr-contracts/lib/openzeppelin-contracts/contracts/\"]},\"sources\":{\"/Users/dl00038ml/PKG/projects/blockChain/e_Tools/rde/mantle/datalayr/contracts/eignlayr-contracts/src/contracts/interfaces/IInvestmentStrategy.sol\":{\"keccak256\":\"0x69eb667cc856ee1fe783243b6db21a43a9dadd29bf6761727b334fca4366bceb\",\"license\":\"UNLICENSED\",\"urls\":[\"bzz-raw://224e8f6def4e53a1065f0c4ce26d8ffff15276944e2351753065aeb5bd265f52\",\"dweb:/ipfs/QmSu8iUPCnwza4SdE5jVSZLnQjMRXJg3VAGc8pHqbaMLob\"]},\"lib/openzeppelin-contracts/contracts/token/ERC20/IERC20.sol\":{\"keccak256\":\"0x9750c6b834f7b43000631af5cc30001c5f547b3ceb3635488f140f60e897ea6b\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://5a7d5b1ef5d8d5889ad2ed89d8619c09383b80b72ab226e0fe7bde1636481e34\",\"dweb:/ipfs/QmebXWgtEfumQGBdVeM6c71McLixYXQP5Bk6kKXuoY4Bmr\"]}},\"version\":1}",
+  "metadata": {
+    "compiler": {
+      "version": "0.8.12+commit.f00d7308"
+    },
+    "language": "Solidity",
+    "output": {
+      "abi": [
+        {
+          "inputs": [
+            {
+              "internalType": "contract IERC20",
+              "name": "token",
+              "type": "address"
+            },
+            {
+              "internalType": "uint256",
+              "name": "amount",
+              "type": "uint256"
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "deposit",
+          "outputs": [
+            {
+              "internalType": "uint256",
+              "name": "",
+              "type": "uint256"
+            }
+          ]
+        },
+        {
+          "inputs": [],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "explanation",
+          "outputs": [
+            {
+              "internalType": "string",
+              "name": "",
+              "type": "string"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "uint256",
+              "name": "amountShares",
+              "type": "uint256"
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "sharesToUnderlying",
+          "outputs": [
+            {
+              "internalType": "uint256",
+              "name": "",
+              "type": "uint256"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "uint256",
+              "name": "amountShares",
+              "type": "uint256"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "sharesToUnderlyingView",
+          "outputs": [
+            {
+              "internalType": "uint256",
+              "name": "",
+              "type": "uint256"
+            }
+          ]
+        },
+        {
+          "inputs": [],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "totalShares",
+          "outputs": [
+            {
+              "internalType": "uint256",
+              "name": "",
+              "type": "uint256"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "uint256",
+              "name": "amountUnderlying",
+              "type": "uint256"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "underlyingToShares",
+          "outputs": [
+            {
+              "internalType": "uint256",
+              "name": "",
+              "type": "uint256"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "uint256",
+              "name": "amountUnderlying",
+              "type": "uint256"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "underlyingToSharesView",
+          "outputs": [
+            {
+              "internalType": "uint256",
+              "name": "",
+              "type": "uint256"
+            }
+          ]
+        },
+        {
+          "inputs": [],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "underlyingToken",
+          "outputs": [
+            {
+              "internalType": "contract IERC20",
+              "name": "",
+              "type": "address"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "user",
+              "type": "address"
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "userUnderlying",
+          "outputs": [
+            {
+              "internalType": "uint256",
+              "name": "",
+              "type": "uint256"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "user",
+              "type": "address"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "userUnderlyingView",
+          "outputs": [
+            {
+              "internalType": "uint256",
+              "name": "",
+              "type": "uint256"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "depositor",
+              "type": "address"
+            },
+            {
+              "internalType": "contract IERC20",
+              "name": "token",
+              "type": "address"
+            },
+            {
+              "internalType": "uint256",
+              "name": "amountShares",
+              "type": "uint256"
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "withdraw"
+        }
+      ],
+      "devdoc": {
+        "kind": "dev",
+        "methods": {
+          "deposit(address,uint256)": {
+            "details": "This function is only callable by the investmentManager contract. It is invoked inside of the investmentManager's `depositIntoStrategy` function, and individual share balances are recorded in the investmentManager as well.",
+            "params": {
+              "amount": "is the amount of token being deposited",
+              "token": "is the ERC20 token being deposited"
+            },
+            "returns": {
+              "_0": "newShares is the number of new shares issued at the current exchange ratio."
+            }
+          },
+          "sharesToUnderlying(uint256)": {
+            "details": "Implementation for these functions in particular may vary signifcantly for different strategies",
+            "params": {
+              "amountShares": "is the amount of shares to calculate its conversion into the underlying token"
+            }
+          },
+          "sharesToUnderlyingView(uint256)": {
+            "details": "Implementation for these functions in particular may vary signifcantly for different strategies",
+            "params": {
+              "amountShares": "is the amount of shares to calculate its conversion into the underlying token"
+            }
+          },
+          "underlyingToShares(uint256)": {
+            "details": "Implementation for these functions in particular may vary signifcantly for different strategies",
+            "params": {
+              "amountUnderlying": "is the amount of `underlyingToken` to calculate its conversion into strategy shares"
+            }
+          },
+          "underlyingToSharesView(uint256)": {
+            "details": "Implementation for these functions in particular may vary signifcantly for different strategies",
+            "params": {
+              "amountUnderlying": "is the amount of `underlyingToken` to calculate its conversion into strategy shares"
+            }
+          },
+          "withdraw(address,address,uint256)": {
+            "details": "This function is only callable by the investmentManager contract. It is invoked inside of the investmentManager's other functions, and individual share balances are recorded in the investmentManager as well.",
+            "params": {
+              "amountShares": "is the amount of shares being withdrawn",
+              "token": "is the ERC20 token being transferred out"
+            }
+          }
+        },
+        "version": 1
+      },
+      "userdoc": {
+        "kind": "user",
+        "methods": {
+          "deposit(address,uint256)": {
+            "notice": "Used to deposit tokens into this InvestmentStrategy"
+          },
+          "explanation()": {
+            "notice": "Returns either a brief string explaining the strategy's goal & purpose, or a link to metadata that explains in more detail."
+          },
+          "sharesToUnderlying(uint256)": {
+            "notice": "Used to convert a number of shares to the equivalent amount of underlying tokens for this strategy.In contrast to `sharesToUnderlyingView`, this function **may** make state modifications"
+          },
+          "sharesToUnderlyingView(uint256)": {
+            "notice": "Used to convert a number of shares to the equivalent amount of underlying tokens for this strategy.In contrast to `sharesToUnderlying`, this function guarantees no state modifications"
+          },
+          "totalShares()": {
+            "notice": "The total number of extant shares in thie InvestmentStrategy"
+          },
+          "underlyingToShares(uint256)": {
+            "notice": "Used to convert an amount of underlying tokens to the equivalent amount of shares in this strategy.In contrast to `underlyingToSharesView`, this function **may** make state modifications"
+          },
+          "underlyingToSharesView(uint256)": {
+            "notice": "Used to convert an amount of underlying tokens to the equivalent amount of shares in this strategy.In contrast to `underlyingToShares`, this function guarantees no state modifications"
+          },
+          "underlyingToken()": {
+            "notice": "The underyling token for shares in this InvestmentStrategy"
+          },
+          "userUnderlying(address)": {
+            "notice": "convenience function for fetching the current underlying value of all of the `user`'s shares in this strategy. In contrast to `userUnderlyingView`, this function **may** make state modifications"
+          },
+          "userUnderlyingView(address)": {
+            "notice": "convenience function for fetching the current underlying value of all of the `user`'s shares in this strategy. In contrast to `userUnderlying`, this function guarantees no state modifications"
+          },
+          "withdraw(address,address,uint256)": {
+            "notice": "Used to withdraw tokens from this InvestmentStrategy, to the `depositor`'s address"
+          }
+        },
+        "version": 1
+      }
+    },
+    "settings": {
+      "remappings": [
+        ":@eigenlayer/=../eignlayr-contracts/src/",
+        ":@openzeppelin-upgrades/=lib/openzeppelin-contracts-upgradeable/",
+        ":@openzeppelin/=lib/openzeppelin-contracts/",
+        ":ds-test/=lib/eignlayr-contracts/lib/ds-test/src/",
+        ":eignlayr-contracts/=lib/eignlayr-contracts/src/",
+        ":forge-std/=lib/forge-std/src/",
+        ":openzeppelin-contracts-upgradeable/=lib/eignlayr-contracts/lib/openzeppelin-contracts-upgradeable/",
+        ":openzeppelin-contracts/=lib/eignlayr-contracts/lib/openzeppelin-contracts/contracts/"
+      ],
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "metadata": {
+        "bytecodeHash": "ipfs"
+      },
+      "compilationTarget": {
+        "/Users/dl00038ml/PKG/projects/blockChain/e_Tools/rde/mantle/datalayr/contracts/eignlayr-contracts/src/contracts/interfaces/IInvestmentStrategy.sol": "IInvestmentStrategy"
+      },
+      "libraries": {}
+    },
+    "sources": {
+      "/Users/dl00038ml/PKG/projects/blockChain/e_Tools/rde/mantle/datalayr/contracts/eignlayr-contracts/src/contracts/interfaces/IInvestmentStrategy.sol": {
+        "keccak256": "0x69eb667cc856ee1fe783243b6db21a43a9dadd29bf6761727b334fca4366bceb",
+        "urls": [
+          "bzz-raw://224e8f6def4e53a1065f0c4ce26d8ffff15276944e2351753065aeb5bd265f52",
+          "dweb:/ipfs/QmSu8iUPCnwza4SdE5jVSZLnQjMRXJg3VAGc8pHqbaMLob"
+        ],
+        "license": "UNLICENSED"
+      },
+      "lib/openzeppelin-contracts/contracts/token/ERC20/IERC20.sol": {
+        "keccak256": "0x9750c6b834f7b43000631af5cc30001c5f547b3ceb3635488f140f60e897ea6b",
+        "urls": [
+          "bzz-raw://5a7d5b1ef5d8d5889ad2ed89d8619c09383b80b72ab226e0fe7bde1636481e34",
+          "dweb:/ipfs/QmebXWgtEfumQGBdVeM6c71McLixYXQP5Bk6kKXuoY4Bmr"
+        ],
+        "license": "MIT"
+      }
+    },
+    "version": 1
+  },
+  "ast": {
+    "absolutePath": "/Users/dl00038ml/PKG/projects/blockChain/e_Tools/rde/mantle/datalayr/contracts/eignlayr-contracts/src/contracts/interfaces/IInvestmentStrategy.sol",
+    "id": 7459,
+    "exportedSymbols": {
+      "IERC20": [
+        40863
+      ],
+      "IInvestmentStrategy": [
+        7458
+      ]
+    },
+    "nodeType": "SourceUnit",
+    "src": "39:4746:43",
+    "nodes": [
+      {
+        "id": 7366,
+        "nodeType": "PragmaDirective",
+        "src": "39:23:43",
+        "nodes": [],
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".9"
+        ]
+      },
+      {
+        "id": 7367,
+        "nodeType": "ImportDirective",
+        "src": "64:56:43",
+        "nodes": [],
+        "absolutePath": "lib/openzeppelin-contracts/contracts/token/ERC20/IERC20.sol",
+        "file": "@openzeppelin/contracts/token/ERC20/IERC20.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 7459,
+        "sourceUnit": 40864,
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "id": 7458,
+        "nodeType": "ContractDefinition",
+        "src": "320:4464:43",
+        "nodes": [
+          {
+            "id": 7379,
+            "nodeType": "FunctionDefinition",
+            "src": "887:74:43",
+            "nodes": [],
+            "documentation": {
+              "id": 7369,
+              "nodeType": "StructuredDocumentation",
+              "src": "356:526:43",
+              "text": " @notice Used to deposit tokens into this InvestmentStrategy\n @param token is the ERC20 token being deposited\n @param amount is the amount of token being deposited\n @dev This function is only callable by the investmentManager contract. It is invoked inside of the investmentManager's\n `depositIntoStrategy` function, and individual share balances are recorded in the investmentManager as well.\n @return newShares is the number of new shares issued at the current exchange ratio."
+            },
+            "functionSelector": "47e7ef24",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "deposit",
+            "nameLocation": "896:7:43",
+            "parameters": {
+              "id": 7375,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 7372,
+                  "mutability": "mutable",
+                  "name": "token",
+                  "nameLocation": "911:5:43",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 7379,
+                  "src": "904:12:43",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_contract$_IERC20_$40863",
+                    "typeString": "contract IERC20"
+                  },
+                  "typeName": {
+                    "id": 7371,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 7370,
+                      "name": "IERC20",
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 40863,
+                      "src": "904:6:43"
+                    },
+                    "referencedDeclaration": 40863,
+                    "src": "904:6:43",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_IERC20_$40863",
+                      "typeString": "contract IERC20"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 7374,
+                  "mutability": "mutable",
+                  "name": "amount",
+                  "nameLocation": "926:6:43",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 7379,
+                  "src": "918:14:43",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 7373,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "918:7:43",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "903:30:43"
+            },
+            "returnParameters": {
+              "id": 7378,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 7377,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 7379,
+                  "src": "952:7:43",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 7376,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "952:7:43",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "951:9:43"
+            },
+            "scope": 7458,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 7390,
+            "nodeType": "FunctionDefinition",
+            "src": "1436:82:43",
+            "nodes": [],
+            "documentation": {
+              "id": 7380,
+              "nodeType": "StructuredDocumentation",
+              "src": "967:464:43",
+              "text": " @notice Used to withdraw tokens from this InvestmentStrategy, to the `depositor`'s address\n @param token is the ERC20 token being transferred out\n @param amountShares is the amount of shares being withdrawn\n @dev This function is only callable by the investmentManager contract. It is invoked inside of the investmentManager's\n other functions, and individual share balances are recorded in the investmentManager as well."
+            },
+            "functionSelector": "d9caed12",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "withdraw",
+            "nameLocation": "1445:8:43",
+            "parameters": {
+              "id": 7388,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 7382,
+                  "mutability": "mutable",
+                  "name": "depositor",
+                  "nameLocation": "1462:9:43",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 7390,
+                  "src": "1454:17:43",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 7381,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1454:7:43",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 7385,
+                  "mutability": "mutable",
+                  "name": "token",
+                  "nameLocation": "1480:5:43",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 7390,
+                  "src": "1473:12:43",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_contract$_IERC20_$40863",
+                    "typeString": "contract IERC20"
+                  },
+                  "typeName": {
+                    "id": 7384,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 7383,
+                      "name": "IERC20",
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 40863,
+                      "src": "1473:6:43"
+                    },
+                    "referencedDeclaration": 40863,
+                    "src": "1473:6:43",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_IERC20_$40863",
+                      "typeString": "contract IERC20"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 7387,
+                  "mutability": "mutable",
+                  "name": "amountShares",
+                  "nameLocation": "1495:12:43",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 7390,
+                  "src": "1487:20:43",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 7386,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1487:7:43",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1453:55:43"
+            },
+            "returnParameters": {
+              "id": 7389,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1517:0:43"
+            },
+            "scope": 7458,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 7398,
+            "nodeType": "FunctionDefinition",
+            "src": "1971:77:43",
+            "nodes": [],
+            "documentation": {
+              "id": 7391,
+              "nodeType": "StructuredDocumentation",
+              "src": "1524:442:43",
+              "text": " @notice Used to convert a number of shares to the equivalent amount of underlying tokens for this strategy.\n @notice In contrast to `sharesToUnderlyingView`, this function **may** make state modifications\n @param amountShares is the amount of shares to calculate its conversion into the underlying token\n @dev Implementation for these functions in particular may vary signifcantly for different strategies"
+            },
+            "functionSelector": "f3e73875",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "sharesToUnderlying",
+            "nameLocation": "1980:18:43",
+            "parameters": {
+              "id": 7394,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 7393,
+                  "mutability": "mutable",
+                  "name": "amountShares",
+                  "nameLocation": "2007:12:43",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 7398,
+                  "src": "1999:20:43",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 7392,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1999:7:43",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1998:22:43"
+            },
+            "returnParameters": {
+              "id": 7397,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 7396,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 7398,
+                  "src": "2039:7:43",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 7395,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2039:7:43",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "2038:9:43"
+            },
+            "scope": 7458,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 7406,
+            "nodeType": "FunctionDefinition",
+            "src": "2511:86:43",
+            "nodes": [],
+            "documentation": {
+              "id": 7399,
+              "nodeType": "StructuredDocumentation",
+              "src": "2054:452:43",
+              "text": " @notice Used to convert an amount of underlying tokens to the equivalent amount of shares in this strategy.\n @notice In contrast to `underlyingToSharesView`, this function **may** make state modifications\n @param amountUnderlying is the amount of `underlyingToken` to calculate its conversion into strategy shares\n @dev Implementation for these functions in particular may vary signifcantly for different strategies"
+            },
+            "functionSelector": "8c871019",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "underlyingToShares",
+            "nameLocation": "2520:18:43",
+            "parameters": {
+              "id": 7402,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 7401,
+                  "mutability": "mutable",
+                  "name": "amountUnderlying",
+                  "nameLocation": "2547:16:43",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 7406,
+                  "src": "2539:24:43",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 7400,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2539:7:43",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "2538:26:43"
+            },
+            "returnParameters": {
+              "id": 7405,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 7404,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 7406,
+                  "src": "2588:7:43",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 7403,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2588:7:43",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "2587:9:43"
+            },
+            "scope": 7458,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 7414,
+            "nodeType": "FunctionDefinition",
+            "src": "2836:65:43",
+            "nodes": [],
+            "documentation": {
+              "id": 7407,
+              "nodeType": "StructuredDocumentation",
+              "src": "2603:228:43",
+              "text": " @notice convenience function for fetching the current underlying value of all of the `user`'s shares in\n this strategy. In contrast to `userUnderlyingView`, this function **may** make state modifications"
+            },
+            "functionSelector": "8f6a6240",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "userUnderlying",
+            "nameLocation": "2845:14:43",
+            "parameters": {
+              "id": 7410,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 7409,
+                  "mutability": "mutable",
+                  "name": "user",
+                  "nameLocation": "2868:4:43",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 7414,
+                  "src": "2860:12:43",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 7408,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2860:7:43",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "2859:14:43"
+            },
+            "returnParameters": {
+              "id": 7413,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 7412,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 7414,
+                  "src": "2892:7:43",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 7411,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2892:7:43",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "2891:9:43"
+            },
+            "scope": 7458,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 7422,
+            "nodeType": "FunctionDefinition",
+            "src": "3352:86:43",
+            "nodes": [],
+            "documentation": {
+              "id": 7415,
+              "nodeType": "StructuredDocumentation",
+              "src": "2908:439:43",
+              "text": " @notice Used to convert a number of shares to the equivalent amount of underlying tokens for this strategy.\n @notice In contrast to `sharesToUnderlying`, this function guarantees no state modifications\n @param amountShares is the amount of shares to calculate its conversion into the underlying token\n @dev Implementation for these functions in particular may vary signifcantly for different strategies"
+            },
+            "functionSelector": "7a8b2637",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "sharesToUnderlyingView",
+            "nameLocation": "3361:22:43",
+            "parameters": {
+              "id": 7418,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 7417,
+                  "mutability": "mutable",
+                  "name": "amountShares",
+                  "nameLocation": "3392:12:43",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 7422,
+                  "src": "3384:20:43",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 7416,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "3384:7:43",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "3383:22:43"
+            },
+            "returnParameters": {
+              "id": 7421,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 7420,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 7422,
+                  "src": "3429:7:43",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 7419,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "3429:7:43",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "3428:9:43"
+            },
+            "scope": 7458,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 7430,
+            "nodeType": "FunctionDefinition",
+            "src": "3898:90:43",
+            "nodes": [],
+            "documentation": {
+              "id": 7423,
+              "nodeType": "StructuredDocumentation",
+              "src": "3444:449:43",
+              "text": " @notice Used to convert an amount of underlying tokens to the equivalent amount of shares in this strategy.\n @notice In contrast to `underlyingToShares`, this function guarantees no state modifications\n @param amountUnderlying is the amount of `underlyingToken` to calculate its conversion into strategy shares\n @dev Implementation for these functions in particular may vary signifcantly for different strategies"
+            },
+            "functionSelector": "e3dae51c",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "underlyingToSharesView",
+            "nameLocation": "3907:22:43",
+            "parameters": {
+              "id": 7426,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 7425,
+                  "mutability": "mutable",
+                  "name": "amountUnderlying",
+                  "nameLocation": "3938:16:43",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 7430,
+                  "src": "3930:24:43",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 7424,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "3930:7:43",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "3929:26:43"
+            },
+            "returnParameters": {
+              "id": 7429,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 7428,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 7430,
+                  "src": "3979:7:43",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 7427,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "3979:7:43",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "3978:9:43"
+            },
+            "scope": 7458,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 7438,
+            "nodeType": "FunctionDefinition",
+            "src": "4224:74:43",
+            "nodes": [],
+            "documentation": {
+              "id": 7431,
+              "nodeType": "StructuredDocumentation",
+              "src": "3994:225:43",
+              "text": " @notice convenience function for fetching the current underlying value of all of the `user`'s shares in\n this strategy. In contrast to `userUnderlying`, this function guarantees no state modifications"
+            },
+            "functionSelector": "553ca5f8",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "userUnderlyingView",
+            "nameLocation": "4233:18:43",
+            "parameters": {
+              "id": 7434,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 7433,
+                  "mutability": "mutable",
+                  "name": "user",
+                  "nameLocation": "4260:4:43",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 7438,
+                  "src": "4252:12:43",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 7432,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "4252:7:43",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "4251:14:43"
+            },
+            "returnParameters": {
+              "id": 7437,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 7436,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 7438,
+                  "src": "4289:7:43",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 7435,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "4289:7:43",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "4288:9:43"
+            },
+            "scope": 7458,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 7445,
+            "nodeType": "FunctionDefinition",
+            "src": "4379:58:43",
+            "nodes": [],
+            "documentation": {
+              "id": 7439,
+              "nodeType": "StructuredDocumentation",
+              "src": "4304:70:43",
+              "text": "@notice The underyling token for shares in this InvestmentStrategy"
+            },
+            "functionSelector": "2495a599",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "underlyingToken",
+            "nameLocation": "4388:15:43",
+            "parameters": {
+              "id": 7440,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "4403:2:43"
+            },
+            "returnParameters": {
+              "id": 7444,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 7443,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 7445,
+                  "src": "4429:6:43",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_contract$_IERC20_$40863",
+                    "typeString": "contract IERC20"
+                  },
+                  "typeName": {
+                    "id": 7442,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 7441,
+                      "name": "IERC20",
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 40863,
+                      "src": "4429:6:43"
+                    },
+                    "referencedDeclaration": 40863,
+                    "src": "4429:6:43",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_IERC20_$40863",
+                      "typeString": "contract IERC20"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "4428:8:43"
+            },
+            "scope": 7458,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 7451,
+            "nodeType": "FunctionDefinition",
+            "src": "4520:55:43",
+            "nodes": [],
+            "documentation": {
+              "id": 7446,
+              "nodeType": "StructuredDocumentation",
+              "src": "4443:72:43",
+              "text": "@notice The total number of extant shares in thie InvestmentStrategy"
+            },
+            "functionSelector": "3a98ef39",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "totalShares",
+            "nameLocation": "4529:11:43",
+            "parameters": {
+              "id": 7447,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "4540:2:43"
+            },
+            "returnParameters": {
+              "id": 7450,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 7449,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 7451,
+                  "src": "4566:7:43",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 7448,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "4566:7:43",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "4565:9:43"
+            },
+            "scope": 7458,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 7457,
+            "nodeType": "FunctionDefinition",
+            "src": "4721:61:43",
+            "nodes": [],
+            "documentation": {
+              "id": 7452,
+              "nodeType": "StructuredDocumentation",
+              "src": "4581:135:43",
+              "text": "@notice Returns either a brief string explaining the strategy's goal & purpose, or a link to metadata that explains in more detail."
+            },
+            "functionSelector": "ab5921e1",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "explanation",
+            "nameLocation": "4730:11:43",
+            "parameters": {
+              "id": 7453,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "4741:2:43"
+            },
+            "returnParameters": {
+              "id": 7456,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 7455,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 7457,
+                  "src": "4767:13:43",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 7454,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "4767:6:43",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "4766:15:43"
+            },
+            "scope": 7458,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "IInvestmentStrategy",
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "documentation": {
+          "id": 7368,
+          "nodeType": "StructuredDocumentation",
+          "src": "122:197:43",
+          "text": " @title Minimal interface for an `InvestmentStrategy` contract.\n @author Layr Labs, Inc.\n @notice Custom `InvestmentStrategy` implementations may expand extensively on this interface."
+        },
+        "fullyImplemented": false,
+        "linearizedBaseContracts": [
+          7458
+        ],
+        "name": "IInvestmentStrategy",
+        "nameLocation": "330:19:43",
+        "scope": 7459,
+        "usedErrors": []
+      }
+    ],
+    "license": "UNLICENSED"
+  },
+  "id": 43
+}

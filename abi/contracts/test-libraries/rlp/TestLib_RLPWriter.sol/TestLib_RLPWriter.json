@@ -1,0 +1,135 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_in",
+        "type": "address"
+      }
+    ],
+    "name": "writeAddress",
+    "outputs": [
+      {
+        "internalType": "bytes",
+        "name": "_out",
+        "type": "bytes"
+      }
+    ],
+    "stateMutability": "pure",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_in",
+        "type": "address"
+      }
+    ],
+    "name": "writeAddressWithTaintedMemory",
+    "outputs": [
+      {
+        "internalType": "bytes",
+        "name": "_out",
+        "type": "bytes"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bool",
+        "name": "_in",
+        "type": "bool"
+      }
+    ],
+    "name": "writeBool",
+    "outputs": [
+      {
+        "internalType": "bytes",
+        "name": "_out",
+        "type": "bytes"
+      }
+    ],
+    "stateMutability": "pure",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes",
+        "name": "_in",
+        "type": "bytes"
+      }
+    ],
+    "name": "writeBytes",
+    "outputs": [
+      {
+        "internalType": "bytes",
+        "name": "_out",
+        "type": "bytes"
+      }
+    ],
+    "stateMutability": "pure",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes[]",
+        "name": "_in",
+        "type": "bytes[]"
+      }
+    ],
+    "name": "writeList",
+    "outputs": [
+      {
+        "internalType": "bytes",
+        "name": "_out",
+        "type": "bytes"
+      }
+    ],
+    "stateMutability": "pure",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "string",
+        "name": "_in",
+        "type": "string"
+      }
+    ],
+    "name": "writeString",
+    "outputs": [
+      {
+        "internalType": "bytes",
+        "name": "_out",
+        "type": "bytes"
+      }
+    ],
+    "stateMutability": "pure",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "_in",
+        "type": "uint256"
+      }
+    ],
+    "name": "writeUint",
+    "outputs": [
+      {
+        "internalType": "bytes",
+        "name": "_out",
+        "type": "bytes"
+      }
+    ],
+    "stateMutability": "pure",
+    "type": "function"
+  }
+]

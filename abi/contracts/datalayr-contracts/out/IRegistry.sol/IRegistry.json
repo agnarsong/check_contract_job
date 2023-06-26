@@ -1,0 +1,258 @@
+{
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "operator",
+          "type": "address"
+        }
+      ],
+      "name": "isActiveOperator",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "bytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "methodIdentifiers": {
+    "isActiveOperator(address)": "3367cca5"
+  },
+  "rawMetadata": "{\"compiler\":{\"version\":\"0.8.12+commit.f00d7308\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"address\",\"name\":\"operator\",\"type\":\"address\"}],\"name\":\"isActiveOperator\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"author\":\"Layr Labs, Inc.\",\"kind\":\"dev\",\"methods\":{},\"title\":\"Minimal interface for a `Registry`-type contract.\",\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{\"isActiveOperator(address)\":{\"notice\":\"Returns 'true' if `operator` is registered as an active operator, and 'false' otherwise.\"}},\"notice\":\"Functions related to the registration process itself have been intentionally excluded because their function signatures may vary significantly.\",\"version\":1}},\"settings\":{\"compilationTarget\":{\"/Users/dl00038ml/PKG/projects/blockChain/e_Tools/rde/mantle/datalayr/contracts/eignlayr-contracts/src/contracts/interfaces/IRegistry.sol\":\"IRegistry\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[\":@eigenlayer/=../eignlayr-contracts/src/\",\":@openzeppelin-upgrades/=lib/openzeppelin-contracts-upgradeable/\",\":@openzeppelin/=lib/openzeppelin-contracts/\",\":ds-test/=lib/eignlayr-contracts/lib/ds-test/src/\",\":eignlayr-contracts/=lib/eignlayr-contracts/src/\",\":forge-std/=lib/forge-std/src/\",\":openzeppelin-contracts-upgradeable/=lib/eignlayr-contracts/lib/openzeppelin-contracts-upgradeable/\",\":openzeppelin-contracts/=lib/eignlayr-contracts/lib/openzeppelin-contracts/contracts/\"]},\"sources\":{\"/Users/dl00038ml/PKG/projects/blockChain/e_Tools/rde/mantle/datalayr/contracts/eignlayr-contracts/src/contracts/interfaces/IRegistry.sol\":{\"keccak256\":\"0x5bd8be0f70b0e69f94e069c52417079ba2b9e73acd5f659c09b22142dc6c59f5\",\"license\":\"UNLICENSED\",\"urls\":[\"bzz-raw://e32791f0147f40738d8a27c86e83c2207d5c1d1654c2f730629b3be587963cc4\",\"dweb:/ipfs/Qma4VYzA9jkLxWQCgCFm911rQodoSboaJxnNqi4AaSzftp\"]}},\"version\":1}",
+  "metadata": {
+    "compiler": {
+      "version": "0.8.12+commit.f00d7308"
+    },
+    "language": "Solidity",
+    "output": {
+      "abi": [
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "operator",
+              "type": "address"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "isActiveOperator",
+          "outputs": [
+            {
+              "internalType": "bool",
+              "name": "",
+              "type": "bool"
+            }
+          ]
+        }
+      ],
+      "devdoc": {
+        "kind": "dev",
+        "methods": {},
+        "version": 1
+      },
+      "userdoc": {
+        "kind": "user",
+        "methods": {
+          "isActiveOperator(address)": {
+            "notice": "Returns 'true' if `operator` is registered as an active operator, and 'false' otherwise."
+          }
+        },
+        "version": 1
+      }
+    },
+    "settings": {
+      "remappings": [
+        ":@eigenlayer/=../eignlayr-contracts/src/",
+        ":@openzeppelin-upgrades/=lib/openzeppelin-contracts-upgradeable/",
+        ":@openzeppelin/=lib/openzeppelin-contracts/",
+        ":ds-test/=lib/eignlayr-contracts/lib/ds-test/src/",
+        ":eignlayr-contracts/=lib/eignlayr-contracts/src/",
+        ":forge-std/=lib/forge-std/src/",
+        ":openzeppelin-contracts-upgradeable/=lib/eignlayr-contracts/lib/openzeppelin-contracts-upgradeable/",
+        ":openzeppelin-contracts/=lib/eignlayr-contracts/lib/openzeppelin-contracts/contracts/"
+      ],
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "metadata": {
+        "bytecodeHash": "ipfs"
+      },
+      "compilationTarget": {
+        "/Users/dl00038ml/PKG/projects/blockChain/e_Tools/rde/mantle/datalayr/contracts/eignlayr-contracts/src/contracts/interfaces/IRegistry.sol": "IRegistry"
+      },
+      "libraries": {}
+    },
+    "sources": {
+      "/Users/dl00038ml/PKG/projects/blockChain/e_Tools/rde/mantle/datalayr/contracts/eignlayr-contracts/src/contracts/interfaces/IRegistry.sol": {
+        "keccak256": "0x5bd8be0f70b0e69f94e069c52417079ba2b9e73acd5f659c09b22142dc6c59f5",
+        "urls": [
+          "bzz-raw://e32791f0147f40738d8a27c86e83c2207d5c1d1654c2f730629b3be587963cc4",
+          "dweb:/ipfs/Qma4VYzA9jkLxWQCgCFm911rQodoSboaJxnNqi4AaSzftp"
+        ],
+        "license": "UNLICENSED"
+      }
+    },
+    "version": 1
+  },
+  "ast": {
+    "absolutePath": "/Users/dl00038ml/PKG/projects/blockChain/e_Tools/rde/mantle/datalayr/contracts/eignlayr-contracts/src/contracts/interfaces/IRegistry.sol",
+    "id": 7631,
+    "exportedSymbols": {
+      "IRegistry": [
+        7630
+      ]
+    },
+    "nodeType": "SourceUnit",
+    "src": "39:485:46",
+    "nodes": [
+      {
+        "id": 7620,
+        "nodeType": "PragmaDirective",
+        "src": "39:23:46",
+        "nodes": [],
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".9"
+        ]
+      },
+      {
+        "id": 7630,
+        "nodeType": "ContractDefinition",
+        "src": "317:206:46",
+        "nodes": [
+          {
+            "id": 7629,
+            "nodeType": "FunctionDefinition",
+            "src": "448:73:46",
+            "nodes": [],
+            "documentation": {
+              "id": 7622,
+              "nodeType": "StructuredDocumentation",
+              "src": "343:100:46",
+              "text": "@notice Returns 'true' if `operator` is registered as an active operator, and 'false' otherwise."
+            },
+            "functionSelector": "3367cca5",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "isActiveOperator",
+            "nameLocation": "457:16:46",
+            "parameters": {
+              "id": 7625,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 7624,
+                  "mutability": "mutable",
+                  "name": "operator",
+                  "nameLocation": "482:8:46",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 7629,
+                  "src": "474:16:46",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 7623,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "474:7:46",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "473:18:46"
+            },
+            "returnParameters": {
+              "id": 7628,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 7627,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 7629,
+                  "src": "515:4:46",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  },
+                  "typeName": {
+                    "id": 7626,
+                    "name": "bool",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "515:4:46",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "514:6:46"
+            },
+            "scope": 7630,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "IRegistry",
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "documentation": {
+          "id": 7621,
+          "nodeType": "StructuredDocumentation",
+          "src": "64:252:46",
+          "text": " @title Minimal interface for a `Registry`-type contract.\n @author Layr Labs, Inc.\n @notice Functions related to the registration process itself have been intentionally excluded\n because their function signatures may vary significantly."
+        },
+        "fullyImplemented": false,
+        "linearizedBaseContracts": [
+          7630
+        ],
+        "name": "IRegistry",
+        "nameLocation": "327:9:46",
+        "scope": 7631,
+        "usedErrors": []
+      }
+    ],
+    "license": "UNLICENSED"
+  },
+  "id": 46
+}

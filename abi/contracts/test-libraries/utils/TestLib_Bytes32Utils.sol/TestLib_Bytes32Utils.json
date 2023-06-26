@@ -1,0 +1,78 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_in",
+        "type": "address"
+      }
+    ],
+    "name": "fromAddress",
+    "outputs": [
+      {
+        "internalType": "bytes32",
+        "name": "_out",
+        "type": "bytes32"
+      }
+    ],
+    "stateMutability": "pure",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bool",
+        "name": "_in",
+        "type": "bool"
+      }
+    ],
+    "name": "fromBool",
+    "outputs": [
+      {
+        "internalType": "bytes32",
+        "name": "_out",
+        "type": "bytes32"
+      }
+    ],
+    "stateMutability": "pure",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "_in",
+        "type": "bytes32"
+      }
+    ],
+    "name": "toAddress",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "_out",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "pure",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "_in",
+        "type": "bytes32"
+      }
+    ],
+    "name": "toBool",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "_out",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "pure",
+    "type": "function"
+  }
+]

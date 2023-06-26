@@ -1,0 +1,1492 @@
+{
+  "abi": [
+    {
+      "inputs": [],
+      "name": "DEPOSIT_TYPEHASH",
+      "outputs": [
+        {
+          "internalType": "bytes32",
+          "name": "",
+          "type": "bytes32"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "DOMAIN_SEPARATOR",
+      "outputs": [
+        {
+          "internalType": "bytes32",
+          "name": "",
+          "type": "bytes32"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "DOMAIN_TYPEHASH",
+      "outputs": [
+        {
+          "internalType": "bytes32",
+          "name": "",
+          "type": "bytes32"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "delegation",
+      "outputs": [
+        {
+          "internalType": "contract IEigenLayrDelegation",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "name": "delegatorWithdrawWhiteList",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "contract IInvestmentStrategy",
+          "name": "strategy",
+          "type": "address"
+        },
+        {
+          "internalType": "contract IERC20",
+          "name": "token",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "amount",
+          "type": "uint256"
+        }
+      ],
+      "name": "depositIntoStrategy",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "contract IInvestmentStrategy",
+          "name": "strategy",
+          "type": "address"
+        },
+        {
+          "internalType": "contract IERC20",
+          "name": "token",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "amount",
+          "type": "uint256"
+        },
+        {
+          "internalType": "address",
+          "name": "staker",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "expiry",
+          "type": "uint256"
+        },
+        {
+          "internalType": "bytes32",
+          "name": "r",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "bytes32",
+          "name": "vs",
+          "type": "bytes32"
+        }
+      ],
+      "name": "depositIntoStrategyOnBehalfOf",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "shares",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "depositor",
+          "type": "address"
+        }
+      ],
+      "name": "getDeposits",
+      "outputs": [
+        {
+          "internalType": "contract IInvestmentStrategy[]",
+          "name": "",
+          "type": "address[]"
+        },
+        {
+          "internalType": "uint256[]",
+          "name": "",
+          "type": "uint256[]"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        },
+        {
+          "internalType": "contract IInvestmentStrategy",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "name": "investorStratShares",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "name": "investorStrats",
+      "outputs": [
+        {
+          "internalType": "contract IInvestmentStrategy",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "staker",
+          "type": "address"
+        }
+      ],
+      "name": "investorStratsLength",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "name": "nonces",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "bytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "methodIdentifiers": {
+    "DEPOSIT_TYPEHASH()": "48825e94",
+    "DOMAIN_SEPARATOR()": "3644e515",
+    "DOMAIN_TYPEHASH()": "20606b70",
+    "delegation()": "df5cf723",
+    "delegatorWithdrawWhiteList(address)": "d80b3f6e",
+    "depositIntoStrategy(address,address,uint256)": "e7a050aa",
+    "depositIntoStrategyOnBehalfOf(address,address,uint256,address,uint256,bytes32,bytes32)": "6876e790",
+    "getDeposits(address)": "94f649dd",
+    "investorStratShares(address,address)": "6be2343f",
+    "investorStrats(address,uint256)": "c377b906",
+    "investorStratsLength(address)": "8e749873",
+    "nonces(address)": "7ecebe00"
+  },
+  "rawMetadata": "{\"compiler\":{\"version\":\"0.8.12+commit.f00d7308\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"DEPOSIT_TYPEHASH\",\"outputs\":[{\"internalType\":\"bytes32\",\"name\":\"\",\"type\":\"bytes32\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"DOMAIN_SEPARATOR\",\"outputs\":[{\"internalType\":\"bytes32\",\"name\":\"\",\"type\":\"bytes32\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"DOMAIN_TYPEHASH\",\"outputs\":[{\"internalType\":\"bytes32\",\"name\":\"\",\"type\":\"bytes32\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"delegation\",\"outputs\":[{\"internalType\":\"contract IEigenLayrDelegation\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"name\":\"delegatorWithdrawWhiteList\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"contract IInvestmentStrategy\",\"name\":\"strategy\",\"type\":\"address\"},{\"internalType\":\"contract IERC20\",\"name\":\"token\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"amount\",\"type\":\"uint256\"}],\"name\":\"depositIntoStrategy\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"contract IInvestmentStrategy\",\"name\":\"strategy\",\"type\":\"address\"},{\"internalType\":\"contract IERC20\",\"name\":\"token\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"amount\",\"type\":\"uint256\"},{\"internalType\":\"address\",\"name\":\"staker\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"expiry\",\"type\":\"uint256\"},{\"internalType\":\"bytes32\",\"name\":\"r\",\"type\":\"bytes32\"},{\"internalType\":\"bytes32\",\"name\":\"vs\",\"type\":\"bytes32\"}],\"name\":\"depositIntoStrategyOnBehalfOf\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"shares\",\"type\":\"uint256\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"depositor\",\"type\":\"address\"}],\"name\":\"getDeposits\",\"outputs\":[{\"internalType\":\"contract IInvestmentStrategy[]\",\"name\":\"\",\"type\":\"address[]\"},{\"internalType\":\"uint256[]\",\"name\":\"\",\"type\":\"uint256[]\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"},{\"internalType\":\"contract IInvestmentStrategy\",\"name\":\"\",\"type\":\"address\"}],\"name\":\"investorStratShares\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"name\":\"investorStrats\",\"outputs\":[{\"internalType\":\"contract IInvestmentStrategy\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"staker\",\"type\":\"address\"}],\"name\":\"investorStratsLength\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"name\":\"nonces\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"author\":\"Layr Labs, Inc.\",\"kind\":\"dev\",\"methods\":{\"depositIntoStrategy(address,address,uint256)\":{\"details\":\"The `msg.sender` must have previously approved this contract to transfer at least `amount` of `token` on their behalf.Cannot be called by an address that is 'frozen' (this function will revert if the `msg.sender` is frozen).\",\"params\":{\"amount\":\"is the amount of token to be invested in the strategy by the depositor\",\"strategy\":\"is the specified strategy where investment is to be made,\",\"token\":\"is the denomination in which the investment is to be made,\"}},\"depositIntoStrategyOnBehalfOf(address,address,uint256,address,uint256,bytes32,bytes32)\":{\"details\":\"The `msg.sender` must have previously approved this contract to transfer at least `amount` of `token` on their behalf.A signature is required for this function to eliminate the possibility of griefing attacks, specifically those targetting stakers who may be attempting to undelegate.Cannot be called on behalf of a staker that is 'frozen' (this function will revert if the `staker` is frozen).\",\"params\":{\"amount\":\"is the amount of token to be invested in the strategy by the depositor\",\"expiry\":\"the timestamp at which the signature expires\",\"r\":\"and @param vs are the elements of the ECDSA signature\",\"staker\":\"the staker that the assets will be deposited on behalf of\",\"strategy\":\"is the specified strategy where investment is to be made,\",\"token\":\"is the denomination in which the investment is to be made,\"}},\"getDeposits(address)\":{\"returns\":{\"_0\":\"(depositor's strategies, shares in these strategies)\"}}},\"title\":\"Storage variables for the `InvestmentManager` contract.\",\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{\"DEPOSIT_TYPEHASH()\":{\"notice\":\"The EIP-712 typehash for the deposit struct used by the contract\"},\"DOMAIN_SEPARATOR()\":{\"notice\":\"EIP-712 Domain separator\"},\"DOMAIN_TYPEHASH()\":{\"notice\":\"The EIP-712 typehash for the contract's domain\"},\"delegation()\":{\"notice\":\"Returns the single, central Delegation contract of EigenLayer\"},\"depositIntoStrategy(address,address,uint256)\":{\"notice\":\"Deposits `amount` of `token` into the specified `strategy`, with the resultant shares credited to `depositor`\"},\"depositIntoStrategyOnBehalfOf(address,address,uint256,address,uint256,bytes32,bytes32)\":{\"notice\":\"Used for investing an asset into the specified strategy with the resultant shared created to `staker`, who must sign off on the action\"},\"getDeposits(address)\":{\"notice\":\"Get all details on the depositor's investments and corresponding shares\"},\"investorStratShares(address,address)\":{\"notice\":\"Returns the current shares of `user` in `strategy`\"},\"investorStratsLength(address)\":{\"notice\":\"Simple getter function that returns `investorStrats[staker].length`.\"}},\"notice\":\"This storage contract is separate from the logic to simplify the upgrade process.\",\"version\":1}},\"settings\":{\"compilationTarget\":{\"/Users/dl00038ml/PKG/projects/blockChain/e_Tools/rde/mantle/datalayr/contracts/eignlayr-contracts/src/contracts/core/InvestmentManagerStorage.sol\":\"InvestmentManagerStorage\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[\":@eigenlayer/=../eignlayr-contracts/src/\",\":@openzeppelin-upgrades/=lib/openzeppelin-contracts-upgradeable/\",\":@openzeppelin/=lib/openzeppelin-contracts/\",\":ds-test/=lib/eignlayr-contracts/lib/ds-test/src/\",\":eignlayr-contracts/=lib/eignlayr-contracts/src/\",\":forge-std/=lib/forge-std/src/\",\":openzeppelin-contracts-upgradeable/=lib/eignlayr-contracts/lib/openzeppelin-contracts-upgradeable/\",\":openzeppelin-contracts/=lib/eignlayr-contracts/lib/openzeppelin-contracts/contracts/\"]},\"sources\":{\"/Users/dl00038ml/PKG/projects/blockChain/e_Tools/rde/mantle/datalayr/contracts/eignlayr-contracts/src/contracts/core/InvestmentManagerStorage.sol\":{\"keccak256\":\"0x70d9b59280ed75693f9ed31f66cd2ad9e6caee82cf2b22be0b8d1d2b54fab461\",\"license\":\"UNLICENSED\",\"urls\":[\"bzz-raw://e5e8f2342ab8daf8d69f7612597330230f26f01933dcfd14c8faaee0bc70497b\",\"dweb:/ipfs/QmUfAjADZULFbNma48pSaCWik3UNB9p4aCMGt3mNGybLLW\"]},\"/Users/dl00038ml/PKG/projects/blockChain/e_Tools/rde/mantle/datalayr/contracts/eignlayr-contracts/src/contracts/interfaces/IEigenLayrDelegation.sol\":{\"keccak256\":\"0x9f11c0becde4111ac7d060dc11b9461888129076740cf78e07f292eefc92955e\",\"license\":\"UNLICENSED\",\"urls\":[\"bzz-raw://53bef92f10fd142e6b0af0f4f77a958c96ebea145492aa5328757e10fffd9c21\",\"dweb:/ipfs/QmUHG67pTyGxu6whsk95JNwevDJ7ooQMyeNT4kfwJtEzU5\"]},\"/Users/dl00038ml/PKG/projects/blockChain/e_Tools/rde/mantle/datalayr/contracts/eignlayr-contracts/src/contracts/interfaces/IInvestmentManager.sol\":{\"keccak256\":\"0xed8f5ee05ffbedbfe649dc7547339b3bc118edfe02825074341b0c474f776100\",\"license\":\"UNLICENSED\",\"urls\":[\"bzz-raw://44e9b0705f113e63a867b59bc292c7d5287968017b39ade9ef4c2b90d7f7dd34\",\"dweb:/ipfs/Qmc46ncEfH6wXKRz7zYKvkTGRhQSSDh6traUrttRFcP2tw\"]},\"/Users/dl00038ml/PKG/projects/blockChain/e_Tools/rde/mantle/datalayr/contracts/eignlayr-contracts/src/contracts/interfaces/IInvestmentStrategy.sol\":{\"keccak256\":\"0x69eb667cc856ee1fe783243b6db21a43a9dadd29bf6761727b334fca4366bceb\",\"license\":\"UNLICENSED\",\"urls\":[\"bzz-raw://224e8f6def4e53a1065f0c4ce26d8ffff15276944e2351753065aeb5bd265f52\",\"dweb:/ipfs/QmSu8iUPCnwza4SdE5jVSZLnQjMRXJg3VAGc8pHqbaMLob\"]},\"/Users/dl00038ml/PKG/projects/blockChain/e_Tools/rde/mantle/datalayr/contracts/eignlayr-contracts/src/contracts/interfaces/IServiceManager.sol\":{\"keccak256\":\"0xded81693805764888f8d1daa8afb600969d4286f3d5ecfa92e99b9446b400ad4\",\"license\":\"UNLICENSED\",\"urls\":[\"bzz-raw://8e0d0704fa8e64543abce318eaf99c53f75215db76cf873e6a6311a4eb5274b2\",\"dweb:/ipfs/Qmd96t8WrNFRY5fqsPtkCaz28j3mvZj3fpc4qp6xXe9wgb\"]},\"lib/openzeppelin-contracts/contracts/token/ERC1155/IERC1155.sol\":{\"keccak256\":\"0x6392f2cfe3a5ee802227fe7a2dfd47096d881aec89bddd214b35c5b46d3cd941\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://bd9c47a375639888e726a99da718890ba16d17d7ad9eacb0ccc892d46d1b3ee0\",\"dweb:/ipfs/Qmb41W5RUjy2sWg49A2rMnxekSeEk6SvGyJL5tyCCSr7un\"]},\"lib/openzeppelin-contracts/contracts/token/ERC20/IERC20.sol\":{\"keccak256\":\"0x9750c6b834f7b43000631af5cc30001c5f547b3ceb3635488f140f60e897ea6b\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://5a7d5b1ef5d8d5889ad2ed89d8619c09383b80b72ab226e0fe7bde1636481e34\",\"dweb:/ipfs/QmebXWgtEfumQGBdVeM6c71McLixYXQP5Bk6kKXuoY4Bmr\"]},\"lib/openzeppelin-contracts/contracts/utils/introspection/IERC165.sol\":{\"keccak256\":\"0x447a5f3ddc18419d41ff92b3773fb86471b1db25773e07f877f548918a185bf1\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://be161e54f24e5c6fae81a12db1a8ae87bc5ae1b0ddc805d82a1440a68455088f\",\"dweb:/ipfs/QmP7C3CHdY9urF4dEMb9wmsp1wMxHF6nhA2yQE5SKiPAdy\"]}},\"version\":1}",
+  "metadata": {
+    "compiler": {
+      "version": "0.8.12+commit.f00d7308"
+    },
+    "language": "Solidity",
+    "output": {
+      "abi": [
+        {
+          "inputs": [],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "DEPOSIT_TYPEHASH",
+          "outputs": [
+            {
+              "internalType": "bytes32",
+              "name": "",
+              "type": "bytes32"
+            }
+          ]
+        },
+        {
+          "inputs": [],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "DOMAIN_SEPARATOR",
+          "outputs": [
+            {
+              "internalType": "bytes32",
+              "name": "",
+              "type": "bytes32"
+            }
+          ]
+        },
+        {
+          "inputs": [],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "DOMAIN_TYPEHASH",
+          "outputs": [
+            {
+              "internalType": "bytes32",
+              "name": "",
+              "type": "bytes32"
+            }
+          ]
+        },
+        {
+          "inputs": [],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "delegation",
+          "outputs": [
+            {
+              "internalType": "contract IEigenLayrDelegation",
+              "name": "",
+              "type": "address"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "",
+              "type": "address"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "delegatorWithdrawWhiteList",
+          "outputs": [
+            {
+              "internalType": "bool",
+              "name": "",
+              "type": "bool"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "contract IInvestmentStrategy",
+              "name": "strategy",
+              "type": "address"
+            },
+            {
+              "internalType": "contract IERC20",
+              "name": "token",
+              "type": "address"
+            },
+            {
+              "internalType": "uint256",
+              "name": "amount",
+              "type": "uint256"
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "depositIntoStrategy",
+          "outputs": [
+            {
+              "internalType": "uint256",
+              "name": "",
+              "type": "uint256"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "contract IInvestmentStrategy",
+              "name": "strategy",
+              "type": "address"
+            },
+            {
+              "internalType": "contract IERC20",
+              "name": "token",
+              "type": "address"
+            },
+            {
+              "internalType": "uint256",
+              "name": "amount",
+              "type": "uint256"
+            },
+            {
+              "internalType": "address",
+              "name": "staker",
+              "type": "address"
+            },
+            {
+              "internalType": "uint256",
+              "name": "expiry",
+              "type": "uint256"
+            },
+            {
+              "internalType": "bytes32",
+              "name": "r",
+              "type": "bytes32"
+            },
+            {
+              "internalType": "bytes32",
+              "name": "vs",
+              "type": "bytes32"
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "depositIntoStrategyOnBehalfOf",
+          "outputs": [
+            {
+              "internalType": "uint256",
+              "name": "shares",
+              "type": "uint256"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "depositor",
+              "type": "address"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "getDeposits",
+          "outputs": [
+            {
+              "internalType": "contract IInvestmentStrategy[]",
+              "name": "",
+              "type": "address[]"
+            },
+            {
+              "internalType": "uint256[]",
+              "name": "",
+              "type": "uint256[]"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "",
+              "type": "address"
+            },
+            {
+              "internalType": "contract IInvestmentStrategy",
+              "name": "",
+              "type": "address"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "investorStratShares",
+          "outputs": [
+            {
+              "internalType": "uint256",
+              "name": "",
+              "type": "uint256"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "",
+              "type": "address"
+            },
+            {
+              "internalType": "uint256",
+              "name": "",
+              "type": "uint256"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "investorStrats",
+          "outputs": [
+            {
+              "internalType": "contract IInvestmentStrategy",
+              "name": "",
+              "type": "address"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "staker",
+              "type": "address"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "investorStratsLength",
+          "outputs": [
+            {
+              "internalType": "uint256",
+              "name": "",
+              "type": "uint256"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "",
+              "type": "address"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "nonces",
+          "outputs": [
+            {
+              "internalType": "uint256",
+              "name": "",
+              "type": "uint256"
+            }
+          ]
+        }
+      ],
+      "devdoc": {
+        "kind": "dev",
+        "methods": {
+          "depositIntoStrategy(address,address,uint256)": {
+            "details": "The `msg.sender` must have previously approved this contract to transfer at least `amount` of `token` on their behalf.Cannot be called by an address that is 'frozen' (this function will revert if the `msg.sender` is frozen).",
+            "params": {
+              "amount": "is the amount of token to be invested in the strategy by the depositor",
+              "strategy": "is the specified strategy where investment is to be made,",
+              "token": "is the denomination in which the investment is to be made,"
+            }
+          },
+          "depositIntoStrategyOnBehalfOf(address,address,uint256,address,uint256,bytes32,bytes32)": {
+            "details": "The `msg.sender` must have previously approved this contract to transfer at least `amount` of `token` on their behalf.A signature is required for this function to eliminate the possibility of griefing attacks, specifically those targetting stakers who may be attempting to undelegate.Cannot be called on behalf of a staker that is 'frozen' (this function will revert if the `staker` is frozen).",
+            "params": {
+              "amount": "is the amount of token to be invested in the strategy by the depositor",
+              "expiry": "the timestamp at which the signature expires",
+              "r": "and @param vs are the elements of the ECDSA signature",
+              "staker": "the staker that the assets will be deposited on behalf of",
+              "strategy": "is the specified strategy where investment is to be made,",
+              "token": "is the denomination in which the investment is to be made,"
+            }
+          },
+          "getDeposits(address)": {
+            "returns": {
+              "_0": "(depositor's strategies, shares in these strategies)"
+            }
+          }
+        },
+        "version": 1
+      },
+      "userdoc": {
+        "kind": "user",
+        "methods": {
+          "DEPOSIT_TYPEHASH()": {
+            "notice": "The EIP-712 typehash for the deposit struct used by the contract"
+          },
+          "DOMAIN_SEPARATOR()": {
+            "notice": "EIP-712 Domain separator"
+          },
+          "DOMAIN_TYPEHASH()": {
+            "notice": "The EIP-712 typehash for the contract's domain"
+          },
+          "delegation()": {
+            "notice": "Returns the single, central Delegation contract of EigenLayer"
+          },
+          "depositIntoStrategy(address,address,uint256)": {
+            "notice": "Deposits `amount` of `token` into the specified `strategy`, with the resultant shares credited to `depositor`"
+          },
+          "depositIntoStrategyOnBehalfOf(address,address,uint256,address,uint256,bytes32,bytes32)": {
+            "notice": "Used for investing an asset into the specified strategy with the resultant shared created to `staker`, who must sign off on the action"
+          },
+          "getDeposits(address)": {
+            "notice": "Get all details on the depositor's investments and corresponding shares"
+          },
+          "investorStratShares(address,address)": {
+            "notice": "Returns the current shares of `user` in `strategy`"
+          },
+          "investorStratsLength(address)": {
+            "notice": "Simple getter function that returns `investorStrats[staker].length`."
+          }
+        },
+        "version": 1
+      }
+    },
+    "settings": {
+      "remappings": [
+        ":@eigenlayer/=../eignlayr-contracts/src/",
+        ":@openzeppelin-upgrades/=lib/openzeppelin-contracts-upgradeable/",
+        ":@openzeppelin/=lib/openzeppelin-contracts/",
+        ":ds-test/=lib/eignlayr-contracts/lib/ds-test/src/",
+        ":eignlayr-contracts/=lib/eignlayr-contracts/src/",
+        ":forge-std/=lib/forge-std/src/",
+        ":openzeppelin-contracts-upgradeable/=lib/eignlayr-contracts/lib/openzeppelin-contracts-upgradeable/",
+        ":openzeppelin-contracts/=lib/eignlayr-contracts/lib/openzeppelin-contracts/contracts/"
+      ],
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "metadata": {
+        "bytecodeHash": "ipfs"
+      },
+      "compilationTarget": {
+        "/Users/dl00038ml/PKG/projects/blockChain/e_Tools/rde/mantle/datalayr/contracts/eignlayr-contracts/src/contracts/core/InvestmentManagerStorage.sol": "InvestmentManagerStorage"
+      },
+      "libraries": {}
+    },
+    "sources": {
+      "/Users/dl00038ml/PKG/projects/blockChain/e_Tools/rde/mantle/datalayr/contracts/eignlayr-contracts/src/contracts/core/InvestmentManagerStorage.sol": {
+        "keccak256": "0x70d9b59280ed75693f9ed31f66cd2ad9e6caee82cf2b22be0b8d1d2b54fab461",
+        "urls": [
+          "bzz-raw://e5e8f2342ab8daf8d69f7612597330230f26f01933dcfd14c8faaee0bc70497b",
+          "dweb:/ipfs/QmUfAjADZULFbNma48pSaCWik3UNB9p4aCMGt3mNGybLLW"
+        ],
+        "license": "UNLICENSED"
+      },
+      "/Users/dl00038ml/PKG/projects/blockChain/e_Tools/rde/mantle/datalayr/contracts/eignlayr-contracts/src/contracts/interfaces/IEigenLayrDelegation.sol": {
+        "keccak256": "0x9f11c0becde4111ac7d060dc11b9461888129076740cf78e07f292eefc92955e",
+        "urls": [
+          "bzz-raw://53bef92f10fd142e6b0af0f4f77a958c96ebea145492aa5328757e10fffd9c21",
+          "dweb:/ipfs/QmUHG67pTyGxu6whsk95JNwevDJ7ooQMyeNT4kfwJtEzU5"
+        ],
+        "license": "UNLICENSED"
+      },
+      "/Users/dl00038ml/PKG/projects/blockChain/e_Tools/rde/mantle/datalayr/contracts/eignlayr-contracts/src/contracts/interfaces/IInvestmentManager.sol": {
+        "keccak256": "0xed8f5ee05ffbedbfe649dc7547339b3bc118edfe02825074341b0c474f776100",
+        "urls": [
+          "bzz-raw://44e9b0705f113e63a867b59bc292c7d5287968017b39ade9ef4c2b90d7f7dd34",
+          "dweb:/ipfs/Qmc46ncEfH6wXKRz7zYKvkTGRhQSSDh6traUrttRFcP2tw"
+        ],
+        "license": "UNLICENSED"
+      },
+      "/Users/dl00038ml/PKG/projects/blockChain/e_Tools/rde/mantle/datalayr/contracts/eignlayr-contracts/src/contracts/interfaces/IInvestmentStrategy.sol": {
+        "keccak256": "0x69eb667cc856ee1fe783243b6db21a43a9dadd29bf6761727b334fca4366bceb",
+        "urls": [
+          "bzz-raw://224e8f6def4e53a1065f0c4ce26d8ffff15276944e2351753065aeb5bd265f52",
+          "dweb:/ipfs/QmSu8iUPCnwza4SdE5jVSZLnQjMRXJg3VAGc8pHqbaMLob"
+        ],
+        "license": "UNLICENSED"
+      },
+      "/Users/dl00038ml/PKG/projects/blockChain/e_Tools/rde/mantle/datalayr/contracts/eignlayr-contracts/src/contracts/interfaces/IServiceManager.sol": {
+        "keccak256": "0xded81693805764888f8d1daa8afb600969d4286f3d5ecfa92e99b9446b400ad4",
+        "urls": [
+          "bzz-raw://8e0d0704fa8e64543abce318eaf99c53f75215db76cf873e6a6311a4eb5274b2",
+          "dweb:/ipfs/Qmd96t8WrNFRY5fqsPtkCaz28j3mvZj3fpc4qp6xXe9wgb"
+        ],
+        "license": "UNLICENSED"
+      },
+      "lib/openzeppelin-contracts/contracts/token/ERC1155/IERC1155.sol": {
+        "keccak256": "0x6392f2cfe3a5ee802227fe7a2dfd47096d881aec89bddd214b35c5b46d3cd941",
+        "urls": [
+          "bzz-raw://bd9c47a375639888e726a99da718890ba16d17d7ad9eacb0ccc892d46d1b3ee0",
+          "dweb:/ipfs/Qmb41W5RUjy2sWg49A2rMnxekSeEk6SvGyJL5tyCCSr7un"
+        ],
+        "license": "MIT"
+      },
+      "lib/openzeppelin-contracts/contracts/token/ERC20/IERC20.sol": {
+        "keccak256": "0x9750c6b834f7b43000631af5cc30001c5f547b3ceb3635488f140f60e897ea6b",
+        "urls": [
+          "bzz-raw://5a7d5b1ef5d8d5889ad2ed89d8619c09383b80b72ab226e0fe7bde1636481e34",
+          "dweb:/ipfs/QmebXWgtEfumQGBdVeM6c71McLixYXQP5Bk6kKXuoY4Bmr"
+        ],
+        "license": "MIT"
+      },
+      "lib/openzeppelin-contracts/contracts/utils/introspection/IERC165.sol": {
+        "keccak256": "0x447a5f3ddc18419d41ff92b3773fb86471b1db25773e07f877f548918a185bf1",
+        "urls": [
+          "bzz-raw://be161e54f24e5c6fae81a12db1a8ae87bc5ae1b0ddc805d82a1440a68455088f",
+          "dweb:/ipfs/QmP7C3CHdY9urF4dEMb9wmsp1wMxHF6nhA2yQE5SKiPAdy"
+        ],
+        "license": "MIT"
+      }
+    },
+    "version": 1
+  },
+  "ast": {
+    "absolutePath": "/Users/dl00038ml/PKG/projects/blockChain/e_Tools/rde/mantle/datalayr/contracts/eignlayr-contracts/src/contracts/core/InvestmentManagerStorage.sol",
+    "id": 7062,
+    "exportedSymbols": {
+      "IERC1155": [
+        40198
+      ],
+      "IERC165": [
+        42238
+      ],
+      "IERC20": [
+        40863
+      ],
+      "IEigenLayrDelegation": [
+        7256
+      ],
+      "IInvestmentManager": [
+        7364
+      ],
+      "IInvestmentStrategy": [
+        7458
+      ],
+      "IServiceManager": [
+        7740
+      ],
+      "InvestmentManagerStorage": [
+        7061
+      ]
+    },
+    "nodeType": "SourceUnit",
+    "src": "39:1904:38",
+    "nodes": [
+      {
+        "id": 7000,
+        "nodeType": "PragmaDirective",
+        "src": "39:23:38",
+        "nodes": [],
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".9"
+        ]
+      },
+      {
+        "id": 7001,
+        "nodeType": "ImportDirective",
+        "src": "64:60:38",
+        "nodes": [],
+        "absolutePath": "lib/openzeppelin-contracts/contracts/token/ERC1155/IERC1155.sol",
+        "file": "@openzeppelin/contracts/token/ERC1155/IERC1155.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 7062,
+        "sourceUnit": 40199,
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "id": 7002,
+        "nodeType": "ImportDirective",
+        "src": "125:46:38",
+        "nodes": [],
+        "absolutePath": "/Users/dl00038ml/PKG/projects/blockChain/e_Tools/rde/mantle/datalayr/contracts/eignlayr-contracts/src/contracts/interfaces/IInvestmentManager.sol",
+        "file": "../interfaces/IInvestmentManager.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 7062,
+        "sourceUnit": 7365,
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "id": 7003,
+        "nodeType": "ImportDirective",
+        "src": "172:47:38",
+        "nodes": [],
+        "absolutePath": "/Users/dl00038ml/PKG/projects/blockChain/e_Tools/rde/mantle/datalayr/contracts/eignlayr-contracts/src/contracts/interfaces/IInvestmentStrategy.sol",
+        "file": "../interfaces/IInvestmentStrategy.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 7062,
+        "sourceUnit": 7459,
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "id": 7004,
+        "nodeType": "ImportDirective",
+        "src": "220:48:38",
+        "nodes": [],
+        "absolutePath": "/Users/dl00038ml/PKG/projects/blockChain/e_Tools/rde/mantle/datalayr/contracts/eignlayr-contracts/src/contracts/interfaces/IEigenLayrDelegation.sol",
+        "file": "../interfaces/IEigenLayrDelegation.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 7062,
+        "sourceUnit": 7257,
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "id": 7061,
+        "nodeType": "ContractDefinition",
+        "src": "464:1478:38",
+        "nodes": [
+          {
+            "id": 7013,
+            "nodeType": "VariableDeclaration",
+            "src": "598:130:38",
+            "nodes": [],
+            "constant": true,
+            "documentation": {
+              "id": 7008,
+              "nodeType": "StructuredDocumentation",
+              "src": "535:58:38",
+              "text": "@notice The EIP-712 typehash for the contract's domain"
+            },
+            "functionSelector": "20606b70",
+            "mutability": "constant",
+            "name": "DOMAIN_TYPEHASH",
+            "nameLocation": "622:15:38",
+            "scope": 7061,
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_bytes32",
+              "typeString": "bytes32"
+            },
+            "typeName": {
+              "id": 7009,
+              "name": "bytes32",
+              "nodeType": "ElementaryTypeName",
+              "src": "598:7:38",
+              "typeDescriptions": {
+                "typeIdentifier": "t_bytes32",
+                "typeString": "bytes32"
+              }
+            },
+            "value": {
+              "arguments": [
+                {
+                  "hexValue": "454950373132446f6d61696e28737472696e67206e616d652c75696e7432353620636861696e49642c6164647265737320766572696679696e67436f6e747261637429",
+                  "id": 7011,
+                  "isConstant": false,
+                  "isLValue": false,
+                  "isPure": true,
+                  "kind": "string",
+                  "lValueRequested": false,
+                  "nodeType": "Literal",
+                  "src": "658:69:38",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_stringliteral_8cad95687ba82c2ce50e74f7b754645e5117c3a5bec8151c0726d5857980a866",
+                    "typeString": "literal_string \"EIP712Domain(string name,uint256 chainId,address verifyingContract)\""
+                  },
+                  "value": "EIP712Domain(string name,uint256 chainId,address verifyingContract)"
+                }
+              ],
+              "expression": {
+                "argumentTypes": [
+                  {
+                    "typeIdentifier": "t_stringliteral_8cad95687ba82c2ce50e74f7b754645e5117c3a5bec8151c0726d5857980a866",
+                    "typeString": "literal_string \"EIP712Domain(string name,uint256 chainId,address verifyingContract)\""
+                  }
+                ],
+                "id": 7010,
+                "name": "keccak256",
+                "nodeType": "Identifier",
+                "overloadedDeclarations": [],
+                "referencedDeclaration": -8,
+                "src": "648:9:38",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_function_keccak256_pure$_t_bytes_memory_ptr_$returns$_t_bytes32_$",
+                  "typeString": "function (bytes memory) pure returns (bytes32)"
+                }
+              },
+              "id": 7012,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "kind": "functionCall",
+              "lValueRequested": false,
+              "names": [],
+              "nodeType": "FunctionCall",
+              "src": "648:80:38",
+              "tryCall": false,
+              "typeDescriptions": {
+                "typeIdentifier": "t_bytes32",
+                "typeString": "bytes32"
+              }
+            },
+            "visibility": "public"
+          },
+          {
+            "id": 7019,
+            "nodeType": "VariableDeclaration",
+            "src": "815:147:38",
+            "nodes": [],
+            "constant": true,
+            "documentation": {
+              "id": 7014,
+              "nodeType": "StructuredDocumentation",
+              "src": "734:76:38",
+              "text": "@notice The EIP-712 typehash for the deposit struct used by the contract"
+            },
+            "functionSelector": "48825e94",
+            "mutability": "constant",
+            "name": "DEPOSIT_TYPEHASH",
+            "nameLocation": "839:16:38",
+            "scope": 7061,
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_bytes32",
+              "typeString": "bytes32"
+            },
+            "typeName": {
+              "id": 7015,
+              "name": "bytes32",
+              "nodeType": "ElementaryTypeName",
+              "src": "815:7:38",
+              "typeDescriptions": {
+                "typeIdentifier": "t_bytes32",
+                "typeString": "bytes32"
+              }
+            },
+            "value": {
+              "arguments": [
+                {
+                  "hexValue": "4465706f73697428616464726573732073747261746567792c6164647265737320746f6b656e2c75696e7432353620616d6f756e742c75696e74323536206e6f6e63652c75696e743235362065787069727929",
+                  "id": 7017,
+                  "isConstant": false,
+                  "isLValue": false,
+                  "isPure": true,
+                  "kind": "string",
+                  "lValueRequested": false,
+                  "nodeType": "Literal",
+                  "src": "876:85:38",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_stringliteral_0a564d4cfe5cb0d4ee082aab2ca54b8c48e129485a8f7c77766ab5ef0c3566f1",
+                    "typeString": "literal_string \"Deposit(address strategy,address token,uint256 amount,uint256 nonce,uint256 expiry)\""
+                  },
+                  "value": "Deposit(address strategy,address token,uint256 amount,uint256 nonce,uint256 expiry)"
+                }
+              ],
+              "expression": {
+                "argumentTypes": [
+                  {
+                    "typeIdentifier": "t_stringliteral_0a564d4cfe5cb0d4ee082aab2ca54b8c48e129485a8f7c77766ab5ef0c3566f1",
+                    "typeString": "literal_string \"Deposit(address strategy,address token,uint256 amount,uint256 nonce,uint256 expiry)\""
+                  }
+                ],
+                "id": 7016,
+                "name": "keccak256",
+                "nodeType": "Identifier",
+                "overloadedDeclarations": [],
+                "referencedDeclaration": -8,
+                "src": "866:9:38",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_function_keccak256_pure$_t_bytes_memory_ptr_$returns$_t_bytes32_$",
+                  "typeString": "function (bytes memory) pure returns (bytes32)"
+                }
+              },
+              "id": 7018,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "kind": "functionCall",
+              "lValueRequested": false,
+              "names": [],
+              "nodeType": "FunctionCall",
+              "src": "866:96:38",
+              "tryCall": false,
+              "typeDescriptions": {
+                "typeIdentifier": "t_bytes32",
+                "typeString": "bytes32"
+              }
+            },
+            "visibility": "public"
+          },
+          {
+            "id": 7022,
+            "nodeType": "VariableDeclaration",
+            "src": "1009:31:38",
+            "nodes": [],
+            "constant": false,
+            "documentation": {
+              "id": 7020,
+              "nodeType": "StructuredDocumentation",
+              "src": "968:36:38",
+              "text": "@notice EIP-712 Domain separator"
+            },
+            "functionSelector": "3644e515",
+            "mutability": "mutable",
+            "name": "DOMAIN_SEPARATOR",
+            "nameLocation": "1024:16:38",
+            "scope": 7061,
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_bytes32",
+              "typeString": "bytes32"
+            },
+            "typeName": {
+              "id": 7021,
+              "name": "bytes32",
+              "nodeType": "ElementaryTypeName",
+              "src": "1009:7:38",
+              "typeDescriptions": {
+                "typeIdentifier": "t_bytes32",
+                "typeString": "bytes32"
+              }
+            },
+            "visibility": "public"
+          },
+          {
+            "id": 7026,
+            "nodeType": "VariableDeclaration",
+            "src": "1134:41:38",
+            "nodes": [],
+            "constant": false,
+            "functionSelector": "7ecebe00",
+            "mutability": "mutable",
+            "name": "nonces",
+            "nameLocation": "1169:6:38",
+            "scope": 7061,
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_mapping$_t_address_$_t_uint256_$",
+              "typeString": "mapping(address => uint256)"
+            },
+            "typeName": {
+              "id": 7025,
+              "keyType": {
+                "id": 7023,
+                "name": "address",
+                "nodeType": "ElementaryTypeName",
+                "src": "1142:7:38",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_address",
+                  "typeString": "address"
+                }
+              },
+              "nodeType": "Mapping",
+              "src": "1134:27:38",
+              "typeDescriptions": {
+                "typeIdentifier": "t_mapping$_t_address_$_t_uint256_$",
+                "typeString": "mapping(address => uint256)"
+              },
+              "valueType": {
+                "id": 7024,
+                "name": "uint256",
+                "nodeType": "ElementaryTypeName",
+                "src": "1153:7:38",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                }
+              }
+            },
+            "visibility": "public"
+          },
+          {
+            "id": 7029,
+            "nodeType": "VariableDeclaration",
+            "src": "1269:55:38",
+            "nodes": [],
+            "constant": true,
+            "mutability": "constant",
+            "name": "MAX_INVESTOR_STRATS_LENGTH",
+            "nameLocation": "1293:26:38",
+            "scope": 7061,
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint8",
+              "typeString": "uint8"
+            },
+            "typeName": {
+              "id": 7027,
+              "name": "uint8",
+              "nodeType": "ElementaryTypeName",
+              "src": "1269:5:38",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint8",
+                "typeString": "uint8"
+              }
+            },
+            "value": {
+              "hexValue": "3332",
+              "id": 7028,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "kind": "number",
+              "lValueRequested": false,
+              "nodeType": "Literal",
+              "src": "1322:2:38",
+              "typeDescriptions": {
+                "typeIdentifier": "t_rational_32_by_1",
+                "typeString": "int_const 32"
+              },
+              "value": "32"
+            },
+            "visibility": "internal"
+          },
+          {
+            "id": 7032,
+            "nodeType": "VariableDeclaration",
+            "src": "1355:48:38",
+            "nodes": [],
+            "baseFunctions": [
+              7363
+            ],
+            "constant": false,
+            "functionSelector": "df5cf723",
+            "mutability": "immutable",
+            "name": "delegation",
+            "nameLocation": "1393:10:38",
+            "scope": 7061,
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_contract$_IEigenLayrDelegation_$7256",
+              "typeString": "contract IEigenLayrDelegation"
+            },
+            "typeName": {
+              "id": 7031,
+              "nodeType": "UserDefinedTypeName",
+              "pathNode": {
+                "id": 7030,
+                "name": "IEigenLayrDelegation",
+                "nodeType": "IdentifierPath",
+                "referencedDeclaration": 7256,
+                "src": "1355:20:38"
+              },
+              "referencedDeclaration": 7256,
+              "src": "1355:20:38",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_IEigenLayrDelegation_$7256",
+                "typeString": "contract IEigenLayrDelegation"
+              }
+            },
+            "visibility": "public"
+          },
+          {
+            "id": 7039,
+            "nodeType": "VariableDeclaration",
+            "src": "1492:86:38",
+            "nodes": [],
+            "baseFunctions": [
+              7335
+            ],
+            "constant": false,
+            "functionSelector": "6be2343f",
+            "mutability": "mutable",
+            "name": "investorStratShares",
+            "nameLocation": "1559:19:38",
+            "scope": 7061,
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_mapping$_t_address_$_t_mapping$_t_contract$_IInvestmentStrategy_$7458_$_t_uint256_$_$",
+              "typeString": "mapping(address => mapping(contract IInvestmentStrategy => uint256))"
+            },
+            "typeName": {
+              "id": 7038,
+              "keyType": {
+                "id": 7033,
+                "name": "address",
+                "nodeType": "ElementaryTypeName",
+                "src": "1500:7:38",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_address",
+                  "typeString": "address"
+                }
+              },
+              "nodeType": "Mapping",
+              "src": "1492:59:38",
+              "typeDescriptions": {
+                "typeIdentifier": "t_mapping$_t_address_$_t_mapping$_t_contract$_IInvestmentStrategy_$7458_$_t_uint256_$_$",
+                "typeString": "mapping(address => mapping(contract IInvestmentStrategy => uint256))"
+              },
+              "valueType": {
+                "id": 7037,
+                "keyType": {
+                  "id": 7035,
+                  "nodeType": "UserDefinedTypeName",
+                  "pathNode": {
+                    "id": 7034,
+                    "name": "IInvestmentStrategy",
+                    "nodeType": "IdentifierPath",
+                    "referencedDeclaration": 7458,
+                    "src": "1519:19:38"
+                  },
+                  "referencedDeclaration": 7458,
+                  "src": "1519:19:38",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_contract$_IInvestmentStrategy_$7458",
+                    "typeString": "contract IInvestmentStrategy"
+                  }
+                },
+                "nodeType": "Mapping",
+                "src": "1511:39:38",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_mapping$_t_contract$_IInvestmentStrategy_$7458_$_t_uint256_$",
+                  "typeString": "mapping(contract IInvestmentStrategy => uint256)"
+                },
+                "valueType": {
+                  "id": 7036,
+                  "name": "uint256",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "1542:7:38",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                }
+              }
+            },
+            "visibility": "public"
+          },
+          {
+            "id": 7045,
+            "nodeType": "VariableDeclaration",
+            "src": "1655:63:38",
+            "nodes": [],
+            "constant": false,
+            "functionSelector": "c377b906",
+            "mutability": "mutable",
+            "name": "investorStrats",
+            "nameLocation": "1704:14:38",
+            "scope": 7061,
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_mapping$_t_address_$_t_array$_t_contract$_IInvestmentStrategy_$7458_$dyn_storage_$",
+              "typeString": "mapping(address => contract IInvestmentStrategy[])"
+            },
+            "typeName": {
+              "id": 7044,
+              "keyType": {
+                "id": 7040,
+                "name": "address",
+                "nodeType": "ElementaryTypeName",
+                "src": "1663:7:38",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_address",
+                  "typeString": "address"
+                }
+              },
+              "nodeType": "Mapping",
+              "src": "1655:41:38",
+              "typeDescriptions": {
+                "typeIdentifier": "t_mapping$_t_address_$_t_array$_t_contract$_IInvestmentStrategy_$7458_$dyn_storage_$",
+                "typeString": "mapping(address => contract IInvestmentStrategy[])"
+              },
+              "valueType": {
+                "baseType": {
+                  "id": 7042,
+                  "nodeType": "UserDefinedTypeName",
+                  "pathNode": {
+                    "id": 7041,
+                    "name": "IInvestmentStrategy",
+                    "nodeType": "IdentifierPath",
+                    "referencedDeclaration": 7458,
+                    "src": "1674:19:38"
+                  },
+                  "referencedDeclaration": 7458,
+                  "src": "1674:19:38",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_contract$_IInvestmentStrategy_$7458",
+                    "typeString": "contract IInvestmentStrategy"
+                  }
+                },
+                "id": 7043,
+                "nodeType": "ArrayTypeName",
+                "src": "1674:21:38",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_array$_t_contract$_IInvestmentStrategy_$7458_$dyn_storage_ptr",
+                  "typeString": "contract IInvestmentStrategy[]"
+                }
+              }
+            },
+            "visibility": "public"
+          },
+          {
+            "id": 7049,
+            "nodeType": "VariableDeclaration",
+            "src": "1788:58:38",
+            "nodes": [],
+            "constant": false,
+            "functionSelector": "d80b3f6e",
+            "mutability": "mutable",
+            "name": "delegatorWithdrawWhiteList",
+            "nameLocation": "1820:26:38",
+            "scope": 7061,
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_mapping$_t_address_$_t_bool_$",
+              "typeString": "mapping(address => bool)"
+            },
+            "typeName": {
+              "id": 7048,
+              "keyType": {
+                "id": 7046,
+                "name": "address",
+                "nodeType": "ElementaryTypeName",
+                "src": "1796:7:38",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_address",
+                  "typeString": "address"
+                }
+              },
+              "nodeType": "Mapping",
+              "src": "1788:24:38",
+              "typeDescriptions": {
+                "typeIdentifier": "t_mapping$_t_address_$_t_bool_$",
+                "typeString": "mapping(address => bool)"
+              },
+              "valueType": {
+                "id": 7047,
+                "name": "bool",
+                "nodeType": "ElementaryTypeName",
+                "src": "1807:4:38",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_bool",
+                  "typeString": "bool"
+                }
+              }
+            },
+            "visibility": "public"
+          },
+          {
+            "id": 7060,
+            "nodeType": "FunctionDefinition",
+            "src": "1853:87:38",
+            "nodes": [],
+            "body": {
+              "id": 7059,
+              "nodeType": "Block",
+              "src": "1899:41:38",
+              "nodes": [],
+              "statements": [
+                {
+                  "expression": {
+                    "id": 7057,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "id": 7055,
+                      "name": "delegation",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 7032,
+                      "src": "1909:10:38",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_contract$_IEigenLayrDelegation_$7256",
+                        "typeString": "contract IEigenLayrDelegation"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "id": 7056,
+                      "name": "_delegation",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 7052,
+                      "src": "1922:11:38",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_contract$_IEigenLayrDelegation_$7256",
+                        "typeString": "contract IEigenLayrDelegation"
+                      }
+                    },
+                    "src": "1909:24:38",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_IEigenLayrDelegation_$7256",
+                      "typeString": "contract IEigenLayrDelegation"
+                    }
+                  },
+                  "id": 7058,
+                  "nodeType": "ExpressionStatement",
+                  "src": "1909:24:38"
+                }
+              ]
+            },
+            "implemented": true,
+            "kind": "constructor",
+            "modifiers": [],
+            "name": "",
+            "nameLocation": "-1:-1:-1",
+            "parameters": {
+              "id": 7053,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 7052,
+                  "mutability": "mutable",
+                  "name": "_delegation",
+                  "nameLocation": "1886:11:38",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 7060,
+                  "src": "1865:32:38",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_contract$_IEigenLayrDelegation_$7256",
+                    "typeString": "contract IEigenLayrDelegation"
+                  },
+                  "typeName": {
+                    "id": 7051,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 7050,
+                      "name": "IEigenLayrDelegation",
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 7256,
+                      "src": "1865:20:38"
+                    },
+                    "referencedDeclaration": 7256,
+                    "src": "1865:20:38",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_IEigenLayrDelegation_$7256",
+                      "typeString": "contract IEigenLayrDelegation"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1864:34:38"
+            },
+            "returnParameters": {
+              "id": 7054,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1899:0:38"
+            },
+            "scope": 7061,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "internal"
+          }
+        ],
+        "abstract": true,
+        "baseContracts": [
+          {
+            "baseName": {
+              "id": 7006,
+              "name": "IInvestmentManager",
+              "nodeType": "IdentifierPath",
+              "referencedDeclaration": 7364,
+              "src": "510:18:38"
+            },
+            "id": 7007,
+            "nodeType": "InheritanceSpecifier",
+            "src": "510:18:38"
+          }
+        ],
+        "canonicalName": "InvestmentManagerStorage",
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": {
+          "id": 7005,
+          "nodeType": "StructuredDocumentation",
+          "src": "270:193:38",
+          "text": " @title Storage variables for the `InvestmentManager` contract.\n @author Layr Labs, Inc.\n @notice This storage contract is separate from the logic to simplify the upgrade process."
+        },
+        "fullyImplemented": false,
+        "linearizedBaseContracts": [
+          7061,
+          7364
+        ],
+        "name": "InvestmentManagerStorage",
+        "nameLocation": "482:24:38",
+        "scope": 7062,
+        "usedErrors": []
+      }
+    ],
+    "license": "UNLICENSED"
+  },
+  "id": 38
+}

@@ -1,0 +1,159 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_blockInitiationVerifier",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_blockFinalizationVerifier",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_interTxVerifier",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_stackOpVerifier",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_environmentalOpVerifier",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_memoryOpVerifier",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_storageOpVerifier",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_callOpVerifier",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_invalidOpVerifier",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "sequencerAddress",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "timestamp",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "number",
+        "type": "uint256"
+      },
+      {
+        "internalType": "address",
+        "name": "origin",
+        "type": "address"
+      },
+      {
+        "internalType": "bytes32",
+        "name": "txHash",
+        "type": "bytes32"
+      },
+      {
+        "components": [
+          {
+            "internalType": "uint64",
+            "name": "nonce",
+            "type": "uint64"
+          },
+          {
+            "internalType": "uint256",
+            "name": "gasPrice",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint64",
+            "name": "gas",
+            "type": "uint64"
+          },
+          {
+            "internalType": "address",
+            "name": "to",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "value",
+            "type": "uint256"
+          },
+          {
+            "internalType": "bytes",
+            "name": "data",
+            "type": "bytes"
+          },
+          {
+            "internalType": "uint256",
+            "name": "v",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "r",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "s",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct EVMTypesLib.Transaction",
+        "name": "transaction",
+        "type": "tuple"
+      },
+      {
+        "internalType": "uint8",
+        "name": "verifier",
+        "type": "uint8"
+      },
+      {
+        "internalType": "bytes32",
+        "name": "currStateHash",
+        "type": "bytes32"
+      },
+      {
+        "internalType": "bytes",
+        "name": "proof",
+        "type": "bytes"
+      }
+    ],
+    "name": "verifyProof",
+    "outputs": [
+      {
+        "internalType": "bytes32",
+        "name": "",
+        "type": "bytes32"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  }
+]

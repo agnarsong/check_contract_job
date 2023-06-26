@@ -1,0 +1,2045 @@
+{
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_pauser",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "_unpauser",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "address",
+          "name": "previousPauser",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "address",
+          "name": "newPauser",
+          "type": "address"
+        }
+      ],
+      "name": "PauserChanged",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "address",
+          "name": "previousUnpauser",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "address",
+          "name": "newUnpauser",
+          "type": "address"
+        }
+      ],
+      "name": "UnpauserChanged",
+      "type": "event"
+    },
+    {
+      "inputs": [],
+      "name": "pauser",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "newPauser",
+          "type": "address"
+        }
+      ],
+      "name": "setPauser",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "newUnpauser",
+          "type": "address"
+        }
+      ],
+      "name": "setUnpauser",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "unpauser",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "bytecode": {
+    "object": "0x608060405234801561001057600080fd5b506040516105e03803806105e083398101604081905261002f91610215565b61003882610048565b61004181610122565b5050610248565b6001600160a01b0381166100b95760405162461bcd60e51b815260206004820152602d60248201527f50617573657252656769737472792e5f7365745061757365723a207a65726f2060448201526c1859191c995cdcc81a5b9c1d5d609a1b60648201526084015b60405180910390fd5b600054604080516001600160a01b03928316815291831660208301527f95bb211a5a393c4d30c3edc9a745825fba4e6ad3e3bb949e6bf8ccdfe431a811910160405180910390a1600080546001600160a01b0319166001600160a01b0392909216919091179055565b6001600160a01b0381166101905760405162461bcd60e51b815260206004820152602f60248201527f50617573657252656769737472792e5f736574556e7061757365723a207a657260448201526e1bc81859191c995cdcc81a5b9c1d5d608a1b60648201526084016100b0565b600154604080516001600160a01b03928316815291831660208301527f06b4167a2528887a1e97a366eefe8549bfbf1ea3e6ac81cb2564a934d20e8892910160405180910390a1600180546001600160a01b0319166001600160a01b0392909216919091179055565b80516001600160a01b038116811461021057600080fd5b919050565b6000806040838503121561022857600080fd5b610231836101f9565b915061023f602084016101f9565b90509250929050565b610389806102576000396000f3fe608060405234801561001057600080fd5b506004361061004c5760003560e01c80632d88af4a146100515780639fd0506d14610066578063ce54842814610095578063eab66d7a146100a8575b600080fd5b61006461005f3660046102d9565b6100bb565b005b600054610079906001600160a01b031681565b6040516001600160a01b03909116815260200160405180910390f35b6100646100a33660046102d9565b6100fa565b600154610079906001600160a01b031681565b6001546001600160a01b031633146100ee5760405162461bcd60e51b81526004016100e590610309565b60405180910390fd5b6100f78161012d565b50565b6001546001600160a01b031633146101245760405162461bcd60e51b81526004016100e590610309565b6100f781610202565b6001600160a01b0381166101995760405162461bcd60e51b815260206004820152602d60248201527f50617573657252656769737472792e5f7365745061757365723a207a65726f2060448201526c1859191c995cdcc81a5b9c1d5d609a1b60648201526084016100e5565b600054604080516001600160a01b03928316815291831660208301527f95bb211a5a393c4d30c3edc9a745825fba4e6ad3e3bb949e6bf8ccdfe431a811910160405180910390a1600080546001600160a01b0319166001600160a01b0392909216919091179055565b6001600160a01b0381166102705760405162461bcd60e51b815260206004820152602f60248201527f50617573657252656769737472792e5f736574556e7061757365723a207a657260448201526e1bc81859191c995cdcc81a5b9c1d5d608a1b60648201526084016100e5565b600154604080516001600160a01b03928316815291831660208301527f06b4167a2528887a1e97a366eefe8549bfbf1ea3e6ac81cb2564a934d20e8892910160405180910390a1600180546001600160a01b0319166001600160a01b0392909216919091179055565b6000602082840312156102eb57600080fd5b81356001600160a01b038116811461030257600080fd5b9392505050565b6020808252602a908201527f6d73672e73656e646572206973206e6f74207065726d697373696f6e6564206160408201526939903ab73830bab9b2b960b11b60608201526080019056fea2646970667358221220875e3ab33f449dfe21ff2406a6e6221499b1282ee2208ecf9406c0781c39457164736f6c634300080c0033",
+    "sourceMap": "220:1824:76:-:0;;;917:117;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;975:19;986:7;975:10;:19::i;:::-;1004:23;1017:9;1004:12;:23::i;:::-;917:117;;220:1824;;1576:221;-1:-1:-1;;;;;1642:23:76;;1634:81;;;;-1:-1:-1;;;1634:81:76;;696:2:96;1634:81:76;;;678:21:96;735:2;715:18;;;708:30;774:34;754:18;;;747:62;-1:-1:-1;;;825:18:96;;;818:43;878:19;;1634:81:76;;;;;;;;;1744:6;;1730:32;;;-1:-1:-1;;;;;1744:6:76;;;1120:34:96;;1190:15;;;1185:2;1170:18;;1163:43;1730:32:76;;1055:18:96;1730:32:76;;;;;;;1772:6;:18;;-1:-1:-1;;;;;;1772:18:76;-1:-1:-1;;;;;1772:18:76;;;;;;;;;;1576:221::o;1803:239::-;-1:-1:-1;;;;;1873:25:76;;1865:85;;;;-1:-1:-1;;;1865:85:76;;1419:2:96;1865:85:76;;;1401:21:96;1458:2;1438:18;;;1431:30;1497:34;1477:18;;;1470:62;-1:-1:-1;;;1548:18:96;;;1541:45;1603:19;;1865:85:76;1217:411:96;1865:85:76;1981:8;;1965:38;;;-1:-1:-1;;;;;1981:8:76;;;1120:34:96;;1190:15;;;1185:2;1170:18;;1163:43;1965:38:76;;1055:18:96;1965:38:76;;;;;;;2013:8;:22;;-1:-1:-1;;;;;;2013:22:76;-1:-1:-1;;;;;2013:22:76;;;;;;;;;;1803:239::o;14:177:96:-;93:13;;-1:-1:-1;;;;;135:31:96;;125:42;;115:70;;181:1;178;171:12;115:70;14:177;;;:::o;196:293::-;275:6;283;336:2;324:9;315:7;311:23;307:32;304:52;;;352:1;349;342:12;304:52;375:40;405:9;375:40;:::i;:::-;365:50;;434:49;479:2;468:9;464:18;434:49;:::i;:::-;424:59;;196:293;;;;;:::o;1217:411::-;220:1824:76;;;;;;",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x608060405234801561001057600080fd5b506004361061004c5760003560e01c80632d88af4a146100515780639fd0506d14610066578063ce54842814610095578063eab66d7a146100a8575b600080fd5b61006461005f3660046102d9565b6100bb565b005b600054610079906001600160a01b031681565b6040516001600160a01b03909116815260200160405180910390f35b6100646100a33660046102d9565b6100fa565b600154610079906001600160a01b031681565b6001546001600160a01b031633146100ee5760405162461bcd60e51b81526004016100e590610309565b60405180910390fd5b6100f78161012d565b50565b6001546001600160a01b031633146101245760405162461bcd60e51b81526004016100e590610309565b6100f781610202565b6001600160a01b0381166101995760405162461bcd60e51b815260206004820152602d60248201527f50617573657252656769737472792e5f7365745061757365723a207a65726f2060448201526c1859191c995cdcc81a5b9c1d5d609a1b60648201526084016100e5565b600054604080516001600160a01b03928316815291831660208301527f95bb211a5a393c4d30c3edc9a745825fba4e6ad3e3bb949e6bf8ccdfe431a811910160405180910390a1600080546001600160a01b0319166001600160a01b0392909216919091179055565b6001600160a01b0381166102705760405162461bcd60e51b815260206004820152602f60248201527f50617573657252656769737472792e5f736574556e7061757365723a207a657260448201526e1bc81859191c995cdcc81a5b9c1d5d608a1b60648201526084016100e5565b600154604080516001600160a01b03928316815291831660208301527f06b4167a2528887a1e97a366eefe8549bfbf1ea3e6ac81cb2564a934d20e8892910160405180910390a1600180546001600160a01b0319166001600160a01b0392909216919091179055565b6000602082840312156102eb57600080fd5b81356001600160a01b038116811461030257600080fd5b9392505050565b6020808252602a908201527f6d73672e73656e646572206973206e6f74207065726d697373696f6e6564206160408201526939903ab73830bab9b2b960b11b60608201526080019056fea2646970667358221220875e3ab33f449dfe21ff2406a6e6221499b1282ee2208ecf9406c0781c39457164736f6c634300080c0033",
+    "sourceMap": "220:1824:76:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1199:98;;;;;;:::i;:::-;;:::i;:::-;;328:21;;;;;-1:-1:-1;;;;;328:21:76;;;;;;-1:-1:-1;;;;;469:32:96;;;451:51;;439:2;424:18;328:21:76;;;;;;;1464:106;;;;;;:::i;:::-;;:::i;479:23::-;;;;;-1:-1:-1;;;;;479:23:76;;;1199:98;838:8;;-1:-1:-1;;;;;838:8:76;824:10;:22;816:77;;;;-1:-1:-1;;;816:77:76;;;;;;;:::i;:::-;;;;;;;;;1269:21:::1;1280:9;1269:10;:21::i;:::-;1199:98:::0;:::o;1464:106::-;838:8;;-1:-1:-1;;;;;838:8:76;824:10;:22;816:77;;;;-1:-1:-1;;;816:77:76;;;;;;;:::i;:::-;1538:25:::1;1551:11;1538:12;:25::i;1576:221::-:0;-1:-1:-1;;;;;1642:23:76;;1634:81;;;;-1:-1:-1;;;1634:81:76;;1126:2:96;1634:81:76;;;1108:21:96;1165:2;1145:18;;;1138:30;1204:34;1184:18;;;1177:62;-1:-1:-1;;;1255:18:96;;;1248:43;1308:19;;1634:81:76;924:409:96;1634:81:76;1744:6;;1730:32;;;-1:-1:-1;;;;;1744:6:76;;;1550:34:96;;1620:15;;;1615:2;1600:18;;1593:43;1730:32:76;;1485:18:96;1730:32:76;;;;;;;1772:6;:18;;-1:-1:-1;;;;;;1772:18:76;-1:-1:-1;;;;;1772:18:76;;;;;;;;;;1576:221::o;1803:239::-;-1:-1:-1;;;;;1873:25:76;;1865:85;;;;-1:-1:-1;;;1865:85:76;;1849:2:96;1865:85:76;;;1831:21:96;1888:2;1868:18;;;1861:30;1927:34;1907:18;;;1900:62;-1:-1:-1;;;1978:18:96;;;1971:45;2033:19;;1865:85:76;1647:411:96;1865:85:76;1981:8;;1965:38;;;-1:-1:-1;;;;;1981:8:76;;;1550:34:96;;1620:15;;;1615:2;1600:18;;1593:43;1965:38:76;;1485:18:96;1965:38:76;;;;;;;2013:8;:22;;-1:-1:-1;;;;;;2013:22:76;-1:-1:-1;;;;;2013:22:76;;;;;;;;;;1803:239::o;14:286:96:-;73:6;126:2;114:9;105:7;101:23;97:32;94:52;;;142:1;139;132:12;94:52;168:23;;-1:-1:-1;;;;;220:31:96;;210:42;;200:70;;266:1;263;256:12;200:70;289:5;14:286;-1:-1:-1;;;14:286:96:o;513:406::-;715:2;697:21;;;754:2;734:18;;;727:30;793:34;788:2;773:18;;766:62;-1:-1:-1;;;859:2:96;844:18;;837:40;909:3;894:19;;513:406::o",
+    "linkReferences": {}
+  },
+  "methodIdentifiers": {
+    "pauser()": "9fd0506d",
+    "setPauser(address)": "2d88af4a",
+    "setUnpauser(address)": "ce548428",
+    "unpauser()": "eab66d7a"
+  },
+  "rawMetadata": "{\"compiler\":{\"version\":\"0.8.12+commit.f00d7308\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_pauser\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"_unpauser\",\"type\":\"address\"}],\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"address\",\"name\":\"previousPauser\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"address\",\"name\":\"newPauser\",\"type\":\"address\"}],\"name\":\"PauserChanged\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"address\",\"name\":\"previousUnpauser\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"address\",\"name\":\"newUnpauser\",\"type\":\"address\"}],\"name\":\"UnpauserChanged\",\"type\":\"event\"},{\"inputs\":[],\"name\":\"pauser\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"newPauser\",\"type\":\"address\"}],\"name\":\"setPauser\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"newUnpauser\",\"type\":\"address\"}],\"name\":\"setUnpauser\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"unpauser\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"author\":\"Layr Labs, Inc.\",\"kind\":\"dev\",\"methods\":{},\"title\":\"Defines pauser & unpauser roles + modifiers to be used elsewhere.\",\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{\"pauser()\":{\"notice\":\"Unique address that holds the pauser role.\"},\"setPauser(address)\":{\"notice\":\"Sets new pauser - only callable by unpauser, as the unpauser is expected to be kept more secure, e.g. being a multisig with a higher threshold\"},\"setUnpauser(address)\":{\"notice\":\"Sets new unpauser - only callable by unpauser, as the unpauser is expected to be kept more secure, e.g. being a multisig with a higher threshold\"},\"unpauser()\":{\"notice\":\"Unique address that holds the unpauser role. Capable of changing *both* the pauser and unpauser addresses.\"}},\"version\":1}},\"settings\":{\"compilationTarget\":{\"src/contracts/permissions/PauserRegistry.sol\":\"PauserRegistry\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[\":@openzeppelin-upgrades/=lib/openzeppelin-contracts-upgradeable/\",\":@openzeppelin/=lib/openzeppelin-contracts/\",\":ds-test/=lib/ds-test/src/\",\":forge-std/=lib/forge-std/src/\",\":openzeppelin-contracts-upgradeable/=lib/openzeppelin-contracts-upgradeable/\",\":openzeppelin-contracts/=lib/openzeppelin-contracts/contracts/\"]},\"sources\":{\"src/contracts/interfaces/IPauserRegistry.sol\":{\"keccak256\":\"0xa74815553054d6feff0cbe94301e3b84127015ca419c256d9121569ccf4e5975\",\"license\":\"UNLICENSED\",\"urls\":[\"bzz-raw://b51815ca5271277622757aa7ca0e9ebdcb4fe47e62ef5b7ff9156d51fc60ad8c\",\"dweb:/ipfs/QmcfnujqU537GjYSmd7moKbVRn5AfhHTyhh7KXAAXbDyC3\"]},\"src/contracts/permissions/PauserRegistry.sol\":{\"keccak256\":\"0xa70cc8aea275bb1f8cc62a4b35bb61240449f029a20c2153f00daa2dccd11dbf\",\"license\":\"UNLICENSED\",\"urls\":[\"bzz-raw://f51a2a18a2d1480d156af786ea0701f519ef538f1c83bb9c822be7666a927434\",\"dweb:/ipfs/QmU9WjW1M4zHURmPp4iREbNA88R2Ga2YgEzkermuQSQq8M\"]}},\"version\":1}",
+  "metadata": {
+    "compiler": {
+      "version": "0.8.12+commit.f00d7308"
+    },
+    "language": "Solidity",
+    "output": {
+      "abi": [
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "_pauser",
+              "type": "address"
+            },
+            {
+              "internalType": "address",
+              "name": "_unpauser",
+              "type": "address"
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "constructor"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "previousPauser",
+              "type": "address",
+              "indexed": false
+            },
+            {
+              "internalType": "address",
+              "name": "newPauser",
+              "type": "address",
+              "indexed": false
+            }
+          ],
+          "type": "event",
+          "name": "PauserChanged",
+          "anonymous": false
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "previousUnpauser",
+              "type": "address",
+              "indexed": false
+            },
+            {
+              "internalType": "address",
+              "name": "newUnpauser",
+              "type": "address",
+              "indexed": false
+            }
+          ],
+          "type": "event",
+          "name": "UnpauserChanged",
+          "anonymous": false
+        },
+        {
+          "inputs": [],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "pauser",
+          "outputs": [
+            {
+              "internalType": "address",
+              "name": "",
+              "type": "address"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "newPauser",
+              "type": "address"
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "setPauser"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "newUnpauser",
+              "type": "address"
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "setUnpauser"
+        },
+        {
+          "inputs": [],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "unpauser",
+          "outputs": [
+            {
+              "internalType": "address",
+              "name": "",
+              "type": "address"
+            }
+          ]
+        }
+      ],
+      "devdoc": {
+        "kind": "dev",
+        "methods": {},
+        "version": 1
+      },
+      "userdoc": {
+        "kind": "user",
+        "methods": {
+          "pauser()": {
+            "notice": "Unique address that holds the pauser role."
+          },
+          "setPauser(address)": {
+            "notice": "Sets new pauser - only callable by unpauser, as the unpauser is expected to be kept more secure, e.g. being a multisig with a higher threshold"
+          },
+          "setUnpauser(address)": {
+            "notice": "Sets new unpauser - only callable by unpauser, as the unpauser is expected to be kept more secure, e.g. being a multisig with a higher threshold"
+          },
+          "unpauser()": {
+            "notice": "Unique address that holds the unpauser role. Capable of changing *both* the pauser and unpauser addresses."
+          }
+        },
+        "version": 1
+      }
+    },
+    "settings": {
+      "remappings": [
+        ":@openzeppelin-upgrades/=lib/openzeppelin-contracts-upgradeable/",
+        ":@openzeppelin/=lib/openzeppelin-contracts/",
+        ":ds-test/=lib/ds-test/src/",
+        ":forge-std/=lib/forge-std/src/",
+        ":openzeppelin-contracts-upgradeable/=lib/openzeppelin-contracts-upgradeable/",
+        ":openzeppelin-contracts/=lib/openzeppelin-contracts/contracts/"
+      ],
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "metadata": {
+        "bytecodeHash": "ipfs"
+      },
+      "compilationTarget": {
+        "src/contracts/permissions/PauserRegistry.sol": "PauserRegistry"
+      },
+      "libraries": {}
+    },
+    "sources": {
+      "src/contracts/interfaces/IPauserRegistry.sol": {
+        "keccak256": "0xa74815553054d6feff0cbe94301e3b84127015ca419c256d9121569ccf4e5975",
+        "urls": [
+          "bzz-raw://b51815ca5271277622757aa7ca0e9ebdcb4fe47e62ef5b7ff9156d51fc60ad8c",
+          "dweb:/ipfs/QmcfnujqU537GjYSmd7moKbVRn5AfhHTyhh7KXAAXbDyC3"
+        ],
+        "license": "UNLICENSED"
+      },
+      "src/contracts/permissions/PauserRegistry.sol": {
+        "keccak256": "0xa70cc8aea275bb1f8cc62a4b35bb61240449f029a20c2153f00daa2dccd11dbf",
+        "urls": [
+          "bzz-raw://f51a2a18a2d1480d156af786ea0701f519ef538f1c83bb9c822be7666a927434",
+          "dweb:/ipfs/QmU9WjW1M4zHURmPp4iREbNA88R2Ga2YgEzkermuQSQq8M"
+        ],
+        "license": "UNLICENSED"
+      }
+    },
+    "version": 1
+  },
+  "ast": {
+    "absolutePath": "src/contracts/permissions/PauserRegistry.sol",
+    "id": 37812,
+    "exportedSymbols": {
+      "IPauserRegistry": [
+        31195
+      ],
+      "PauserRegistry": [
+        37811
+      ]
+    },
+    "nodeType": "SourceUnit",
+    "src": "39:2006:76",
+    "nodes": [
+      {
+        "id": 37672,
+        "nodeType": "PragmaDirective",
+        "src": "39:23:76",
+        "nodes": [],
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".9"
+        ]
+      },
+      {
+        "id": 37673,
+        "nodeType": "ImportDirective",
+        "src": "64:43:76",
+        "nodes": [],
+        "absolutePath": "src/contracts/interfaces/IPauserRegistry.sol",
+        "file": "../interfaces/IPauserRegistry.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 37812,
+        "sourceUnit": 31196,
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "id": 37811,
+        "nodeType": "ContractDefinition",
+        "src": "220:1824:76",
+        "nodes": [
+          {
+            "id": 37679,
+            "nodeType": "VariableDeclaration",
+            "src": "328:21:76",
+            "nodes": [],
+            "baseFunctions": [
+              31188
+            ],
+            "constant": false,
+            "documentation": {
+              "id": 37677,
+              "nodeType": "StructuredDocumentation",
+              "src": "269:54:76",
+              "text": "@notice Unique address that holds the pauser role."
+            },
+            "functionSelector": "9fd0506d",
+            "mutability": "mutable",
+            "name": "pauser",
+            "nameLocation": "343:6:76",
+            "scope": 37811,
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_address",
+              "typeString": "address"
+            },
+            "typeName": {
+              "id": 37678,
+              "name": "address",
+              "nodeType": "ElementaryTypeName",
+              "src": "328:7:76",
+              "stateMutability": "nonpayable",
+              "typeDescriptions": {
+                "typeIdentifier": "t_address",
+                "typeString": "address"
+              }
+            },
+            "visibility": "public"
+          },
+          {
+            "id": 37682,
+            "nodeType": "VariableDeclaration",
+            "src": "479:23:76",
+            "nodes": [],
+            "baseFunctions": [
+              31194
+            ],
+            "constant": false,
+            "documentation": {
+              "id": 37680,
+              "nodeType": "StructuredDocumentation",
+              "src": "356:118:76",
+              "text": "@notice Unique address that holds the unpauser role. Capable of changing *both* the pauser and unpauser addresses."
+            },
+            "functionSelector": "eab66d7a",
+            "mutability": "mutable",
+            "name": "unpauser",
+            "nameLocation": "494:8:76",
+            "scope": 37811,
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_address",
+              "typeString": "address"
+            },
+            "typeName": {
+              "id": 37681,
+              "name": "address",
+              "nodeType": "ElementaryTypeName",
+              "src": "479:7:76",
+              "stateMutability": "nonpayable",
+              "typeDescriptions": {
+                "typeIdentifier": "t_address",
+                "typeString": "address"
+              }
+            },
+            "visibility": "public"
+          },
+          {
+            "id": 37688,
+            "nodeType": "EventDefinition",
+            "src": "509:63:76",
+            "nodes": [],
+            "anonymous": false,
+            "name": "PauserChanged",
+            "nameLocation": "515:13:76",
+            "parameters": {
+              "id": 37687,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 37684,
+                  "indexed": false,
+                  "mutability": "mutable",
+                  "name": "previousPauser",
+                  "nameLocation": "537:14:76",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 37688,
+                  "src": "529:22:76",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 37683,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "529:7:76",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 37686,
+                  "indexed": false,
+                  "mutability": "mutable",
+                  "name": "newPauser",
+                  "nameLocation": "561:9:76",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 37688,
+                  "src": "553:17:76",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 37685,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "553:7:76",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "528:43:76"
+            }
+          },
+          {
+            "id": 37694,
+            "nodeType": "EventDefinition",
+            "src": "578:69:76",
+            "nodes": [],
+            "anonymous": false,
+            "name": "UnpauserChanged",
+            "nameLocation": "584:15:76",
+            "parameters": {
+              "id": 37693,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 37690,
+                  "indexed": false,
+                  "mutability": "mutable",
+                  "name": "previousUnpauser",
+                  "nameLocation": "608:16:76",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 37694,
+                  "src": "600:24:76",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 37689,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "600:7:76",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 37692,
+                  "indexed": false,
+                  "mutability": "mutable",
+                  "name": "newUnpauser",
+                  "nameLocation": "634:11:76",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 37694,
+                  "src": "626:19:76",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 37691,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "626:7:76",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "599:47:76"
+            }
+          },
+          {
+            "id": 37706,
+            "nodeType": "ModifierDefinition",
+            "src": "653:123:76",
+            "nodes": [],
+            "body": {
+              "id": 37705,
+              "nodeType": "Block",
+              "src": "675:101:76",
+              "nodes": [],
+              "statements": [
+                {
+                  "expression": {
+                    "arguments": [
+                      {
+                        "commonType": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        },
+                        "id": 37700,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "leftExpression": {
+                          "expression": {
+                            "id": 37697,
+                            "name": "msg",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": -15,
+                            "src": "693:3:76",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_magic_message",
+                              "typeString": "msg"
+                            }
+                          },
+                          "id": 37698,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "memberName": "sender",
+                          "nodeType": "MemberAccess",
+                          "src": "693:10:76",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_address",
+                            "typeString": "address"
+                          }
+                        },
+                        "nodeType": "BinaryOperation",
+                        "operator": "==",
+                        "rightExpression": {
+                          "id": 37699,
+                          "name": "pauser",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 37679,
+                          "src": "707:6:76",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_address",
+                            "typeString": "address"
+                          }
+                        },
+                        "src": "693:20:76",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        }
+                      },
+                      {
+                        "hexValue": "6d73672e73656e646572206973206e6f74207065726d697373696f6e656420617320706175736572",
+                        "id": 37701,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "string",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "715:42:76",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_stringliteral_32e31a2b752f6feaa9d59a7f51508b88c70c96c3c570b94aaadcc2b7733de9d6",
+                          "typeString": "literal_string \"msg.sender is not permissioned as pauser\""
+                        },
+                        "value": "msg.sender is not permissioned as pauser"
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        },
+                        {
+                          "typeIdentifier": "t_stringliteral_32e31a2b752f6feaa9d59a7f51508b88c70c96c3c570b94aaadcc2b7733de9d6",
+                          "typeString": "literal_string \"msg.sender is not permissioned as pauser\""
+                        }
+                      ],
+                      "id": 37696,
+                      "name": "require",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [
+                        -18,
+                        -18
+                      ],
+                      "referencedDeclaration": -18,
+                      "src": "685:7:76",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
+                        "typeString": "function (bool,string memory) pure"
+                      }
+                    },
+                    "id": 37702,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "685:73:76",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 37703,
+                  "nodeType": "ExpressionStatement",
+                  "src": "685:73:76"
+                },
+                {
+                  "id": 37704,
+                  "nodeType": "PlaceholderStatement",
+                  "src": "768:1:76"
+                }
+              ]
+            },
+            "name": "onlyPauser",
+            "nameLocation": "662:10:76",
+            "parameters": {
+              "id": 37695,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "672:2:76"
+            },
+            "virtual": false,
+            "visibility": "internal"
+          },
+          {
+            "id": 37718,
+            "nodeType": "ModifierDefinition",
+            "src": "782:129:76",
+            "nodes": [],
+            "body": {
+              "id": 37717,
+              "nodeType": "Block",
+              "src": "806:105:76",
+              "nodes": [],
+              "statements": [
+                {
+                  "expression": {
+                    "arguments": [
+                      {
+                        "commonType": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        },
+                        "id": 37712,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "leftExpression": {
+                          "expression": {
+                            "id": 37709,
+                            "name": "msg",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": -15,
+                            "src": "824:3:76",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_magic_message",
+                              "typeString": "msg"
+                            }
+                          },
+                          "id": 37710,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "memberName": "sender",
+                          "nodeType": "MemberAccess",
+                          "src": "824:10:76",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_address",
+                            "typeString": "address"
+                          }
+                        },
+                        "nodeType": "BinaryOperation",
+                        "operator": "==",
+                        "rightExpression": {
+                          "id": 37711,
+                          "name": "unpauser",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 37682,
+                          "src": "838:8:76",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_address",
+                            "typeString": "address"
+                          }
+                        },
+                        "src": "824:22:76",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        }
+                      },
+                      {
+                        "hexValue": "6d73672e73656e646572206973206e6f74207065726d697373696f6e656420617320756e706175736572",
+                        "id": 37713,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "string",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "848:44:76",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_stringliteral_3ea890b3dbb9a78e0cb9fce3af7fa4df32bce8f7429615ea40e18d113f9f57fc",
+                          "typeString": "literal_string \"msg.sender is not permissioned as unpauser\""
+                        },
+                        "value": "msg.sender is not permissioned as unpauser"
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        },
+                        {
+                          "typeIdentifier": "t_stringliteral_3ea890b3dbb9a78e0cb9fce3af7fa4df32bce8f7429615ea40e18d113f9f57fc",
+                          "typeString": "literal_string \"msg.sender is not permissioned as unpauser\""
+                        }
+                      ],
+                      "id": 37708,
+                      "name": "require",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [
+                        -18,
+                        -18
+                      ],
+                      "referencedDeclaration": -18,
+                      "src": "816:7:76",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
+                        "typeString": "function (bool,string memory) pure"
+                      }
+                    },
+                    "id": 37714,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "816:77:76",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 37715,
+                  "nodeType": "ExpressionStatement",
+                  "src": "816:77:76"
+                },
+                {
+                  "id": 37716,
+                  "nodeType": "PlaceholderStatement",
+                  "src": "903:1:76"
+                }
+              ]
+            },
+            "name": "onlyUnpauser",
+            "nameLocation": "791:12:76",
+            "parameters": {
+              "id": 37707,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "803:2:76"
+            },
+            "virtual": false,
+            "visibility": "internal"
+          },
+          {
+            "id": 37734,
+            "nodeType": "FunctionDefinition",
+            "src": "917:117:76",
+            "nodes": [],
+            "body": {
+              "id": 37733,
+              "nodeType": "Block",
+              "src": "965:69:76",
+              "nodes": [],
+              "statements": [
+                {
+                  "expression": {
+                    "arguments": [
+                      {
+                        "id": 37726,
+                        "name": "_pauser",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 37720,
+                        "src": "986:7:76",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      ],
+                      "id": 37725,
+                      "name": "_setPauser",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 37785,
+                      "src": "975:10:76",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_nonpayable$_t_address_$returns$__$",
+                        "typeString": "function (address)"
+                      }
+                    },
+                    "id": 37727,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "975:19:76",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 37728,
+                  "nodeType": "ExpressionStatement",
+                  "src": "975:19:76"
+                },
+                {
+                  "expression": {
+                    "arguments": [
+                      {
+                        "id": 37730,
+                        "name": "_unpauser",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 37722,
+                        "src": "1017:9:76",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      ],
+                      "id": 37729,
+                      "name": "_setUnpauser",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 37810,
+                      "src": "1004:12:76",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_nonpayable$_t_address_$returns$__$",
+                        "typeString": "function (address)"
+                      }
+                    },
+                    "id": 37731,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "1004:23:76",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 37732,
+                  "nodeType": "ExpressionStatement",
+                  "src": "1004:23:76"
+                }
+              ]
+            },
+            "implemented": true,
+            "kind": "constructor",
+            "modifiers": [],
+            "name": "",
+            "nameLocation": "-1:-1:-1",
+            "parameters": {
+              "id": 37723,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 37720,
+                  "mutability": "mutable",
+                  "name": "_pauser",
+                  "nameLocation": "937:7:76",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 37734,
+                  "src": "929:15:76",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 37719,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "929:7:76",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 37722,
+                  "mutability": "mutable",
+                  "name": "_unpauser",
+                  "nameLocation": "954:9:76",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 37734,
+                  "src": "946:17:76",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 37721,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "946:7:76",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "928:36:76"
+            },
+            "returnParameters": {
+              "id": 37724,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "965:0:76"
+            },
+            "scope": 37811,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "public"
+          },
+          {
+            "id": 37747,
+            "nodeType": "FunctionDefinition",
+            "src": "1199:98:76",
+            "nodes": [],
+            "body": {
+              "id": 37746,
+              "nodeType": "Block",
+              "src": "1259:38:76",
+              "nodes": [],
+              "statements": [
+                {
+                  "expression": {
+                    "arguments": [
+                      {
+                        "id": 37743,
+                        "name": "newPauser",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 37737,
+                        "src": "1280:9:76",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      ],
+                      "id": 37742,
+                      "name": "_setPauser",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 37785,
+                      "src": "1269:10:76",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_nonpayable$_t_address_$returns$__$",
+                        "typeString": "function (address)"
+                      }
+                    },
+                    "id": 37744,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "1269:21:76",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 37745,
+                  "nodeType": "ExpressionStatement",
+                  "src": "1269:21:76"
+                }
+              ]
+            },
+            "documentation": {
+              "id": 37735,
+              "nodeType": "StructuredDocumentation",
+              "src": "1040:154:76",
+              "text": "@notice Sets new pauser - only callable by unpauser, as the unpauser is expected to be kept more secure, e.g. being a multisig with a higher threshold"
+            },
+            "functionSelector": "2d88af4a",
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [
+              {
+                "id": 37740,
+                "kind": "modifierInvocation",
+                "modifierName": {
+                  "id": 37739,
+                  "name": "onlyUnpauser",
+                  "nodeType": "IdentifierPath",
+                  "referencedDeclaration": 37718,
+                  "src": "1246:12:76"
+                },
+                "nodeType": "ModifierInvocation",
+                "src": "1246:12:76"
+              }
+            ],
+            "name": "setPauser",
+            "nameLocation": "1208:9:76",
+            "parameters": {
+              "id": 37738,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 37737,
+                  "mutability": "mutable",
+                  "name": "newPauser",
+                  "nameLocation": "1226:9:76",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 37747,
+                  "src": "1218:17:76",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 37736,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1218:7:76",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1217:19:76"
+            },
+            "returnParameters": {
+              "id": 37741,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1259:0:76"
+            },
+            "scope": 37811,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 37760,
+            "nodeType": "FunctionDefinition",
+            "src": "1464:106:76",
+            "nodes": [],
+            "body": {
+              "id": 37759,
+              "nodeType": "Block",
+              "src": "1528:42:76",
+              "nodes": [],
+              "statements": [
+                {
+                  "expression": {
+                    "arguments": [
+                      {
+                        "id": 37756,
+                        "name": "newUnpauser",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 37750,
+                        "src": "1551:11:76",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      ],
+                      "id": 37755,
+                      "name": "_setUnpauser",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 37810,
+                      "src": "1538:12:76",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_nonpayable$_t_address_$returns$__$",
+                        "typeString": "function (address)"
+                      }
+                    },
+                    "id": 37757,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "1538:25:76",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 37758,
+                  "nodeType": "ExpressionStatement",
+                  "src": "1538:25:76"
+                }
+              ]
+            },
+            "documentation": {
+              "id": 37748,
+              "nodeType": "StructuredDocumentation",
+              "src": "1303:156:76",
+              "text": "@notice Sets new unpauser - only callable by unpauser, as the unpauser is expected to be kept more secure, e.g. being a multisig with a higher threshold"
+            },
+            "functionSelector": "ce548428",
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [
+              {
+                "id": 37753,
+                "kind": "modifierInvocation",
+                "modifierName": {
+                  "id": 37752,
+                  "name": "onlyUnpauser",
+                  "nodeType": "IdentifierPath",
+                  "referencedDeclaration": 37718,
+                  "src": "1515:12:76"
+                },
+                "nodeType": "ModifierInvocation",
+                "src": "1515:12:76"
+              }
+            ],
+            "name": "setUnpauser",
+            "nameLocation": "1473:11:76",
+            "parameters": {
+              "id": 37751,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 37750,
+                  "mutability": "mutable",
+                  "name": "newUnpauser",
+                  "nameLocation": "1493:11:76",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 37760,
+                  "src": "1485:19:76",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 37749,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1485:7:76",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1484:21:76"
+            },
+            "returnParameters": {
+              "id": 37754,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1528:0:76"
+            },
+            "scope": 37811,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 37785,
+            "nodeType": "FunctionDefinition",
+            "src": "1576:221:76",
+            "nodes": [],
+            "body": {
+              "id": 37784,
+              "nodeType": "Block",
+              "src": "1624:173:76",
+              "nodes": [],
+              "statements": [
+                {
+                  "expression": {
+                    "arguments": [
+                      {
+                        "commonType": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        },
+                        "id": 37771,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "leftExpression": {
+                          "id": 37766,
+                          "name": "newPauser",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 37762,
+                          "src": "1642:9:76",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_address",
+                            "typeString": "address"
+                          }
+                        },
+                        "nodeType": "BinaryOperation",
+                        "operator": "!=",
+                        "rightExpression": {
+                          "arguments": [
+                            {
+                              "hexValue": "30",
+                              "id": 37769,
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": true,
+                              "kind": "number",
+                              "lValueRequested": false,
+                              "nodeType": "Literal",
+                              "src": "1663:1:76",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_rational_0_by_1",
+                                "typeString": "int_const 0"
+                              },
+                              "value": "0"
+                            }
+                          ],
+                          "expression": {
+                            "argumentTypes": [
+                              {
+                                "typeIdentifier": "t_rational_0_by_1",
+                                "typeString": "int_const 0"
+                              }
+                            ],
+                            "id": 37768,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": true,
+                            "lValueRequested": false,
+                            "nodeType": "ElementaryTypeNameExpression",
+                            "src": "1655:7:76",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_type$_t_address_$",
+                              "typeString": "type(address)"
+                            },
+                            "typeName": {
+                              "id": 37767,
+                              "name": "address",
+                              "nodeType": "ElementaryTypeName",
+                              "src": "1655:7:76",
+                              "typeDescriptions": {}
+                            }
+                          },
+                          "id": 37770,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": true,
+                          "kind": "typeConversion",
+                          "lValueRequested": false,
+                          "names": [],
+                          "nodeType": "FunctionCall",
+                          "src": "1655:10:76",
+                          "tryCall": false,
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_address",
+                            "typeString": "address"
+                          }
+                        },
+                        "src": "1642:23:76",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        }
+                      },
+                      {
+                        "hexValue": "50617573657252656769737472792e5f7365745061757365723a207a65726f206164647265737320696e707574",
+                        "id": 37772,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "string",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "1667:47:76",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_stringliteral_4c4944a092c215d24625f63a54be510c5ece3fce723530f27b92674218c8d9b7",
+                          "typeString": "literal_string \"PauserRegistry._setPauser: zero address input\""
+                        },
+                        "value": "PauserRegistry._setPauser: zero address input"
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        },
+                        {
+                          "typeIdentifier": "t_stringliteral_4c4944a092c215d24625f63a54be510c5ece3fce723530f27b92674218c8d9b7",
+                          "typeString": "literal_string \"PauserRegistry._setPauser: zero address input\""
+                        }
+                      ],
+                      "id": 37765,
+                      "name": "require",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [
+                        -18,
+                        -18
+                      ],
+                      "referencedDeclaration": -18,
+                      "src": "1634:7:76",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
+                        "typeString": "function (bool,string memory) pure"
+                      }
+                    },
+                    "id": 37773,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "1634:81:76",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 37774,
+                  "nodeType": "ExpressionStatement",
+                  "src": "1634:81:76"
+                },
+                {
+                  "eventCall": {
+                    "arguments": [
+                      {
+                        "id": 37776,
+                        "name": "pauser",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 37679,
+                        "src": "1744:6:76",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      },
+                      {
+                        "id": 37777,
+                        "name": "newPauser",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 37762,
+                        "src": "1752:9:76",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        },
+                        {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      ],
+                      "id": 37775,
+                      "name": "PauserChanged",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 37688,
+                      "src": "1730:13:76",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_event_nonpayable$_t_address_$_t_address_$returns$__$",
+                        "typeString": "function (address,address)"
+                      }
+                    },
+                    "id": 37778,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "1730:32:76",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 37779,
+                  "nodeType": "EmitStatement",
+                  "src": "1725:37:76"
+                },
+                {
+                  "expression": {
+                    "id": 37782,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "id": 37780,
+                      "name": "pauser",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 37679,
+                      "src": "1772:6:76",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address",
+                        "typeString": "address"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "id": 37781,
+                      "name": "newPauser",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 37762,
+                      "src": "1781:9:76",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address",
+                        "typeString": "address"
+                      }
+                    },
+                    "src": "1772:18:76",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "id": 37783,
+                  "nodeType": "ExpressionStatement",
+                  "src": "1772:18:76"
+                }
+              ]
+            },
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "_setPauser",
+            "nameLocation": "1585:10:76",
+            "parameters": {
+              "id": 37763,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 37762,
+                  "mutability": "mutable",
+                  "name": "newPauser",
+                  "nameLocation": "1604:9:76",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 37785,
+                  "src": "1596:17:76",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 37761,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1596:7:76",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1595:19:76"
+            },
+            "returnParameters": {
+              "id": 37764,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1624:0:76"
+            },
+            "scope": 37811,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "internal"
+          },
+          {
+            "id": 37810,
+            "nodeType": "FunctionDefinition",
+            "src": "1803:239:76",
+            "nodes": [],
+            "body": {
+              "id": 37809,
+              "nodeType": "Block",
+              "src": "1855:187:76",
+              "nodes": [],
+              "statements": [
+                {
+                  "expression": {
+                    "arguments": [
+                      {
+                        "commonType": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        },
+                        "id": 37796,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "leftExpression": {
+                          "id": 37791,
+                          "name": "newUnpauser",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 37787,
+                          "src": "1873:11:76",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_address",
+                            "typeString": "address"
+                          }
+                        },
+                        "nodeType": "BinaryOperation",
+                        "operator": "!=",
+                        "rightExpression": {
+                          "arguments": [
+                            {
+                              "hexValue": "30",
+                              "id": 37794,
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": true,
+                              "kind": "number",
+                              "lValueRequested": false,
+                              "nodeType": "Literal",
+                              "src": "1896:1:76",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_rational_0_by_1",
+                                "typeString": "int_const 0"
+                              },
+                              "value": "0"
+                            }
+                          ],
+                          "expression": {
+                            "argumentTypes": [
+                              {
+                                "typeIdentifier": "t_rational_0_by_1",
+                                "typeString": "int_const 0"
+                              }
+                            ],
+                            "id": 37793,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": true,
+                            "lValueRequested": false,
+                            "nodeType": "ElementaryTypeNameExpression",
+                            "src": "1888:7:76",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_type$_t_address_$",
+                              "typeString": "type(address)"
+                            },
+                            "typeName": {
+                              "id": 37792,
+                              "name": "address",
+                              "nodeType": "ElementaryTypeName",
+                              "src": "1888:7:76",
+                              "typeDescriptions": {}
+                            }
+                          },
+                          "id": 37795,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": true,
+                          "kind": "typeConversion",
+                          "lValueRequested": false,
+                          "names": [],
+                          "nodeType": "FunctionCall",
+                          "src": "1888:10:76",
+                          "tryCall": false,
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_address",
+                            "typeString": "address"
+                          }
+                        },
+                        "src": "1873:25:76",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        }
+                      },
+                      {
+                        "hexValue": "50617573657252656769737472792e5f736574556e7061757365723a207a65726f206164647265737320696e707574",
+                        "id": 37797,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "string",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "1900:49:76",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_stringliteral_c0c046a44febc0f26280b43f221b9f6e7aa95de62781dcd0b00a4c4be747b189",
+                          "typeString": "literal_string \"PauserRegistry._setUnpauser: zero address input\""
+                        },
+                        "value": "PauserRegistry._setUnpauser: zero address input"
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        },
+                        {
+                          "typeIdentifier": "t_stringliteral_c0c046a44febc0f26280b43f221b9f6e7aa95de62781dcd0b00a4c4be747b189",
+                          "typeString": "literal_string \"PauserRegistry._setUnpauser: zero address input\""
+                        }
+                      ],
+                      "id": 37790,
+                      "name": "require",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [
+                        -18,
+                        -18
+                      ],
+                      "referencedDeclaration": -18,
+                      "src": "1865:7:76",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
+                        "typeString": "function (bool,string memory) pure"
+                      }
+                    },
+                    "id": 37798,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "1865:85:76",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 37799,
+                  "nodeType": "ExpressionStatement",
+                  "src": "1865:85:76"
+                },
+                {
+                  "eventCall": {
+                    "arguments": [
+                      {
+                        "id": 37801,
+                        "name": "unpauser",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 37682,
+                        "src": "1981:8:76",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      },
+                      {
+                        "id": 37802,
+                        "name": "newUnpauser",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 37787,
+                        "src": "1991:11:76",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        },
+                        {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      ],
+                      "id": 37800,
+                      "name": "UnpauserChanged",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 37694,
+                      "src": "1965:15:76",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_event_nonpayable$_t_address_$_t_address_$returns$__$",
+                        "typeString": "function (address,address)"
+                      }
+                    },
+                    "id": 37803,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "1965:38:76",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 37804,
+                  "nodeType": "EmitStatement",
+                  "src": "1960:43:76"
+                },
+                {
+                  "expression": {
+                    "id": 37807,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "id": 37805,
+                      "name": "unpauser",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 37682,
+                      "src": "2013:8:76",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address",
+                        "typeString": "address"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "id": 37806,
+                      "name": "newUnpauser",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 37787,
+                      "src": "2024:11:76",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address",
+                        "typeString": "address"
+                      }
+                    },
+                    "src": "2013:22:76",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "id": 37808,
+                  "nodeType": "ExpressionStatement",
+                  "src": "2013:22:76"
+                }
+              ]
+            },
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "_setUnpauser",
+            "nameLocation": "1812:12:76",
+            "parameters": {
+              "id": 37788,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 37787,
+                  "mutability": "mutable",
+                  "name": "newUnpauser",
+                  "nameLocation": "1833:11:76",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 37810,
+                  "src": "1825:19:76",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 37786,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1825:7:76",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1824:21:76"
+            },
+            "returnParameters": {
+              "id": 37789,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1855:0:76"
+            },
+            "scope": 37811,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "internal"
+          }
+        ],
+        "abstract": false,
+        "baseContracts": [
+          {
+            "baseName": {
+              "id": 37675,
+              "name": "IPauserRegistry",
+              "nodeType": "IdentifierPath",
+              "referencedDeclaration": 31195,
+              "src": "247:15:76"
+            },
+            "id": 37676,
+            "nodeType": "InheritanceSpecifier",
+            "src": "247:15:76"
+          }
+        ],
+        "canonicalName": "PauserRegistry",
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": {
+          "id": 37674,
+          "nodeType": "StructuredDocumentation",
+          "src": "109:110:76",
+          "text": " @title Defines pauser & unpauser roles + modifiers to be used elsewhere.\n @author Layr Labs, Inc."
+        },
+        "fullyImplemented": true,
+        "linearizedBaseContracts": [
+          37811,
+          31195
+        ],
+        "name": "PauserRegistry",
+        "nameLocation": "229:14:76",
+        "scope": 37812,
+        "usedErrors": []
+      }
+    ],
+    "license": "UNLICENSED"
+  },
+  "id": 76
+}

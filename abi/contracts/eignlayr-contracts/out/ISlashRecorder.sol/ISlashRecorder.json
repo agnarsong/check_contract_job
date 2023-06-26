@@ -1,0 +1,671 @@
+{
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_memberAddress",
+          "type": "address"
+        },
+        {
+          "internalType": "enum ISlashRecorder.SlashType",
+          "name": "evilType",
+          "type": "uint8"
+        },
+        {
+          "internalType": "string",
+          "name": "socket",
+          "type": "string"
+        }
+      ],
+      "name": "addEvilMember",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "getSlashMemberList",
+      "outputs": [
+        {
+          "components": [
+            {
+              "internalType": "address",
+              "name": "memberAddress",
+              "type": "address"
+            },
+            {
+              "internalType": "enum ISlashRecorder.SlashType",
+              "name": "evilType",
+              "type": "uint8"
+            },
+            {
+              "internalType": "string",
+              "name": "socket",
+              "type": "string"
+            }
+          ],
+          "internalType": "struct ISlashRecorder.SlashMember[]",
+          "name": "",
+          "type": "tuple[]"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "resetSlashMemberList",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "slasherAddress",
+          "type": "address"
+        }
+      ],
+      "name": "setSlasherManager",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "bytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "methodIdentifiers": {
+    "addEvilMember(address,uint8,string)": "8b13173b",
+    "getSlashMemberList()": "47aa113a",
+    "resetSlashMemberList()": "e6269627",
+    "setSlasherManager(address)": "370f9f2e"
+  },
+  "rawMetadata": "{\"compiler\":{\"version\":\"0.8.12+commit.f00d7308\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_memberAddress\",\"type\":\"address\"},{\"internalType\":\"enum ISlashRecorder.SlashType\",\"name\":\"evilType\",\"type\":\"uint8\"},{\"internalType\":\"string\",\"name\":\"socket\",\"type\":\"string\"}],\"name\":\"addEvilMember\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"getSlashMemberList\",\"outputs\":[{\"components\":[{\"internalType\":\"address\",\"name\":\"memberAddress\",\"type\":\"address\"},{\"internalType\":\"enum ISlashRecorder.SlashType\",\"name\":\"evilType\",\"type\":\"uint8\"},{\"internalType\":\"string\",\"name\":\"socket\",\"type\":\"string\"}],\"internalType\":\"struct ISlashRecorder.SlashMember[]\",\"name\":\"\",\"type\":\"tuple[]\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"resetSlashMemberList\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"slasherAddress\",\"type\":\"address\"}],\"name\":\"setSlasherManager\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"author\":\"mantle, Inc.\",\"kind\":\"dev\",\"methods\":{},\"title\":\"Interface for the primary 'SlashRecorder' contract for Mantle.\",\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"notice\":\"See the `SlashRecorder` contract itself for implementation details.\",\"version\":1}},\"settings\":{\"compilationTarget\":{\"src/contracts/interfaces/ISlashRecorder.sol\":\"ISlashRecorder\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[\":@openzeppelin-upgrades/=lib/openzeppelin-contracts-upgradeable/\",\":@openzeppelin/=lib/openzeppelin-contracts/\",\":ds-test/=lib/ds-test/src/\",\":forge-std/=lib/forge-std/src/\",\":openzeppelin-contracts-upgradeable/=lib/openzeppelin-contracts-upgradeable/\",\":openzeppelin-contracts/=lib/openzeppelin-contracts/contracts/\"]},\"sources\":{\"src/contracts/interfaces/ISlashRecorder.sol\":{\"keccak256\":\"0x31c2e34e14cfad1bc2f437227c88ae30cef432718789a5f88286ea9615b706cf\",\"license\":\"UNLICENSED\",\"urls\":[\"bzz-raw://462884f3e01c3cd0c5ed104cce9674bf0b2e6f0c2c2eac3a1c1f6928482bc16a\",\"dweb:/ipfs/Qmey3iSwQp5vcv4uz7EAdSefhroHRbCF9PmLgWWZ4wp3pw\"]}},\"version\":1}",
+  "metadata": {
+    "compiler": {
+      "version": "0.8.12+commit.f00d7308"
+    },
+    "language": "Solidity",
+    "output": {
+      "abi": [
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "_memberAddress",
+              "type": "address"
+            },
+            {
+              "internalType": "enum ISlashRecorder.SlashType",
+              "name": "evilType",
+              "type": "uint8"
+            },
+            {
+              "internalType": "string",
+              "name": "socket",
+              "type": "string"
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "addEvilMember"
+        },
+        {
+          "inputs": [],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "getSlashMemberList",
+          "outputs": [
+            {
+              "internalType": "struct ISlashRecorder.SlashMember[]",
+              "name": "",
+              "type": "tuple[]",
+              "components": [
+                {
+                  "internalType": "address",
+                  "name": "memberAddress",
+                  "type": "address"
+                },
+                {
+                  "internalType": "enum ISlashRecorder.SlashType",
+                  "name": "evilType",
+                  "type": "uint8"
+                },
+                {
+                  "internalType": "string",
+                  "name": "socket",
+                  "type": "string"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "inputs": [],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "resetSlashMemberList"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "slasherAddress",
+              "type": "address"
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "setSlasherManager"
+        }
+      ],
+      "devdoc": {
+        "kind": "dev",
+        "methods": {},
+        "version": 1
+      },
+      "userdoc": {
+        "kind": "user",
+        "methods": {},
+        "version": 1
+      }
+    },
+    "settings": {
+      "remappings": [
+        ":@openzeppelin-upgrades/=lib/openzeppelin-contracts-upgradeable/",
+        ":@openzeppelin/=lib/openzeppelin-contracts/",
+        ":ds-test/=lib/ds-test/src/",
+        ":forge-std/=lib/forge-std/src/",
+        ":openzeppelin-contracts-upgradeable/=lib/openzeppelin-contracts-upgradeable/",
+        ":openzeppelin-contracts/=lib/openzeppelin-contracts/contracts/"
+      ],
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "metadata": {
+        "bytecodeHash": "ipfs"
+      },
+      "compilationTarget": {
+        "src/contracts/interfaces/ISlashRecorder.sol": "ISlashRecorder"
+      },
+      "libraries": {}
+    },
+    "sources": {
+      "src/contracts/interfaces/ISlashRecorder.sol": {
+        "keccak256": "0x31c2e34e14cfad1bc2f437227c88ae30cef432718789a5f88286ea9615b706cf",
+        "urls": [
+          "bzz-raw://462884f3e01c3cd0c5ed104cce9674bf0b2e6f0c2c2eac3a1c1f6928482bc16a",
+          "dweb:/ipfs/Qmey3iSwQp5vcv4uz7EAdSefhroHRbCF9PmLgWWZ4wp3pw"
+        ],
+        "license": "UNLICENSED"
+      }
+    },
+    "version": 1
+  },
+  "ast": {
+    "absolutePath": "src/contracts/interfaces/ISlashRecorder.sol",
+    "id": 31502,
+    "exportedSymbols": {
+      "ISlashRecorder": [
+        31501
+      ]
+    },
+    "nodeType": "SourceUnit",
+    "src": "39:724:60",
+    "nodes": [
+      {
+        "id": 31463,
+        "nodeType": "PragmaDirective",
+        "src": "39:23:60",
+        "nodes": [],
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".9"
+        ]
+      },
+      {
+        "id": 31501,
+        "nodeType": "ContractDefinition",
+        "src": "248:514:60",
+        "nodes": [
+          {
+            "id": 31467,
+            "nodeType": "EnumDefinition",
+            "src": "279:69:60",
+            "nodes": [],
+            "canonicalName": "ISlashRecorder.SlashType",
+            "members": [
+              {
+                "id": 31465,
+                "name": "NetworkStability",
+                "nameLocation": "304:16:60",
+                "nodeType": "EnumValue",
+                "src": "304:16:60"
+              },
+              {
+                "id": 31466,
+                "name": "DataValidity",
+                "nameLocation": "330:12:60",
+                "nodeType": "EnumValue",
+                "src": "330:12:60"
+              }
+            ],
+            "name": "SlashType",
+            "nameLocation": "284:9:60"
+          },
+          {
+            "id": 31475,
+            "nodeType": "StructDefinition",
+            "src": "354:109:60",
+            "nodes": [],
+            "canonicalName": "ISlashRecorder.SlashMember",
+            "members": [
+              {
+                "constant": false,
+                "id": 31469,
+                "mutability": "mutable",
+                "name": "memberAddress",
+                "nameLocation": "391:13:60",
+                "nodeType": "VariableDeclaration",
+                "scope": 31475,
+                "src": "383:21:60",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_address",
+                  "typeString": "address"
+                },
+                "typeName": {
+                  "id": 31468,
+                  "name": "address",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "383:7:60",
+                  "stateMutability": "nonpayable",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 31472,
+                "mutability": "mutable",
+                "name": "evilType",
+                "nameLocation": "425:8:60",
+                "nodeType": "VariableDeclaration",
+                "scope": 31475,
+                "src": "414:19:60",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_enum$_SlashType_$31467",
+                  "typeString": "enum ISlashRecorder.SlashType"
+                },
+                "typeName": {
+                  "id": 31471,
+                  "nodeType": "UserDefinedTypeName",
+                  "pathNode": {
+                    "id": 31470,
+                    "name": "SlashType",
+                    "nodeType": "IdentifierPath",
+                    "referencedDeclaration": 31467,
+                    "src": "414:9:60"
+                  },
+                  "referencedDeclaration": 31467,
+                  "src": "414:9:60",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_enum$_SlashType_$31467",
+                    "typeString": "enum ISlashRecorder.SlashType"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 31474,
+                "mutability": "mutable",
+                "name": "socket",
+                "nameLocation": "450:6:60",
+                "nodeType": "VariableDeclaration",
+                "scope": 31475,
+                "src": "443:13:60",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                },
+                "typeName": {
+                  "id": 31473,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "443:6:60",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "visibility": "internal"
+              }
+            ],
+            "name": "SlashMember",
+            "nameLocation": "361:11:60",
+            "scope": 31501,
+            "visibility": "public"
+          },
+          {
+            "id": 31485,
+            "nodeType": "FunctionDefinition",
+            "src": "469:100:60",
+            "nodes": [],
+            "functionSelector": "8b13173b",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "addEvilMember",
+            "nameLocation": "478:13:60",
+            "parameters": {
+              "id": 31483,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 31477,
+                  "mutability": "mutable",
+                  "name": "_memberAddress",
+                  "nameLocation": "500:14:60",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 31485,
+                  "src": "492:22:60",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 31476,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "492:7:60",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 31480,
+                  "mutability": "mutable",
+                  "name": "evilType",
+                  "nameLocation": "526:8:60",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 31485,
+                  "src": "516:18:60",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_enum$_SlashType_$31467",
+                    "typeString": "enum ISlashRecorder.SlashType"
+                  },
+                  "typeName": {
+                    "id": 31479,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 31478,
+                      "name": "SlashType",
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 31467,
+                      "src": "516:9:60"
+                    },
+                    "referencedDeclaration": 31467,
+                    "src": "516:9:60",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_enum$_SlashType_$31467",
+                      "typeString": "enum ISlashRecorder.SlashType"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 31482,
+                  "mutability": "mutable",
+                  "name": "socket",
+                  "nameLocation": "552:6:60",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 31485,
+                  "src": "536:22:60",
+                  "stateVariable": false,
+                  "storageLocation": "calldata",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_calldata_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 31481,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "536:6:60",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "491:68:60"
+            },
+            "returnParameters": {
+              "id": 31484,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "568:0:60"
+            },
+            "scope": 31501,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 31492,
+            "nodeType": "FunctionDefinition",
+            "src": "574:75:60",
+            "nodes": [],
+            "functionSelector": "47aa113a",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getSlashMemberList",
+            "nameLocation": "583:18:60",
+            "parameters": {
+              "id": 31486,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "601:2:60"
+            },
+            "returnParameters": {
+              "id": 31491,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 31490,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 31492,
+                  "src": "627:20:60",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_struct$_SlashMember_$31475_memory_ptr_$dyn_memory_ptr",
+                    "typeString": "struct ISlashRecorder.SlashMember[]"
+                  },
+                  "typeName": {
+                    "baseType": {
+                      "id": 31488,
+                      "nodeType": "UserDefinedTypeName",
+                      "pathNode": {
+                        "id": 31487,
+                        "name": "SlashMember",
+                        "nodeType": "IdentifierPath",
+                        "referencedDeclaration": 31475,
+                        "src": "627:11:60"
+                      },
+                      "referencedDeclaration": 31475,
+                      "src": "627:11:60",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_struct$_SlashMember_$31475_storage_ptr",
+                        "typeString": "struct ISlashRecorder.SlashMember"
+                      }
+                    },
+                    "id": 31489,
+                    "nodeType": "ArrayTypeName",
+                    "src": "627:13:60",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_array$_t_struct$_SlashMember_$31475_storage_$dyn_storage_ptr",
+                      "typeString": "struct ISlashRecorder.SlashMember[]"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "626:22:60"
+            },
+            "scope": 31501,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 31495,
+            "nodeType": "FunctionDefinition",
+            "src": "654:41:60",
+            "nodes": [],
+            "functionSelector": "e6269627",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "resetSlashMemberList",
+            "nameLocation": "663:20:60",
+            "parameters": {
+              "id": 31493,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "683:2:60"
+            },
+            "returnParameters": {
+              "id": 31494,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "694:0:60"
+            },
+            "scope": 31501,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 31500,
+            "nodeType": "FunctionDefinition",
+            "src": "700:60:60",
+            "nodes": [],
+            "functionSelector": "370f9f2e",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "setSlasherManager",
+            "nameLocation": "709:17:60",
+            "parameters": {
+              "id": 31498,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 31497,
+                  "mutability": "mutable",
+                  "name": "slasherAddress",
+                  "nameLocation": "735:14:60",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 31500,
+                  "src": "727:22:60",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 31496,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "727:7:60",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "726:24:60"
+            },
+            "returnParameters": {
+              "id": 31499,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "759:0:60"
+            },
+            "scope": 31501,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "ISlashRecorder",
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "documentation": {
+          "id": 31464,
+          "nodeType": "StructuredDocumentation",
+          "src": "64:183:60",
+          "text": " @title Interface for the primary 'SlashRecorder' contract for Mantle.\n @author mantle, Inc.\n @notice See the `SlashRecorder` contract itself for implementation details."
+        },
+        "fullyImplemented": false,
+        "linearizedBaseContracts": [
+          31501
+        ],
+        "name": "ISlashRecorder",
+        "nameLocation": "258:14:60",
+        "scope": 31502,
+        "usedErrors": []
+      }
+    ],
+    "license": "UNLICENSED"
+  },
+  "id": 60
+}

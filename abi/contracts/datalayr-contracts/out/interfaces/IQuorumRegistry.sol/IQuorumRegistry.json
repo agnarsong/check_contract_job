@@ -1,0 +1,2501 @@
+{
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "operator",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "blockNumber",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "stakeHistoryIndex",
+          "type": "uint256"
+        }
+      ],
+      "name": "checkOperatorActiveAtBlockNumber",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "operator",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "blockNumber",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "stakeHistoryIndex",
+          "type": "uint256"
+        }
+      ],
+      "name": "checkOperatorInactiveAtBlockNumber",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "operator",
+          "type": "address"
+        }
+      ],
+      "name": "getFromTaskNumberForOperator",
+      "outputs": [
+        {
+          "internalType": "uint32",
+          "name": "",
+          "type": "uint32"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "getLengthOfTotalStakeHistory",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "operator",
+          "type": "address"
+        },
+        {
+          "internalType": "uint32",
+          "name": "blockNumber",
+          "type": "uint32"
+        },
+        {
+          "internalType": "uint32",
+          "name": "index",
+          "type": "uint32"
+        }
+      ],
+      "name": "getOperatorIndex",
+      "outputs": [
+        {
+          "internalType": "uint32",
+          "name": "",
+          "type": "uint32"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "operator",
+          "type": "address"
+        }
+      ],
+      "name": "getOperatorPubkeyHash",
+      "outputs": [
+        {
+          "internalType": "bytes32",
+          "name": "",
+          "type": "bytes32"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "pubkeyHash",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "uint256",
+          "name": "index",
+          "type": "uint256"
+        }
+      ],
+      "name": "getStakeFromPubkeyHashAndIndex",
+      "outputs": [
+        {
+          "components": [
+            {
+              "internalType": "uint32",
+              "name": "updateBlockNumber",
+              "type": "uint32"
+            },
+            {
+              "internalType": "uint32",
+              "name": "nextUpdateBlockNumber",
+              "type": "uint32"
+            },
+            {
+              "internalType": "uint96",
+              "name": "firstQuorumStake",
+              "type": "uint96"
+            },
+            {
+              "internalType": "uint96",
+              "name": "secondQuorumStake",
+              "type": "uint96"
+            }
+          ],
+          "internalType": "struct IQuorumRegistry.OperatorStake",
+          "name": "",
+          "type": "tuple"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint32",
+          "name": "blockNumber",
+          "type": "uint32"
+        },
+        {
+          "internalType": "uint32",
+          "name": "index",
+          "type": "uint32"
+        }
+      ],
+      "name": "getTotalOperators",
+      "outputs": [
+        {
+          "internalType": "uint32",
+          "name": "",
+          "type": "uint32"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "index",
+          "type": "uint256"
+        }
+      ],
+      "name": "getTotalStakeFromIndex",
+      "outputs": [
+        {
+          "components": [
+            {
+              "internalType": "uint32",
+              "name": "updateBlockNumber",
+              "type": "uint32"
+            },
+            {
+              "internalType": "uint32",
+              "name": "nextUpdateBlockNumber",
+              "type": "uint32"
+            },
+            {
+              "internalType": "uint96",
+              "name": "firstQuorumStake",
+              "type": "uint96"
+            },
+            {
+              "internalType": "uint96",
+              "name": "secondQuorumStake",
+              "type": "uint96"
+            }
+          ],
+          "internalType": "struct IQuorumRegistry.OperatorStake",
+          "name": "",
+          "type": "tuple"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "operator",
+          "type": "address"
+        }
+      ],
+      "name": "isActiveOperator",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "numOperators",
+      "outputs": [
+        {
+          "internalType": "uint32",
+          "name": "",
+          "type": "uint32"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "operator",
+          "type": "address"
+        }
+      ],
+      "name": "operatorStakes",
+      "outputs": [
+        {
+          "internalType": "uint96",
+          "name": "",
+          "type": "uint96"
+        },
+        {
+          "internalType": "uint96",
+          "name": "",
+          "type": "uint96"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "totalStake",
+      "outputs": [
+        {
+          "internalType": "uint96",
+          "name": "",
+          "type": "uint96"
+        },
+        {
+          "internalType": "uint96",
+          "name": "",
+          "type": "uint96"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "bytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "methodIdentifiers": {
+    "checkOperatorActiveAtBlockNumber(address,uint256,uint256)": "629b312a",
+    "checkOperatorInactiveAtBlockNumber(address,uint256,uint256)": "e84ef3cb",
+    "getFromTaskNumberForOperator(address)": "ae124d40",
+    "getLengthOfTotalStakeHistory()": "ca06c782",
+    "getOperatorIndex(address,uint32,uint32)": "7210b0c9",
+    "getOperatorPubkeyHash(address)": "fd0d930a",
+    "getStakeFromPubkeyHashAndIndex(bytes32,uint256)": "2173fa23",
+    "getTotalOperators(uint32,uint32)": "b322bdc7",
+    "getTotalStakeFromIndex(uint256)": "102068d3",
+    "isActiveOperator(address)": "3367cca5",
+    "numOperators()": "bd820688",
+    "operatorStakes(address)": "1c9856ae",
+    "totalStake()": "8b0e9f3f"
+  },
+  "rawMetadata": "{\"compiler\":{\"version\":\"0.8.12+commit.f00d7308\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"address\",\"name\":\"operator\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"blockNumber\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"stakeHistoryIndex\",\"type\":\"uint256\"}],\"name\":\"checkOperatorActiveAtBlockNumber\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"operator\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"blockNumber\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"stakeHistoryIndex\",\"type\":\"uint256\"}],\"name\":\"checkOperatorInactiveAtBlockNumber\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"operator\",\"type\":\"address\"}],\"name\":\"getFromTaskNumberForOperator\",\"outputs\":[{\"internalType\":\"uint32\",\"name\":\"\",\"type\":\"uint32\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"getLengthOfTotalStakeHistory\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"operator\",\"type\":\"address\"},{\"internalType\":\"uint32\",\"name\":\"blockNumber\",\"type\":\"uint32\"},{\"internalType\":\"uint32\",\"name\":\"index\",\"type\":\"uint32\"}],\"name\":\"getOperatorIndex\",\"outputs\":[{\"internalType\":\"uint32\",\"name\":\"\",\"type\":\"uint32\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"operator\",\"type\":\"address\"}],\"name\":\"getOperatorPubkeyHash\",\"outputs\":[{\"internalType\":\"bytes32\",\"name\":\"\",\"type\":\"bytes32\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"pubkeyHash\",\"type\":\"bytes32\"},{\"internalType\":\"uint256\",\"name\":\"index\",\"type\":\"uint256\"}],\"name\":\"getStakeFromPubkeyHashAndIndex\",\"outputs\":[{\"components\":[{\"internalType\":\"uint32\",\"name\":\"updateBlockNumber\",\"type\":\"uint32\"},{\"internalType\":\"uint32\",\"name\":\"nextUpdateBlockNumber\",\"type\":\"uint32\"},{\"internalType\":\"uint96\",\"name\":\"firstQuorumStake\",\"type\":\"uint96\"},{\"internalType\":\"uint96\",\"name\":\"secondQuorumStake\",\"type\":\"uint96\"}],\"internalType\":\"struct IQuorumRegistry.OperatorStake\",\"name\":\"\",\"type\":\"tuple\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint32\",\"name\":\"blockNumber\",\"type\":\"uint32\"},{\"internalType\":\"uint32\",\"name\":\"index\",\"type\":\"uint32\"}],\"name\":\"getTotalOperators\",\"outputs\":[{\"internalType\":\"uint32\",\"name\":\"\",\"type\":\"uint32\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"index\",\"type\":\"uint256\"}],\"name\":\"getTotalStakeFromIndex\",\"outputs\":[{\"components\":[{\"internalType\":\"uint32\",\"name\":\"updateBlockNumber\",\"type\":\"uint32\"},{\"internalType\":\"uint32\",\"name\":\"nextUpdateBlockNumber\",\"type\":\"uint32\"},{\"internalType\":\"uint96\",\"name\":\"firstQuorumStake\",\"type\":\"uint96\"},{\"internalType\":\"uint96\",\"name\":\"secondQuorumStake\",\"type\":\"uint96\"}],\"internalType\":\"struct IQuorumRegistry.OperatorStake\",\"name\":\"\",\"type\":\"tuple\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"operator\",\"type\":\"address\"}],\"name\":\"isActiveOperator\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"numOperators\",\"outputs\":[{\"internalType\":\"uint32\",\"name\":\"\",\"type\":\"uint32\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"operator\",\"type\":\"address\"}],\"name\":\"operatorStakes\",\"outputs\":[{\"internalType\":\"uint96\",\"name\":\"\",\"type\":\"uint96\"},{\"internalType\":\"uint96\",\"name\":\"\",\"type\":\"uint96\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"totalStake\",\"outputs\":[{\"internalType\":\"uint96\",\"name\":\"\",\"type\":\"uint96\"},{\"internalType\":\"uint96\",\"name\":\"\",\"type\":\"uint96\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"author\":\"Layr Labs, Inc.\",\"kind\":\"dev\",\"methods\":{\"checkOperatorActiveAtBlockNumber(address,uint256,uint256)\":{\"details\":\"In order for this function to return 'true', the inputs must satisfy all of the following list: 1) `pubkeyHashToStakeHistory[pubkeyHash][index].updateBlockNumber <= blockNumber` 2) `pubkeyHashToStakeHistory[pubkeyHash][index].nextUpdateBlockNumber` must be either `0` (signifying no next update) or is must be strictly greater than `blockNumber` 3) `pubkeyHashToStakeHistory[pubkeyHash][index].firstQuorumStake > 0` or `pubkeyHashToStakeHistory[pubkeyHash][index].secondQuorumStake > 0`, i.e. the operator had nonzero stakeNote that a return value of 'false' does not guarantee that the `operator` was inactive at `blockNumber`, since a bad `stakeHistoryIndex` can be supplied in order to obtain a response of 'false'.\",\"params\":{\"blockNumber\":\"is the block number of interest\",\"operator\":\"is the operator of interest\",\"stakeHistoryIndex\":\"specifies an index in `pubkeyHashToStakeHistory[pubkeyHash]`, where `pubkeyHash` is looked up in `registry[operator].pubkeyHash`\"},\"returns\":{\"_0\":\"'true' if it is succesfully proven that  the `operator` was active at the `blockNumber`, and 'false' otherwise\"}},\"checkOperatorInactiveAtBlockNumber(address,uint256,uint256)\":{\"details\":\"In order for this function to return 'true', the inputs must satisfy all of the following list: 1) `pubkeyHashToStakeHistory[pubkeyHash][index].updateBlockNumber <= blockNumber` 2) `pubkeyHashToStakeHistory[pubkeyHash][index].nextUpdateBlockNumber` must be either `0` (signifying no next update) or is must be strictly greater than `blockNumber` 3) `pubkeyHashToStakeHistory[pubkeyHash][index].firstQuorumStake > 0` or `pubkeyHashToStakeHistory[pubkeyHash][index].secondQuorumStake > 0`, i.e. the operator had nonzero stakeNote that a return value of 'false' does not guarantee that the `operator` was active at `blockNumber`, since a bad `stakeHistoryIndex` can be supplied in order to obtain a response of 'false'.\",\"params\":{\"blockNumber\":\"is the block number of interest\",\"operator\":\"is the operator of interest\",\"stakeHistoryIndex\":\"specifies an index in `pubkeyHashToStakeHistory[pubkeyHash]`, where `pubkeyHash` is looked up in `registry[operator].pubkeyHash`\"},\"returns\":{\"_0\":\"'true' if it is succesfully proven that  the `operator` was inactive at the `blockNumber`, and 'false' otherwise\"}},\"getOperatorIndex(address,uint32,uint32)\":{\"details\":\"Function will revert in the event that the specified `index` input does not identify the appropriate entry in the array `pubkeyHashToIndexHistory[pubkeyHash]` to pull the info from.\",\"params\":{\"blockNumber\":\"Is the desired block number at which we wish to query the operator's position in the `operatorList` array\",\"index\":\"Used to specify the entry within the dynamic array `pubkeyHashToIndexHistory[pubkeyHash]` to  read data from, where `pubkeyHash` is looked up from `operator`'s registration info\"}},\"getStakeFromPubkeyHashAndIndex(bytes32,uint256)\":{\"details\":\"Function will revert if `index` is out-of-bounds.\",\"params\":{\"index\":\"Array index for lookup, within the dynamic array `pubkeyHashToStakeHistory[pubkeyHash]`.\",\"pubkeyHash\":\"Hash of the public key of the operator of interest.\"}},\"getTotalOperators(uint32,uint32)\":{\"details\":\"This function will revert if the provided `index` is out of bounds.\",\"params\":{\"index\":\"Input used to specify the entry within the dynamic array `totalOperatorsHistory` to read data from.\"}},\"getTotalStakeFromIndex(uint256)\":{\"details\":\"Function will revert in the event that `index` is out-of-bounds.\"},\"operatorStakes(address)\":{\"details\":\"Function returns weights of **0** in the event that the operator has no stake history\"}},\"title\":\"Interface for a `Registry`-type contract that uses either 1 or 2 quorums.\",\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{\"checkOperatorActiveAtBlockNumber(address,uint256,uint256)\":{\"notice\":\"Checks that the `operator` was active at the `blockNumber`, using the specified `stakeHistoryIndex` as proof.\"},\"checkOperatorInactiveAtBlockNumber(address,uint256,uint256)\":{\"notice\":\"Checks that the `operator` was inactive at the `blockNumber`, using the specified `stakeHistoryIndex` as proof.\"},\"getFromTaskNumberForOperator(address)\":{\"notice\":\"Returns task number from when `operator` has been registered.\"},\"getOperatorIndex(address,uint32,uint32)\":{\"notice\":\"Looks up the `operator`'s index in the dynamic array `operatorList` at the specified `blockNumber`.\"},\"getOperatorPubkeyHash(address)\":{\"notice\":\"Returns the stored pubkeyHash for the specified `operator`.\"},\"getStakeFromPubkeyHashAndIndex(bytes32,uint256)\":{\"notice\":\"Returns the stake weight corresponding to `pubkeyHash`, at the `index`-th entry in the `pubkeyHashToStakeHistory[pubkeyHash]` array.\"},\"getTotalOperators(uint32,uint32)\":{\"notice\":\"Looks up the number of total operators at the specified `blockNumber`.\"},\"getTotalStakeFromIndex(uint256)\":{\"notice\":\"Returns the `index`-th entry in the dynamic array of total stake, `totalStakeHistory`.\"},\"isActiveOperator(address)\":{\"notice\":\"Returns 'true' if `operator` is registered as an active operator, and 'false' otherwise.\"},\"numOperators()\":{\"notice\":\"Returns the current number of operators of this service.\"},\"operatorStakes(address)\":{\"notice\":\"Returns the most recent stake weights for the `operator`\"},\"totalStake()\":{\"notice\":\"Returns the stake amounts from the latest entry in `totalStakeHistory`.\"}},\"notice\":\"This contract does not currently support n-quorums where n >= 3. Note in particular the presence of only `firstQuorumStake` and `secondQuorumStake` in the `OperatorStake` struct.\",\"version\":1}},\"settings\":{\"compilationTarget\":{\"../eignlayr-contracts/src/contracts/interfaces/IQuorumRegistry.sol\":\"IQuorumRegistry\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[\":@eigenlayer/=../eignlayr-contracts/src/\",\":@openzeppelin-upgrades/=lib/openzeppelin-contracts-upgradeable/\",\":@openzeppelin/=lib/openzeppelin-contracts/\",\":ds-test/=lib/eignlayr-contracts/lib/ds-test/src/\",\":eignlayr-contracts/=lib/eignlayr-contracts/src/\",\":forge-std/=lib/forge-std/src/\",\":openzeppelin-contracts-upgradeable/=lib/eignlayr-contracts/lib/openzeppelin-contracts-upgradeable/\",\":openzeppelin-contracts/=lib/eignlayr-contracts/lib/openzeppelin-contracts/contracts/\"]},\"sources\":{\"../eignlayr-contracts/src/contracts/interfaces/IQuorumRegistry.sol\":{\"keccak256\":\"0xe666a9120ceaf3278c34cebd7c33ee27a14788752b70f08fccc252971a53d6e3\",\"license\":\"UNLICENSED\",\"urls\":[\"bzz-raw://3f3df7d1504adc6f3c4305150c980d27c35feea7d1b9119b86a5bdb442b8f36e\",\"dweb:/ipfs/QmQqwGVbZ8mV7aFwe9rQ9hiAcXonmtyD2Kq22eNfcXhnkw\"]},\"../eignlayr-contracts/src/contracts/interfaces/IRegistry.sol\":{\"keccak256\":\"0x5bd8be0f70b0e69f94e069c52417079ba2b9e73acd5f659c09b22142dc6c59f5\",\"license\":\"UNLICENSED\",\"urls\":[\"bzz-raw://e32791f0147f40738d8a27c86e83c2207d5c1d1654c2f730629b3be587963cc4\",\"dweb:/ipfs/Qma4VYzA9jkLxWQCgCFm911rQodoSboaJxnNqi4AaSzftp\"]}},\"version\":1}",
+  "metadata": {
+    "compiler": {
+      "version": "0.8.12+commit.f00d7308"
+    },
+    "language": "Solidity",
+    "output": {
+      "abi": [
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "operator",
+              "type": "address"
+            },
+            {
+              "internalType": "uint256",
+              "name": "blockNumber",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "stakeHistoryIndex",
+              "type": "uint256"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "checkOperatorActiveAtBlockNumber",
+          "outputs": [
+            {
+              "internalType": "bool",
+              "name": "",
+              "type": "bool"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "operator",
+              "type": "address"
+            },
+            {
+              "internalType": "uint256",
+              "name": "blockNumber",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "stakeHistoryIndex",
+              "type": "uint256"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "checkOperatorInactiveAtBlockNumber",
+          "outputs": [
+            {
+              "internalType": "bool",
+              "name": "",
+              "type": "bool"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "operator",
+              "type": "address"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "getFromTaskNumberForOperator",
+          "outputs": [
+            {
+              "internalType": "uint32",
+              "name": "",
+              "type": "uint32"
+            }
+          ]
+        },
+        {
+          "inputs": [],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "getLengthOfTotalStakeHistory",
+          "outputs": [
+            {
+              "internalType": "uint256",
+              "name": "",
+              "type": "uint256"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "operator",
+              "type": "address"
+            },
+            {
+              "internalType": "uint32",
+              "name": "blockNumber",
+              "type": "uint32"
+            },
+            {
+              "internalType": "uint32",
+              "name": "index",
+              "type": "uint32"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "getOperatorIndex",
+          "outputs": [
+            {
+              "internalType": "uint32",
+              "name": "",
+              "type": "uint32"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "operator",
+              "type": "address"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "getOperatorPubkeyHash",
+          "outputs": [
+            {
+              "internalType": "bytes32",
+              "name": "",
+              "type": "bytes32"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "bytes32",
+              "name": "pubkeyHash",
+              "type": "bytes32"
+            },
+            {
+              "internalType": "uint256",
+              "name": "index",
+              "type": "uint256"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "getStakeFromPubkeyHashAndIndex",
+          "outputs": [
+            {
+              "internalType": "struct IQuorumRegistry.OperatorStake",
+              "name": "",
+              "type": "tuple",
+              "components": [
+                {
+                  "internalType": "uint32",
+                  "name": "updateBlockNumber",
+                  "type": "uint32"
+                },
+                {
+                  "internalType": "uint32",
+                  "name": "nextUpdateBlockNumber",
+                  "type": "uint32"
+                },
+                {
+                  "internalType": "uint96",
+                  "name": "firstQuorumStake",
+                  "type": "uint96"
+                },
+                {
+                  "internalType": "uint96",
+                  "name": "secondQuorumStake",
+                  "type": "uint96"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "uint32",
+              "name": "blockNumber",
+              "type": "uint32"
+            },
+            {
+              "internalType": "uint32",
+              "name": "index",
+              "type": "uint32"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "getTotalOperators",
+          "outputs": [
+            {
+              "internalType": "uint32",
+              "name": "",
+              "type": "uint32"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "uint256",
+              "name": "index",
+              "type": "uint256"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "getTotalStakeFromIndex",
+          "outputs": [
+            {
+              "internalType": "struct IQuorumRegistry.OperatorStake",
+              "name": "",
+              "type": "tuple",
+              "components": [
+                {
+                  "internalType": "uint32",
+                  "name": "updateBlockNumber",
+                  "type": "uint32"
+                },
+                {
+                  "internalType": "uint32",
+                  "name": "nextUpdateBlockNumber",
+                  "type": "uint32"
+                },
+                {
+                  "internalType": "uint96",
+                  "name": "firstQuorumStake",
+                  "type": "uint96"
+                },
+                {
+                  "internalType": "uint96",
+                  "name": "secondQuorumStake",
+                  "type": "uint96"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "operator",
+              "type": "address"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "isActiveOperator",
+          "outputs": [
+            {
+              "internalType": "bool",
+              "name": "",
+              "type": "bool"
+            }
+          ]
+        },
+        {
+          "inputs": [],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "numOperators",
+          "outputs": [
+            {
+              "internalType": "uint32",
+              "name": "",
+              "type": "uint32"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "operator",
+              "type": "address"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "operatorStakes",
+          "outputs": [
+            {
+              "internalType": "uint96",
+              "name": "",
+              "type": "uint96"
+            },
+            {
+              "internalType": "uint96",
+              "name": "",
+              "type": "uint96"
+            }
+          ]
+        },
+        {
+          "inputs": [],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "totalStake",
+          "outputs": [
+            {
+              "internalType": "uint96",
+              "name": "",
+              "type": "uint96"
+            },
+            {
+              "internalType": "uint96",
+              "name": "",
+              "type": "uint96"
+            }
+          ]
+        }
+      ],
+      "devdoc": {
+        "kind": "dev",
+        "methods": {
+          "checkOperatorActiveAtBlockNumber(address,uint256,uint256)": {
+            "details": "In order for this function to return 'true', the inputs must satisfy all of the following list: 1) `pubkeyHashToStakeHistory[pubkeyHash][index].updateBlockNumber <= blockNumber` 2) `pubkeyHashToStakeHistory[pubkeyHash][index].nextUpdateBlockNumber` must be either `0` (signifying no next update) or is must be strictly greater than `blockNumber` 3) `pubkeyHashToStakeHistory[pubkeyHash][index].firstQuorumStake > 0` or `pubkeyHashToStakeHistory[pubkeyHash][index].secondQuorumStake > 0`, i.e. the operator had nonzero stakeNote that a return value of 'false' does not guarantee that the `operator` was inactive at `blockNumber`, since a bad `stakeHistoryIndex` can be supplied in order to obtain a response of 'false'.",
+            "params": {
+              "blockNumber": "is the block number of interest",
+              "operator": "is the operator of interest",
+              "stakeHistoryIndex": "specifies an index in `pubkeyHashToStakeHistory[pubkeyHash]`, where `pubkeyHash` is looked up in `registry[operator].pubkeyHash`"
+            },
+            "returns": {
+              "_0": "'true' if it is succesfully proven that  the `operator` was active at the `blockNumber`, and 'false' otherwise"
+            }
+          },
+          "checkOperatorInactiveAtBlockNumber(address,uint256,uint256)": {
+            "details": "In order for this function to return 'true', the inputs must satisfy all of the following list: 1) `pubkeyHashToStakeHistory[pubkeyHash][index].updateBlockNumber <= blockNumber` 2) `pubkeyHashToStakeHistory[pubkeyHash][index].nextUpdateBlockNumber` must be either `0` (signifying no next update) or is must be strictly greater than `blockNumber` 3) `pubkeyHashToStakeHistory[pubkeyHash][index].firstQuorumStake > 0` or `pubkeyHashToStakeHistory[pubkeyHash][index].secondQuorumStake > 0`, i.e. the operator had nonzero stakeNote that a return value of 'false' does not guarantee that the `operator` was active at `blockNumber`, since a bad `stakeHistoryIndex` can be supplied in order to obtain a response of 'false'.",
+            "params": {
+              "blockNumber": "is the block number of interest",
+              "operator": "is the operator of interest",
+              "stakeHistoryIndex": "specifies an index in `pubkeyHashToStakeHistory[pubkeyHash]`, where `pubkeyHash` is looked up in `registry[operator].pubkeyHash`"
+            },
+            "returns": {
+              "_0": "'true' if it is succesfully proven that  the `operator` was inactive at the `blockNumber`, and 'false' otherwise"
+            }
+          },
+          "getOperatorIndex(address,uint32,uint32)": {
+            "details": "Function will revert in the event that the specified `index` input does not identify the appropriate entry in the array `pubkeyHashToIndexHistory[pubkeyHash]` to pull the info from.",
+            "params": {
+              "blockNumber": "Is the desired block number at which we wish to query the operator's position in the `operatorList` array",
+              "index": "Used to specify the entry within the dynamic array `pubkeyHashToIndexHistory[pubkeyHash]` to  read data from, where `pubkeyHash` is looked up from `operator`'s registration info"
+            }
+          },
+          "getStakeFromPubkeyHashAndIndex(bytes32,uint256)": {
+            "details": "Function will revert if `index` is out-of-bounds.",
+            "params": {
+              "index": "Array index for lookup, within the dynamic array `pubkeyHashToStakeHistory[pubkeyHash]`.",
+              "pubkeyHash": "Hash of the public key of the operator of interest."
+            }
+          },
+          "getTotalOperators(uint32,uint32)": {
+            "details": "This function will revert if the provided `index` is out of bounds.",
+            "params": {
+              "index": "Input used to specify the entry within the dynamic array `totalOperatorsHistory` to read data from."
+            }
+          },
+          "getTotalStakeFromIndex(uint256)": {
+            "details": "Function will revert in the event that `index` is out-of-bounds."
+          },
+          "operatorStakes(address)": {
+            "details": "Function returns weights of **0** in the event that the operator has no stake history"
+          }
+        },
+        "version": 1
+      },
+      "userdoc": {
+        "kind": "user",
+        "methods": {
+          "checkOperatorActiveAtBlockNumber(address,uint256,uint256)": {
+            "notice": "Checks that the `operator` was active at the `blockNumber`, using the specified `stakeHistoryIndex` as proof."
+          },
+          "checkOperatorInactiveAtBlockNumber(address,uint256,uint256)": {
+            "notice": "Checks that the `operator` was inactive at the `blockNumber`, using the specified `stakeHistoryIndex` as proof."
+          },
+          "getFromTaskNumberForOperator(address)": {
+            "notice": "Returns task number from when `operator` has been registered."
+          },
+          "getOperatorIndex(address,uint32,uint32)": {
+            "notice": "Looks up the `operator`'s index in the dynamic array `operatorList` at the specified `blockNumber`."
+          },
+          "getOperatorPubkeyHash(address)": {
+            "notice": "Returns the stored pubkeyHash for the specified `operator`."
+          },
+          "getStakeFromPubkeyHashAndIndex(bytes32,uint256)": {
+            "notice": "Returns the stake weight corresponding to `pubkeyHash`, at the `index`-th entry in the `pubkeyHashToStakeHistory[pubkeyHash]` array."
+          },
+          "getTotalOperators(uint32,uint32)": {
+            "notice": "Looks up the number of total operators at the specified `blockNumber`."
+          },
+          "getTotalStakeFromIndex(uint256)": {
+            "notice": "Returns the `index`-th entry in the dynamic array of total stake, `totalStakeHistory`."
+          },
+          "isActiveOperator(address)": {
+            "notice": "Returns 'true' if `operator` is registered as an active operator, and 'false' otherwise."
+          },
+          "numOperators()": {
+            "notice": "Returns the current number of operators of this service."
+          },
+          "operatorStakes(address)": {
+            "notice": "Returns the most recent stake weights for the `operator`"
+          },
+          "totalStake()": {
+            "notice": "Returns the stake amounts from the latest entry in `totalStakeHistory`."
+          }
+        },
+        "version": 1
+      }
+    },
+    "settings": {
+      "remappings": [
+        ":@eigenlayer/=../eignlayr-contracts/src/",
+        ":@openzeppelin-upgrades/=lib/openzeppelin-contracts-upgradeable/",
+        ":@openzeppelin/=lib/openzeppelin-contracts/",
+        ":ds-test/=lib/eignlayr-contracts/lib/ds-test/src/",
+        ":eignlayr-contracts/=lib/eignlayr-contracts/src/",
+        ":forge-std/=lib/forge-std/src/",
+        ":openzeppelin-contracts-upgradeable/=lib/eignlayr-contracts/lib/openzeppelin-contracts-upgradeable/",
+        ":openzeppelin-contracts/=lib/eignlayr-contracts/lib/openzeppelin-contracts/contracts/"
+      ],
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "metadata": {
+        "bytecodeHash": "ipfs"
+      },
+      "compilationTarget": {
+        "../eignlayr-contracts/src/contracts/interfaces/IQuorumRegistry.sol": "IQuorumRegistry"
+      },
+      "libraries": {}
+    },
+    "sources": {
+      "../eignlayr-contracts/src/contracts/interfaces/IQuorumRegistry.sol": {
+        "keccak256": "0xe666a9120ceaf3278c34cebd7c33ee27a14788752b70f08fccc252971a53d6e3",
+        "urls": [
+          "bzz-raw://3f3df7d1504adc6f3c4305150c980d27c35feea7d1b9119b86a5bdb442b8f36e",
+          "dweb:/ipfs/QmQqwGVbZ8mV7aFwe9rQ9hiAcXonmtyD2Kq22eNfcXhnkw"
+        ],
+        "license": "UNLICENSED"
+      },
+      "../eignlayr-contracts/src/contracts/interfaces/IRegistry.sol": {
+        "keccak256": "0x5bd8be0f70b0e69f94e069c52417079ba2b9e73acd5f659c09b22142dc6c59f5",
+        "urls": [
+          "bzz-raw://e32791f0147f40738d8a27c86e83c2207d5c1d1654c2f730629b3be587963cc4",
+          "dweb:/ipfs/Qma4VYzA9jkLxWQCgCFm911rQodoSboaJxnNqi4AaSzftp"
+        ],
+        "license": "UNLICENSED"
+      }
+    },
+    "version": 1
+  },
+  "ast": {
+    "absolutePath": "../eignlayr-contracts/src/contracts/interfaces/IQuorumRegistry.sol",
+    "id": 468,
+    "exportedSymbols": {
+      "IQuorumRegistry": [
+        467
+      ],
+      "IRegistry": [
+        54512
+      ]
+    },
+    "nodeType": "SourceUnit",
+    "src": "39:8218:11",
+    "nodes": [
+      {
+        "id": 325,
+        "nodeType": "PragmaDirective",
+        "src": "39:23:11",
+        "nodes": [],
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".9"
+        ]
+      },
+      {
+        "id": 326,
+        "nodeType": "ImportDirective",
+        "src": "64:25:11",
+        "nodes": [],
+        "absolutePath": "../eignlayr-contracts/src/contracts/interfaces/IRegistry.sol",
+        "file": "./IRegistry.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 468,
+        "sourceUnit": 54513,
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "id": 467,
+        "nodeType": "ContractDefinition",
+        "src": "403:7853:11",
+        "nodes": [
+          {
+            "id": 332,
+            "nodeType": "EnumDefinition",
+            "src": "471:87:11",
+            "nodes": [],
+            "canonicalName": "IQuorumRegistry.Status",
+            "members": [
+              {
+                "id": 330,
+                "name": "INACTIVE",
+                "nameLocation": "528:8:11",
+                "nodeType": "EnumValue",
+                "src": "528:8:11"
+              },
+              {
+                "id": 331,
+                "name": "ACTIVE",
+                "nameLocation": "546:6:11",
+                "nodeType": "EnumValue",
+                "src": "546:6:11"
+              }
+            ],
+            "name": "Status",
+            "nameLocation": "476:6:11"
+          },
+          {
+            "id": 340,
+            "nodeType": "StructDefinition",
+            "src": "739:319:11",
+            "nodes": [],
+            "canonicalName": "IQuorumRegistry.Operator",
+            "members": [
+              {
+                "constant": false,
+                "id": 334,
+                "mutability": "mutable",
+                "name": "pubkeyHash",
+                "nameLocation": "815:10:11",
+                "nodeType": "VariableDeclaration",
+                "scope": 340,
+                "src": "807:18:11",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_bytes32",
+                  "typeString": "bytes32"
+                },
+                "typeName": {
+                  "id": 333,
+                  "name": "bytes32",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "807:7:11",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 336,
+                "mutability": "mutable",
+                "name": "fromTaskNumber",
+                "nameLocation": "915:14:11",
+                "nodeType": "VariableDeclaration",
+                "scope": 340,
+                "src": "908:21:11",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint32",
+                  "typeString": "uint32"
+                },
+                "typeName": {
+                  "id": 335,
+                  "name": "uint32",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "908:6:11",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint32",
+                    "typeString": "uint32"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 339,
+                "mutability": "mutable",
+                "name": "status",
+                "nameLocation": "1045:6:11",
+                "nodeType": "VariableDeclaration",
+                "scope": 340,
+                "src": "1038:13:11",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_enum$_Status_$332",
+                  "typeString": "enum IQuorumRegistry.Status"
+                },
+                "typeName": {
+                  "id": 338,
+                  "nodeType": "UserDefinedTypeName",
+                  "pathNode": {
+                    "id": 337,
+                    "name": "Status",
+                    "nodeType": "IdentifierPath",
+                    "referencedDeclaration": 332,
+                    "src": "1038:6:11"
+                  },
+                  "referencedDeclaration": 332,
+                  "src": "1038:6:11",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_enum$_Status_$332",
+                    "typeString": "enum IQuorumRegistry.Status"
+                  }
+                },
+                "visibility": "internal"
+              }
+            ],
+            "name": "Operator",
+            "nameLocation": "746:8:11",
+            "scope": 467,
+            "visibility": "public"
+          },
+          {
+            "id": 345,
+            "nodeType": "StructDefinition",
+            "src": "1144:395:11",
+            "nodes": [],
+            "canonicalName": "IQuorumRegistry.OperatorIndex",
+            "members": [
+              {
+                "constant": false,
+                "id": 342,
+                "mutability": "mutable",
+                "name": "toBlockNumber",
+                "nameLocation": "1374:13:11",
+                "nodeType": "VariableDeclaration",
+                "scope": 345,
+                "src": "1367:20:11",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint32",
+                  "typeString": "uint32"
+                },
+                "typeName": {
+                  "id": 341,
+                  "name": "uint32",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "1367:6:11",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint32",
+                    "typeString": "uint32"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 344,
+                "mutability": "mutable",
+                "name": "index",
+                "nameLocation": "1527:5:11",
+                "nodeType": "VariableDeclaration",
+                "scope": 345,
+                "src": "1520:12:11",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint32",
+                  "typeString": "uint32"
+                },
+                "typeName": {
+                  "id": 343,
+                  "name": "uint32",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "1520:6:11",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint32",
+                    "typeString": "uint32"
+                  }
+                },
+                "visibility": "internal"
+              }
+            ],
+            "name": "OperatorIndex",
+            "nameLocation": "1151:13:11",
+            "scope": 467,
+            "visibility": "public"
+          },
+          {
+            "id": 355,
+            "nodeType": "StructDefinition",
+            "src": "1668:550:11",
+            "nodes": [],
+            "canonicalName": "IQuorumRegistry.OperatorStake",
+            "members": [
+              {
+                "constant": false,
+                "id": 347,
+                "mutability": "mutable",
+                "name": "updateBlockNumber",
+                "nameLocation": "1785:17:11",
+                "nodeType": "VariableDeclaration",
+                "scope": 355,
+                "src": "1778:24:11",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint32",
+                  "typeString": "uint32"
+                },
+                "typeName": {
+                  "id": 346,
+                  "name": "uint32",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "1778:6:11",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint32",
+                    "typeString": "uint32"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 350,
+                "mutability": "mutable",
+                "name": "nextUpdateBlockNumber",
+                "nameLocation": "1969:21:11",
+                "nodeType": "VariableDeclaration",
+                "scope": 355,
+                "src": "1962:28:11",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint32",
+                  "typeString": "uint32"
+                },
+                "typeName": {
+                  "id": 349,
+                  "name": "uint32",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "1962:6:11",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint32",
+                    "typeString": "uint32"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 352,
+                "mutability": "mutable",
+                "name": "firstQuorumStake",
+                "nameLocation": "2052:16:11",
+                "nodeType": "VariableDeclaration",
+                "scope": 355,
+                "src": "2045:23:11",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint96",
+                  "typeString": "uint96"
+                },
+                "typeName": {
+                  "id": 351,
+                  "name": "uint96",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "2045:6:11",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint96",
+                    "typeString": "uint96"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 354,
+                "mutability": "mutable",
+                "name": "secondQuorumStake",
+                "nameLocation": "2194:17:11",
+                "nodeType": "VariableDeclaration",
+                "scope": 355,
+                "src": "2187:24:11",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint96",
+                  "typeString": "uint96"
+                },
+                "typeName": {
+                  "id": 353,
+                  "name": "uint96",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "2187:6:11",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint96",
+                    "typeString": "uint96"
+                  }
+                },
+                "visibility": "internal"
+              }
+            ],
+            "name": "OperatorStake",
+            "nameLocation": "1675:13:11",
+            "scope": 467,
+            "visibility": "public"
+          },
+          {
+            "id": 360,
+            "nodeType": "FunctionDefinition",
+            "src": "2224:72:11",
+            "nodes": [],
+            "functionSelector": "ca06c782",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getLengthOfTotalStakeHistory",
+            "nameLocation": "2233:28:11",
+            "parameters": {
+              "id": 356,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "2261:2:11"
+            },
+            "returnParameters": {
+              "id": 359,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 358,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 360,
+                  "src": "2287:7:11",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 357,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2287:7:11",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "2286:9:11"
+            },
+            "scope": 467,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 369,
+            "nodeType": "FunctionDefinition",
+            "src": "2497:92:11",
+            "nodes": [],
+            "documentation": {
+              "id": 361,
+              "nodeType": "StructuredDocumentation",
+              "src": "2302:190:11",
+              "text": " @notice Returns the `index`-th entry in the dynamic array of total stake, `totalStakeHistory`.\n @dev Function will revert in the event that `index` is out-of-bounds."
+            },
+            "functionSelector": "102068d3",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getTotalStakeFromIndex",
+            "nameLocation": "2506:22:11",
+            "parameters": {
+              "id": 364,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 363,
+                  "mutability": "mutable",
+                  "name": "index",
+                  "nameLocation": "2537:5:11",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 369,
+                  "src": "2529:13:11",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 362,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2529:7:11",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "2528:15:11"
+            },
+            "returnParameters": {
+              "id": 368,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 367,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 369,
+                  "src": "2567:20:11",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_struct$_OperatorStake_$355_memory_ptr",
+                    "typeString": "struct IQuorumRegistry.OperatorStake"
+                  },
+                  "typeName": {
+                    "id": 366,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 365,
+                      "name": "OperatorStake",
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 355,
+                      "src": "2567:13:11"
+                    },
+                    "referencedDeclaration": 355,
+                    "src": "2567:13:11",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_OperatorStake_$355_storage_ptr",
+                      "typeString": "struct IQuorumRegistry.OperatorStake"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "2566:22:11"
+            },
+            "scope": 467,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 377,
+            "nodeType": "FunctionDefinition",
+            "src": "2671:81:11",
+            "nodes": [],
+            "documentation": {
+              "id": 370,
+              "nodeType": "StructuredDocumentation",
+              "src": "2595:71:11",
+              "text": "@notice Returns the stored pubkeyHash for the specified `operator`."
+            },
+            "functionSelector": "fd0d930a",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getOperatorPubkeyHash",
+            "nameLocation": "2680:21:11",
+            "parameters": {
+              "id": 373,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 372,
+                  "mutability": "mutable",
+                  "name": "operator",
+                  "nameLocation": "2710:8:11",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 377,
+                  "src": "2702:16:11",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 371,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2702:7:11",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "2701:18:11"
+            },
+            "returnParameters": {
+              "id": 376,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 375,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 377,
+                  "src": "2743:7:11",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 374,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2743:7:11",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "2742:9:11"
+            },
+            "scope": 467,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 385,
+            "nodeType": "FunctionDefinition",
+            "src": "2836:87:11",
+            "nodes": [],
+            "documentation": {
+              "id": 378,
+              "nodeType": "StructuredDocumentation",
+              "src": "2758:73:11",
+              "text": "@notice Returns task number from when `operator` has been registered."
+            },
+            "functionSelector": "ae124d40",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getFromTaskNumberForOperator",
+            "nameLocation": "2845:28:11",
+            "parameters": {
+              "id": 381,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 380,
+                  "mutability": "mutable",
+                  "name": "operator",
+                  "nameLocation": "2882:8:11",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 385,
+                  "src": "2874:16:11",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 379,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2874:7:11",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "2873:18:11"
+            },
+            "returnParameters": {
+              "id": 384,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 383,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 385,
+                  "src": "2915:6:11",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint32",
+                    "typeString": "uint32"
+                  },
+                  "typeName": {
+                    "id": 382,
+                    "name": "uint32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2915:6:11",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint32",
+                      "typeString": "uint32"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "2914:8:11"
+            },
+            "scope": 467,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 396,
+            "nodeType": "FunctionDefinition",
+            "src": "3348:144:11",
+            "nodes": [],
+            "documentation": {
+              "id": 386,
+              "nodeType": "StructuredDocumentation",
+              "src": "2929:414:11",
+              "text": " @notice Returns the stake weight corresponding to `pubkeyHash`, at the\n `index`-th entry in the `pubkeyHashToStakeHistory[pubkeyHash]` array.\n @param pubkeyHash Hash of the public key of the operator of interest.\n @param index Array index for lookup, within the dynamic array `pubkeyHashToStakeHistory[pubkeyHash]`.\n @dev Function will revert if `index` is out-of-bounds."
+            },
+            "functionSelector": "2173fa23",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getStakeFromPubkeyHashAndIndex",
+            "nameLocation": "3357:30:11",
+            "parameters": {
+              "id": 391,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 388,
+                  "mutability": "mutable",
+                  "name": "pubkeyHash",
+                  "nameLocation": "3396:10:11",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 396,
+                  "src": "3388:18:11",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 387,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "3388:7:11",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 390,
+                  "mutability": "mutable",
+                  "name": "index",
+                  "nameLocation": "3416:5:11",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 396,
+                  "src": "3408:13:11",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 389,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "3408:7:11",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "3387:35:11"
+            },
+            "returnParameters": {
+              "id": 395,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 394,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 396,
+                  "src": "3470:20:11",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_struct$_OperatorStake_$355_memory_ptr",
+                    "typeString": "struct IQuorumRegistry.OperatorStake"
+                  },
+                  "typeName": {
+                    "id": 393,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 392,
+                      "name": "OperatorStake",
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 355,
+                      "src": "3470:13:11"
+                    },
+                    "referencedDeclaration": 355,
+                    "src": "3470:13:11",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_OperatorStake_$355_storage_ptr",
+                      "typeString": "struct IQuorumRegistry.OperatorStake"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "3469:22:11"
+            },
+            "scope": 467,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 408,
+            "nodeType": "FunctionDefinition",
+            "src": "4828:171:11",
+            "nodes": [],
+            "documentation": {
+              "id": 397,
+              "nodeType": "StructuredDocumentation",
+              "src": "3498:1325:11",
+              "text": " @notice Checks that the `operator` was active at the `blockNumber`, using the specified `stakeHistoryIndex` as proof.\n @param operator is the operator of interest\n @param blockNumber is the block number of interest\n @param stakeHistoryIndex specifies an index in `pubkeyHashToStakeHistory[pubkeyHash]`, where `pubkeyHash` is looked up\n in `registry[operator].pubkeyHash`\n @return 'true' if it is succesfully proven that  the `operator` was active at the `blockNumber`, and 'false' otherwise\n @dev In order for this function to return 'true', the inputs must satisfy all of the following list:\n 1) `pubkeyHashToStakeHistory[pubkeyHash][index].updateBlockNumber <= blockNumber`\n 2) `pubkeyHashToStakeHistory[pubkeyHash][index].nextUpdateBlockNumber` must be either `0` (signifying no next update) or\n is must be strictly greater than `blockNumber`\n 3) `pubkeyHashToStakeHistory[pubkeyHash][index].firstQuorumStake > 0`\n or `pubkeyHashToStakeHistory[pubkeyHash][index].secondQuorumStake > 0`, i.e. the operator had nonzero stake\n @dev Note that a return value of 'false' does not guarantee that the `operator` was inactive at `blockNumber`, since a\n bad `stakeHistoryIndex` can be supplied in order to obtain a response of 'false'."
+            },
+            "functionSelector": "629b312a",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "checkOperatorActiveAtBlockNumber",
+            "nameLocation": "4837:32:11",
+            "parameters": {
+              "id": 404,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 399,
+                  "mutability": "mutable",
+                  "name": "operator",
+                  "nameLocation": "4887:8:11",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 408,
+                  "src": "4879:16:11",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 398,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "4879:7:11",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 401,
+                  "mutability": "mutable",
+                  "name": "blockNumber",
+                  "nameLocation": "4913:11:11",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 408,
+                  "src": "4905:19:11",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 400,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "4905:7:11",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 403,
+                  "mutability": "mutable",
+                  "name": "stakeHistoryIndex",
+                  "nameLocation": "4942:17:11",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 408,
+                  "src": "4934:25:11",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 402,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "4934:7:11",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "4869:100:11"
+            },
+            "returnParameters": {
+              "id": 407,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 406,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 408,
+                  "src": "4993:4:11",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  },
+                  "typeName": {
+                    "id": 405,
+                    "name": "bool",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "4993:4:11",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "4992:6:11"
+            },
+            "scope": 467,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 420,
+            "nodeType": "FunctionDefinition",
+            "src": "6337:173:11",
+            "nodes": [],
+            "documentation": {
+              "id": 409,
+              "nodeType": "StructuredDocumentation",
+              "src": "5005:1327:11",
+              "text": " @notice Checks that the `operator` was inactive at the `blockNumber`, using the specified `stakeHistoryIndex` as proof.\n @param operator is the operator of interest\n @param blockNumber is the block number of interest\n @param stakeHistoryIndex specifies an index in `pubkeyHashToStakeHistory[pubkeyHash]`, where `pubkeyHash` is looked up\n in `registry[operator].pubkeyHash`\n @return 'true' if it is succesfully proven that  the `operator` was inactive at the `blockNumber`, and 'false' otherwise\n @dev In order for this function to return 'true', the inputs must satisfy all of the following list:\n 1) `pubkeyHashToStakeHistory[pubkeyHash][index].updateBlockNumber <= blockNumber`\n 2) `pubkeyHashToStakeHistory[pubkeyHash][index].nextUpdateBlockNumber` must be either `0` (signifying no next update) or\n is must be strictly greater than `blockNumber`\n 3) `pubkeyHashToStakeHistory[pubkeyHash][index].firstQuorumStake > 0`\n or `pubkeyHashToStakeHistory[pubkeyHash][index].secondQuorumStake > 0`, i.e. the operator had nonzero stake\n @dev Note that a return value of 'false' does not guarantee that the `operator` was active at `blockNumber`, since a\n bad `stakeHistoryIndex` can be supplied in order to obtain a response of 'false'."
+            },
+            "functionSelector": "e84ef3cb",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "checkOperatorInactiveAtBlockNumber",
+            "nameLocation": "6346:34:11",
+            "parameters": {
+              "id": 416,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 411,
+                  "mutability": "mutable",
+                  "name": "operator",
+                  "nameLocation": "6398:8:11",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 420,
+                  "src": "6390:16:11",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 410,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "6390:7:11",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 413,
+                  "mutability": "mutable",
+                  "name": "blockNumber",
+                  "nameLocation": "6424:11:11",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 420,
+                  "src": "6416:19:11",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 412,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "6416:7:11",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 415,
+                  "mutability": "mutable",
+                  "name": "stakeHistoryIndex",
+                  "nameLocation": "6453:17:11",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 420,
+                  "src": "6445:25:11",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 414,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "6445:7:11",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "6380:100:11"
+            },
+            "returnParameters": {
+              "id": 419,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 418,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 420,
+                  "src": "6504:4:11",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  },
+                  "typeName": {
+                    "id": 417,
+                    "name": "bool",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "6504:4:11",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "6503:6:11"
+            },
+            "scope": 467,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 432,
+            "nodeType": "FunctionDefinition",
+            "src": "7184:109:11",
+            "nodes": [],
+            "documentation": {
+              "id": 421,
+              "nodeType": "StructuredDocumentation",
+              "src": "6516:663:11",
+              "text": " @notice Looks up the `operator`'s index in the dynamic array `operatorList` at the specified `blockNumber`.\n @param index Used to specify the entry within the dynamic array `pubkeyHashToIndexHistory[pubkeyHash]` to \n read data from, where `pubkeyHash` is looked up from `operator`'s registration info\n @param blockNumber Is the desired block number at which we wish to query the operator's position in the `operatorList` array\n @dev Function will revert in the event that the specified `index` input does not identify the appropriate entry in the\n array `pubkeyHashToIndexHistory[pubkeyHash]` to pull the info from."
+            },
+            "functionSelector": "7210b0c9",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getOperatorIndex",
+            "nameLocation": "7193:16:11",
+            "parameters": {
+              "id": 428,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 423,
+                  "mutability": "mutable",
+                  "name": "operator",
+                  "nameLocation": "7218:8:11",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 432,
+                  "src": "7210:16:11",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 422,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "7210:7:11",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 425,
+                  "mutability": "mutable",
+                  "name": "blockNumber",
+                  "nameLocation": "7235:11:11",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 432,
+                  "src": "7228:18:11",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint32",
+                    "typeString": "uint32"
+                  },
+                  "typeName": {
+                    "id": 424,
+                    "name": "uint32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "7228:6:11",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint32",
+                      "typeString": "uint32"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 427,
+                  "mutability": "mutable",
+                  "name": "index",
+                  "nameLocation": "7255:5:11",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 432,
+                  "src": "7248:12:11",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint32",
+                    "typeString": "uint32"
+                  },
+                  "typeName": {
+                    "id": 426,
+                    "name": "uint32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "7248:6:11",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint32",
+                      "typeString": "uint32"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "7209:52:11"
+            },
+            "returnParameters": {
+              "id": 431,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 430,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 432,
+                  "src": "7285:6:11",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint32",
+                    "typeString": "uint32"
+                  },
+                  "typeName": {
+                    "id": 429,
+                    "name": "uint32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "7285:6:11",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint32",
+                      "typeString": "uint32"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "7284:8:11"
+            },
+            "scope": 467,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 442,
+            "nodeType": "FunctionDefinition",
+            "src": "7600:92:11",
+            "nodes": [],
+            "documentation": {
+              "id": 433,
+              "nodeType": "StructuredDocumentation",
+              "src": "7299:296:11",
+              "text": " @notice Looks up the number of total operators at the specified `blockNumber`.\n @param index Input used to specify the entry within the dynamic array `totalOperatorsHistory` to read data from.\n @dev This function will revert if the provided `index` is out of bounds."
+            },
+            "functionSelector": "b322bdc7",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getTotalOperators",
+            "nameLocation": "7609:17:11",
+            "parameters": {
+              "id": 438,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 435,
+                  "mutability": "mutable",
+                  "name": "blockNumber",
+                  "nameLocation": "7634:11:11",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 442,
+                  "src": "7627:18:11",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint32",
+                    "typeString": "uint32"
+                  },
+                  "typeName": {
+                    "id": 434,
+                    "name": "uint32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "7627:6:11",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint32",
+                      "typeString": "uint32"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 437,
+                  "mutability": "mutable",
+                  "name": "index",
+                  "nameLocation": "7654:5:11",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 442,
+                  "src": "7647:12:11",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint32",
+                    "typeString": "uint32"
+                  },
+                  "typeName": {
+                    "id": 436,
+                    "name": "uint32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "7647:6:11",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint32",
+                      "typeString": "uint32"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "7626:34:11"
+            },
+            "returnParameters": {
+              "id": 441,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 440,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 442,
+                  "src": "7684:6:11",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint32",
+                    "typeString": "uint32"
+                  },
+                  "typeName": {
+                    "id": 439,
+                    "name": "uint32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "7684:6:11",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint32",
+                      "typeString": "uint32"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "7683:8:11"
+            },
+            "scope": 467,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 448,
+            "nodeType": "FunctionDefinition",
+            "src": "7771:55:11",
+            "nodes": [],
+            "documentation": {
+              "id": 443,
+              "nodeType": "StructuredDocumentation",
+              "src": "7698:68:11",
+              "text": "@notice Returns the current number of operators of this service."
+            },
+            "functionSelector": "bd820688",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "numOperators",
+            "nameLocation": "7780:12:11",
+            "parameters": {
+              "id": 444,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "7792:2:11"
+            },
+            "returnParameters": {
+              "id": 447,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 446,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 448,
+                  "src": "7818:6:11",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint32",
+                    "typeString": "uint32"
+                  },
+                  "typeName": {
+                    "id": 445,
+                    "name": "uint32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "7818:6:11",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint32",
+                      "typeString": "uint32"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "7817:8:11"
+            },
+            "scope": 467,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 458,
+            "nodeType": "FunctionDefinition",
+            "src": "8018:81:11",
+            "nodes": [],
+            "documentation": {
+              "id": 449,
+              "nodeType": "StructuredDocumentation",
+              "src": "7832:181:11",
+              "text": " @notice Returns the most recent stake weights for the `operator`\n @dev Function returns weights of **0** in the event that the operator has no stake history"
+            },
+            "functionSelector": "1c9856ae",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "operatorStakes",
+            "nameLocation": "8027:14:11",
+            "parameters": {
+              "id": 452,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 451,
+                  "mutability": "mutable",
+                  "name": "operator",
+                  "nameLocation": "8050:8:11",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 458,
+                  "src": "8042:16:11",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 450,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "8042:7:11",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "8041:18:11"
+            },
+            "returnParameters": {
+              "id": 457,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 454,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 458,
+                  "src": "8083:6:11",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint96",
+                    "typeString": "uint96"
+                  },
+                  "typeName": {
+                    "id": 453,
+                    "name": "uint96",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "8083:6:11",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint96",
+                      "typeString": "uint96"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 456,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 458,
+                  "src": "8091:6:11",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint96",
+                    "typeString": "uint96"
+                  },
+                  "typeName": {
+                    "id": 455,
+                    "name": "uint96",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "8091:6:11",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint96",
+                      "typeString": "uint96"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "8082:16:11"
+            },
+            "scope": 467,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 466,
+            "nodeType": "FunctionDefinition",
+            "src": "8193:61:11",
+            "nodes": [],
+            "documentation": {
+              "id": 459,
+              "nodeType": "StructuredDocumentation",
+              "src": "8105:83:11",
+              "text": "@notice Returns the stake amounts from the latest entry in `totalStakeHistory`."
+            },
+            "functionSelector": "8b0e9f3f",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "totalStake",
+            "nameLocation": "8202:10:11",
+            "parameters": {
+              "id": 460,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "8212:2:11"
+            },
+            "returnParameters": {
+              "id": 465,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 462,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 466,
+                  "src": "8238:6:11",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint96",
+                    "typeString": "uint96"
+                  },
+                  "typeName": {
+                    "id": 461,
+                    "name": "uint96",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "8238:6:11",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint96",
+                      "typeString": "uint96"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 464,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 466,
+                  "src": "8246:6:11",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint96",
+                    "typeString": "uint96"
+                  },
+                  "typeName": {
+                    "id": 463,
+                    "name": "uint96",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "8246:6:11",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint96",
+                      "typeString": "uint96"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "8237:16:11"
+            },
+            "scope": 467,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "abstract": false,
+        "baseContracts": [
+          {
+            "baseName": {
+              "id": 328,
+              "name": "IRegistry",
+              "nodeType": "IdentifierPath",
+              "referencedDeclaration": 54512,
+              "src": "432:9:11"
+            },
+            "id": 329,
+            "nodeType": "InheritanceSpecifier",
+            "src": "432:9:11"
+          }
+        ],
+        "canonicalName": "IQuorumRegistry",
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "documentation": {
+          "id": 327,
+          "nodeType": "StructuredDocumentation",
+          "src": "91:311:11",
+          "text": " @title Interface for a `Registry`-type contract that uses either 1 or 2 quorums.\n @author Layr Labs, Inc.\n @notice This contract does not currently support n-quorums where n >= 3.\n Note in particular the presence of only `firstQuorumStake` and `secondQuorumStake` in the `OperatorStake` struct."
+        },
+        "fullyImplemented": false,
+        "linearizedBaseContracts": [
+          467,
+          54512
+        ],
+        "name": "IQuorumRegistry",
+        "nameLocation": "413:15:11",
+        "scope": 468,
+        "usedErrors": []
+      }
+    ],
+    "license": "UNLICENSED"
+  },
+  "id": 11
+}

@@ -1,0 +1,76 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "delegator",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "operator",
+        "type": "address"
+      },
+      {
+        "internalType": "contract IDelegationShare[]",
+        "name": "delegationShares",
+        "type": "address[]"
+      },
+      {
+        "internalType": "uint256[]",
+        "name": "investorShares",
+        "type": "uint256[]"
+      }
+    ],
+    "name": "onDelegationReceived",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "delegator",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "operator",
+        "type": "address"
+      },
+      {
+        "internalType": "contract IDelegationShare[]",
+        "name": "delegationShares",
+        "type": "address[]"
+      },
+      {
+        "internalType": "uint256[]",
+        "name": "investorShares",
+        "type": "uint256[]"
+      }
+    ],
+    "name": "onDelegationWithdrawn",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "contract IERC20",
+        "name": "token",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "amount",
+        "type": "uint256"
+      }
+    ],
+    "name": "payForService",
+    "outputs": [],
+    "stateMutability": "payable",
+    "type": "function"
+  }
+]

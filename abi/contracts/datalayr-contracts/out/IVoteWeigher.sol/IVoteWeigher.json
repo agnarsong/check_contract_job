@@ -1,0 +1,526 @@
+{
+  "abi": [
+    {
+      "inputs": [],
+      "name": "NUMBER_OF_QUORUMS",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "quorumNumber",
+          "type": "uint256"
+        }
+      ],
+      "name": "quorumBips",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "operator",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "quorumNumber",
+          "type": "uint256"
+        }
+      ],
+      "name": "weightOfOperator",
+      "outputs": [
+        {
+          "internalType": "uint96",
+          "name": "",
+          "type": "uint96"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "bytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "methodIdentifiers": {
+    "NUMBER_OF_QUORUMS()": "e21ade6d",
+    "quorumBips(uint256)": "28420dfa",
+    "weightOfOperator(address,uint256)": "891f28a5"
+  },
+  "rawMetadata": "{\"compiler\":{\"version\":\"0.8.12+commit.f00d7308\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"NUMBER_OF_QUORUMS\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"quorumNumber\",\"type\":\"uint256\"}],\"name\":\"quorumBips\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"operator\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"quorumNumber\",\"type\":\"uint256\"}],\"name\":\"weightOfOperator\",\"outputs\":[{\"internalType\":\"uint96\",\"name\":\"\",\"type\":\"uint96\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"author\":\"Layr Labs, Inc.\",\"kind\":\"dev\",\"methods\":{\"quorumBips(uint256)\":{\"details\":\"The sum of all entries, i.e. sum(quorumBips[0] through quorumBips[NUMBER_OF_QUORUMS - 1]) should *always* be 10,000!\"},\"weightOfOperator(address,uint256)\":{\"details\":\"returns zero in the case that `quorumNumber` is greater than or equal to `NUMBER_OF_QUORUMS`\"}},\"title\":\"Interface for a `VoteWeigher`-type contract.\",\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{\"NUMBER_OF_QUORUMS()\":{\"notice\":\"Number of quorums that are being used by the middleware.\"},\"quorumBips(uint256)\":{\"notice\":\"This defines the earnings split between different quorums. Mapping is quorumNumber => BIPS which the quorum earns, out of the total earnings.\"},\"weightOfOperator(address,uint256)\":{\"notice\":\"This function computes the total weight of the @param operator in the quorum @param quorumNumber.\"}},\"notice\":\"Note that `NUMBER_OF_QUORUMS` is expected to remain constant, as suggested by its uppercase formatting.\",\"version\":1}},\"settings\":{\"compilationTarget\":{\"/Users/dl00038ml/PKG/projects/blockChain/e_Tools/rde/mantle/datalayr/contracts/eignlayr-contracts/src/contracts/interfaces/IVoteWeigher.sol\":\"IVoteWeigher\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[\":@eigenlayer/=../eignlayr-contracts/src/\",\":@openzeppelin-upgrades/=lib/openzeppelin-contracts-upgradeable/\",\":@openzeppelin/=lib/openzeppelin-contracts/\",\":ds-test/=lib/eignlayr-contracts/lib/ds-test/src/\",\":eignlayr-contracts/=lib/eignlayr-contracts/src/\",\":forge-std/=lib/forge-std/src/\",\":openzeppelin-contracts-upgradeable/=lib/eignlayr-contracts/lib/openzeppelin-contracts-upgradeable/\",\":openzeppelin-contracts/=lib/eignlayr-contracts/lib/openzeppelin-contracts/contracts/\"]},\"sources\":{\"/Users/dl00038ml/PKG/projects/blockChain/e_Tools/rde/mantle/datalayr/contracts/eignlayr-contracts/src/contracts/interfaces/IVoteWeigher.sol\":{\"keccak256\":\"0x4d8068106dc1bc924e15cb4f8ae1c2f1b86bd3c6de1ce947081774225da63ad0\",\"license\":\"UNLICENSED\",\"urls\":[\"bzz-raw://b252272b18e9a9480568a2f96cbf17e41d7d61e42e30edaef9633ca4e7149fef\",\"dweb:/ipfs/QmSh9uPEpkT4QbT83vHgXuXCE8DhJpCZh1typa97tD4zZ4\"]}},\"version\":1}",
+  "metadata": {
+    "compiler": {
+      "version": "0.8.12+commit.f00d7308"
+    },
+    "language": "Solidity",
+    "output": {
+      "abi": [
+        {
+          "inputs": [],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "NUMBER_OF_QUORUMS",
+          "outputs": [
+            {
+              "internalType": "uint256",
+              "name": "",
+              "type": "uint256"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "uint256",
+              "name": "quorumNumber",
+              "type": "uint256"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "quorumBips",
+          "outputs": [
+            {
+              "internalType": "uint256",
+              "name": "",
+              "type": "uint256"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "operator",
+              "type": "address"
+            },
+            {
+              "internalType": "uint256",
+              "name": "quorumNumber",
+              "type": "uint256"
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "weightOfOperator",
+          "outputs": [
+            {
+              "internalType": "uint96",
+              "name": "",
+              "type": "uint96"
+            }
+          ]
+        }
+      ],
+      "devdoc": {
+        "kind": "dev",
+        "methods": {
+          "quorumBips(uint256)": {
+            "details": "The sum of all entries, i.e. sum(quorumBips[0] through quorumBips[NUMBER_OF_QUORUMS - 1]) should *always* be 10,000!"
+          },
+          "weightOfOperator(address,uint256)": {
+            "details": "returns zero in the case that `quorumNumber` is greater than or equal to `NUMBER_OF_QUORUMS`"
+          }
+        },
+        "version": 1
+      },
+      "userdoc": {
+        "kind": "user",
+        "methods": {
+          "NUMBER_OF_QUORUMS()": {
+            "notice": "Number of quorums that are being used by the middleware."
+          },
+          "quorumBips(uint256)": {
+            "notice": "This defines the earnings split between different quorums. Mapping is quorumNumber => BIPS which the quorum earns, out of the total earnings."
+          },
+          "weightOfOperator(address,uint256)": {
+            "notice": "This function computes the total weight of the @param operator in the quorum @param quorumNumber."
+          }
+        },
+        "version": 1
+      }
+    },
+    "settings": {
+      "remappings": [
+        ":@eigenlayer/=../eignlayr-contracts/src/",
+        ":@openzeppelin-upgrades/=lib/openzeppelin-contracts-upgradeable/",
+        ":@openzeppelin/=lib/openzeppelin-contracts/",
+        ":ds-test/=lib/eignlayr-contracts/lib/ds-test/src/",
+        ":eignlayr-contracts/=lib/eignlayr-contracts/src/",
+        ":forge-std/=lib/forge-std/src/",
+        ":openzeppelin-contracts-upgradeable/=lib/eignlayr-contracts/lib/openzeppelin-contracts-upgradeable/",
+        ":openzeppelin-contracts/=lib/eignlayr-contracts/lib/openzeppelin-contracts/contracts/"
+      ],
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "metadata": {
+        "bytecodeHash": "ipfs"
+      },
+      "compilationTarget": {
+        "/Users/dl00038ml/PKG/projects/blockChain/e_Tools/rde/mantle/datalayr/contracts/eignlayr-contracts/src/contracts/interfaces/IVoteWeigher.sol": "IVoteWeigher"
+      },
+      "libraries": {}
+    },
+    "sources": {
+      "/Users/dl00038ml/PKG/projects/blockChain/e_Tools/rde/mantle/datalayr/contracts/eignlayr-contracts/src/contracts/interfaces/IVoteWeigher.sol": {
+        "keccak256": "0x4d8068106dc1bc924e15cb4f8ae1c2f1b86bd3c6de1ce947081774225da63ad0",
+        "urls": [
+          "bzz-raw://b252272b18e9a9480568a2f96cbf17e41d7d61e42e30edaef9633ca4e7149fef",
+          "dweb:/ipfs/QmSh9uPEpkT4QbT83vHgXuXCE8DhJpCZh1typa97tD4zZ4"
+        ],
+        "license": "UNLICENSED"
+      }
+    },
+    "version": 1
+  },
+  "ast": {
+    "absolutePath": "/Users/dl00038ml/PKG/projects/blockChain/e_Tools/rde/mantle/datalayr/contracts/eignlayr-contracts/src/contracts/interfaces/IVoteWeigher.sol",
+    "id": 7769,
+    "exportedSymbols": {
+      "IVoteWeigher": [
+        7768
+      ]
+    },
+    "nodeType": "SourceUnit",
+    "src": "39:1110:49",
+    "nodes": [
+      {
+        "id": 7742,
+        "nodeType": "PragmaDirective",
+        "src": "39:23:49",
+        "nodes": [],
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".9"
+        ]
+      },
+      {
+        "id": 7768,
+        "nodeType": "ContractDefinition",
+        "src": "269:879:49",
+        "nodes": [
+          {
+            "id": 7753,
+            "nodeType": "FunctionDefinition",
+            "src": "532:92:49",
+            "nodes": [],
+            "documentation": {
+              "id": 7744,
+              "nodeType": "StructuredDocumentation",
+              "src": "298:229:49",
+              "text": " @notice This function computes the total weight of the @param operator in the quorum @param quorumNumber.\n @dev returns zero in the case that `quorumNumber` is greater than or equal to `NUMBER_OF_QUORUMS`"
+            },
+            "functionSelector": "891f28a5",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "weightOfOperator",
+            "nameLocation": "541:16:49",
+            "parameters": {
+              "id": 7749,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 7746,
+                  "mutability": "mutable",
+                  "name": "operator",
+                  "nameLocation": "566:8:49",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 7753,
+                  "src": "558:16:49",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 7745,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "558:7:49",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 7748,
+                  "mutability": "mutable",
+                  "name": "quorumNumber",
+                  "nameLocation": "584:12:49",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 7753,
+                  "src": "576:20:49",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 7747,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "576:7:49",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "557:40:49"
+            },
+            "returnParameters": {
+              "id": 7752,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 7751,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 7753,
+                  "src": "616:6:49",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint96",
+                    "typeString": "uint96"
+                  },
+                  "typeName": {
+                    "id": 7750,
+                    "name": "uint96",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "616:6:49",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint96",
+                      "typeString": "uint96"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "615:8:49"
+            },
+            "scope": 7768,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 7759,
+            "nodeType": "FunctionDefinition",
+            "src": "703:61:49",
+            "nodes": [],
+            "documentation": {
+              "id": 7754,
+              "nodeType": "StructuredDocumentation",
+              "src": "630:68:49",
+              "text": "@notice Number of quorums that are being used by the middleware."
+            },
+            "functionSelector": "e21ade6d",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "NUMBER_OF_QUORUMS",
+            "nameLocation": "712:17:49",
+            "parameters": {
+              "id": 7755,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "729:2:49"
+            },
+            "returnParameters": {
+              "id": 7758,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 7757,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 7759,
+                  "src": "755:7:49",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 7756,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "755:7:49",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "754:9:49"
+            },
+            "scope": 7768,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 7767,
+            "nodeType": "FunctionDefinition",
+            "src": "1072:74:49",
+            "nodes": [],
+            "documentation": {
+              "id": 7760,
+              "nodeType": "StructuredDocumentation",
+              "src": "770:297:49",
+              "text": " @notice This defines the earnings split between different quorums. Mapping is quorumNumber => BIPS which the quorum earns, out of the total earnings.\n @dev The sum of all entries, i.e. sum(quorumBips[0] through quorumBips[NUMBER_OF_QUORUMS - 1]) should *always* be 10,000!"
+            },
+            "functionSelector": "28420dfa",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "quorumBips",
+            "nameLocation": "1081:10:49",
+            "parameters": {
+              "id": 7763,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 7762,
+                  "mutability": "mutable",
+                  "name": "quorumNumber",
+                  "nameLocation": "1100:12:49",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 7767,
+                  "src": "1092:20:49",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 7761,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1092:7:49",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1091:22:49"
+            },
+            "returnParameters": {
+              "id": 7766,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 7765,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 7767,
+                  "src": "1137:7:49",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 7764,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1137:7:49",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1136:9:49"
+            },
+            "scope": 7768,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "IVoteWeigher",
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "documentation": {
+          "id": 7743,
+          "nodeType": "StructuredDocumentation",
+          "src": "64:204:49",
+          "text": " @title Interface for a `VoteWeigher`-type contract.\n @author Layr Labs, Inc.\n @notice Note that `NUMBER_OF_QUORUMS` is expected to remain constant, as suggested by its uppercase formatting."
+        },
+        "fullyImplemented": false,
+        "linearizedBaseContracts": [
+          7768
+        ],
+        "name": "IVoteWeigher",
+        "nameLocation": "279:12:49",
+        "scope": 7769,
+        "usedErrors": []
+      }
+    ],
+    "license": "UNLICENSED"
+  },
+  "id": 49
+}

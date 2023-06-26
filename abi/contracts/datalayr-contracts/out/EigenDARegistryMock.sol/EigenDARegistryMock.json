@@ -1,0 +1,4163 @@
+{
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "contract IServiceManager",
+          "name": "_serviceManager",
+          "type": "address"
+        },
+        {
+          "internalType": "contract IInvestmentManager",
+          "name": "_investmentManager",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "string",
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "name": "log",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "name": "log_address",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "bytes",
+          "name": "",
+          "type": "bytes"
+        }
+      ],
+      "name": "log_bytes",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "bytes32",
+          "name": "",
+          "type": "bytes32"
+        }
+      ],
+      "name": "log_bytes32",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "int256",
+          "name": "",
+          "type": "int256"
+        }
+      ],
+      "name": "log_int",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "string",
+          "name": "key",
+          "type": "string"
+        },
+        {
+          "indexed": false,
+          "internalType": "address",
+          "name": "val",
+          "type": "address"
+        }
+      ],
+      "name": "log_named_address",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "string",
+          "name": "key",
+          "type": "string"
+        },
+        {
+          "indexed": false,
+          "internalType": "bytes",
+          "name": "val",
+          "type": "bytes"
+        }
+      ],
+      "name": "log_named_bytes",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "string",
+          "name": "key",
+          "type": "string"
+        },
+        {
+          "indexed": false,
+          "internalType": "bytes32",
+          "name": "val",
+          "type": "bytes32"
+        }
+      ],
+      "name": "log_named_bytes32",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "string",
+          "name": "key",
+          "type": "string"
+        },
+        {
+          "indexed": false,
+          "internalType": "int256",
+          "name": "val",
+          "type": "int256"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "decimals",
+          "type": "uint256"
+        }
+      ],
+      "name": "log_named_decimal_int",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "string",
+          "name": "key",
+          "type": "string"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "val",
+          "type": "uint256"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "decimals",
+          "type": "uint256"
+        }
+      ],
+      "name": "log_named_decimal_uint",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "string",
+          "name": "key",
+          "type": "string"
+        },
+        {
+          "indexed": false,
+          "internalType": "int256",
+          "name": "val",
+          "type": "int256"
+        }
+      ],
+      "name": "log_named_int",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "string",
+          "name": "key",
+          "type": "string"
+        },
+        {
+          "indexed": false,
+          "internalType": "string",
+          "name": "val",
+          "type": "string"
+        }
+      ],
+      "name": "log_named_string",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "string",
+          "name": "key",
+          "type": "string"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "val",
+          "type": "uint256"
+        }
+      ],
+      "name": "log_named_uint",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "string",
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "name": "log_string",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "name": "log_uint",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "bytes",
+          "name": "",
+          "type": "bytes"
+        }
+      ],
+      "name": "logs",
+      "type": "event"
+    },
+    {
+      "inputs": [],
+      "name": "IS_TEST",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "name": "checkOperatorActiveAtBlockNumber",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "pure",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "name": "checkOperatorInactiveAtBlockNumber",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "pure",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "operator",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "startIndex",
+          "type": "uint256"
+        }
+      ],
+      "name": "deregisterOperator",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "failed",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "operator",
+          "type": "address"
+        }
+      ],
+      "name": "getFromTaskNumberForOperator",
+      "outputs": [
+        {
+          "internalType": "uint32",
+          "name": "",
+          "type": "uint32"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "getLengthOfTotalStakeHistory",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "operator",
+          "type": "address"
+        },
+        {
+          "internalType": "uint32",
+          "name": "blockNumber",
+          "type": "uint32"
+        },
+        {
+          "internalType": "uint32",
+          "name": "index",
+          "type": "uint32"
+        }
+      ],
+      "name": "getOperatorIndex",
+      "outputs": [
+        {
+          "internalType": "uint32",
+          "name": "",
+          "type": "uint32"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "operator",
+          "type": "address"
+        }
+      ],
+      "name": "getOperatorPubkeyHash",
+      "outputs": [
+        {
+          "internalType": "bytes32",
+          "name": "",
+          "type": "bytes32"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "pubkeyHash",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "uint256",
+          "name": "index",
+          "type": "uint256"
+        }
+      ],
+      "name": "getStakeFromPubkeyHashAndIndex",
+      "outputs": [
+        {
+          "components": [
+            {
+              "internalType": "uint32",
+              "name": "updateBlockNumber",
+              "type": "uint32"
+            },
+            {
+              "internalType": "uint32",
+              "name": "nextUpdateBlockNumber",
+              "type": "uint32"
+            },
+            {
+              "internalType": "uint96",
+              "name": "firstQuorumStake",
+              "type": "uint96"
+            },
+            {
+              "internalType": "uint96",
+              "name": "secondQuorumStake",
+              "type": "uint96"
+            }
+          ],
+          "internalType": "struct IQuorumRegistry.OperatorStake",
+          "name": "",
+          "type": "tuple"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint32",
+          "name": "blockNumber",
+          "type": "uint32"
+        },
+        {
+          "internalType": "uint32",
+          "name": "index",
+          "type": "uint32"
+        }
+      ],
+      "name": "getTotalOperators",
+      "outputs": [
+        {
+          "internalType": "uint32",
+          "name": "",
+          "type": "uint32"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "index",
+          "type": "uint256"
+        }
+      ],
+      "name": "getTotalStakeFromIndex",
+      "outputs": [
+        {
+          "components": [
+            {
+              "internalType": "uint32",
+              "name": "updateBlockNumber",
+              "type": "uint32"
+            },
+            {
+              "internalType": "uint32",
+              "name": "nextUpdateBlockNumber",
+              "type": "uint32"
+            },
+            {
+              "internalType": "uint96",
+              "name": "firstQuorumStake",
+              "type": "uint96"
+            },
+            {
+              "internalType": "uint96",
+              "name": "secondQuorumStake",
+              "type": "uint96"
+            }
+          ],
+          "internalType": "struct IQuorumRegistry.OperatorStake",
+          "name": "",
+          "type": "tuple"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "investmentManager",
+      "outputs": [
+        {
+          "internalType": "contract IInvestmentManager",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "operator",
+          "type": "address"
+        }
+      ],
+      "name": "isActiveOperator",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "pure",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "numOperators",
+      "outputs": [
+        {
+          "internalType": "uint32",
+          "name": "",
+          "type": "uint32"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "operator",
+          "type": "address"
+        }
+      ],
+      "name": "operatorStakes",
+      "outputs": [
+        {
+          "internalType": "uint96",
+          "name": "",
+          "type": "uint96"
+        },
+        {
+          "internalType": "uint96",
+          "name": "",
+          "type": "uint96"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "operator",
+          "type": "address"
+        },
+        {
+          "internalType": "uint32",
+          "name": "blockNumber",
+          "type": "uint32"
+        },
+        {
+          "internalType": "uint256",
+          "name": "prevElement",
+          "type": "uint256"
+        }
+      ],
+      "name": "propagateStakeUpdate",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "operator",
+          "type": "address"
+        },
+        {
+          "internalType": "uint32",
+          "name": "serveUntil",
+          "type": "uint32"
+        }
+      ],
+      "name": "registerOperator",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "serviceManager",
+      "outputs": [
+        {
+          "internalType": "contract IServiceManager",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "totalStake",
+      "outputs": [
+        {
+          "internalType": "uint96",
+          "name": "",
+          "type": "uint96"
+        },
+        {
+          "internalType": "uint96",
+          "name": "",
+          "type": "uint96"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "bytecode": {
+    "object": "0x60c06040526000805460ff1916600117905534801561001d57600080fd5b5060405161082438038061082483398101604081905261003c9161006b565b6001600160a01b039182166080521660a0526100a5565b6001600160a01b038116811461006857600080fd5b50565b6000806040838503121561007e57600080fd5b825161008981610053565b602084015190925061009a81610053565b809150509250929050565b60805160a05161075a6100ca60003960006102a90152600061026a015261075a6000f3fe608060405234801561001057600080fd5b506004361061012c5760003560e01c80638b0e9f3f116100ad578063c0bf897e11610071578063c0bf897e1461035d578063ca06c78214610370578063e84ef3cb146102d9578063fa7626d414610381578063fd0d930a1461038e57600080fd5b80638b0e9f3f1461031c578063ae124d4014610324578063b322bdc714610338578063ba414fa61461034e578063bd8206881461035657600080fd5b80633998fdd3116100f45780633998fdd3146102655780634b31bb10146102a457806358662162146102cb578063629b312a146102d95780637210b0c9146102f057600080fd5b8063102068d3146101315780631c9856ae146101bc5780632173fa23146101f75780632fb327991461022e5780633367cca514610242575b600080fd5b61016761013f3660046104eb565b5060408051608081018252600080825260208201819052918101829052606081019190915290565b60408051825163ffffffff908116825260208085015190911690820152828201516bffffffffffffffffffffffff90811692820192909252606092830151909116918101919091526080015b60405180910390f35b6101d26101ca36600461051b565b600080915091565b604080516bffffffffffffffffffffffff9384168152929091166020830152016101b3565b610167610205366004610536565b505060408051608081018252600080825260208201819052918101829052606081019190915290565b61024061023c366004610558565b5050565b005b61025561025036600461051b565b6103a1565b60405190151581526020016101b3565b61028c7f000000000000000000000000000000000000000000000000000000000000000081565b6040516001600160a01b0390911681526020016101b3565b61028c7f000000000000000000000000000000000000000000000000000000000000000081565b61024061023c366004610596565b6102556102e73660046105c9565b60019392505050565b6103076102fe3660046105fc565b60009392505050565b60405163ffffffff90911681526020016101b3565b6000806101d2565b61030761033236600461051b565b50600090565b61030761034636600461063f565b600092915050565b6102556103c2565b6000610307565b61024061036b36600461065b565b505050565b60005b6040519081526020016101b3565b6000546102559060ff1681565b61037361033236600461051b565b919050565b60006001600160a01b038216156103ba57506001919050565b506000919050565b60008054610100900460ff16156103e25750600054610100900460ff1690565b6000737109709ecfa91a80626ff3989d68f67f5b1dd12d3b1561039c5760408051737109709ecfa91a80626ff3989d68f67f5b1dd12d602082018190526519985a5b195960d21b82840152825180830384018152606083019093526000929091610470917f667f9d70ca411d70ead50d8d5c22070dafc36ad75f3dcf5e7237b22ade9aecc4916080016106d2565b60408051601f198184030181529082905261048a916106f6565b6000604051808303816000865af19150503d80600081146104c7576040519150601f19603f3d011682016040523d82523d6000602084013e6104cc565b606091505b50915050808060200190518101906104e49190610702565b9392505050565b6000602082840312156104fd57600080fd5b5035919050565b80356001600160a01b038116811461039c57600080fd5b60006020828403121561052d57600080fd5b6104e482610504565b6000806040838503121561054957600080fd5b50508035926020909101359150565b6000806040838503121561056b57600080fd5b61057483610504565b946020939093013593505050565b803563ffffffff8116811461039c57600080fd5b600080604083850312156105a957600080fd5b6105b283610504565b91506105c060208401610582565b90509250929050565b6000806000606084860312156105de57600080fd5b6105e784610504565b95602085013595506040909401359392505050565b60008060006060848603121561061157600080fd5b61061a84610504565b925061062860208501610582565b915061063660408501610582565b90509250925092565b6000806040838503121561065257600080fd5b6105b283610582565b60008060006060848603121561067057600080fd5b61067984610504565b925061068760208501610582565b9150604084013590509250925092565b6000815160005b818110156106b8576020818501810151868301520161069e565b818111156106c7576000828601525b509290920192915050565b6001600160e01b03198316815260006106ee6004830184610697565b949350505050565b60006104e48284610697565b60006020828403121561071457600080fd5b815180151581146104e457600080fdfea264697066735822122017797d09d1646c53caf504fea608ed48b96175eebf9a49de77c4e3e86ffcf36764736f6c634300080c0033",
+    "sourceMap": "287:2884:124:-:0;;;1572:26:66;;;-1:-1:-1;;1572:26:66;1594:4;1572:26;;;462:202:124;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;-1:-1:-1;;;;;577:32:124;;;;;619:38;;;287:2884;;14:148:128;-1:-1:-1;;;;;106:31:128;;96:42;;86:70;;152:1;149;142:12;86:70;14:148;:::o;167:468::-;295:6;303;356:2;344:9;335:7;331:23;327:32;324:52;;;372:1;369;362:12;324:52;404:9;398:16;423:48;465:5;423:48;:::i;:::-;540:2;525:18;;519:25;490:5;;-1:-1:-1;553:50:128;519:25;553:50;:::i;:::-;622:7;612:17;;;167:468;;;;;:::o;:::-;287:2884:124;;;;;;;;;;;;;;;;;;",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x608060405234801561001057600080fd5b506004361061012c5760003560e01c80638b0e9f3f116100ad578063c0bf897e11610071578063c0bf897e1461035d578063ca06c78214610370578063e84ef3cb146102d9578063fa7626d414610381578063fd0d930a1461038e57600080fd5b80638b0e9f3f1461031c578063ae124d4014610324578063b322bdc714610338578063ba414fa61461034e578063bd8206881461035657600080fd5b80633998fdd3116100f45780633998fdd3146102655780634b31bb10146102a457806358662162146102cb578063629b312a146102d95780637210b0c9146102f057600080fd5b8063102068d3146101315780631c9856ae146101bc5780632173fa23146101f75780632fb327991461022e5780633367cca514610242575b600080fd5b61016761013f3660046104eb565b5060408051608081018252600080825260208201819052918101829052606081019190915290565b60408051825163ffffffff908116825260208085015190911690820152828201516bffffffffffffffffffffffff90811692820192909252606092830151909116918101919091526080015b60405180910390f35b6101d26101ca36600461051b565b600080915091565b604080516bffffffffffffffffffffffff9384168152929091166020830152016101b3565b610167610205366004610536565b505060408051608081018252600080825260208201819052918101829052606081019190915290565b61024061023c366004610558565b5050565b005b61025561025036600461051b565b6103a1565b60405190151581526020016101b3565b61028c7f000000000000000000000000000000000000000000000000000000000000000081565b6040516001600160a01b0390911681526020016101b3565b61028c7f000000000000000000000000000000000000000000000000000000000000000081565b61024061023c366004610596565b6102556102e73660046105c9565b60019392505050565b6103076102fe3660046105fc565b60009392505050565b60405163ffffffff90911681526020016101b3565b6000806101d2565b61030761033236600461051b565b50600090565b61030761034636600461063f565b600092915050565b6102556103c2565b6000610307565b61024061036b36600461065b565b505050565b60005b6040519081526020016101b3565b6000546102559060ff1681565b61037361033236600461051b565b919050565b60006001600160a01b038216156103ba57506001919050565b506000919050565b60008054610100900460ff16156103e25750600054610100900460ff1690565b6000737109709ecfa91a80626ff3989d68f67f5b1dd12d3b1561039c5760408051737109709ecfa91a80626ff3989d68f67f5b1dd12d602082018190526519985a5b195960d21b82840152825180830384018152606083019093526000929091610470917f667f9d70ca411d70ead50d8d5c22070dafc36ad75f3dcf5e7237b22ade9aecc4916080016106d2565b60408051601f198184030181529082905261048a916106f6565b6000604051808303816000865af19150503d80600081146104c7576040519150601f19603f3d011682016040523d82523d6000602084013e6104cc565b606091505b50915050808060200190518101906104e49190610702565b9392505050565b6000602082840312156104fd57600080fd5b5035919050565b80356001600160a01b038116811461039c57600080fd5b60006020828403121561052d57600080fd5b6104e482610504565b6000806040838503121561054957600080fd5b50508035926020909101359150565b6000806040838503121561056b57600080fd5b61057483610504565b946020939093013593505050565b803563ffffffff8116811461039c57600080fd5b600080604083850312156105a957600080fd5b6105b283610504565b91506105c060208401610582565b90509250929050565b6000806000606084860312156105de57600080fd5b6105e784610504565b95602085013595506040909401359392505050565b60008060006060848603121561061157600080fd5b61061a84610504565b925061062860208501610582565b915061063660408501610582565b90509250925092565b6000806040838503121561065257600080fd5b6105b283610582565b60008060006060848603121561067057600080fd5b61067984610504565b925061068760208501610582565b9150604084013590509250925092565b6000815160005b818110156106b8576020818501810151868301520161069e565b818111156106c7576000828601525b509290920192915050565b6001600160e01b03198316815260006106ee6004830184610697565b949350505050565b60006104e48284610697565b60006020828403121561071457600080fd5b815180151581146104e457600080fdfea264697066735822122017797d09d1646c53caf504fea608ed48b96175eebf9a49de77c4e3e86ffcf36764736f6c634300080c0033",
+    "sourceMap": "287:2884:124:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1750:93;;;;;;:::i;:::-;-1:-1:-1;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1750:93:124;;;;;457:13:128;;416:10;453:22;;;435:41;;536:4;524:17;;;518:24;514:33;;;492:20;;;485:63;583:17;;;577:24;620:26;684:21;;;662:20;;;655:51;;;;766:4;754:17;;;748:24;744:33;;;722:20;;;715:63;;;;393:3;378:19;1750:93:124;;;;;;;;2589:82;;;;;;:::i;:::-;2654:6;2662;2589:82;;;;;;;;1338:26:128;1391:15;;;1373:34;;1443:15;;;;1438:2;1423:18;;1416:43;1301:18;2589:82:124;1158:307:128;2185:121:124;;;;;;:::i;:::-;-1:-1:-1;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;2185:121:124;945:255;;;;;;:::i;:::-;;;;;;1469:196;;;;;;:::i;:::-;;:::i;:::-;;;2147:14:128;;2140:22;2122:41;;2110:2;2095:18;1469:196:124;1982:187:128;348:47:124;;;;;;;;-1:-1:-1;;;;;2361:32:128;;;2343:51;;2331:2;2316:18;348:47:124;2174:226:128;401:53:124;;;;;670:269;;;;;;:::i;2677:160::-;;;;;;:::i;:::-;2826:4;2677:160;;;;;;2312:110;;;;;;:::i;:::-;2413:6;2312:110;;;;;;;;;3906:10:128;3894:23;;;3876:42;;3864:2;3849:18;2312:110:124;3732:192:128;3107:62:124;3152:6;;3107:62;;2091:88;;;;;;:::i;:::-;-1:-1:-1;2170:6:124;;2091:88;2428:93;;;;;;:::i;:::-;2512:6;2428:93;;;;;1819:584:66;;;:::i;2527:56:124:-;2574:6;2527:56;;1206:256;;;;;;:::i;:::-;;;;;1671:73;2574:6;1671:73;;;4667:25:128;;;4655:2;4640:18;1671:73:124;4521:177:128;1572:26:66;;;;;;;;;1925:82:124;;;;;;:::i;1820:20::-;1750:93;;;:::o;1469:196::-;1536:4;-1:-1:-1;;;;;1556:22:124;;;1552:106;;-1:-1:-1;1600:4:124;;1469:196;-1:-1:-1;1469:196:124:o;1552:106::-;-1:-1:-1;1642:5:124;;1469:196;-1:-1:-1;1469:196:124:o;1819:584:66:-;1853:4;1873:7;;;;;;;1869:528;;;-1:-1:-1;1903:7:66;;;;;;;;1819:584::o;1869:528::-;1941:17;2990:42;2978:55;3059:16;1980:374;;2196:43;;;1671:64;2196:43;;;5059:51:128;;;-1:-1:-1;;;5126:18:128;;;5119:34;2196:43:66;;;;;;;;;5032:18:128;;;2196:43:66;;;-1:-1:-1;;1671:64:66;;2086:175;;2135:34;;2086:175;;;:::i;:::-;;;;-1:-1:-1;;2086:175:66;;;;;;;;;;2047:232;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;2020:259;;;2323:7;2312:27;;;;;;;;;;;;:::i;:::-;2297:42;2374:12;-1:-1:-1;;;1819:584:66:o;14:180:128:-;73:6;126:2;114:9;105:7;101:23;97:32;94:52;;;142:1;139;132:12;94:52;-1:-1:-1;165:23:128;;14:180;-1:-1:-1;14:180:128:o;789:173::-;857:20;;-1:-1:-1;;;;;906:31:128;;896:42;;886:70;;952:1;949;942:12;967:186;1026:6;1079:2;1067:9;1058:7;1054:23;1050:32;1047:52;;;1095:1;1092;1085:12;1047:52;1118:29;1137:9;1118:29;:::i;1470:248::-;1538:6;1546;1599:2;1587:9;1578:7;1574:23;1570:32;1567:52;;;1615:1;1612;1605:12;1567:52;-1:-1:-1;;1638:23:128;;;1708:2;1693:18;;;1680:32;;-1:-1:-1;1470:248:128:o;1723:254::-;1791:6;1799;1852:2;1840:9;1831:7;1827:23;1823:32;1820:52;;;1868:1;1865;1858:12;1820:52;1891:29;1910:9;1891:29;:::i;:::-;1881:39;1967:2;1952:18;;;;1939:32;;-1:-1:-1;;;1723:254:128:o;2639:163::-;2706:20;;2766:10;2755:22;;2745:33;;2735:61;;2792:1;2789;2782:12;2807:258;2874:6;2882;2935:2;2923:9;2914:7;2910:23;2906:32;2903:52;;;2951:1;2948;2941:12;2903:52;2974:29;2993:9;2974:29;:::i;:::-;2964:39;;3022:37;3055:2;3044:9;3040:18;3022:37;:::i;:::-;3012:47;;2807:258;;;;;:::o;3070:322::-;3147:6;3155;3163;3216:2;3204:9;3195:7;3191:23;3187:32;3184:52;;;3232:1;3229;3222:12;3184:52;3255:29;3274:9;3255:29;:::i;:::-;3245:39;3331:2;3316:18;;3303:32;;-1:-1:-1;3382:2:128;3367:18;;;3354:32;;3070:322;-1:-1:-1;;;3070:322:128:o;3397:330::-;3472:6;3480;3488;3541:2;3529:9;3520:7;3516:23;3512:32;3509:52;;;3557:1;3554;3547:12;3509:52;3580:29;3599:9;3580:29;:::i;:::-;3570:39;;3628:37;3661:2;3650:9;3646:18;3628:37;:::i;:::-;3618:47;;3684:37;3717:2;3706:9;3702:18;3684:37;:::i;:::-;3674:47;;3397:330;;;;;:::o;3929:256::-;3995:6;4003;4056:2;4044:9;4035:7;4031:23;4027:32;4024:52;;;4072:1;4069;4062:12;4024:52;4095:28;4113:9;4095:28;:::i;4190:326::-;4266:6;4274;4282;4335:2;4323:9;4314:7;4310:23;4306:32;4303:52;;;4351:1;4348;4341:12;4303:52;4374:29;4393:9;4374:29;:::i;:::-;4364:39;;4422:37;4455:2;4444:9;4440:18;4422:37;:::i;:::-;4412:47;;4506:2;4495:9;4491:18;4478:32;4468:42;;4190:326;;;;;:::o;5164:336::-;5205:3;5243:5;5237:12;5267:1;5277:128;5291:6;5288:1;5285:13;5277:128;;;5388:4;5373:13;;;5369:24;;5363:31;5350:11;;;5343:52;5306:12;5277:128;;;5423:6;5420:1;5417:13;5414:48;;;5458:1;5449:6;5444:3;5440:16;5433:27;5414:48;-1:-1:-1;5478:16:128;;;;;5164:336;-1:-1:-1;;5164:336:128:o;5505:278::-;-1:-1:-1;;;;;;5690:33:128;;5678:46;;5660:3;5740:37;5774:1;5765:11;;5757:6;5740:37;:::i;:::-;5733:44;5505:278;-1:-1:-1;;;;5505:278:128:o;5788:189::-;5917:3;5942:29;5967:3;5959:6;5942:29;:::i;5982:277::-;6049:6;6102:2;6090:9;6081:7;6077:23;6073:32;6070:52;;;6118:1;6115;6108:12;6070:52;6150:9;6144:16;6203:5;6196:13;6189:21;6182:5;6179:32;6169:60;;6225:1;6222;6215:12",
+    "linkReferences": {},
+    "immutableReferences": {
+      "53692": [
+        {
+          "start": 618,
+          "length": 32
+        }
+      ],
+      "53695": [
+        {
+          "start": 681,
+          "length": 32
+        }
+      ]
+    }
+  },
+  "methodIdentifiers": {
+    "IS_TEST()": "fa7626d4",
+    "checkOperatorActiveAtBlockNumber(address,uint256,uint256)": "629b312a",
+    "checkOperatorInactiveAtBlockNumber(address,uint256,uint256)": "e84ef3cb",
+    "deregisterOperator(address,uint256)": "2fb32799",
+    "failed()": "ba414fa6",
+    "getFromTaskNumberForOperator(address)": "ae124d40",
+    "getLengthOfTotalStakeHistory()": "ca06c782",
+    "getOperatorIndex(address,uint32,uint32)": "7210b0c9",
+    "getOperatorPubkeyHash(address)": "fd0d930a",
+    "getStakeFromPubkeyHashAndIndex(bytes32,uint256)": "2173fa23",
+    "getTotalOperators(uint32,uint32)": "b322bdc7",
+    "getTotalStakeFromIndex(uint256)": "102068d3",
+    "investmentManager()": "4b31bb10",
+    "isActiveOperator(address)": "3367cca5",
+    "numOperators()": "bd820688",
+    "operatorStakes(address)": "1c9856ae",
+    "propagateStakeUpdate(address,uint32,uint256)": "c0bf897e",
+    "registerOperator(address,uint32)": "58662162",
+    "serviceManager()": "3998fdd3",
+    "totalStake()": "8b0e9f3f"
+  },
+  "rawMetadata": "{\"compiler\":{\"version\":\"0.8.12+commit.f00d7308\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"contract IServiceManager\",\"name\":\"_serviceManager\",\"type\":\"address\"},{\"internalType\":\"contract IInvestmentManager\",\"name\":\"_investmentManager\",\"type\":\"address\"}],\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"name\":\"log\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"name\":\"log_address\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"bytes\",\"name\":\"\",\"type\":\"bytes\"}],\"name\":\"log_bytes\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"bytes32\",\"name\":\"\",\"type\":\"bytes32\"}],\"name\":\"log_bytes32\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"int256\",\"name\":\"\",\"type\":\"int256\"}],\"name\":\"log_int\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"string\",\"name\":\"key\",\"type\":\"string\"},{\"indexed\":false,\"internalType\":\"address\",\"name\":\"val\",\"type\":\"address\"}],\"name\":\"log_named_address\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"string\",\"name\":\"key\",\"type\":\"string\"},{\"indexed\":false,\"internalType\":\"bytes\",\"name\":\"val\",\"type\":\"bytes\"}],\"name\":\"log_named_bytes\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"string\",\"name\":\"key\",\"type\":\"string\"},{\"indexed\":false,\"internalType\":\"bytes32\",\"name\":\"val\",\"type\":\"bytes32\"}],\"name\":\"log_named_bytes32\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"string\",\"name\":\"key\",\"type\":\"string\"},{\"indexed\":false,\"internalType\":\"int256\",\"name\":\"val\",\"type\":\"int256\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"decimals\",\"type\":\"uint256\"}],\"name\":\"log_named_decimal_int\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"string\",\"name\":\"key\",\"type\":\"string\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"val\",\"type\":\"uint256\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"decimals\",\"type\":\"uint256\"}],\"name\":\"log_named_decimal_uint\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"string\",\"name\":\"key\",\"type\":\"string\"},{\"indexed\":false,\"internalType\":\"int256\",\"name\":\"val\",\"type\":\"int256\"}],\"name\":\"log_named_int\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"string\",\"name\":\"key\",\"type\":\"string\"},{\"indexed\":false,\"internalType\":\"string\",\"name\":\"val\",\"type\":\"string\"}],\"name\":\"log_named_string\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"string\",\"name\":\"key\",\"type\":\"string\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"val\",\"type\":\"uint256\"}],\"name\":\"log_named_uint\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"name\":\"log_string\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"name\":\"log_uint\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"bytes\",\"name\":\"\",\"type\":\"bytes\"}],\"name\":\"logs\",\"type\":\"event\"},{\"inputs\":[],\"name\":\"IS_TEST\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"name\":\"checkOperatorActiveAtBlockNumber\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"pure\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"name\":\"checkOperatorInactiveAtBlockNumber\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"pure\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"operator\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"startIndex\",\"type\":\"uint256\"}],\"name\":\"deregisterOperator\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"failed\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"operator\",\"type\":\"address\"}],\"name\":\"getFromTaskNumberForOperator\",\"outputs\":[{\"internalType\":\"uint32\",\"name\":\"\",\"type\":\"uint32\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"getLengthOfTotalStakeHistory\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"operator\",\"type\":\"address\"},{\"internalType\":\"uint32\",\"name\":\"blockNumber\",\"type\":\"uint32\"},{\"internalType\":\"uint32\",\"name\":\"index\",\"type\":\"uint32\"}],\"name\":\"getOperatorIndex\",\"outputs\":[{\"internalType\":\"uint32\",\"name\":\"\",\"type\":\"uint32\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"operator\",\"type\":\"address\"}],\"name\":\"getOperatorPubkeyHash\",\"outputs\":[{\"internalType\":\"bytes32\",\"name\":\"\",\"type\":\"bytes32\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"pubkeyHash\",\"type\":\"bytes32\"},{\"internalType\":\"uint256\",\"name\":\"index\",\"type\":\"uint256\"}],\"name\":\"getStakeFromPubkeyHashAndIndex\",\"outputs\":[{\"components\":[{\"internalType\":\"uint32\",\"name\":\"updateBlockNumber\",\"type\":\"uint32\"},{\"internalType\":\"uint32\",\"name\":\"nextUpdateBlockNumber\",\"type\":\"uint32\"},{\"internalType\":\"uint96\",\"name\":\"firstQuorumStake\",\"type\":\"uint96\"},{\"internalType\":\"uint96\",\"name\":\"secondQuorumStake\",\"type\":\"uint96\"}],\"internalType\":\"struct IQuorumRegistry.OperatorStake\",\"name\":\"\",\"type\":\"tuple\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint32\",\"name\":\"blockNumber\",\"type\":\"uint32\"},{\"internalType\":\"uint32\",\"name\":\"index\",\"type\":\"uint32\"}],\"name\":\"getTotalOperators\",\"outputs\":[{\"internalType\":\"uint32\",\"name\":\"\",\"type\":\"uint32\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"index\",\"type\":\"uint256\"}],\"name\":\"getTotalStakeFromIndex\",\"outputs\":[{\"components\":[{\"internalType\":\"uint32\",\"name\":\"updateBlockNumber\",\"type\":\"uint32\"},{\"internalType\":\"uint32\",\"name\":\"nextUpdateBlockNumber\",\"type\":\"uint32\"},{\"internalType\":\"uint96\",\"name\":\"firstQuorumStake\",\"type\":\"uint96\"},{\"internalType\":\"uint96\",\"name\":\"secondQuorumStake\",\"type\":\"uint96\"}],\"internalType\":\"struct IQuorumRegistry.OperatorStake\",\"name\":\"\",\"type\":\"tuple\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"investmentManager\",\"outputs\":[{\"internalType\":\"contract IInvestmentManager\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"operator\",\"type\":\"address\"}],\"name\":\"isActiveOperator\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"pure\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"numOperators\",\"outputs\":[{\"internalType\":\"uint32\",\"name\":\"\",\"type\":\"uint32\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"operator\",\"type\":\"address\"}],\"name\":\"operatorStakes\",\"outputs\":[{\"internalType\":\"uint96\",\"name\":\"\",\"type\":\"uint96\"},{\"internalType\":\"uint96\",\"name\":\"\",\"type\":\"uint96\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"operator\",\"type\":\"address\"},{\"internalType\":\"uint32\",\"name\":\"blockNumber\",\"type\":\"uint32\"},{\"internalType\":\"uint256\",\"name\":\"prevElement\",\"type\":\"uint256\"}],\"name\":\"propagateStakeUpdate\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"operator\",\"type\":\"address\"},{\"internalType\":\"uint32\",\"name\":\"serveUntil\",\"type\":\"uint32\"}],\"name\":\"registerOperator\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"serviceManager\",\"outputs\":[{\"internalType\":\"contract IServiceManager\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"totalStake\",\"outputs\":[{\"internalType\":\"uint96\",\"name\":\"\",\"type\":\"uint96\"},{\"internalType\":\"uint96\",\"name\":\"\",\"type\":\"uint96\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{\"getOperatorIndex(address,uint32,uint32)\":{\"details\":\"Function will revert in the event that the specified `index` input does not identify the appropriate entry in the array `pubkeyHashToIndexHistory[pubkeyHash]` to pull the info from.\",\"params\":{\"blockNumber\":\"Is the desired block number at which we wish to query the operator's position in the `operatorList` array\",\"index\":\"Used to specify the entry within the dynamic array `pubkeyHashToIndexHistory[pubkeyHash]` to  read data from, where `pubkeyHash` is looked up from `operator`'s registration info\"}},\"getStakeFromPubkeyHashAndIndex(bytes32,uint256)\":{\"details\":\"Function will revert if `index` is out-of-bounds.\",\"params\":{\"index\":\"Array index for lookup, within the dynamic array `pubkeyHashToStakeHistory[pubkeyHash]`.\",\"pubkeyHash\":\"Hash of the public key of the operator of interest.\"}},\"getTotalOperators(uint32,uint32)\":{\"details\":\"This function will revert if the provided `index` is out of bounds.\",\"params\":{\"index\":\"Input used to specify the entry within the dynamic array `totalOperatorsHistory` to read data from.\"}},\"getTotalStakeFromIndex(uint256)\":{\"details\":\"Function will revert in the event that `index` is out-of-bounds.\"},\"operatorStakes(address)\":{\"details\":\"Function returns weights of **0** in the event that the operator has no stake history\"}},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{\"getFromTaskNumberForOperator(address)\":{\"notice\":\"Returns task number from when `operator` has been registered.\"},\"getOperatorIndex(address,uint32,uint32)\":{\"notice\":\"Looks up the `operator`'s index in the dynamic array `operatorList` at the specified `blockNumber`.\"},\"getOperatorPubkeyHash(address)\":{\"notice\":\"Returns the stored pubkeyHash for the specified `operator`.\"},\"getStakeFromPubkeyHashAndIndex(bytes32,uint256)\":{\"notice\":\"Returns the stake weight corresponding to `pubkeyHash`, at the `index`-th entry in the `pubkeyHashToStakeHistory[pubkeyHash]` array.\"},\"getTotalOperators(uint32,uint32)\":{\"notice\":\"Looks up the number of total operators at the specified `blockNumber`.\"},\"getTotalStakeFromIndex(uint256)\":{\"notice\":\"Returns the `index`-th entry in the dynamic array of total stake, `totalStakeHistory`.\"},\"isActiveOperator(address)\":{\"notice\":\"Returns 'true' if `operator` is registered as an active operator, and 'false' otherwise.\"},\"numOperators()\":{\"notice\":\"Returns the current number of operators of this service.\"},\"operatorStakes(address)\":{\"notice\":\"Returns the most recent stake weights for the `operator`\"},\"totalStake()\":{\"notice\":\"Returns the stake amounts from the latest entry in `totalStakeHistory`.\"}},\"version\":1}},\"settings\":{\"compilationTarget\":{\"src/test/mocks/EigenDARegistryMock.sol\":\"EigenDARegistryMock\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[\":@eigenlayer/=../eignlayr-contracts/src/\",\":@openzeppelin-upgrades/=lib/openzeppelin-contracts-upgradeable/\",\":@openzeppelin/=lib/openzeppelin-contracts/\",\":ds-test/=lib/forge-std/lib/ds-test/src/\",\":forge-std/=lib/forge-std/src/\"]},\"sources\":{\"../eignlayr-contracts/src/contracts/interfaces/IEigenLayrDelegation.sol\":{\"keccak256\":\"0x9f11c0becde4111ac7d060dc11b9461888129076740cf78e07f292eefc92955e\",\"license\":\"UNLICENSED\",\"urls\":[\"bzz-raw://53bef92f10fd142e6b0af0f4f77a958c96ebea145492aa5328757e10fffd9c21\",\"dweb:/ipfs/QmUHG67pTyGxu6whsk95JNwevDJ7ooQMyeNT4kfwJtEzU5\"]},\"../eignlayr-contracts/src/contracts/interfaces/IInvestmentManager.sol\":{\"keccak256\":\"0xed8f5ee05ffbedbfe649dc7547339b3bc118edfe02825074341b0c474f776100\",\"license\":\"UNLICENSED\",\"urls\":[\"bzz-raw://44e9b0705f113e63a867b59bc292c7d5287968017b39ade9ef4c2b90d7f7dd34\",\"dweb:/ipfs/Qmc46ncEfH6wXKRz7zYKvkTGRhQSSDh6traUrttRFcP2tw\"]},\"../eignlayr-contracts/src/contracts/interfaces/IInvestmentStrategy.sol\":{\"keccak256\":\"0x69eb667cc856ee1fe783243b6db21a43a9dadd29bf6761727b334fca4366bceb\",\"license\":\"UNLICENSED\",\"urls\":[\"bzz-raw://224e8f6def4e53a1065f0c4ce26d8ffff15276944e2351753065aeb5bd265f52\",\"dweb:/ipfs/QmSu8iUPCnwza4SdE5jVSZLnQjMRXJg3VAGc8pHqbaMLob\"]},\"../eignlayr-contracts/src/contracts/interfaces/IQuorumRegistry.sol\":{\"keccak256\":\"0xe666a9120ceaf3278c34cebd7c33ee27a14788752b70f08fccc252971a53d6e3\",\"license\":\"UNLICENSED\",\"urls\":[\"bzz-raw://3f3df7d1504adc6f3c4305150c980d27c35feea7d1b9119b86a5bdb442b8f36e\",\"dweb:/ipfs/QmQqwGVbZ8mV7aFwe9rQ9hiAcXonmtyD2Kq22eNfcXhnkw\"]},\"../eignlayr-contracts/src/contracts/interfaces/IRegistry.sol\":{\"keccak256\":\"0x5bd8be0f70b0e69f94e069c52417079ba2b9e73acd5f659c09b22142dc6c59f5\",\"license\":\"UNLICENSED\",\"urls\":[\"bzz-raw://e32791f0147f40738d8a27c86e83c2207d5c1d1654c2f730629b3be587963cc4\",\"dweb:/ipfs/Qma4VYzA9jkLxWQCgCFm911rQodoSboaJxnNqi4AaSzftp\"]},\"../eignlayr-contracts/src/contracts/interfaces/IServiceManager.sol\":{\"keccak256\":\"0xded81693805764888f8d1daa8afb600969d4286f3d5ecfa92e99b9446b400ad4\",\"license\":\"UNLICENSED\",\"urls\":[\"bzz-raw://8e0d0704fa8e64543abce318eaf99c53f75215db76cf873e6a6311a4eb5274b2\",\"dweb:/ipfs/Qmd96t8WrNFRY5fqsPtkCaz28j3mvZj3fpc4qp6xXe9wgb\"]},\"lib/forge-std/lib/ds-test/src/test.sol\":{\"keccak256\":\"0xb39cd1d5220cb474947b131e15a4538334b7e886af244b440ae5c9c6bba96a54\",\"license\":\"GPL-3.0-or-later\",\"urls\":[\"bzz-raw://3101520221449ac0070bda3881311a71d9aa87e5210765e875246922cb5cb5f5\",\"dweb:/ipfs/Qmbg6kAHNoG7ox9N9Xqd9Ere2H2XixMFWFqvyPwFCzB3Gr\"]},\"lib/forge-std/src/Common.sol\":{\"keccak256\":\"0x3ed7f49e907eaf339c3bb0b79a81d303d0f9e37aa5b8a9854c0cbfc3ad9a3ef0\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://01c2532fb5fea32c6dc165518f2c4918af25d9139d17c11da330414c9797a70b\",\"dweb:/ipfs/QmV4r8a1e9Rgu2xoigVCuSv3fZ737wD2DXbV6ZmHXVUtDn\"]},\"lib/forge-std/src/Components.sol\":{\"keccak256\":\"0xd3b8ba6df58174d5d650a668dfa49eeee28b2b855514b9e793e1c0b69d747149\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://cce2b2ca79d5ce993b91358ed3d588396295e0aba9bb923481c1ffa5058a0dcd\",\"dweb:/ipfs/QmPNymteQmLWk7SqQhNsF6Rbc3xFPY7xGb4fBKravHLXD3\"]},\"lib/forge-std/src/StdAssertions.sol\":{\"keccak256\":\"0xde2bdee8e0e530de3269da50ebba83f4f90dde817971488980b720281e3cde4d\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://cb3f05bb06b654db43f4ce38e22aa7e2296ee00615df5329623c08c9ac030f8d\",\"dweb:/ipfs/QmdKwTpFsTiDFmc8zGwbPRu8mDs4oiKdZvzSj3WpiiGaez\"]},\"lib/forge-std/src/StdCheats.sol\":{\"keccak256\":\"0xf0c5c17c4cdfd0de659cf5e58e0e1611b6ee53900d3ab8b07b871d71d0b37bc6\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://21ffda3891e7480d5fdbf7f5e9d539f0ed76204bca69738f8ee006395ef1e23e\",\"dweb:/ipfs/Qmbhbn8zVXrCyvhvoQ5AUSj3usVGqMbMSEHYkNPdbQKBxt\"]},\"lib/forge-std/src/StdError.sol\":{\"keccak256\":\"0xbf477b11a42d7611696956546bcfaa29317d1166bf65e402344599c05943fc77\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://bc2e117d1135e030862b96a6526a43feb38d396cc79857f1fb696d4eff0e5fd6\",\"dweb:/ipfs/QmdSuQ5RrQudTLsNmWXGEeVJX8gR5U9XPm6m4dwwuQnJrj\"]},\"lib/forge-std/src/StdJson.sol\":{\"keccak256\":\"0x2291ee8f379552b86f34d98acb248d50442c7d4ab94aed03f1c8ddb6aea6852d\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://1ca6ca6fe35692428b507008b24e4ec4ba0cabaf58110fd0b4456a42e0166bdc\",\"dweb:/ipfs/QmUcSeXfYMyusrWxEdPRMeWFYhf9qD6YJaZXCVo29F4eus\"]},\"lib/forge-std/src/StdMath.sol\":{\"keccak256\":\"0xd90ad4fd8aeaeb8929964e686e769fdedd5eded3fc3815df194a0ab9f91a3fb2\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://7919b70f636c7b805223992f28ad1ad0145d6c1385b5931a3589aface5fe6c92\",\"dweb:/ipfs/QmY7FRaULwoGgFteF8GawjQJRfasNgpWnU2aiMsFrYpuTC\"]},\"lib/forge-std/src/StdStorage.sol\":{\"keccak256\":\"0xb0da85ce6999940eba6190a26c15b9bc7aede57123891287e1b30f80333a9cf5\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://d287fd41de40ef992588f7a9531e66d1e9f8e4f3f194b9e721ac576d4613964a\",\"dweb:/ipfs/QmbFYYjoc8WGLKVfDe4rscYPwdGq48incbwRQNoLtcMMjn\"]},\"lib/forge-std/src/StdUtils.sol\":{\"keccak256\":\"0x216818221765c43713791708d7dc83fcd5ada81766c9d4ce54551528c191a59f\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://3f03d0ef065ce600e5922f3e9c92f0f54ff7c12895a250fa97d83e9ee38e7e2b\",\"dweb:/ipfs/QmX59m9mNRNEhjhEZnxbDirniesi26pnDaNzF5hPB4A3E8\"]},\"lib/forge-std/src/Test.sol\":{\"keccak256\":\"0x6dc670615c9d04adf786ed4f18095b2142311c93dfda6459732da919d9113c17\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://b4eb56f37ea1c9bb72d2064b5e8fd134dd871dd0a9a3e081995c0fa52dd82c74\",\"dweb:/ipfs/QmbQZeD1RfPWjUSZ8iEdUYoLBn1PuSHvSYzZ7V9rLrRK4T\"]},\"lib/forge-std/src/Vm.sol\":{\"keccak256\":\"0xf4442ded918d167635adc30ba3c451d45666c89b38e0eec2adaf0857b49a72f7\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://b4cb181bd626fe852a36f9b1cf2d79ef0fa9d2bf2cbf0ec86f33f5bf492c0b69\",\"dweb:/ipfs/QmaZKevWdZbjoTB7qtzKjP3dZhiUGymJc4Wb9qkNMewxjB\"]},\"lib/forge-std/src/console.sol\":{\"keccak256\":\"0x91d5413c2434ca58fd278b6e1e79fd98d10c83931cc2596a6038eee4daeb34ba\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://91ccea707361e48b9b7a161fe81f496b9932bc471e9c4e4e1e9c283f2453cc70\",\"dweb:/ipfs/QmcB66sZhQ6Kz7MUHcLE78YXRUZxoZnnxZjN6yATsbB2ec\"]},\"lib/forge-std/src/console2.sol\":{\"keccak256\":\"0x225cc1ec33efd35c90e78aec0792ed9751cd6217e646271172421e96e2e2cc0f\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://6c6adbd216e40ca2387835b8618c82e7153cb826023d38943bbb0c2e992644aa\",\"dweb:/ipfs/QmZeejwEkm7iH9NHih7dPbuNqivuFn27EkgJesgByzS9wD\"]},\"lib/openzeppelin-contracts/contracts/token/ERC20/IERC20.sol\":{\"keccak256\":\"0x9750c6b834f7b43000631af5cc30001c5f547b3ceb3635488f140f60e897ea6b\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://5a7d5b1ef5d8d5889ad2ed89d8619c09383b80b72ab226e0fe7bde1636481e34\",\"dweb:/ipfs/QmebXWgtEfumQGBdVeM6c71McLixYXQP5Bk6kKXuoY4Bmr\"]},\"src/test/mocks/EigenDARegistryMock.sol\":{\"keccak256\":\"0xeb54d44ad50cd3b68da1656b6255b1ba450799f3e519e0175a119d376c174eb3\",\"license\":\"UNLICENSED\",\"urls\":[\"bzz-raw://dcc0f48ce4d610815c6905e7f8cd208df1cc7cdcaedc2f1e3263072817cc8023\",\"dweb:/ipfs/QmWpE7g33M74hVRzH2M8MxEnHHtD7MZr2R6CFdzvhujUvi\"]}},\"version\":1}",
+  "metadata": {
+    "compiler": {
+      "version": "0.8.12+commit.f00d7308"
+    },
+    "language": "Solidity",
+    "output": {
+      "abi": [
+        {
+          "inputs": [
+            {
+              "internalType": "contract IServiceManager",
+              "name": "_serviceManager",
+              "type": "address"
+            },
+            {
+              "internalType": "contract IInvestmentManager",
+              "name": "_investmentManager",
+              "type": "address"
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "constructor"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "string",
+              "name": "",
+              "type": "string",
+              "indexed": false
+            }
+          ],
+          "type": "event",
+          "name": "log",
+          "anonymous": false
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "",
+              "type": "address",
+              "indexed": false
+            }
+          ],
+          "type": "event",
+          "name": "log_address",
+          "anonymous": false
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "bytes",
+              "name": "",
+              "type": "bytes",
+              "indexed": false
+            }
+          ],
+          "type": "event",
+          "name": "log_bytes",
+          "anonymous": false
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "bytes32",
+              "name": "",
+              "type": "bytes32",
+              "indexed": false
+            }
+          ],
+          "type": "event",
+          "name": "log_bytes32",
+          "anonymous": false
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "int256",
+              "name": "",
+              "type": "int256",
+              "indexed": false
+            }
+          ],
+          "type": "event",
+          "name": "log_int",
+          "anonymous": false
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "string",
+              "name": "key",
+              "type": "string",
+              "indexed": false
+            },
+            {
+              "internalType": "address",
+              "name": "val",
+              "type": "address",
+              "indexed": false
+            }
+          ],
+          "type": "event",
+          "name": "log_named_address",
+          "anonymous": false
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "string",
+              "name": "key",
+              "type": "string",
+              "indexed": false
+            },
+            {
+              "internalType": "bytes",
+              "name": "val",
+              "type": "bytes",
+              "indexed": false
+            }
+          ],
+          "type": "event",
+          "name": "log_named_bytes",
+          "anonymous": false
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "string",
+              "name": "key",
+              "type": "string",
+              "indexed": false
+            },
+            {
+              "internalType": "bytes32",
+              "name": "val",
+              "type": "bytes32",
+              "indexed": false
+            }
+          ],
+          "type": "event",
+          "name": "log_named_bytes32",
+          "anonymous": false
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "string",
+              "name": "key",
+              "type": "string",
+              "indexed": false
+            },
+            {
+              "internalType": "int256",
+              "name": "val",
+              "type": "int256",
+              "indexed": false
+            },
+            {
+              "internalType": "uint256",
+              "name": "decimals",
+              "type": "uint256",
+              "indexed": false
+            }
+          ],
+          "type": "event",
+          "name": "log_named_decimal_int",
+          "anonymous": false
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "string",
+              "name": "key",
+              "type": "string",
+              "indexed": false
+            },
+            {
+              "internalType": "uint256",
+              "name": "val",
+              "type": "uint256",
+              "indexed": false
+            },
+            {
+              "internalType": "uint256",
+              "name": "decimals",
+              "type": "uint256",
+              "indexed": false
+            }
+          ],
+          "type": "event",
+          "name": "log_named_decimal_uint",
+          "anonymous": false
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "string",
+              "name": "key",
+              "type": "string",
+              "indexed": false
+            },
+            {
+              "internalType": "int256",
+              "name": "val",
+              "type": "int256",
+              "indexed": false
+            }
+          ],
+          "type": "event",
+          "name": "log_named_int",
+          "anonymous": false
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "string",
+              "name": "key",
+              "type": "string",
+              "indexed": false
+            },
+            {
+              "internalType": "string",
+              "name": "val",
+              "type": "string",
+              "indexed": false
+            }
+          ],
+          "type": "event",
+          "name": "log_named_string",
+          "anonymous": false
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "string",
+              "name": "key",
+              "type": "string",
+              "indexed": false
+            },
+            {
+              "internalType": "uint256",
+              "name": "val",
+              "type": "uint256",
+              "indexed": false
+            }
+          ],
+          "type": "event",
+          "name": "log_named_uint",
+          "anonymous": false
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "string",
+              "name": "",
+              "type": "string",
+              "indexed": false
+            }
+          ],
+          "type": "event",
+          "name": "log_string",
+          "anonymous": false
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "uint256",
+              "name": "",
+              "type": "uint256",
+              "indexed": false
+            }
+          ],
+          "type": "event",
+          "name": "log_uint",
+          "anonymous": false
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "bytes",
+              "name": "",
+              "type": "bytes",
+              "indexed": false
+            }
+          ],
+          "type": "event",
+          "name": "logs",
+          "anonymous": false
+        },
+        {
+          "inputs": [],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "IS_TEST",
+          "outputs": [
+            {
+              "internalType": "bool",
+              "name": "",
+              "type": "bool"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "",
+              "type": "address"
+            },
+            {
+              "internalType": "uint256",
+              "name": "",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "",
+              "type": "uint256"
+            }
+          ],
+          "stateMutability": "pure",
+          "type": "function",
+          "name": "checkOperatorActiveAtBlockNumber",
+          "outputs": [
+            {
+              "internalType": "bool",
+              "name": "",
+              "type": "bool"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "",
+              "type": "address"
+            },
+            {
+              "internalType": "uint256",
+              "name": "",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "",
+              "type": "uint256"
+            }
+          ],
+          "stateMutability": "pure",
+          "type": "function",
+          "name": "checkOperatorInactiveAtBlockNumber",
+          "outputs": [
+            {
+              "internalType": "bool",
+              "name": "",
+              "type": "bool"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "operator",
+              "type": "address"
+            },
+            {
+              "internalType": "uint256",
+              "name": "startIndex",
+              "type": "uint256"
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "deregisterOperator"
+        },
+        {
+          "inputs": [],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "failed",
+          "outputs": [
+            {
+              "internalType": "bool",
+              "name": "",
+              "type": "bool"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "operator",
+              "type": "address"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "getFromTaskNumberForOperator",
+          "outputs": [
+            {
+              "internalType": "uint32",
+              "name": "",
+              "type": "uint32"
+            }
+          ]
+        },
+        {
+          "inputs": [],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "getLengthOfTotalStakeHistory",
+          "outputs": [
+            {
+              "internalType": "uint256",
+              "name": "",
+              "type": "uint256"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "operator",
+              "type": "address"
+            },
+            {
+              "internalType": "uint32",
+              "name": "blockNumber",
+              "type": "uint32"
+            },
+            {
+              "internalType": "uint32",
+              "name": "index",
+              "type": "uint32"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "getOperatorIndex",
+          "outputs": [
+            {
+              "internalType": "uint32",
+              "name": "",
+              "type": "uint32"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "operator",
+              "type": "address"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "getOperatorPubkeyHash",
+          "outputs": [
+            {
+              "internalType": "bytes32",
+              "name": "",
+              "type": "bytes32"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "bytes32",
+              "name": "pubkeyHash",
+              "type": "bytes32"
+            },
+            {
+              "internalType": "uint256",
+              "name": "index",
+              "type": "uint256"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "getStakeFromPubkeyHashAndIndex",
+          "outputs": [
+            {
+              "internalType": "struct IQuorumRegistry.OperatorStake",
+              "name": "",
+              "type": "tuple",
+              "components": [
+                {
+                  "internalType": "uint32",
+                  "name": "updateBlockNumber",
+                  "type": "uint32"
+                },
+                {
+                  "internalType": "uint32",
+                  "name": "nextUpdateBlockNumber",
+                  "type": "uint32"
+                },
+                {
+                  "internalType": "uint96",
+                  "name": "firstQuorumStake",
+                  "type": "uint96"
+                },
+                {
+                  "internalType": "uint96",
+                  "name": "secondQuorumStake",
+                  "type": "uint96"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "uint32",
+              "name": "blockNumber",
+              "type": "uint32"
+            },
+            {
+              "internalType": "uint32",
+              "name": "index",
+              "type": "uint32"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "getTotalOperators",
+          "outputs": [
+            {
+              "internalType": "uint32",
+              "name": "",
+              "type": "uint32"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "uint256",
+              "name": "index",
+              "type": "uint256"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "getTotalStakeFromIndex",
+          "outputs": [
+            {
+              "internalType": "struct IQuorumRegistry.OperatorStake",
+              "name": "",
+              "type": "tuple",
+              "components": [
+                {
+                  "internalType": "uint32",
+                  "name": "updateBlockNumber",
+                  "type": "uint32"
+                },
+                {
+                  "internalType": "uint32",
+                  "name": "nextUpdateBlockNumber",
+                  "type": "uint32"
+                },
+                {
+                  "internalType": "uint96",
+                  "name": "firstQuorumStake",
+                  "type": "uint96"
+                },
+                {
+                  "internalType": "uint96",
+                  "name": "secondQuorumStake",
+                  "type": "uint96"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "inputs": [],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "investmentManager",
+          "outputs": [
+            {
+              "internalType": "contract IInvestmentManager",
+              "name": "",
+              "type": "address"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "operator",
+              "type": "address"
+            }
+          ],
+          "stateMutability": "pure",
+          "type": "function",
+          "name": "isActiveOperator",
+          "outputs": [
+            {
+              "internalType": "bool",
+              "name": "",
+              "type": "bool"
+            }
+          ]
+        },
+        {
+          "inputs": [],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "numOperators",
+          "outputs": [
+            {
+              "internalType": "uint32",
+              "name": "",
+              "type": "uint32"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "operator",
+              "type": "address"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "operatorStakes",
+          "outputs": [
+            {
+              "internalType": "uint96",
+              "name": "",
+              "type": "uint96"
+            },
+            {
+              "internalType": "uint96",
+              "name": "",
+              "type": "uint96"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "operator",
+              "type": "address"
+            },
+            {
+              "internalType": "uint32",
+              "name": "blockNumber",
+              "type": "uint32"
+            },
+            {
+              "internalType": "uint256",
+              "name": "prevElement",
+              "type": "uint256"
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "propagateStakeUpdate"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "operator",
+              "type": "address"
+            },
+            {
+              "internalType": "uint32",
+              "name": "serveUntil",
+              "type": "uint32"
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "registerOperator"
+        },
+        {
+          "inputs": [],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "serviceManager",
+          "outputs": [
+            {
+              "internalType": "contract IServiceManager",
+              "name": "",
+              "type": "address"
+            }
+          ]
+        },
+        {
+          "inputs": [],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "totalStake",
+          "outputs": [
+            {
+              "internalType": "uint96",
+              "name": "",
+              "type": "uint96"
+            },
+            {
+              "internalType": "uint96",
+              "name": "",
+              "type": "uint96"
+            }
+          ]
+        }
+      ],
+      "devdoc": {
+        "kind": "dev",
+        "methods": {
+          "getOperatorIndex(address,uint32,uint32)": {
+            "details": "Function will revert in the event that the specified `index` input does not identify the appropriate entry in the array `pubkeyHashToIndexHistory[pubkeyHash]` to pull the info from.",
+            "params": {
+              "blockNumber": "Is the desired block number at which we wish to query the operator's position in the `operatorList` array",
+              "index": "Used to specify the entry within the dynamic array `pubkeyHashToIndexHistory[pubkeyHash]` to  read data from, where `pubkeyHash` is looked up from `operator`'s registration info"
+            }
+          },
+          "getStakeFromPubkeyHashAndIndex(bytes32,uint256)": {
+            "details": "Function will revert if `index` is out-of-bounds.",
+            "params": {
+              "index": "Array index for lookup, within the dynamic array `pubkeyHashToStakeHistory[pubkeyHash]`.",
+              "pubkeyHash": "Hash of the public key of the operator of interest."
+            }
+          },
+          "getTotalOperators(uint32,uint32)": {
+            "details": "This function will revert if the provided `index` is out of bounds.",
+            "params": {
+              "index": "Input used to specify the entry within the dynamic array `totalOperatorsHistory` to read data from."
+            }
+          },
+          "getTotalStakeFromIndex(uint256)": {
+            "details": "Function will revert in the event that `index` is out-of-bounds."
+          },
+          "operatorStakes(address)": {
+            "details": "Function returns weights of **0** in the event that the operator has no stake history"
+          }
+        },
+        "version": 1
+      },
+      "userdoc": {
+        "kind": "user",
+        "methods": {
+          "getFromTaskNumberForOperator(address)": {
+            "notice": "Returns task number from when `operator` has been registered."
+          },
+          "getOperatorIndex(address,uint32,uint32)": {
+            "notice": "Looks up the `operator`'s index in the dynamic array `operatorList` at the specified `blockNumber`."
+          },
+          "getOperatorPubkeyHash(address)": {
+            "notice": "Returns the stored pubkeyHash for the specified `operator`."
+          },
+          "getStakeFromPubkeyHashAndIndex(bytes32,uint256)": {
+            "notice": "Returns the stake weight corresponding to `pubkeyHash`, at the `index`-th entry in the `pubkeyHashToStakeHistory[pubkeyHash]` array."
+          },
+          "getTotalOperators(uint32,uint32)": {
+            "notice": "Looks up the number of total operators at the specified `blockNumber`."
+          },
+          "getTotalStakeFromIndex(uint256)": {
+            "notice": "Returns the `index`-th entry in the dynamic array of total stake, `totalStakeHistory`."
+          },
+          "isActiveOperator(address)": {
+            "notice": "Returns 'true' if `operator` is registered as an active operator, and 'false' otherwise."
+          },
+          "numOperators()": {
+            "notice": "Returns the current number of operators of this service."
+          },
+          "operatorStakes(address)": {
+            "notice": "Returns the most recent stake weights for the `operator`"
+          },
+          "totalStake()": {
+            "notice": "Returns the stake amounts from the latest entry in `totalStakeHistory`."
+          }
+        },
+        "version": 1
+      }
+    },
+    "settings": {
+      "remappings": [
+        ":@eigenlayer/=../eignlayr-contracts/src/",
+        ":@openzeppelin-upgrades/=lib/openzeppelin-contracts-upgradeable/",
+        ":@openzeppelin/=lib/openzeppelin-contracts/",
+        ":ds-test/=lib/forge-std/lib/ds-test/src/",
+        ":forge-std/=lib/forge-std/src/"
+      ],
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "metadata": {
+        "bytecodeHash": "ipfs"
+      },
+      "compilationTarget": {
+        "src/test/mocks/EigenDARegistryMock.sol": "EigenDARegistryMock"
+      },
+      "libraries": {}
+    },
+    "sources": {
+      "../eignlayr-contracts/src/contracts/interfaces/IEigenLayrDelegation.sol": {
+        "keccak256": "0x9f11c0becde4111ac7d060dc11b9461888129076740cf78e07f292eefc92955e",
+        "urls": [
+          "bzz-raw://53bef92f10fd142e6b0af0f4f77a958c96ebea145492aa5328757e10fffd9c21",
+          "dweb:/ipfs/QmUHG67pTyGxu6whsk95JNwevDJ7ooQMyeNT4kfwJtEzU5"
+        ],
+        "license": "UNLICENSED"
+      },
+      "../eignlayr-contracts/src/contracts/interfaces/IInvestmentManager.sol": {
+        "keccak256": "0xed8f5ee05ffbedbfe649dc7547339b3bc118edfe02825074341b0c474f776100",
+        "urls": [
+          "bzz-raw://44e9b0705f113e63a867b59bc292c7d5287968017b39ade9ef4c2b90d7f7dd34",
+          "dweb:/ipfs/Qmc46ncEfH6wXKRz7zYKvkTGRhQSSDh6traUrttRFcP2tw"
+        ],
+        "license": "UNLICENSED"
+      },
+      "../eignlayr-contracts/src/contracts/interfaces/IInvestmentStrategy.sol": {
+        "keccak256": "0x69eb667cc856ee1fe783243b6db21a43a9dadd29bf6761727b334fca4366bceb",
+        "urls": [
+          "bzz-raw://224e8f6def4e53a1065f0c4ce26d8ffff15276944e2351753065aeb5bd265f52",
+          "dweb:/ipfs/QmSu8iUPCnwza4SdE5jVSZLnQjMRXJg3VAGc8pHqbaMLob"
+        ],
+        "license": "UNLICENSED"
+      },
+      "../eignlayr-contracts/src/contracts/interfaces/IQuorumRegistry.sol": {
+        "keccak256": "0xe666a9120ceaf3278c34cebd7c33ee27a14788752b70f08fccc252971a53d6e3",
+        "urls": [
+          "bzz-raw://3f3df7d1504adc6f3c4305150c980d27c35feea7d1b9119b86a5bdb442b8f36e",
+          "dweb:/ipfs/QmQqwGVbZ8mV7aFwe9rQ9hiAcXonmtyD2Kq22eNfcXhnkw"
+        ],
+        "license": "UNLICENSED"
+      },
+      "../eignlayr-contracts/src/contracts/interfaces/IRegistry.sol": {
+        "keccak256": "0x5bd8be0f70b0e69f94e069c52417079ba2b9e73acd5f659c09b22142dc6c59f5",
+        "urls": [
+          "bzz-raw://e32791f0147f40738d8a27c86e83c2207d5c1d1654c2f730629b3be587963cc4",
+          "dweb:/ipfs/Qma4VYzA9jkLxWQCgCFm911rQodoSboaJxnNqi4AaSzftp"
+        ],
+        "license": "UNLICENSED"
+      },
+      "../eignlayr-contracts/src/contracts/interfaces/IServiceManager.sol": {
+        "keccak256": "0xded81693805764888f8d1daa8afb600969d4286f3d5ecfa92e99b9446b400ad4",
+        "urls": [
+          "bzz-raw://8e0d0704fa8e64543abce318eaf99c53f75215db76cf873e6a6311a4eb5274b2",
+          "dweb:/ipfs/Qmd96t8WrNFRY5fqsPtkCaz28j3mvZj3fpc4qp6xXe9wgb"
+        ],
+        "license": "UNLICENSED"
+      },
+      "lib/forge-std/lib/ds-test/src/test.sol": {
+        "keccak256": "0xb39cd1d5220cb474947b131e15a4538334b7e886af244b440ae5c9c6bba96a54",
+        "urls": [
+          "bzz-raw://3101520221449ac0070bda3881311a71d9aa87e5210765e875246922cb5cb5f5",
+          "dweb:/ipfs/Qmbg6kAHNoG7ox9N9Xqd9Ere2H2XixMFWFqvyPwFCzB3Gr"
+        ],
+        "license": "GPL-3.0-or-later"
+      },
+      "lib/forge-std/src/Common.sol": {
+        "keccak256": "0x3ed7f49e907eaf339c3bb0b79a81d303d0f9e37aa5b8a9854c0cbfc3ad9a3ef0",
+        "urls": [
+          "bzz-raw://01c2532fb5fea32c6dc165518f2c4918af25d9139d17c11da330414c9797a70b",
+          "dweb:/ipfs/QmV4r8a1e9Rgu2xoigVCuSv3fZ737wD2DXbV6ZmHXVUtDn"
+        ],
+        "license": "MIT"
+      },
+      "lib/forge-std/src/Components.sol": {
+        "keccak256": "0xd3b8ba6df58174d5d650a668dfa49eeee28b2b855514b9e793e1c0b69d747149",
+        "urls": [
+          "bzz-raw://cce2b2ca79d5ce993b91358ed3d588396295e0aba9bb923481c1ffa5058a0dcd",
+          "dweb:/ipfs/QmPNymteQmLWk7SqQhNsF6Rbc3xFPY7xGb4fBKravHLXD3"
+        ],
+        "license": "MIT"
+      },
+      "lib/forge-std/src/StdAssertions.sol": {
+        "keccak256": "0xde2bdee8e0e530de3269da50ebba83f4f90dde817971488980b720281e3cde4d",
+        "urls": [
+          "bzz-raw://cb3f05bb06b654db43f4ce38e22aa7e2296ee00615df5329623c08c9ac030f8d",
+          "dweb:/ipfs/QmdKwTpFsTiDFmc8zGwbPRu8mDs4oiKdZvzSj3WpiiGaez"
+        ],
+        "license": "MIT"
+      },
+      "lib/forge-std/src/StdCheats.sol": {
+        "keccak256": "0xf0c5c17c4cdfd0de659cf5e58e0e1611b6ee53900d3ab8b07b871d71d0b37bc6",
+        "urls": [
+          "bzz-raw://21ffda3891e7480d5fdbf7f5e9d539f0ed76204bca69738f8ee006395ef1e23e",
+          "dweb:/ipfs/Qmbhbn8zVXrCyvhvoQ5AUSj3usVGqMbMSEHYkNPdbQKBxt"
+        ],
+        "license": "MIT"
+      },
+      "lib/forge-std/src/StdError.sol": {
+        "keccak256": "0xbf477b11a42d7611696956546bcfaa29317d1166bf65e402344599c05943fc77",
+        "urls": [
+          "bzz-raw://bc2e117d1135e030862b96a6526a43feb38d396cc79857f1fb696d4eff0e5fd6",
+          "dweb:/ipfs/QmdSuQ5RrQudTLsNmWXGEeVJX8gR5U9XPm6m4dwwuQnJrj"
+        ],
+        "license": "MIT"
+      },
+      "lib/forge-std/src/StdJson.sol": {
+        "keccak256": "0x2291ee8f379552b86f34d98acb248d50442c7d4ab94aed03f1c8ddb6aea6852d",
+        "urls": [
+          "bzz-raw://1ca6ca6fe35692428b507008b24e4ec4ba0cabaf58110fd0b4456a42e0166bdc",
+          "dweb:/ipfs/QmUcSeXfYMyusrWxEdPRMeWFYhf9qD6YJaZXCVo29F4eus"
+        ],
+        "license": "MIT"
+      },
+      "lib/forge-std/src/StdMath.sol": {
+        "keccak256": "0xd90ad4fd8aeaeb8929964e686e769fdedd5eded3fc3815df194a0ab9f91a3fb2",
+        "urls": [
+          "bzz-raw://7919b70f636c7b805223992f28ad1ad0145d6c1385b5931a3589aface5fe6c92",
+          "dweb:/ipfs/QmY7FRaULwoGgFteF8GawjQJRfasNgpWnU2aiMsFrYpuTC"
+        ],
+        "license": "MIT"
+      },
+      "lib/forge-std/src/StdStorage.sol": {
+        "keccak256": "0xb0da85ce6999940eba6190a26c15b9bc7aede57123891287e1b30f80333a9cf5",
+        "urls": [
+          "bzz-raw://d287fd41de40ef992588f7a9531e66d1e9f8e4f3f194b9e721ac576d4613964a",
+          "dweb:/ipfs/QmbFYYjoc8WGLKVfDe4rscYPwdGq48incbwRQNoLtcMMjn"
+        ],
+        "license": "MIT"
+      },
+      "lib/forge-std/src/StdUtils.sol": {
+        "keccak256": "0x216818221765c43713791708d7dc83fcd5ada81766c9d4ce54551528c191a59f",
+        "urls": [
+          "bzz-raw://3f03d0ef065ce600e5922f3e9c92f0f54ff7c12895a250fa97d83e9ee38e7e2b",
+          "dweb:/ipfs/QmX59m9mNRNEhjhEZnxbDirniesi26pnDaNzF5hPB4A3E8"
+        ],
+        "license": "MIT"
+      },
+      "lib/forge-std/src/Test.sol": {
+        "keccak256": "0x6dc670615c9d04adf786ed4f18095b2142311c93dfda6459732da919d9113c17",
+        "urls": [
+          "bzz-raw://b4eb56f37ea1c9bb72d2064b5e8fd134dd871dd0a9a3e081995c0fa52dd82c74",
+          "dweb:/ipfs/QmbQZeD1RfPWjUSZ8iEdUYoLBn1PuSHvSYzZ7V9rLrRK4T"
+        ],
+        "license": "MIT"
+      },
+      "lib/forge-std/src/Vm.sol": {
+        "keccak256": "0xf4442ded918d167635adc30ba3c451d45666c89b38e0eec2adaf0857b49a72f7",
+        "urls": [
+          "bzz-raw://b4cb181bd626fe852a36f9b1cf2d79ef0fa9d2bf2cbf0ec86f33f5bf492c0b69",
+          "dweb:/ipfs/QmaZKevWdZbjoTB7qtzKjP3dZhiUGymJc4Wb9qkNMewxjB"
+        ],
+        "license": "MIT"
+      },
+      "lib/forge-std/src/console.sol": {
+        "keccak256": "0x91d5413c2434ca58fd278b6e1e79fd98d10c83931cc2596a6038eee4daeb34ba",
+        "urls": [
+          "bzz-raw://91ccea707361e48b9b7a161fe81f496b9932bc471e9c4e4e1e9c283f2453cc70",
+          "dweb:/ipfs/QmcB66sZhQ6Kz7MUHcLE78YXRUZxoZnnxZjN6yATsbB2ec"
+        ],
+        "license": "MIT"
+      },
+      "lib/forge-std/src/console2.sol": {
+        "keccak256": "0x225cc1ec33efd35c90e78aec0792ed9751cd6217e646271172421e96e2e2cc0f",
+        "urls": [
+          "bzz-raw://6c6adbd216e40ca2387835b8618c82e7153cb826023d38943bbb0c2e992644aa",
+          "dweb:/ipfs/QmZeejwEkm7iH9NHih7dPbuNqivuFn27EkgJesgByzS9wD"
+        ],
+        "license": "MIT"
+      },
+      "lib/openzeppelin-contracts/contracts/token/ERC20/IERC20.sol": {
+        "keccak256": "0x9750c6b834f7b43000631af5cc30001c5f547b3ceb3635488f140f60e897ea6b",
+        "urls": [
+          "bzz-raw://5a7d5b1ef5d8d5889ad2ed89d8619c09383b80b72ab226e0fe7bde1636481e34",
+          "dweb:/ipfs/QmebXWgtEfumQGBdVeM6c71McLixYXQP5Bk6kKXuoY4Bmr"
+        ],
+        "license": "MIT"
+      },
+      "src/test/mocks/EigenDARegistryMock.sol": {
+        "keccak256": "0xeb54d44ad50cd3b68da1656b6255b1ba450799f3e519e0175a119d376c174eb3",
+        "urls": [
+          "bzz-raw://dcc0f48ce4d610815c6905e7f8cd208df1cc7cdcaedc2f1e3263072817cc8023",
+          "dweb:/ipfs/QmWpE7g33M74hVRzH2M8MxEnHHtD7MZr2R6CFdzvhujUvi"
+        ],
+        "license": "UNLICENSED"
+      }
+    },
+    "version": 1
+  },
+  "ast": {
+    "absolutePath": "src/test/mocks/EigenDARegistryMock.sol",
+    "id": 53881,
+    "exportedSymbols": {
+      "CommonBase": [
+        15709
+      ],
+      "DSTest": [
+        15677
+      ],
+      "EigenDARegistryMock": [
+        53880
+      ],
+      "IERC20": [
+        40969
+      ],
+      "IEigenLayrDelegation": [
+        121
+      ],
+      "IInvestmentManager": [
+        229
+      ],
+      "IInvestmentStrategy": [
+        323
+      ],
+      "IQuorumRegistry": [
+        467
+      ],
+      "IRegistry": [
+        54618
+      ],
+      "IServiceManager": [
+        577
+      ],
+      "StdAssertions": [
+        16568
+      ],
+      "StdCheats": [
+        18681
+      ],
+      "StdStorage": [
+        19586
+      ],
+      "StdUtils": [
+        21449
+      ],
+      "Test": [
+        21480
+      ],
+      "TestBase": [
+        21469
+      ],
+      "Vm": [
+        22454
+      ],
+      "console": [
+        30518
+      ],
+      "console2": [
+        38583
+      ],
+      "stdError": [
+        18747
+      ],
+      "stdJson": [
+        19413
+      ],
+      "stdMath": [
+        19555
+      ],
+      "stdStorage": [
+        21020
+      ]
+    },
+    "nodeType": "SourceUnit",
+    "src": "39:3133:124",
+    "nodes": [
+      {
+        "id": 53681,
+        "nodeType": "PragmaDirective",
+        "src": "39:23:124",
+        "nodes": [],
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".9"
+        ]
+      },
+      {
+        "id": 53682,
+        "nodeType": "ImportDirective",
+        "src": "64:62:124",
+        "nodes": [],
+        "absolutePath": "../eignlayr-contracts/src/contracts/interfaces/IServiceManager.sol",
+        "file": "@eigenlayer/contracts/interfaces/IServiceManager.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 53881,
+        "sourceUnit": 578,
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "id": 53683,
+        "nodeType": "ImportDirective",
+        "src": "127:62:124",
+        "nodes": [],
+        "absolutePath": "../eignlayr-contracts/src/contracts/interfaces/IQuorumRegistry.sol",
+        "file": "@eigenlayer/contracts/interfaces/IQuorumRegistry.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 53881,
+        "sourceUnit": 468,
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "id": 53684,
+        "nodeType": "ImportDirective",
+        "src": "190:65:124",
+        "nodes": [],
+        "absolutePath": "../eignlayr-contracts/src/contracts/interfaces/IInvestmentManager.sol",
+        "file": "@eigenlayer/contracts/interfaces/IInvestmentManager.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 53881,
+        "sourceUnit": 230,
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "id": 53685,
+        "nodeType": "ImportDirective",
+        "src": "257:28:124",
+        "nodes": [],
+        "absolutePath": "lib/forge-std/src/Test.sol",
+        "file": "forge-std/Test.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 53881,
+        "sourceUnit": 21481,
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "id": 53880,
+        "nodeType": "ContractDefinition",
+        "src": "287:2884:124",
+        "nodes": [
+          {
+            "id": 53692,
+            "nodeType": "VariableDeclaration",
+            "src": "348:47:124",
+            "nodes": [],
+            "constant": false,
+            "functionSelector": "3998fdd3",
+            "mutability": "immutable",
+            "name": "serviceManager",
+            "nameLocation": "381:14:124",
+            "scope": 53880,
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_contract$_IServiceManager_$577",
+              "typeString": "contract IServiceManager"
+            },
+            "typeName": {
+              "id": 53691,
+              "nodeType": "UserDefinedTypeName",
+              "pathNode": {
+                "id": 53690,
+                "name": "IServiceManager",
+                "nodeType": "IdentifierPath",
+                "referencedDeclaration": 577,
+                "src": "348:15:124"
+              },
+              "referencedDeclaration": 577,
+              "src": "348:15:124",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_IServiceManager_$577",
+                "typeString": "contract IServiceManager"
+              }
+            },
+            "visibility": "public"
+          },
+          {
+            "id": 53695,
+            "nodeType": "VariableDeclaration",
+            "src": "401:53:124",
+            "nodes": [],
+            "constant": false,
+            "functionSelector": "4b31bb10",
+            "mutability": "immutable",
+            "name": "investmentManager",
+            "nameLocation": "437:17:124",
+            "scope": 53880,
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_contract$_IInvestmentManager_$229",
+              "typeString": "contract IInvestmentManager"
+            },
+            "typeName": {
+              "id": 53694,
+              "nodeType": "UserDefinedTypeName",
+              "pathNode": {
+                "id": 53693,
+                "name": "IInvestmentManager",
+                "nodeType": "IdentifierPath",
+                "referencedDeclaration": 229,
+                "src": "401:18:124"
+              },
+              "referencedDeclaration": 229,
+              "src": "401:18:124",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_IInvestmentManager_$229",
+                "typeString": "contract IInvestmentManager"
+              }
+            },
+            "visibility": "public"
+          },
+          {
+            "id": 53713,
+            "nodeType": "FunctionDefinition",
+            "src": "462:202:124",
+            "nodes": [],
+            "body": {
+              "id": 53712,
+              "nodeType": "Block",
+              "src": "567:97:124",
+              "nodes": [],
+              "statements": [
+                {
+                  "expression": {
+                    "id": 53706,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "id": 53704,
+                      "name": "serviceManager",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 53692,
+                      "src": "577:14:124",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_contract$_IServiceManager_$577",
+                        "typeString": "contract IServiceManager"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "id": 53705,
+                      "name": "_serviceManager",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 53698,
+                      "src": "594:15:124",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_contract$_IServiceManager_$577",
+                        "typeString": "contract IServiceManager"
+                      }
+                    },
+                    "src": "577:32:124",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_IServiceManager_$577",
+                      "typeString": "contract IServiceManager"
+                    }
+                  },
+                  "id": 53707,
+                  "nodeType": "ExpressionStatement",
+                  "src": "577:32:124"
+                },
+                {
+                  "expression": {
+                    "id": 53710,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "id": 53708,
+                      "name": "investmentManager",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 53695,
+                      "src": "619:17:124",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_contract$_IInvestmentManager_$229",
+                        "typeString": "contract IInvestmentManager"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "id": 53709,
+                      "name": "_investmentManager",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 53701,
+                      "src": "639:18:124",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_contract$_IInvestmentManager_$229",
+                        "typeString": "contract IInvestmentManager"
+                      }
+                    },
+                    "src": "619:38:124",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_IInvestmentManager_$229",
+                      "typeString": "contract IInvestmentManager"
+                    }
+                  },
+                  "id": 53711,
+                  "nodeType": "ExpressionStatement",
+                  "src": "619:38:124"
+                }
+              ]
+            },
+            "implemented": true,
+            "kind": "constructor",
+            "modifiers": [],
+            "name": "",
+            "nameLocation": "-1:-1:-1",
+            "parameters": {
+              "id": 53702,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 53698,
+                  "mutability": "mutable",
+                  "name": "_serviceManager",
+                  "nameLocation": "499:15:124",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 53713,
+                  "src": "483:31:124",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_contract$_IServiceManager_$577",
+                    "typeString": "contract IServiceManager"
+                  },
+                  "typeName": {
+                    "id": 53697,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 53696,
+                      "name": "IServiceManager",
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 577,
+                      "src": "483:15:124"
+                    },
+                    "referencedDeclaration": 577,
+                    "src": "483:15:124",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_IServiceManager_$577",
+                      "typeString": "contract IServiceManager"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 53701,
+                  "mutability": "mutable",
+                  "name": "_investmentManager",
+                  "nameLocation": "543:18:124",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 53713,
+                  "src": "524:37:124",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_contract$_IInvestmentManager_$229",
+                    "typeString": "contract IInvestmentManager"
+                  },
+                  "typeName": {
+                    "id": 53700,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 53699,
+                      "name": "IInvestmentManager",
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 229,
+                      "src": "524:18:124"
+                    },
+                    "referencedDeclaration": 229,
+                    "src": "524:18:124",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_IInvestmentManager_$229",
+                      "typeString": "contract IInvestmentManager"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "473:94:124"
+            },
+            "returnParameters": {
+              "id": 53703,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "567:0:124"
+            },
+            "scope": 53880,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "public"
+          },
+          {
+            "id": 53721,
+            "nodeType": "FunctionDefinition",
+            "src": "670:269:124",
+            "nodes": [],
+            "body": {
+              "id": 53720,
+              "nodeType": "Block",
+              "src": "762:177:124",
+              "nodes": [],
+              "statements": []
+            },
+            "functionSelector": "58662162",
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "registerOperator",
+            "nameLocation": "679:16:124",
+            "parameters": {
+              "id": 53718,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 53715,
+                  "mutability": "mutable",
+                  "name": "operator",
+                  "nameLocation": "713:8:124",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 53721,
+                  "src": "705:16:124",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 53714,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "705:7:124",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 53717,
+                  "mutability": "mutable",
+                  "name": "serveUntil",
+                  "nameLocation": "738:10:124",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 53721,
+                  "src": "731:17:124",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint32",
+                    "typeString": "uint32"
+                  },
+                  "typeName": {
+                    "id": 53716,
+                    "name": "uint32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "731:6:124",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint32",
+                      "typeString": "uint32"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "695:59:124"
+            },
+            "returnParameters": {
+              "id": 53719,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "762:0:124"
+            },
+            "scope": 53880,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "public"
+          },
+          {
+            "id": 53729,
+            "nodeType": "FunctionDefinition",
+            "src": "945:255:124",
+            "nodes": [],
+            "body": {
+              "id": 53728,
+              "nodeType": "Block",
+              "src": "1040:160:124",
+              "nodes": [],
+              "statements": []
+            },
+            "functionSelector": "2fb32799",
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "deregisterOperator",
+            "nameLocation": "954:18:124",
+            "parameters": {
+              "id": 53726,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 53723,
+                  "mutability": "mutable",
+                  "name": "operator",
+                  "nameLocation": "990:8:124",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 53729,
+                  "src": "982:16:124",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 53722,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "982:7:124",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 53725,
+                  "mutability": "mutable",
+                  "name": "startIndex",
+                  "nameLocation": "1016:10:124",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 53729,
+                  "src": "1008:18:124",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 53724,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1008:7:124",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "972:60:124"
+            },
+            "returnParameters": {
+              "id": 53727,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1040:0:124"
+            },
+            "scope": 53880,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "public"
+          },
+          {
+            "id": 53739,
+            "nodeType": "FunctionDefinition",
+            "src": "1206:256:124",
+            "nodes": [],
+            "body": {
+              "id": 53738,
+              "nodeType": "Block",
+              "src": "1304:158:124",
+              "nodes": [],
+              "statements": []
+            },
+            "functionSelector": "c0bf897e",
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "propagateStakeUpdate",
+            "nameLocation": "1215:20:124",
+            "parameters": {
+              "id": 53736,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 53731,
+                  "mutability": "mutable",
+                  "name": "operator",
+                  "nameLocation": "1244:8:124",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 53739,
+                  "src": "1236:16:124",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 53730,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1236:7:124",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 53733,
+                  "mutability": "mutable",
+                  "name": "blockNumber",
+                  "nameLocation": "1261:11:124",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 53739,
+                  "src": "1254:18:124",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint32",
+                    "typeString": "uint32"
+                  },
+                  "typeName": {
+                    "id": 53732,
+                    "name": "uint32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1254:6:124",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint32",
+                      "typeString": "uint32"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 53735,
+                  "mutability": "mutable",
+                  "name": "prevElement",
+                  "nameLocation": "1282:11:124",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 53739,
+                  "src": "1274:19:124",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 53734,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1274:7:124",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1235:59:124"
+            },
+            "returnParameters": {
+              "id": 53737,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1304:0:124"
+            },
+            "scope": 53880,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 53760,
+            "nodeType": "FunctionDefinition",
+            "src": "1469:196:124",
+            "nodes": [],
+            "body": {
+              "id": 53759,
+              "nodeType": "Block",
+              "src": "1542:123:124",
+              "nodes": [],
+              "statements": [
+                {
+                  "condition": {
+                    "commonType": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    },
+                    "id": 53751,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftExpression": {
+                      "id": 53746,
+                      "name": "operator",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 53741,
+                      "src": "1556:8:124",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address",
+                        "typeString": "address"
+                      }
+                    },
+                    "nodeType": "BinaryOperation",
+                    "operator": "!=",
+                    "rightExpression": {
+                      "arguments": [
+                        {
+                          "hexValue": "30",
+                          "id": 53749,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": true,
+                          "kind": "number",
+                          "lValueRequested": false,
+                          "nodeType": "Literal",
+                          "src": "1576:1:124",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_rational_0_by_1",
+                            "typeString": "int_const 0"
+                          },
+                          "value": "0"
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": [
+                          {
+                            "typeIdentifier": "t_rational_0_by_1",
+                            "typeString": "int_const 0"
+                          }
+                        ],
+                        "id": 53748,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "lValueRequested": false,
+                        "nodeType": "ElementaryTypeNameExpression",
+                        "src": "1568:7:124",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_type$_t_address_$",
+                          "typeString": "type(address)"
+                        },
+                        "typeName": {
+                          "id": 53747,
+                          "name": "address",
+                          "nodeType": "ElementaryTypeName",
+                          "src": "1568:7:124",
+                          "typeDescriptions": {}
+                        }
+                      },
+                      "id": 53750,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "kind": "typeConversion",
+                      "lValueRequested": false,
+                      "names": [],
+                      "nodeType": "FunctionCall",
+                      "src": "1568:10:124",
+                      "tryCall": false,
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address",
+                        "typeString": "address"
+                      }
+                    },
+                    "src": "1556:22:124",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "falseBody": {
+                    "id": 53757,
+                    "nodeType": "Block",
+                    "src": "1621:37:124",
+                    "statements": [
+                      {
+                        "expression": {
+                          "hexValue": "66616c7365",
+                          "id": 53755,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": true,
+                          "kind": "bool",
+                          "lValueRequested": false,
+                          "nodeType": "Literal",
+                          "src": "1642:5:124",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_bool",
+                            "typeString": "bool"
+                          },
+                          "value": "false"
+                        },
+                        "functionReturnParameters": 53745,
+                        "id": 53756,
+                        "nodeType": "Return",
+                        "src": "1635:12:124"
+                      }
+                    ]
+                  },
+                  "id": 53758,
+                  "nodeType": "IfStatement",
+                  "src": "1552:106:124",
+                  "trueBody": {
+                    "id": 53754,
+                    "nodeType": "Block",
+                    "src": "1579:36:124",
+                    "statements": [
+                      {
+                        "expression": {
+                          "hexValue": "74727565",
+                          "id": 53752,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": true,
+                          "kind": "bool",
+                          "lValueRequested": false,
+                          "nodeType": "Literal",
+                          "src": "1600:4:124",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_bool",
+                            "typeString": "bool"
+                          },
+                          "value": "true"
+                        },
+                        "functionReturnParameters": 53745,
+                        "id": 53753,
+                        "nodeType": "Return",
+                        "src": "1593:11:124"
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            "baseFunctions": [
+              54617
+            ],
+            "functionSelector": "3367cca5",
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "isActiveOperator",
+            "nameLocation": "1478:16:124",
+            "parameters": {
+              "id": 53742,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 53741,
+                  "mutability": "mutable",
+                  "name": "operator",
+                  "nameLocation": "1503:8:124",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 53760,
+                  "src": "1495:16:124",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 53740,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1495:7:124",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1494:18:124"
+            },
+            "returnParameters": {
+              "id": 53745,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 53744,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 53760,
+                  "src": "1536:4:124",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  },
+                  "typeName": {
+                    "id": 53743,
+                    "name": "bool",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1536:4:124",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1535:6:124"
+            },
+            "scope": 53880,
+            "stateMutability": "pure",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 53766,
+            "nodeType": "FunctionDefinition",
+            "src": "1671:73:124",
+            "nodes": [],
+            "body": {
+              "id": 53765,
+              "nodeType": "Block",
+              "src": "1742:2:124",
+              "nodes": [],
+              "statements": []
+            },
+            "baseFunctions": [
+              360
+            ],
+            "functionSelector": "ca06c782",
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getLengthOfTotalStakeHistory",
+            "nameLocation": "1680:28:124",
+            "parameters": {
+              "id": 53761,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1708:2:124"
+            },
+            "returnParameters": {
+              "id": 53764,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 53763,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 53766,
+                  "src": "1734:7:124",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 53762,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1734:7:124",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1733:9:124"
+            },
+            "scope": 53880,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 53775,
+            "nodeType": "FunctionDefinition",
+            "src": "1750:93:124",
+            "nodes": [],
+            "body": {
+              "id": 53774,
+              "nodeType": "Block",
+              "src": "1841:2:124",
+              "nodes": [],
+              "statements": []
+            },
+            "baseFunctions": [
+              369
+            ],
+            "functionSelector": "102068d3",
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getTotalStakeFromIndex",
+            "nameLocation": "1759:22:124",
+            "parameters": {
+              "id": 53769,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 53768,
+                  "mutability": "mutable",
+                  "name": "index",
+                  "nameLocation": "1790:5:124",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 53775,
+                  "src": "1782:13:124",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 53767,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1782:7:124",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1781:15:124"
+            },
+            "returnParameters": {
+              "id": 53773,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 53772,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 53775,
+                  "src": "1820:20:124",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_struct$_OperatorStake_$355_memory_ptr",
+                    "typeString": "struct IQuorumRegistry.OperatorStake"
+                  },
+                  "typeName": {
+                    "id": 53771,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 53770,
+                      "name": "OperatorStake",
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 355,
+                      "src": "1820:13:124"
+                    },
+                    "referencedDeclaration": 355,
+                    "src": "1820:13:124",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_OperatorStake_$355_storage_ptr",
+                      "typeString": "struct IQuorumRegistry.OperatorStake"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1819:22:124"
+            },
+            "scope": 53880,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 53784,
+            "nodeType": "FunctionDefinition",
+            "src": "1925:82:124",
+            "nodes": [],
+            "body": {
+              "id": 53783,
+              "nodeType": "Block",
+              "src": "2005:2:124",
+              "nodes": [],
+              "statements": []
+            },
+            "baseFunctions": [
+              377
+            ],
+            "documentation": {
+              "id": 53776,
+              "nodeType": "StructuredDocumentation",
+              "src": "1849:71:124",
+              "text": "@notice Returns the stored pubkeyHash for the specified `operator`."
+            },
+            "functionSelector": "fd0d930a",
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getOperatorPubkeyHash",
+            "nameLocation": "1934:21:124",
+            "parameters": {
+              "id": 53779,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 53778,
+                  "mutability": "mutable",
+                  "name": "operator",
+                  "nameLocation": "1964:8:124",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 53784,
+                  "src": "1956:16:124",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 53777,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1956:7:124",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1955:18:124"
+            },
+            "returnParameters": {
+              "id": 53782,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 53781,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 53784,
+                  "src": "1997:7:124",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 53780,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1997:7:124",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1996:9:124"
+            },
+            "scope": 53880,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 53793,
+            "nodeType": "FunctionDefinition",
+            "src": "2091:88:124",
+            "nodes": [],
+            "body": {
+              "id": 53792,
+              "nodeType": "Block",
+              "src": "2177:2:124",
+              "nodes": [],
+              "statements": []
+            },
+            "baseFunctions": [
+              385
+            ],
+            "documentation": {
+              "id": 53785,
+              "nodeType": "StructuredDocumentation",
+              "src": "2013:73:124",
+              "text": "@notice Returns task number from when `operator` has been registered."
+            },
+            "functionSelector": "ae124d40",
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getFromTaskNumberForOperator",
+            "nameLocation": "2100:28:124",
+            "parameters": {
+              "id": 53788,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 53787,
+                  "mutability": "mutable",
+                  "name": "operator",
+                  "nameLocation": "2137:8:124",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 53793,
+                  "src": "2129:16:124",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 53786,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2129:7:124",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "2128:18:124"
+            },
+            "returnParameters": {
+              "id": 53791,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 53790,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 53793,
+                  "src": "2170:6:124",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint32",
+                    "typeString": "uint32"
+                  },
+                  "typeName": {
+                    "id": 53789,
+                    "name": "uint32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2170:6:124",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint32",
+                      "typeString": "uint32"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "2169:8:124"
+            },
+            "scope": 53880,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 53804,
+            "nodeType": "FunctionDefinition",
+            "src": "2185:121:124",
+            "nodes": [],
+            "body": {
+              "id": 53803,
+              "nodeType": "Block",
+              "src": "2304:2:124",
+              "nodes": [],
+              "statements": []
+            },
+            "baseFunctions": [
+              396
+            ],
+            "functionSelector": "2173fa23",
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getStakeFromPubkeyHashAndIndex",
+            "nameLocation": "2194:30:124",
+            "parameters": {
+              "id": 53798,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 53795,
+                  "mutability": "mutable",
+                  "name": "pubkeyHash",
+                  "nameLocation": "2233:10:124",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 53804,
+                  "src": "2225:18:124",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 53794,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2225:7:124",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 53797,
+                  "mutability": "mutable",
+                  "name": "index",
+                  "nameLocation": "2253:5:124",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 53804,
+                  "src": "2245:13:124",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 53796,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2245:7:124",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "2224:35:124"
+            },
+            "returnParameters": {
+              "id": 53802,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 53801,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 53804,
+                  "src": "2283:20:124",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_struct$_OperatorStake_$355_memory_ptr",
+                    "typeString": "struct IQuorumRegistry.OperatorStake"
+                  },
+                  "typeName": {
+                    "id": 53800,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 53799,
+                      "name": "OperatorStake",
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 355,
+                      "src": "2283:13:124"
+                    },
+                    "referencedDeclaration": 355,
+                    "src": "2283:13:124",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_OperatorStake_$355_storage_ptr",
+                      "typeString": "struct IQuorumRegistry.OperatorStake"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "2282:22:124"
+            },
+            "scope": 53880,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 53816,
+            "nodeType": "FunctionDefinition",
+            "src": "2312:110:124",
+            "nodes": [],
+            "body": {
+              "id": 53815,
+              "nodeType": "Block",
+              "src": "2420:2:124",
+              "nodes": [],
+              "statements": []
+            },
+            "baseFunctions": [
+              432
+            ],
+            "functionSelector": "7210b0c9",
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getOperatorIndex",
+            "nameLocation": "2321:16:124",
+            "parameters": {
+              "id": 53811,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 53806,
+                  "mutability": "mutable",
+                  "name": "operator",
+                  "nameLocation": "2346:8:124",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 53816,
+                  "src": "2338:16:124",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 53805,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2338:7:124",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 53808,
+                  "mutability": "mutable",
+                  "name": "blockNumber",
+                  "nameLocation": "2363:11:124",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 53816,
+                  "src": "2356:18:124",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint32",
+                    "typeString": "uint32"
+                  },
+                  "typeName": {
+                    "id": 53807,
+                    "name": "uint32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2356:6:124",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint32",
+                      "typeString": "uint32"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 53810,
+                  "mutability": "mutable",
+                  "name": "index",
+                  "nameLocation": "2383:5:124",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 53816,
+                  "src": "2376:12:124",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint32",
+                    "typeString": "uint32"
+                  },
+                  "typeName": {
+                    "id": 53809,
+                    "name": "uint32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2376:6:124",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint32",
+                      "typeString": "uint32"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "2337:52:124"
+            },
+            "returnParameters": {
+              "id": 53814,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 53813,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 53816,
+                  "src": "2413:6:124",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint32",
+                    "typeString": "uint32"
+                  },
+                  "typeName": {
+                    "id": 53812,
+                    "name": "uint32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2413:6:124",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint32",
+                      "typeString": "uint32"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "2412:8:124"
+            },
+            "scope": 53880,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 53826,
+            "nodeType": "FunctionDefinition",
+            "src": "2428:93:124",
+            "nodes": [],
+            "body": {
+              "id": 53825,
+              "nodeType": "Block",
+              "src": "2519:2:124",
+              "nodes": [],
+              "statements": []
+            },
+            "baseFunctions": [
+              442
+            ],
+            "functionSelector": "b322bdc7",
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getTotalOperators",
+            "nameLocation": "2437:17:124",
+            "parameters": {
+              "id": 53821,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 53818,
+                  "mutability": "mutable",
+                  "name": "blockNumber",
+                  "nameLocation": "2462:11:124",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 53826,
+                  "src": "2455:18:124",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint32",
+                    "typeString": "uint32"
+                  },
+                  "typeName": {
+                    "id": 53817,
+                    "name": "uint32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2455:6:124",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint32",
+                      "typeString": "uint32"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 53820,
+                  "mutability": "mutable",
+                  "name": "index",
+                  "nameLocation": "2482:5:124",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 53826,
+                  "src": "2475:12:124",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint32",
+                    "typeString": "uint32"
+                  },
+                  "typeName": {
+                    "id": 53819,
+                    "name": "uint32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2475:6:124",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint32",
+                      "typeString": "uint32"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "2454:34:124"
+            },
+            "returnParameters": {
+              "id": 53824,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 53823,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 53826,
+                  "src": "2512:6:124",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint32",
+                    "typeString": "uint32"
+                  },
+                  "typeName": {
+                    "id": 53822,
+                    "name": "uint32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2512:6:124",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint32",
+                      "typeString": "uint32"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "2511:8:124"
+            },
+            "scope": 53880,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 53832,
+            "nodeType": "FunctionDefinition",
+            "src": "2527:56:124",
+            "nodes": [],
+            "body": {
+              "id": 53831,
+              "nodeType": "Block",
+              "src": "2581:2:124",
+              "nodes": [],
+              "statements": []
+            },
+            "baseFunctions": [
+              448
+            ],
+            "functionSelector": "bd820688",
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "numOperators",
+            "nameLocation": "2536:12:124",
+            "parameters": {
+              "id": 53827,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "2548:2:124"
+            },
+            "returnParameters": {
+              "id": 53830,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 53829,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 53832,
+                  "src": "2574:6:124",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint32",
+                    "typeString": "uint32"
+                  },
+                  "typeName": {
+                    "id": 53828,
+                    "name": "uint32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2574:6:124",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint32",
+                      "typeString": "uint32"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "2573:8:124"
+            },
+            "scope": 53880,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 53842,
+            "nodeType": "FunctionDefinition",
+            "src": "2589:82:124",
+            "nodes": [],
+            "body": {
+              "id": 53841,
+              "nodeType": "Block",
+              "src": "2669:2:124",
+              "nodes": [],
+              "statements": []
+            },
+            "baseFunctions": [
+              458
+            ],
+            "functionSelector": "1c9856ae",
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "operatorStakes",
+            "nameLocation": "2598:14:124",
+            "parameters": {
+              "id": 53835,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 53834,
+                  "mutability": "mutable",
+                  "name": "operator",
+                  "nameLocation": "2621:8:124",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 53842,
+                  "src": "2613:16:124",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 53833,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2613:7:124",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "2612:18:124"
+            },
+            "returnParameters": {
+              "id": 53840,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 53837,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 53842,
+                  "src": "2654:6:124",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint96",
+                    "typeString": "uint96"
+                  },
+                  "typeName": {
+                    "id": 53836,
+                    "name": "uint96",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2654:6:124",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint96",
+                      "typeString": "uint96"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 53839,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 53842,
+                  "src": "2662:6:124",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint96",
+                    "typeString": "uint96"
+                  },
+                  "typeName": {
+                    "id": 53838,
+                    "name": "uint96",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2662:6:124",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint96",
+                      "typeString": "uint96"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "2653:16:124"
+            },
+            "scope": 53880,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 53856,
+            "nodeType": "FunctionDefinition",
+            "src": "2677:160:124",
+            "nodes": [],
+            "body": {
+              "id": 53855,
+              "nodeType": "Block",
+              "src": "2809:28:124",
+              "nodes": [],
+              "statements": [
+                {
+                  "expression": {
+                    "hexValue": "74727565",
+                    "id": 53853,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": true,
+                    "kind": "bool",
+                    "lValueRequested": false,
+                    "nodeType": "Literal",
+                    "src": "2826:4:124",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    },
+                    "value": "true"
+                  },
+                  "functionReturnParameters": 53852,
+                  "id": 53854,
+                  "nodeType": "Return",
+                  "src": "2819:11:124"
+                }
+              ]
+            },
+            "baseFunctions": [
+              408
+            ],
+            "functionSelector": "629b312a",
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "checkOperatorActiveAtBlockNumber",
+            "nameLocation": "2686:32:124",
+            "parameters": {
+              "id": 53849,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 53844,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 53856,
+                  "src": "2728:7:124",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 53843,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2728:7:124",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 53846,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 53856,
+                  "src": "2745:7:124",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 53845,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2745:7:124",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 53848,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 53856,
+                  "src": "2762:7:124",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 53847,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2762:7:124",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "2718:61:124"
+            },
+            "returnParameters": {
+              "id": 53852,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 53851,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 53856,
+                  "src": "2803:4:124",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  },
+                  "typeName": {
+                    "id": 53850,
+                    "name": "bool",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2803:4:124",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "2802:6:124"
+            },
+            "scope": 53880,
+            "stateMutability": "pure",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 53870,
+            "nodeType": "FunctionDefinition",
+            "src": "2843:170:124",
+            "nodes": [],
+            "body": {
+              "id": 53869,
+              "nodeType": "Block",
+              "src": "2977:36:124",
+              "nodes": [],
+              "statements": [
+                {
+                  "expression": {
+                    "hexValue": "74727565",
+                    "id": 53867,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": true,
+                    "kind": "bool",
+                    "lValueRequested": false,
+                    "nodeType": "Literal",
+                    "src": "2998:4:124",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    },
+                    "value": "true"
+                  },
+                  "functionReturnParameters": 53866,
+                  "id": 53868,
+                  "nodeType": "Return",
+                  "src": "2991:11:124"
+                }
+              ]
+            },
+            "baseFunctions": [
+              420
+            ],
+            "functionSelector": "e84ef3cb",
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "checkOperatorInactiveAtBlockNumber",
+            "nameLocation": "2852:34:124",
+            "parameters": {
+              "id": 53863,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 53858,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 53870,
+                  "src": "2896:7:124",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 53857,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2896:7:124",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 53860,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 53870,
+                  "src": "2913:7:124",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 53859,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2913:7:124",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 53862,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 53870,
+                  "src": "2930:7:124",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 53861,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2930:7:124",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "2886:61:124"
+            },
+            "returnParameters": {
+              "id": 53866,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 53865,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 53870,
+                  "src": "2971:4:124",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  },
+                  "typeName": {
+                    "id": 53864,
+                    "name": "bool",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2971:4:124",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "2970:6:124"
+            },
+            "scope": 53880,
+            "stateMutability": "pure",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 53879,
+            "nodeType": "FunctionDefinition",
+            "src": "3107:62:124",
+            "nodes": [],
+            "body": {
+              "id": 53878,
+              "nodeType": "Block",
+              "src": "3167:2:124",
+              "nodes": [],
+              "statements": []
+            },
+            "baseFunctions": [
+              466
+            ],
+            "documentation": {
+              "id": 53871,
+              "nodeType": "StructuredDocumentation",
+              "src": "3019:83:124",
+              "text": "@notice Returns the stake amounts from the latest entry in `totalStakeHistory`."
+            },
+            "functionSelector": "8b0e9f3f",
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "totalStake",
+            "nameLocation": "3116:10:124",
+            "parameters": {
+              "id": 53872,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "3126:2:124"
+            },
+            "returnParameters": {
+              "id": 53877,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 53874,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 53879,
+                  "src": "3152:6:124",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint96",
+                    "typeString": "uint96"
+                  },
+                  "typeName": {
+                    "id": 53873,
+                    "name": "uint96",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "3152:6:124",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint96",
+                      "typeString": "uint96"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 53876,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 53879,
+                  "src": "3160:6:124",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint96",
+                    "typeString": "uint96"
+                  },
+                  "typeName": {
+                    "id": 53875,
+                    "name": "uint96",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "3160:6:124",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint96",
+                      "typeString": "uint96"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "3151:16:124"
+            },
+            "scope": 53880,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "abstract": false,
+        "baseContracts": [
+          {
+            "baseName": {
+              "id": 53686,
+              "name": "IQuorumRegistry",
+              "nodeType": "IdentifierPath",
+              "referencedDeclaration": 467,
+              "src": "319:15:124"
+            },
+            "id": 53687,
+            "nodeType": "InheritanceSpecifier",
+            "src": "319:15:124"
+          },
+          {
+            "baseName": {
+              "id": 53688,
+              "name": "DSTest",
+              "nodeType": "IdentifierPath",
+              "referencedDeclaration": 15677,
+              "src": "336:6:124"
+            },
+            "id": 53689,
+            "nodeType": "InheritanceSpecifier",
+            "src": "336:6:124"
+          }
+        ],
+        "canonicalName": "EigenDARegistryMock",
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "fullyImplemented": true,
+        "linearizedBaseContracts": [
+          53880,
+          15677,
+          467,
+          54618
+        ],
+        "name": "EigenDARegistryMock",
+        "nameLocation": "296:19:124",
+        "scope": 53881,
+        "usedErrors": []
+      }
+    ],
+    "license": "UNLICENSED"
+  },
+  "id": 124
+}

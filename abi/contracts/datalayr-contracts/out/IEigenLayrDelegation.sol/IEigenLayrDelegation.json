@@ -1,0 +1,1908 @@
+{
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "staker",
+          "type": "address"
+        },
+        {
+          "internalType": "contract IInvestmentStrategy[]",
+          "name": "strategies",
+          "type": "address[]"
+        },
+        {
+          "internalType": "uint256[]",
+          "name": "shares",
+          "type": "uint256[]"
+        }
+      ],
+      "name": "decreaseDelegatedShares",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "operator",
+          "type": "address"
+        }
+      ],
+      "name": "delegateTo",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "staker",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "operator",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "expiry",
+          "type": "uint256"
+        },
+        {
+          "internalType": "bytes32",
+          "name": "r",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "bytes32",
+          "name": "vs",
+          "type": "bytes32"
+        }
+      ],
+      "name": "delegateToBySignature",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "staker",
+          "type": "address"
+        }
+      ],
+      "name": "delegatedTo",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "operator",
+          "type": "address"
+        }
+      ],
+      "name": "getOperatorRewardAddress",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "staker",
+          "type": "address"
+        },
+        {
+          "internalType": "contract IInvestmentStrategy",
+          "name": "strategy",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "shares",
+          "type": "uint256"
+        }
+      ],
+      "name": "increaseDelegatedShares",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "staker",
+          "type": "address"
+        }
+      ],
+      "name": "isDelegated",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "staker",
+          "type": "address"
+        }
+      ],
+      "name": "isNotDelegated",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "operator",
+          "type": "address"
+        }
+      ],
+      "name": "isOperator",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "operator",
+          "type": "address"
+        },
+        {
+          "internalType": "contract IInvestmentStrategy",
+          "name": "strategy",
+          "type": "address"
+        }
+      ],
+      "name": "operatorShares",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "rewardReciveAddress",
+          "type": "address"
+        }
+      ],
+      "name": "registerAsOperator",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "staker",
+          "type": "address"
+        }
+      ],
+      "name": "undelegate",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "bytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "methodIdentifiers": {
+    "decreaseDelegatedShares(address,address[],uint256[])": "5820491c",
+    "delegateTo(address)": "ac637c7a",
+    "delegateToBySignature(address,address,uint256,bytes32,bytes32)": "b41b394b",
+    "delegatedTo(address)": "65da1264",
+    "getOperatorRewardAddress(address)": "ee4ea66a",
+    "increaseDelegatedShares(address,address,uint256)": "28a573ae",
+    "isDelegated(address)": "3e28391d",
+    "isNotDelegated(address)": "1d3696b7",
+    "isOperator(address)": "6d70f7ae",
+    "operatorShares(address,address)": "778e55f3",
+    "registerAsOperator(address)": "bd44e403",
+    "undelegate(address)": "da8be864"
+  },
+  "rawMetadata": "{\"compiler\":{\"version\":\"0.8.12+commit.f00d7308\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"address\",\"name\":\"staker\",\"type\":\"address\"},{\"internalType\":\"contract IInvestmentStrategy[]\",\"name\":\"strategies\",\"type\":\"address[]\"},{\"internalType\":\"uint256[]\",\"name\":\"shares\",\"type\":\"uint256[]\"}],\"name\":\"decreaseDelegatedShares\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"operator\",\"type\":\"address\"}],\"name\":\"delegateTo\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"staker\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"operator\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"expiry\",\"type\":\"uint256\"},{\"internalType\":\"bytes32\",\"name\":\"r\",\"type\":\"bytes32\"},{\"internalType\":\"bytes32\",\"name\":\"vs\",\"type\":\"bytes32\"}],\"name\":\"delegateToBySignature\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"staker\",\"type\":\"address\"}],\"name\":\"delegatedTo\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"operator\",\"type\":\"address\"}],\"name\":\"getOperatorRewardAddress\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"staker\",\"type\":\"address\"},{\"internalType\":\"contract IInvestmentStrategy\",\"name\":\"strategy\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"shares\",\"type\":\"uint256\"}],\"name\":\"increaseDelegatedShares\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"staker\",\"type\":\"address\"}],\"name\":\"isDelegated\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"staker\",\"type\":\"address\"}],\"name\":\"isNotDelegated\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"operator\",\"type\":\"address\"}],\"name\":\"isOperator\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"operator\",\"type\":\"address\"},{\"internalType\":\"contract IInvestmentStrategy\",\"name\":\"strategy\",\"type\":\"address\"}],\"name\":\"operatorShares\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"rewardReciveAddress\",\"type\":\"address\"}],\"name\":\"registerAsOperator\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"staker\",\"type\":\"address\"}],\"name\":\"undelegate\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"author\":\"Layr Labs, Inc.\",\"kind\":\"dev\",\"methods\":{\"decreaseDelegatedShares(address,address[],uint256[])\":{\"details\":\"Callable only by the InvestmentManager\"},\"delegateTo(address)\":{\"params\":{\"operator\":\"is the operator to whom staker (msg.sender) is delegating its assets\"}},\"delegateToBySignature(address,address,uint256,bytes32,bytes32)\":{\"details\":\"requires that r, vs are a valid ECSDA signature from `staker` indicating their intention for this action\"},\"increaseDelegatedShares(address,address,uint256)\":{\"details\":\"Callable only by the InvestmentManager\"},\"registerAsOperator(address)\":{\"params\":{\"rewardReciveAddress\":\"another EOA address for receive from mantle network\"}},\"undelegate(address)\":{\"details\":\"Should only ever be called in the event that the `staker` has no active deposits in EigenLayer.\"}},\"title\":\"The interface for the primary delegation contract for EigenLayr.\",\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{\"decreaseDelegatedShares(address,address[],uint256[])\":{\"notice\":\"Decreases the `staker`'s delegated shares in each entry of `strategies` by its respective `shares[i]`, typically called when the staker withdraws from EigenLayr\"},\"delegateTo(address)\":{\"notice\":\"This will be called by a staker to delegate its assets to some operator.\"},\"delegateToBySignature(address,address,uint256,bytes32,bytes32)\":{\"notice\":\"Delegates from `staker` to `operator`.\"},\"delegatedTo(address)\":{\"notice\":\"returns the address of the operator that `staker` is delegated to.\"},\"getOperatorRewardAddress(address)\":{\"notice\":\"returns the eoa address of the `operator`, which may mediate their interactions with stakers who delegate to them.\"},\"increaseDelegatedShares(address,address,uint256)\":{\"notice\":\"Increases the `staker`'s delegated shares in `strategy` by `shares, typically called when the staker has further deposits into EigenLayr\"},\"isDelegated(address)\":{\"notice\":\"Returns 'true' if `staker` *is* actively delegated, and 'false' otherwise.\"},\"isNotDelegated(address)\":{\"notice\":\"Returns 'true' if `staker` is *not* actively delegated, and 'false' otherwise.\"},\"isOperator(address)\":{\"notice\":\"Returns if an operator can be delegated to, i.e. it has called `registerAsOperator`.\"},\"operatorShares(address,address)\":{\"notice\":\"returns the total number of shares in `strategy` that are delegated to `operator`.\"},\"registerAsOperator(address)\":{\"notice\":\"This will be called by an operator to register itself as an operator that stakers can choose to delegate to.\"},\"undelegate(address)\":{\"notice\":\"Undelegates `staker` from the operator who they are delegated to.Callable only by the InvestmentManager\"}},\"notice\":\"This is the contract for delegation in EigenLayr. The main functionalities of this contract are - enabling anyone to register as an operator in EigenLayr - allowing new operators to provide a DelegationTerms-type contract, which may mediate their interactions with stakers who delegate to them - enabling any staker to delegate its stake to the operator of its choice - enabling a staker to undelegate its assets from an operator (performed as part of the withdrawal process, initiated through the InvestmentManager)\",\"version\":1}},\"settings\":{\"compilationTarget\":{\"/Users/dl00038ml/PKG/projects/blockChain/e_Tools/rde/mantle/datalayr/contracts/eignlayr-contracts/src/contracts/interfaces/IEigenLayrDelegation.sol\":\"IEigenLayrDelegation\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[\":@eigenlayer/=../eignlayr-contracts/src/\",\":@openzeppelin-upgrades/=lib/openzeppelin-contracts-upgradeable/\",\":@openzeppelin/=lib/openzeppelin-contracts/\",\":ds-test/=lib/eignlayr-contracts/lib/ds-test/src/\",\":eignlayr-contracts/=lib/eignlayr-contracts/src/\",\":forge-std/=lib/forge-std/src/\",\":openzeppelin-contracts-upgradeable/=lib/eignlayr-contracts/lib/openzeppelin-contracts-upgradeable/\",\":openzeppelin-contracts/=lib/eignlayr-contracts/lib/openzeppelin-contracts/contracts/\"]},\"sources\":{\"/Users/dl00038ml/PKG/projects/blockChain/e_Tools/rde/mantle/datalayr/contracts/eignlayr-contracts/src/contracts/interfaces/IEigenLayrDelegation.sol\":{\"keccak256\":\"0x9f11c0becde4111ac7d060dc11b9461888129076740cf78e07f292eefc92955e\",\"license\":\"UNLICENSED\",\"urls\":[\"bzz-raw://53bef92f10fd142e6b0af0f4f77a958c96ebea145492aa5328757e10fffd9c21\",\"dweb:/ipfs/QmUHG67pTyGxu6whsk95JNwevDJ7ooQMyeNT4kfwJtEzU5\"]},\"/Users/dl00038ml/PKG/projects/blockChain/e_Tools/rde/mantle/datalayr/contracts/eignlayr-contracts/src/contracts/interfaces/IInvestmentStrategy.sol\":{\"keccak256\":\"0x69eb667cc856ee1fe783243b6db21a43a9dadd29bf6761727b334fca4366bceb\",\"license\":\"UNLICENSED\",\"urls\":[\"bzz-raw://224e8f6def4e53a1065f0c4ce26d8ffff15276944e2351753065aeb5bd265f52\",\"dweb:/ipfs/QmSu8iUPCnwza4SdE5jVSZLnQjMRXJg3VAGc8pHqbaMLob\"]},\"lib/openzeppelin-contracts/contracts/token/ERC20/IERC20.sol\":{\"keccak256\":\"0x9750c6b834f7b43000631af5cc30001c5f547b3ceb3635488f140f60e897ea6b\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://5a7d5b1ef5d8d5889ad2ed89d8619c09383b80b72ab226e0fe7bde1636481e34\",\"dweb:/ipfs/QmebXWgtEfumQGBdVeM6c71McLixYXQP5Bk6kKXuoY4Bmr\"]}},\"version\":1}",
+  "metadata": {
+    "compiler": {
+      "version": "0.8.12+commit.f00d7308"
+    },
+    "language": "Solidity",
+    "output": {
+      "abi": [
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "staker",
+              "type": "address"
+            },
+            {
+              "internalType": "contract IInvestmentStrategy[]",
+              "name": "strategies",
+              "type": "address[]"
+            },
+            {
+              "internalType": "uint256[]",
+              "name": "shares",
+              "type": "uint256[]"
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "decreaseDelegatedShares"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "operator",
+              "type": "address"
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "delegateTo"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "staker",
+              "type": "address"
+            },
+            {
+              "internalType": "address",
+              "name": "operator",
+              "type": "address"
+            },
+            {
+              "internalType": "uint256",
+              "name": "expiry",
+              "type": "uint256"
+            },
+            {
+              "internalType": "bytes32",
+              "name": "r",
+              "type": "bytes32"
+            },
+            {
+              "internalType": "bytes32",
+              "name": "vs",
+              "type": "bytes32"
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "delegateToBySignature"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "staker",
+              "type": "address"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "delegatedTo",
+          "outputs": [
+            {
+              "internalType": "address",
+              "name": "",
+              "type": "address"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "operator",
+              "type": "address"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "getOperatorRewardAddress",
+          "outputs": [
+            {
+              "internalType": "address",
+              "name": "",
+              "type": "address"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "staker",
+              "type": "address"
+            },
+            {
+              "internalType": "contract IInvestmentStrategy",
+              "name": "strategy",
+              "type": "address"
+            },
+            {
+              "internalType": "uint256",
+              "name": "shares",
+              "type": "uint256"
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "increaseDelegatedShares"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "staker",
+              "type": "address"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "isDelegated",
+          "outputs": [
+            {
+              "internalType": "bool",
+              "name": "",
+              "type": "bool"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "staker",
+              "type": "address"
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "isNotDelegated",
+          "outputs": [
+            {
+              "internalType": "bool",
+              "name": "",
+              "type": "bool"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "operator",
+              "type": "address"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "isOperator",
+          "outputs": [
+            {
+              "internalType": "bool",
+              "name": "",
+              "type": "bool"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "operator",
+              "type": "address"
+            },
+            {
+              "internalType": "contract IInvestmentStrategy",
+              "name": "strategy",
+              "type": "address"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "operatorShares",
+          "outputs": [
+            {
+              "internalType": "uint256",
+              "name": "",
+              "type": "uint256"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "rewardReciveAddress",
+              "type": "address"
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "registerAsOperator"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "staker",
+              "type": "address"
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "undelegate"
+        }
+      ],
+      "devdoc": {
+        "kind": "dev",
+        "methods": {
+          "decreaseDelegatedShares(address,address[],uint256[])": {
+            "details": "Callable only by the InvestmentManager"
+          },
+          "delegateTo(address)": {
+            "params": {
+              "operator": "is the operator to whom staker (msg.sender) is delegating its assets"
+            }
+          },
+          "delegateToBySignature(address,address,uint256,bytes32,bytes32)": {
+            "details": "requires that r, vs are a valid ECSDA signature from `staker` indicating their intention for this action"
+          },
+          "increaseDelegatedShares(address,address,uint256)": {
+            "details": "Callable only by the InvestmentManager"
+          },
+          "registerAsOperator(address)": {
+            "params": {
+              "rewardReciveAddress": "another EOA address for receive from mantle network"
+            }
+          },
+          "undelegate(address)": {
+            "details": "Should only ever be called in the event that the `staker` has no active deposits in EigenLayer."
+          }
+        },
+        "version": 1
+      },
+      "userdoc": {
+        "kind": "user",
+        "methods": {
+          "decreaseDelegatedShares(address,address[],uint256[])": {
+            "notice": "Decreases the `staker`'s delegated shares in each entry of `strategies` by its respective `shares[i]`, typically called when the staker withdraws from EigenLayr"
+          },
+          "delegateTo(address)": {
+            "notice": "This will be called by a staker to delegate its assets to some operator."
+          },
+          "delegateToBySignature(address,address,uint256,bytes32,bytes32)": {
+            "notice": "Delegates from `staker` to `operator`."
+          },
+          "delegatedTo(address)": {
+            "notice": "returns the address of the operator that `staker` is delegated to."
+          },
+          "getOperatorRewardAddress(address)": {
+            "notice": "returns the eoa address of the `operator`, which may mediate their interactions with stakers who delegate to them."
+          },
+          "increaseDelegatedShares(address,address,uint256)": {
+            "notice": "Increases the `staker`'s delegated shares in `strategy` by `shares, typically called when the staker has further deposits into EigenLayr"
+          },
+          "isDelegated(address)": {
+            "notice": "Returns 'true' if `staker` *is* actively delegated, and 'false' otherwise."
+          },
+          "isNotDelegated(address)": {
+            "notice": "Returns 'true' if `staker` is *not* actively delegated, and 'false' otherwise."
+          },
+          "isOperator(address)": {
+            "notice": "Returns if an operator can be delegated to, i.e. it has called `registerAsOperator`."
+          },
+          "operatorShares(address,address)": {
+            "notice": "returns the total number of shares in `strategy` that are delegated to `operator`."
+          },
+          "registerAsOperator(address)": {
+            "notice": "This will be called by an operator to register itself as an operator that stakers can choose to delegate to."
+          },
+          "undelegate(address)": {
+            "notice": "Undelegates `staker` from the operator who they are delegated to.Callable only by the InvestmentManager"
+          }
+        },
+        "version": 1
+      }
+    },
+    "settings": {
+      "remappings": [
+        ":@eigenlayer/=../eignlayr-contracts/src/",
+        ":@openzeppelin-upgrades/=lib/openzeppelin-contracts-upgradeable/",
+        ":@openzeppelin/=lib/openzeppelin-contracts/",
+        ":ds-test/=lib/eignlayr-contracts/lib/ds-test/src/",
+        ":eignlayr-contracts/=lib/eignlayr-contracts/src/",
+        ":forge-std/=lib/forge-std/src/",
+        ":openzeppelin-contracts-upgradeable/=lib/eignlayr-contracts/lib/openzeppelin-contracts-upgradeable/",
+        ":openzeppelin-contracts/=lib/eignlayr-contracts/lib/openzeppelin-contracts/contracts/"
+      ],
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "metadata": {
+        "bytecodeHash": "ipfs"
+      },
+      "compilationTarget": {
+        "/Users/dl00038ml/PKG/projects/blockChain/e_Tools/rde/mantle/datalayr/contracts/eignlayr-contracts/src/contracts/interfaces/IEigenLayrDelegation.sol": "IEigenLayrDelegation"
+      },
+      "libraries": {}
+    },
+    "sources": {
+      "/Users/dl00038ml/PKG/projects/blockChain/e_Tools/rde/mantle/datalayr/contracts/eignlayr-contracts/src/contracts/interfaces/IEigenLayrDelegation.sol": {
+        "keccak256": "0x9f11c0becde4111ac7d060dc11b9461888129076740cf78e07f292eefc92955e",
+        "urls": [
+          "bzz-raw://53bef92f10fd142e6b0af0f4f77a958c96ebea145492aa5328757e10fffd9c21",
+          "dweb:/ipfs/QmUHG67pTyGxu6whsk95JNwevDJ7ooQMyeNT4kfwJtEzU5"
+        ],
+        "license": "UNLICENSED"
+      },
+      "/Users/dl00038ml/PKG/projects/blockChain/e_Tools/rde/mantle/datalayr/contracts/eignlayr-contracts/src/contracts/interfaces/IInvestmentStrategy.sol": {
+        "keccak256": "0x69eb667cc856ee1fe783243b6db21a43a9dadd29bf6761727b334fca4366bceb",
+        "urls": [
+          "bzz-raw://224e8f6def4e53a1065f0c4ce26d8ffff15276944e2351753065aeb5bd265f52",
+          "dweb:/ipfs/QmSu8iUPCnwza4SdE5jVSZLnQjMRXJg3VAGc8pHqbaMLob"
+        ],
+        "license": "UNLICENSED"
+      },
+      "lib/openzeppelin-contracts/contracts/token/ERC20/IERC20.sol": {
+        "keccak256": "0x9750c6b834f7b43000631af5cc30001c5f547b3ceb3635488f140f60e897ea6b",
+        "urls": [
+          "bzz-raw://5a7d5b1ef5d8d5889ad2ed89d8619c09383b80b72ab226e0fe7bde1636481e34",
+          "dweb:/ipfs/QmebXWgtEfumQGBdVeM6c71McLixYXQP5Bk6kKXuoY4Bmr"
+        ],
+        "license": "MIT"
+      }
+    },
+    "version": 1
+  },
+  "ast": {
+    "absolutePath": "/Users/dl00038ml/PKG/projects/blockChain/e_Tools/rde/mantle/datalayr/contracts/eignlayr-contracts/src/contracts/interfaces/IEigenLayrDelegation.sol",
+    "id": 7257,
+    "exportedSymbols": {
+      "IERC20": [
+        40863
+      ],
+      "IEigenLayrDelegation": [
+        7256
+      ],
+      "IInvestmentStrategy": [
+        7458
+      ]
+    },
+    "nodeType": "SourceUnit",
+    "src": "39:3739:41",
+    "nodes": [
+      {
+        "id": 7146,
+        "nodeType": "PragmaDirective",
+        "src": "39:23:41",
+        "nodes": [],
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".9"
+        ]
+      },
+      {
+        "id": 7147,
+        "nodeType": "ImportDirective",
+        "src": "64:35:41",
+        "nodes": [],
+        "absolutePath": "/Users/dl00038ml/PKG/projects/blockChain/e_Tools/rde/mantle/datalayr/contracts/eignlayr-contracts/src/contracts/interfaces/IInvestmentStrategy.sol",
+        "file": "./IInvestmentStrategy.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 7257,
+        "sourceUnit": 7459,
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "id": 7256,
+        "nodeType": "ContractDefinition",
+        "src": "752:3025:41",
+        "nodes": [
+          {
+            "id": 7154,
+            "nodeType": "FunctionDefinition",
+            "src": "1016:66:41",
+            "nodes": [],
+            "documentation": {
+              "id": 7149,
+              "nodeType": "StructuredDocumentation",
+              "src": "790:221:41",
+              "text": " @notice This will be called by an operator to register itself as an operator that stakers can choose to delegate to.\n @param rewardReciveAddress another EOA address for receive from mantle network"
+            },
+            "functionSelector": "bd44e403",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "registerAsOperator",
+            "nameLocation": "1025:18:41",
+            "parameters": {
+              "id": 7152,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 7151,
+                  "mutability": "mutable",
+                  "name": "rewardReciveAddress",
+                  "nameLocation": "1052:19:41",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 7154,
+                  "src": "1044:27:41",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 7150,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1044:7:41",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1043:29:41"
+            },
+            "returnParameters": {
+              "id": 7153,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1081:0:41"
+            },
+            "scope": 7256,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 7160,
+            "nodeType": "FunctionDefinition",
+            "src": "1286:47:41",
+            "nodes": [],
+            "documentation": {
+              "id": 7155,
+              "nodeType": "StructuredDocumentation",
+              "src": "1088:193:41",
+              "text": "  @notice This will be called by a staker to delegate its assets to some operator.\n  @param operator is the operator to whom staker (msg.sender) is delegating its assets"
+            },
+            "functionSelector": "ac637c7a",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "delegateTo",
+            "nameLocation": "1295:10:41",
+            "parameters": {
+              "id": 7158,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 7157,
+                  "mutability": "mutable",
+                  "name": "operator",
+                  "nameLocation": "1314:8:41",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 7160,
+                  "src": "1306:16:41",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 7156,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1306:7:41",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1305:18:41"
+            },
+            "returnParameters": {
+              "id": 7159,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1332:0:41"
+            },
+            "scope": 7256,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 7174,
+            "nodeType": "FunctionDefinition",
+            "src": "1526:113:41",
+            "nodes": [],
+            "documentation": {
+              "id": 7161,
+              "nodeType": "StructuredDocumentation",
+              "src": "1339:182:41",
+              "text": " @notice Delegates from `staker` to `operator`.\n @dev requires that r, vs are a valid ECSDA signature from `staker` indicating their intention for this action"
+            },
+            "functionSelector": "b41b394b",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "delegateToBySignature",
+            "nameLocation": "1535:21:41",
+            "parameters": {
+              "id": 7172,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 7163,
+                  "mutability": "mutable",
+                  "name": "staker",
+                  "nameLocation": "1565:6:41",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 7174,
+                  "src": "1557:14:41",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 7162,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1557:7:41",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 7165,
+                  "mutability": "mutable",
+                  "name": "operator",
+                  "nameLocation": "1581:8:41",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 7174,
+                  "src": "1573:16:41",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 7164,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1573:7:41",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 7167,
+                  "mutability": "mutable",
+                  "name": "expiry",
+                  "nameLocation": "1599:6:41",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 7174,
+                  "src": "1591:14:41",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 7166,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1591:7:41",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 7169,
+                  "mutability": "mutable",
+                  "name": "r",
+                  "nameLocation": "1615:1:41",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 7174,
+                  "src": "1607:9:41",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 7168,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1607:7:41",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 7171,
+                  "mutability": "mutable",
+                  "name": "vs",
+                  "nameLocation": "1626:2:41",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 7174,
+                  "src": "1618:10:41",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 7170,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1618:7:41",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1556:73:41"
+            },
+            "returnParameters": {
+              "id": 7173,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1638:0:41"
+            },
+            "scope": 7256,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 7180,
+            "nodeType": "FunctionDefinition",
+            "src": "1904:45:41",
+            "nodes": [],
+            "documentation": {
+              "id": 7175,
+              "nodeType": "StructuredDocumentation",
+              "src": "1645:254:41",
+              "text": " @notice Undelegates `staker` from the operator who they are delegated to.\n @notice Callable only by the InvestmentManager\n @dev Should only ever be called in the event that the `staker` has no active deposits in EigenLayer."
+            },
+            "functionSelector": "da8be864",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "undelegate",
+            "nameLocation": "1913:10:41",
+            "parameters": {
+              "id": 7178,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 7177,
+                  "mutability": "mutable",
+                  "name": "staker",
+                  "nameLocation": "1932:6:41",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 7180,
+                  "src": "1924:14:41",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 7176,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1924:7:41",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1923:16:41"
+            },
+            "returnParameters": {
+              "id": 7179,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1948:0:41"
+            },
+            "scope": 7256,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 7188,
+            "nodeType": "FunctionDefinition",
+            "src": "2038:69:41",
+            "nodes": [],
+            "documentation": {
+              "id": 7181,
+              "nodeType": "StructuredDocumentation",
+              "src": "1955:78:41",
+              "text": "@notice returns the address of the operator that `staker` is delegated to."
+            },
+            "functionSelector": "65da1264",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "delegatedTo",
+            "nameLocation": "2047:11:41",
+            "parameters": {
+              "id": 7184,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 7183,
+                  "mutability": "mutable",
+                  "name": "staker",
+                  "nameLocation": "2067:6:41",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 7188,
+                  "src": "2059:14:41",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 7182,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2059:7:41",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "2058:16:41"
+            },
+            "returnParameters": {
+              "id": 7187,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 7186,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 7188,
+                  "src": "2098:7:41",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 7185,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2098:7:41",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "2097:9:41"
+            },
+            "scope": 7256,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 7196,
+            "nodeType": "FunctionDefinition",
+            "src": "2244:84:41",
+            "nodes": [],
+            "documentation": {
+              "id": 7189,
+              "nodeType": "StructuredDocumentation",
+              "src": "2113:126:41",
+              "text": "@notice returns the eoa address of the `operator`, which may mediate their interactions with stakers who delegate to them."
+            },
+            "functionSelector": "ee4ea66a",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getOperatorRewardAddress",
+            "nameLocation": "2253:24:41",
+            "parameters": {
+              "id": 7192,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 7191,
+                  "mutability": "mutable",
+                  "name": "operator",
+                  "nameLocation": "2286:8:41",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 7196,
+                  "src": "2278:16:41",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 7190,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2278:7:41",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "2277:18:41"
+            },
+            "returnParameters": {
+              "id": 7195,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 7194,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 7196,
+                  "src": "2319:7:41",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 7193,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2319:7:41",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "2318:9:41"
+            },
+            "scope": 7256,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 7207,
+            "nodeType": "FunctionDefinition",
+            "src": "2433:104:41",
+            "nodes": [],
+            "documentation": {
+              "id": 7197,
+              "nodeType": "StructuredDocumentation",
+              "src": "2334:94:41",
+              "text": "@notice returns the total number of shares in `strategy` that are delegated to `operator`."
+            },
+            "functionSelector": "778e55f3",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "operatorShares",
+            "nameLocation": "2442:14:41",
+            "parameters": {
+              "id": 7203,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 7199,
+                  "mutability": "mutable",
+                  "name": "operator",
+                  "nameLocation": "2465:8:41",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 7207,
+                  "src": "2457:16:41",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 7198,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2457:7:41",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 7202,
+                  "mutability": "mutable",
+                  "name": "strategy",
+                  "nameLocation": "2495:8:41",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 7207,
+                  "src": "2475:28:41",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_contract$_IInvestmentStrategy_$7458",
+                    "typeString": "contract IInvestmentStrategy"
+                  },
+                  "typeName": {
+                    "id": 7201,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 7200,
+                      "name": "IInvestmentStrategy",
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 7458,
+                      "src": "2475:19:41"
+                    },
+                    "referencedDeclaration": 7458,
+                    "src": "2475:19:41",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_IInvestmentStrategy_$7458",
+                      "typeString": "contract IInvestmentStrategy"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "2456:48:41"
+            },
+            "returnParameters": {
+              "id": 7206,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 7205,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 7207,
+                  "src": "2528:7:41",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 7204,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2528:7:41",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "2527:9:41"
+            },
+            "scope": 7256,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 7218,
+            "nodeType": "FunctionDefinition",
+            "src": "2762:104:41",
+            "nodes": [],
+            "documentation": {
+              "id": 7208,
+              "nodeType": "StructuredDocumentation",
+              "src": "2543:214:41",
+              "text": " @notice Increases the `staker`'s delegated shares in `strategy` by `shares, typically called when the staker has further deposits into EigenLayr\n @dev Callable only by the InvestmentManager"
+            },
+            "functionSelector": "28a573ae",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "increaseDelegatedShares",
+            "nameLocation": "2771:23:41",
+            "parameters": {
+              "id": 7216,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 7210,
+                  "mutability": "mutable",
+                  "name": "staker",
+                  "nameLocation": "2803:6:41",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 7218,
+                  "src": "2795:14:41",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 7209,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2795:7:41",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 7213,
+                  "mutability": "mutable",
+                  "name": "strategy",
+                  "nameLocation": "2831:8:41",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 7218,
+                  "src": "2811:28:41",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_contract$_IInvestmentStrategy_$7458",
+                    "typeString": "contract IInvestmentStrategy"
+                  },
+                  "typeName": {
+                    "id": 7212,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 7211,
+                      "name": "IInvestmentStrategy",
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 7458,
+                      "src": "2811:19:41"
+                    },
+                    "referencedDeclaration": 7458,
+                    "src": "2811:19:41",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_IInvestmentStrategy_$7458",
+                      "typeString": "contract IInvestmentStrategy"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 7215,
+                  "mutability": "mutable",
+                  "name": "shares",
+                  "nameLocation": "2849:6:41",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 7218,
+                  "src": "2841:14:41",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 7214,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2841:7:41",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "2794:62:41"
+            },
+            "returnParameters": {
+              "id": 7217,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "2865:0:41"
+            },
+            "scope": 7256,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 7231,
+            "nodeType": "FunctionDefinition",
+            "src": "3115:158:41",
+            "nodes": [],
+            "documentation": {
+              "id": 7219,
+              "nodeType": "StructuredDocumentation",
+              "src": "2872:238:41",
+              "text": " @notice Decreases the `staker`'s delegated shares in each entry of `strategies` by its respective `shares[i]`, typically called when the staker withdraws from EigenLayr\n @dev Callable only by the InvestmentManager"
+            },
+            "functionSelector": "5820491c",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "decreaseDelegatedShares",
+            "nameLocation": "3124:23:41",
+            "parameters": {
+              "id": 7229,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 7221,
+                  "mutability": "mutable",
+                  "name": "staker",
+                  "nameLocation": "3165:6:41",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 7231,
+                  "src": "3157:14:41",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 7220,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "3157:7:41",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 7225,
+                  "mutability": "mutable",
+                  "name": "strategies",
+                  "nameLocation": "3212:10:41",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 7231,
+                  "src": "3181:41:41",
+                  "stateVariable": false,
+                  "storageLocation": "calldata",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_contract$_IInvestmentStrategy_$7458_$dyn_calldata_ptr",
+                    "typeString": "contract IInvestmentStrategy[]"
+                  },
+                  "typeName": {
+                    "baseType": {
+                      "id": 7223,
+                      "nodeType": "UserDefinedTypeName",
+                      "pathNode": {
+                        "id": 7222,
+                        "name": "IInvestmentStrategy",
+                        "nodeType": "IdentifierPath",
+                        "referencedDeclaration": 7458,
+                        "src": "3181:19:41"
+                      },
+                      "referencedDeclaration": 7458,
+                      "src": "3181:19:41",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_contract$_IInvestmentStrategy_$7458",
+                        "typeString": "contract IInvestmentStrategy"
+                      }
+                    },
+                    "id": 7224,
+                    "nodeType": "ArrayTypeName",
+                    "src": "3181:21:41",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_array$_t_contract$_IInvestmentStrategy_$7458_$dyn_storage_ptr",
+                      "typeString": "contract IInvestmentStrategy[]"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 7228,
+                  "mutability": "mutable",
+                  "name": "shares",
+                  "nameLocation": "3251:6:41",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 7231,
+                  "src": "3232:25:41",
+                  "stateVariable": false,
+                  "storageLocation": "calldata",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_uint256_$dyn_calldata_ptr",
+                    "typeString": "uint256[]"
+                  },
+                  "typeName": {
+                    "baseType": {
+                      "id": 7226,
+                      "name": "uint256",
+                      "nodeType": "ElementaryTypeName",
+                      "src": "3232:7:41",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "id": 7227,
+                    "nodeType": "ArrayTypeName",
+                    "src": "3232:9:41",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_array$_t_uint256_$dyn_storage_ptr",
+                      "typeString": "uint256[]"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "3147:116:41"
+            },
+            "returnParameters": {
+              "id": 7230,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "3272:0:41"
+            },
+            "scope": 7256,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 7239,
+            "nodeType": "FunctionDefinition",
+            "src": "3370:66:41",
+            "nodes": [],
+            "documentation": {
+              "id": 7232,
+              "nodeType": "StructuredDocumentation",
+              "src": "3279:86:41",
+              "text": "@notice Returns 'true' if `staker` *is* actively delegated, and 'false' otherwise."
+            },
+            "functionSelector": "3e28391d",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "isDelegated",
+            "nameLocation": "3379:11:41",
+            "parameters": {
+              "id": 7235,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 7234,
+                  "mutability": "mutable",
+                  "name": "staker",
+                  "nameLocation": "3399:6:41",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 7239,
+                  "src": "3391:14:41",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 7233,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "3391:7:41",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "3390:16:41"
+            },
+            "returnParameters": {
+              "id": 7238,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 7237,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 7239,
+                  "src": "3430:4:41",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  },
+                  "typeName": {
+                    "id": 7236,
+                    "name": "bool",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "3430:4:41",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "3429:6:41"
+            },
+            "scope": 7256,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 7247,
+            "nodeType": "FunctionDefinition",
+            "src": "3537:64:41",
+            "nodes": [],
+            "documentation": {
+              "id": 7240,
+              "nodeType": "StructuredDocumentation",
+              "src": "3442:90:41",
+              "text": "@notice Returns 'true' if `staker` is *not* actively delegated, and 'false' otherwise."
+            },
+            "functionSelector": "1d3696b7",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "isNotDelegated",
+            "nameLocation": "3546:14:41",
+            "parameters": {
+              "id": 7243,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 7242,
+                  "mutability": "mutable",
+                  "name": "staker",
+                  "nameLocation": "3569:6:41",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 7247,
+                  "src": "3561:14:41",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 7241,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "3561:7:41",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "3560:16:41"
+            },
+            "returnParameters": {
+              "id": 7246,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 7245,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 7247,
+                  "src": "3595:4:41",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  },
+                  "typeName": {
+                    "id": 7244,
+                    "name": "bool",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "3595:4:41",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "3594:6:41"
+            },
+            "scope": 7256,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 7255,
+            "nodeType": "FunctionDefinition",
+            "src": "3708:67:41",
+            "nodes": [],
+            "documentation": {
+              "id": 7248,
+              "nodeType": "StructuredDocumentation",
+              "src": "3607:96:41",
+              "text": "@notice Returns if an operator can be delegated to, i.e. it has called `registerAsOperator`."
+            },
+            "functionSelector": "6d70f7ae",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "isOperator",
+            "nameLocation": "3717:10:41",
+            "parameters": {
+              "id": 7251,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 7250,
+                  "mutability": "mutable",
+                  "name": "operator",
+                  "nameLocation": "3736:8:41",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 7255,
+                  "src": "3728:16:41",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 7249,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "3728:7:41",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "3727:18:41"
+            },
+            "returnParameters": {
+              "id": 7254,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 7253,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 7255,
+                  "src": "3769:4:41",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  },
+                  "typeName": {
+                    "id": 7252,
+                    "name": "bool",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "3769:4:41",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "3768:6:41"
+            },
+            "scope": 7256,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "IEigenLayrDelegation",
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "documentation": {
+          "id": 7148,
+          "nodeType": "StructuredDocumentation",
+          "src": "101:650:41",
+          "text": " @title The interface for the primary delegation contract for EigenLayr.\n @author Layr Labs, Inc.\n @notice  This is the contract for delegation in EigenLayr. The main functionalities of this contract are\n - enabling anyone to register as an operator in EigenLayr\n - allowing new operators to provide a DelegationTerms-type contract, which may mediate their interactions with stakers who delegate to them\n - enabling any staker to delegate its stake to the operator of its choice\n - enabling a staker to undelegate its assets from an operator (performed as part of the withdrawal process, initiated through the InvestmentManager)"
+        },
+        "fullyImplemented": false,
+        "linearizedBaseContracts": [
+          7256
+        ],
+        "name": "IEigenLayrDelegation",
+        "nameLocation": "762:20:41",
+        "scope": 7257,
+        "usedErrors": []
+      }
+    ],
+    "license": "UNLICENSED"
+  },
+  "id": 41
+}

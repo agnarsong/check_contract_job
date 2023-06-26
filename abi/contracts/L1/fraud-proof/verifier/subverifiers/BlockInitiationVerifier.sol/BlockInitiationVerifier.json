@@ -1,0 +1,193 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "currStateHash",
+        "type": "bytes32"
+      },
+      {
+        "internalType": "bytes",
+        "name": "encoded",
+        "type": "bytes"
+      }
+    ],
+    "name": "executeOneStepProof",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint64",
+            "name": "blockNumber",
+            "type": "uint64"
+          },
+          {
+            "internalType": "uint64",
+            "name": "transactionIdx",
+            "type": "uint64"
+          },
+          {
+            "internalType": "bytes32",
+            "name": "globalStateRoot",
+            "type": "bytes32"
+          },
+          {
+            "internalType": "uint256",
+            "name": "cumulativeGasUsed",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "blockGasUsed",
+            "type": "uint256"
+          },
+          {
+            "internalType": "bytes32",
+            "name": "blockHashRoot",
+            "type": "bytes32"
+          },
+          {
+            "internalType": "bytes32",
+            "name": "transactionTrieRoot",
+            "type": "bytes32"
+          },
+          {
+            "internalType": "bytes32",
+            "name": "receiptTrieRoot",
+            "type": "bytes32"
+          },
+          {
+            "components": [
+              {
+                "internalType": "bytes32[8]",
+                "name": "data",
+                "type": "bytes32[8]"
+              }
+            ],
+            "internalType": "struct BloomLib.Bloom",
+            "name": "logsBloom",
+            "type": "tuple"
+          }
+        ],
+        "internalType": "struct OneStepProof.InterStateProof",
+        "name": "endState",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "pure",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "coinbase",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "timestamp",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "number",
+            "type": "uint256"
+          },
+          {
+            "internalType": "address",
+            "name": "origin",
+            "type": "address"
+          },
+          {
+            "components": [
+              {
+                "internalType": "uint64",
+                "name": "nonce",
+                "type": "uint64"
+              },
+              {
+                "internalType": "uint256",
+                "name": "gasPrice",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint64",
+                "name": "gas",
+                "type": "uint64"
+              },
+              {
+                "internalType": "address",
+                "name": "to",
+                "type": "address"
+              },
+              {
+                "internalType": "uint256",
+                "name": "value",
+                "type": "uint256"
+              },
+              {
+                "internalType": "bytes",
+                "name": "data",
+                "type": "bytes"
+              },
+              {
+                "internalType": "uint256",
+                "name": "v",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "r",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "s",
+                "type": "uint256"
+              }
+            ],
+            "internalType": "struct EVMTypesLib.Transaction",
+            "name": "transaction",
+            "type": "tuple"
+          },
+          {
+            "internalType": "bytes32",
+            "name": "inputRoot",
+            "type": "bytes32"
+          },
+          {
+            "internalType": "bytes32",
+            "name": "txHash",
+            "type": "bytes32"
+          }
+        ],
+        "internalType": "struct VerificationContext.Context",
+        "name": "",
+        "type": "tuple"
+      },
+      {
+        "internalType": "bytes32",
+        "name": "currStateHash",
+        "type": "bytes32"
+      },
+      {
+        "internalType": "bytes",
+        "name": "encoded",
+        "type": "bytes"
+      }
+    ],
+    "name": "verifyOneStepProof",
+    "outputs": [
+      {
+        "internalType": "bytes32",
+        "name": "",
+        "type": "bytes32"
+      }
+    ],
+    "stateMutability": "pure",
+    "type": "function"
+  }
+]

@@ -1,0 +1,3053 @@
+{
+  "abi": [
+    {
+      "inputs": [],
+      "name": "BLOCK_STALE_MEASURE",
+      "outputs": [
+        {
+          "internalType": "uint32",
+          "name": "",
+          "type": "uint32"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "DURATION_SCALE",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "MAX_DATASTORE_DURATION",
+      "outputs": [
+        {
+          "internalType": "uint8",
+          "name": "",
+          "type": "uint8"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "collateralToken",
+      "outputs": [
+        {
+          "internalType": "contract IERC20",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes",
+          "name": "data",
+          "type": "bytes"
+        },
+        {
+          "components": [
+            {
+              "components": [
+                {
+                  "internalType": "bytes32",
+                  "name": "headerHash",
+                  "type": "bytes32"
+                },
+                {
+                  "internalType": "uint32",
+                  "name": "durationDataStoreId",
+                  "type": "uint32"
+                },
+                {
+                  "internalType": "uint32",
+                  "name": "globalDataStoreId",
+                  "type": "uint32"
+                },
+                {
+                  "internalType": "uint32",
+                  "name": "referenceBlockNumber",
+                  "type": "uint32"
+                },
+                {
+                  "internalType": "uint32",
+                  "name": "blockNumber",
+                  "type": "uint32"
+                },
+                {
+                  "internalType": "uint96",
+                  "name": "fee",
+                  "type": "uint96"
+                },
+                {
+                  "internalType": "address",
+                  "name": "confirmer",
+                  "type": "address"
+                },
+                {
+                  "internalType": "bytes32",
+                  "name": "signatoryRecordHash",
+                  "type": "bytes32"
+                }
+              ],
+              "internalType": "struct IDataLayrServiceManager.DataStoreMetadata",
+              "name": "metadata",
+              "type": "tuple"
+            },
+            {
+              "internalType": "uint8",
+              "name": "duration",
+              "type": "uint8"
+            },
+            {
+              "internalType": "uint256",
+              "name": "timestamp",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint32",
+              "name": "index",
+              "type": "uint32"
+            }
+          ],
+          "internalType": "struct IDataLayrServiceManager.DataStoreSearchData",
+          "name": "searchData",
+          "type": "tuple"
+        }
+      ],
+      "name": "confirmDataStore",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "eigenLayrDelegation",
+      "outputs": [
+        {
+          "internalType": "contract IEigenLayrDelegation",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "operator",
+          "type": "address"
+        }
+      ],
+      "name": "freezeOperator",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint8",
+          "name": "duration",
+          "type": "uint8"
+        },
+        {
+          "internalType": "uint256",
+          "name": "timestamp",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint32",
+          "name": "index",
+          "type": "uint32"
+        }
+      ],
+      "name": "getDataStoreHashesForDurationAtTimestamp",
+      "outputs": [
+        {
+          "internalType": "bytes32",
+          "name": "",
+          "type": "bytes32"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint8",
+          "name": "duration",
+          "type": "uint8"
+        }
+      ],
+      "name": "getNumDataStoresForDuration",
+      "outputs": [
+        {
+          "internalType": "uint32",
+          "name": "",
+          "type": "uint32"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "feePayer",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "confirmer",
+          "type": "address"
+        },
+        {
+          "internalType": "uint8",
+          "name": "duration",
+          "type": "uint8"
+        },
+        {
+          "internalType": "uint32",
+          "name": "blockNumber",
+          "type": "uint32"
+        },
+        {
+          "internalType": "uint32",
+          "name": "totalOperatorsIndex",
+          "type": "uint32"
+        },
+        {
+          "internalType": "bytes",
+          "name": "header",
+          "type": "bytes"
+        }
+      ],
+      "name": "initDataStore",
+      "outputs": [
+        {
+          "internalType": "uint32",
+          "name": "",
+          "type": "uint32"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "latestTime",
+      "outputs": [
+        {
+          "internalType": "uint32",
+          "name": "",
+          "type": "uint32"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "log2NumPowersOfTau",
+      "outputs": [
+        {
+          "internalType": "uint48",
+          "name": "",
+          "type": "uint48"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "numPowersOfTau",
+      "outputs": [
+        {
+          "internalType": "uint48",
+          "name": "",
+          "type": "uint48"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "owner",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "taskNumber",
+      "outputs": [
+        {
+          "internalType": "uint32",
+          "name": "",
+          "type": "uint32"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint8",
+          "name": "duration",
+          "type": "uint8"
+        },
+        {
+          "internalType": "uint256",
+          "name": "timestamp",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint32",
+          "name": "index",
+          "type": "uint32"
+        },
+        {
+          "components": [
+            {
+              "internalType": "bytes32",
+              "name": "headerHash",
+              "type": "bytes32"
+            },
+            {
+              "internalType": "uint32",
+              "name": "durationDataStoreId",
+              "type": "uint32"
+            },
+            {
+              "internalType": "uint32",
+              "name": "globalDataStoreId",
+              "type": "uint32"
+            },
+            {
+              "internalType": "uint32",
+              "name": "referenceBlockNumber",
+              "type": "uint32"
+            },
+            {
+              "internalType": "uint32",
+              "name": "blockNumber",
+              "type": "uint32"
+            },
+            {
+              "internalType": "uint96",
+              "name": "fee",
+              "type": "uint96"
+            },
+            {
+              "internalType": "address",
+              "name": "confirmer",
+              "type": "address"
+            },
+            {
+              "internalType": "bytes32",
+              "name": "signatoryRecordHash",
+              "type": "bytes32"
+            }
+          ],
+          "internalType": "struct IDataLayrServiceManager.DataStoreMetadata",
+          "name": "metadata",
+          "type": "tuple"
+        }
+      ],
+      "name": "verifyDataStoreMetadata",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "bytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "methodIdentifiers": {
+    "BLOCK_STALE_MEASURE()": "5e8b3f2d",
+    "DURATION_SCALE()": "31a219c5",
+    "MAX_DATASTORE_DURATION()": "578ae5a1",
+    "collateralToken()": "b2016bd4",
+    "confirmDataStore(bytes,((bytes32,uint32,uint32,uint32,uint32,uint96,address,bytes32),uint8,uint256,uint32))": "58942e73",
+    "eigenLayrDelegation()": "33d2433a",
+    "freezeOperator(address)": "38c8ee64",
+    "getDataStoreHashesForDurationAtTimestamp(uint8,uint256,uint32)": "ed82c0ee",
+    "getNumDataStoresForDuration(uint8)": "73441c4e",
+    "initDataStore(address,address,uint8,uint32,uint32,bytes)": "dcf49ea7",
+    "latestTime()": "7dfd16d7",
+    "log2NumPowersOfTau()": "a50017a1",
+    "numPowersOfTau()": "046bf4a6",
+    "owner()": "8da5cb5b",
+    "taskNumber()": "72d18e8d",
+    "verifyDataStoreMetadata(uint8,uint256,uint32,(bytes32,uint32,uint32,uint32,uint32,uint96,address,bytes32))": "ba4994b1"
+  },
+  "rawMetadata": "{\"compiler\":{\"version\":\"0.8.12+commit.f00d7308\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"BLOCK_STALE_MEASURE\",\"outputs\":[{\"internalType\":\"uint32\",\"name\":\"\",\"type\":\"uint32\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"DURATION_SCALE\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"MAX_DATASTORE_DURATION\",\"outputs\":[{\"internalType\":\"uint8\",\"name\":\"\",\"type\":\"uint8\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"collateralToken\",\"outputs\":[{\"internalType\":\"contract IERC20\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes\",\"name\":\"data\",\"type\":\"bytes\"},{\"components\":[{\"components\":[{\"internalType\":\"bytes32\",\"name\":\"headerHash\",\"type\":\"bytes32\"},{\"internalType\":\"uint32\",\"name\":\"durationDataStoreId\",\"type\":\"uint32\"},{\"internalType\":\"uint32\",\"name\":\"globalDataStoreId\",\"type\":\"uint32\"},{\"internalType\":\"uint32\",\"name\":\"referenceBlockNumber\",\"type\":\"uint32\"},{\"internalType\":\"uint32\",\"name\":\"blockNumber\",\"type\":\"uint32\"},{\"internalType\":\"uint96\",\"name\":\"fee\",\"type\":\"uint96\"},{\"internalType\":\"address\",\"name\":\"confirmer\",\"type\":\"address\"},{\"internalType\":\"bytes32\",\"name\":\"signatoryRecordHash\",\"type\":\"bytes32\"}],\"internalType\":\"struct IDataLayrServiceManager.DataStoreMetadata\",\"name\":\"metadata\",\"type\":\"tuple\"},{\"internalType\":\"uint8\",\"name\":\"duration\",\"type\":\"uint8\"},{\"internalType\":\"uint256\",\"name\":\"timestamp\",\"type\":\"uint256\"},{\"internalType\":\"uint32\",\"name\":\"index\",\"type\":\"uint32\"}],\"internalType\":\"struct IDataLayrServiceManager.DataStoreSearchData\",\"name\":\"searchData\",\"type\":\"tuple\"}],\"name\":\"confirmDataStore\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"eigenLayrDelegation\",\"outputs\":[{\"internalType\":\"contract IEigenLayrDelegation\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"operator\",\"type\":\"address\"}],\"name\":\"freezeOperator\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint8\",\"name\":\"duration\",\"type\":\"uint8\"},{\"internalType\":\"uint256\",\"name\":\"timestamp\",\"type\":\"uint256\"},{\"internalType\":\"uint32\",\"name\":\"index\",\"type\":\"uint32\"}],\"name\":\"getDataStoreHashesForDurationAtTimestamp\",\"outputs\":[{\"internalType\":\"bytes32\",\"name\":\"\",\"type\":\"bytes32\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint8\",\"name\":\"duration\",\"type\":\"uint8\"}],\"name\":\"getNumDataStoresForDuration\",\"outputs\":[{\"internalType\":\"uint32\",\"name\":\"\",\"type\":\"uint32\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"feePayer\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"confirmer\",\"type\":\"address\"},{\"internalType\":\"uint8\",\"name\":\"duration\",\"type\":\"uint8\"},{\"internalType\":\"uint32\",\"name\":\"blockNumber\",\"type\":\"uint32\"},{\"internalType\":\"uint32\",\"name\":\"totalOperatorsIndex\",\"type\":\"uint32\"},{\"internalType\":\"bytes\",\"name\":\"header\",\"type\":\"bytes\"}],\"name\":\"initDataStore\",\"outputs\":[{\"internalType\":\"uint32\",\"name\":\"\",\"type\":\"uint32\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"latestTime\",\"outputs\":[{\"internalType\":\"uint32\",\"name\":\"\",\"type\":\"uint32\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"log2NumPowersOfTau\",\"outputs\":[{\"internalType\":\"uint48\",\"name\":\"\",\"type\":\"uint48\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"numPowersOfTau\",\"outputs\":[{\"internalType\":\"uint48\",\"name\":\"\",\"type\":\"uint48\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"owner\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"taskNumber\",\"outputs\":[{\"internalType\":\"uint32\",\"name\":\"\",\"type\":\"uint32\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint8\",\"name\":\"duration\",\"type\":\"uint8\"},{\"internalType\":\"uint256\",\"name\":\"timestamp\",\"type\":\"uint256\"},{\"internalType\":\"uint32\",\"name\":\"index\",\"type\":\"uint32\"},{\"components\":[{\"internalType\":\"bytes32\",\"name\":\"headerHash\",\"type\":\"bytes32\"},{\"internalType\":\"uint32\",\"name\":\"durationDataStoreId\",\"type\":\"uint32\"},{\"internalType\":\"uint32\",\"name\":\"globalDataStoreId\",\"type\":\"uint32\"},{\"internalType\":\"uint32\",\"name\":\"referenceBlockNumber\",\"type\":\"uint32\"},{\"internalType\":\"uint32\",\"name\":\"blockNumber\",\"type\":\"uint32\"},{\"internalType\":\"uint96\",\"name\":\"fee\",\"type\":\"uint96\"},{\"internalType\":\"address\",\"name\":\"confirmer\",\"type\":\"address\"},{\"internalType\":\"bytes32\",\"name\":\"signatoryRecordHash\",\"type\":\"bytes32\"}],\"internalType\":\"struct IDataLayrServiceManager.DataStoreMetadata\",\"name\":\"metadata\",\"type\":\"tuple\"}],\"name\":\"verifyDataStoreMetadata\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{\"confirmDataStore(bytes,((bytes32,uint32,uint32,uint32,uint32,uint96,address,bytes32),uint8,uint256,uint32))\":{\"params\":{\"data\":\"Input to the `checkSignatures` function, which is of the format: < bytes32 msgHash, uint48 index of the totalStake corresponding to the dataStoreId in the 'totalStakeHistory' array of the BLSRegistry uint32 numberOfNonSigners, uint256[numberOfSigners][4] pubkeys of nonsigners, uint32 apkIndex, uint256[4] apk, uint256[2] sigma >\"}},\"initDataStore(address,address,uint8,uint32,uint32,bytes)\":{\"params\":{\"blockNumber\":\"is the block number in Ethereum for which the confirmation will consult total + operator stake amounts. -- must not be more than 'BLOCK_STALE_MEASURE' (defined in DataLayr) blocks in past\",\"confirmer\":\"is the address that must confirm the datastore\",\"duration\":\"for which the data has to be stored by the DataLayr operators. This is a quantized parameter that describes how many factors of DURATION_SCALE does this data blob needs to be stored. The quantization process comes from ease of implementation in DataLayrBombVerifier.sol.\",\"header\":\"is the summary of the data that is being asserted into DataLayr,  type DataStoreHeader struct {   KzgCommit      [64]byte   Degree         uint32   NumSys         uint32   NumPar         uint32   OrigDataSize   uint32   Disperser      [20]byte   LowDegreeProof [64]byte  }\"},\"returns\":{\"_0\":\"index The index in the array `dataStoreHashesForDurationAtTimestamp[duration][block.timestamp]` at which the DataStore's hash was stored.\"}}},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{\"BLOCK_STALE_MEASURE()\":{\"notice\":\"The maximum amount of blocks in the past that the service will consider stake amounts to still be 'valid'.\"},\"DURATION_SCALE()\":{\"notice\":\"Unit of measure (in time) for the duration of DataStores\"},\"MAX_DATASTORE_DURATION()\":{\"notice\":\"The longest allowed duation of a DataStore, measured in `DURATION_SCALE`\"},\"collateralToken()\":{\"notice\":\"Collateral token used for placing collateral on challenges & payment commits\"},\"eigenLayrDelegation()\":{\"notice\":\"The Delegation contract of EigenLayer.\"},\"getDataStoreHashesForDurationAtTimestamp(uint8,uint256,uint32)\":{\"notice\":\"Returns the hash of the `index`th DataStore with the specified `duration` at the specified UTC `timestamp`.\"},\"getNumDataStoresForDuration(uint8)\":{\"notice\":\"returns the number of data stores for the @param duration\"},\"latestTime()\":{\"notice\":\"Returns the `latestTime` until which operators must serve.\"},\"log2NumPowersOfTau()\":{\"notice\":\"number of layers in the root tree\"},\"numPowersOfTau()\":{\"notice\":\"number of leaves in the root tree\"},\"taskNumber()\":{\"notice\":\"Returns the current 'taskNumber' for the middleware\"},\"verifyDataStoreMetadata(uint8,uint256,uint32,(bytes32,uint32,uint32,uint32,uint32,uint96,address,bytes32))\":{\"notice\":\"Checks that the hash of the `index`th DataStore with the specified `duration` at the specified UTC `timestamp` matches the supplied `metadata`. Returns 'true' if the metadata matches the hash, and 'false' otherwise.\"}},\"version\":1}},\"settings\":{\"compilationTarget\":{\"src/contracts/interfaces/IDataLayrServiceManager.sol\":\"IDataLayrServiceManager\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[\":@eigenlayer/=../eignlayr-contracts/src/\",\":@openzeppelin-upgrades/=lib/openzeppelin-contracts-upgradeable/\",\":@openzeppelin/=lib/openzeppelin-contracts/\",\":ds-test/=lib/eignlayr-contracts/lib/ds-test/src/\",\":eignlayr-contracts/=lib/eignlayr-contracts/src/\",\":forge-std/=lib/forge-std/src/\",\":openzeppelin-contracts-upgradeable/=lib/eignlayr-contracts/lib/openzeppelin-contracts-upgradeable/\",\":openzeppelin-contracts/=lib/eignlayr-contracts/lib/openzeppelin-contracts/contracts/\"]},\"sources\":{\"../eignlayr-contracts/src/contracts/interfaces/IDelayedService.sol\":{\"keccak256\":\"0x4c9c1d5de05ad392b45244c373d137c7f49436618492ba165b2e3a241dee25cc\",\"license\":\"UNLICENSED\",\"urls\":[\"bzz-raw://1675794f6a64068df5d2362d85793b9c61c4ccffa6829bbb7cc0cc843fa3a359\",\"dweb:/ipfs/QmdZyC2W5rrEX2fSkF6YxsWCt3HgaAdm4HSpss8T9oVAJn\"]},\"../eignlayr-contracts/src/contracts/interfaces/IEigenLayrDelegation.sol\":{\"keccak256\":\"0x9f11c0becde4111ac7d060dc11b9461888129076740cf78e07f292eefc92955e\",\"license\":\"UNLICENSED\",\"urls\":[\"bzz-raw://53bef92f10fd142e6b0af0f4f77a958c96ebea145492aa5328757e10fffd9c21\",\"dweb:/ipfs/QmUHG67pTyGxu6whsk95JNwevDJ7ooQMyeNT4kfwJtEzU5\"]},\"../eignlayr-contracts/src/contracts/interfaces/IInvestmentStrategy.sol\":{\"keccak256\":\"0x69eb667cc856ee1fe783243b6db21a43a9dadd29bf6761727b334fca4366bceb\",\"license\":\"UNLICENSED\",\"urls\":[\"bzz-raw://224e8f6def4e53a1065f0c4ce26d8ffff15276944e2351753065aeb5bd265f52\",\"dweb:/ipfs/QmSu8iUPCnwza4SdE5jVSZLnQjMRXJg3VAGc8pHqbaMLob\"]},\"../eignlayr-contracts/src/contracts/interfaces/IServiceManager.sol\":{\"keccak256\":\"0xded81693805764888f8d1daa8afb600969d4286f3d5ecfa92e99b9446b400ad4\",\"license\":\"UNLICENSED\",\"urls\":[\"bzz-raw://8e0d0704fa8e64543abce318eaf99c53f75215db76cf873e6a6311a4eb5274b2\",\"dweb:/ipfs/Qmd96t8WrNFRY5fqsPtkCaz28j3mvZj3fpc4qp6xXe9wgb\"]},\"lib/openzeppelin-contracts/contracts/token/ERC20/IERC20.sol\":{\"keccak256\":\"0x9750c6b834f7b43000631af5cc30001c5f547b3ceb3635488f140f60e897ea6b\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://5a7d5b1ef5d8d5889ad2ed89d8619c09383b80b72ab226e0fe7bde1636481e34\",\"dweb:/ipfs/QmebXWgtEfumQGBdVeM6c71McLixYXQP5Bk6kKXuoY4Bmr\"]},\"src/contracts/interfaces/IDataLayrServiceManager.sol\":{\"keccak256\":\"0x5d49a50c80b5a38ff6d8ae09494793d52fd05c4233b4c55940da54202a4dfe89\",\"license\":\"UNLICENSED\",\"urls\":[\"bzz-raw://a5a1d28d3217eb8154bb62c58d97beec073bffdcff779000390ca0af7dc5bf88\",\"dweb:/ipfs/QmR9aHtgFsyMTZZu86dPyZbP3QE88L8g6e6N2iZDvdUiZA\"]}},\"version\":1}",
+  "metadata": {
+    "compiler": {
+      "version": "0.8.12+commit.f00d7308"
+    },
+    "language": "Solidity",
+    "output": {
+      "abi": [
+        {
+          "inputs": [],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "BLOCK_STALE_MEASURE",
+          "outputs": [
+            {
+              "internalType": "uint32",
+              "name": "",
+              "type": "uint32"
+            }
+          ]
+        },
+        {
+          "inputs": [],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "DURATION_SCALE",
+          "outputs": [
+            {
+              "internalType": "uint256",
+              "name": "",
+              "type": "uint256"
+            }
+          ]
+        },
+        {
+          "inputs": [],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "MAX_DATASTORE_DURATION",
+          "outputs": [
+            {
+              "internalType": "uint8",
+              "name": "",
+              "type": "uint8"
+            }
+          ]
+        },
+        {
+          "inputs": [],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "collateralToken",
+          "outputs": [
+            {
+              "internalType": "contract IERC20",
+              "name": "",
+              "type": "address"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "bytes",
+              "name": "data",
+              "type": "bytes"
+            },
+            {
+              "internalType": "struct IDataLayrServiceManager.DataStoreSearchData",
+              "name": "searchData",
+              "type": "tuple",
+              "components": [
+                {
+                  "internalType": "struct IDataLayrServiceManager.DataStoreMetadata",
+                  "name": "metadata",
+                  "type": "tuple",
+                  "components": [
+                    {
+                      "internalType": "bytes32",
+                      "name": "headerHash",
+                      "type": "bytes32"
+                    },
+                    {
+                      "internalType": "uint32",
+                      "name": "durationDataStoreId",
+                      "type": "uint32"
+                    },
+                    {
+                      "internalType": "uint32",
+                      "name": "globalDataStoreId",
+                      "type": "uint32"
+                    },
+                    {
+                      "internalType": "uint32",
+                      "name": "referenceBlockNumber",
+                      "type": "uint32"
+                    },
+                    {
+                      "internalType": "uint32",
+                      "name": "blockNumber",
+                      "type": "uint32"
+                    },
+                    {
+                      "internalType": "uint96",
+                      "name": "fee",
+                      "type": "uint96"
+                    },
+                    {
+                      "internalType": "address",
+                      "name": "confirmer",
+                      "type": "address"
+                    },
+                    {
+                      "internalType": "bytes32",
+                      "name": "signatoryRecordHash",
+                      "type": "bytes32"
+                    }
+                  ]
+                },
+                {
+                  "internalType": "uint8",
+                  "name": "duration",
+                  "type": "uint8"
+                },
+                {
+                  "internalType": "uint256",
+                  "name": "timestamp",
+                  "type": "uint256"
+                },
+                {
+                  "internalType": "uint32",
+                  "name": "index",
+                  "type": "uint32"
+                }
+              ]
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "confirmDataStore"
+        },
+        {
+          "inputs": [],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "eigenLayrDelegation",
+          "outputs": [
+            {
+              "internalType": "contract IEigenLayrDelegation",
+              "name": "",
+              "type": "address"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "operator",
+              "type": "address"
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "freezeOperator"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "uint8",
+              "name": "duration",
+              "type": "uint8"
+            },
+            {
+              "internalType": "uint256",
+              "name": "timestamp",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint32",
+              "name": "index",
+              "type": "uint32"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "getDataStoreHashesForDurationAtTimestamp",
+          "outputs": [
+            {
+              "internalType": "bytes32",
+              "name": "",
+              "type": "bytes32"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "uint8",
+              "name": "duration",
+              "type": "uint8"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "getNumDataStoresForDuration",
+          "outputs": [
+            {
+              "internalType": "uint32",
+              "name": "",
+              "type": "uint32"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "feePayer",
+              "type": "address"
+            },
+            {
+              "internalType": "address",
+              "name": "confirmer",
+              "type": "address"
+            },
+            {
+              "internalType": "uint8",
+              "name": "duration",
+              "type": "uint8"
+            },
+            {
+              "internalType": "uint32",
+              "name": "blockNumber",
+              "type": "uint32"
+            },
+            {
+              "internalType": "uint32",
+              "name": "totalOperatorsIndex",
+              "type": "uint32"
+            },
+            {
+              "internalType": "bytes",
+              "name": "header",
+              "type": "bytes"
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "initDataStore",
+          "outputs": [
+            {
+              "internalType": "uint32",
+              "name": "",
+              "type": "uint32"
+            }
+          ]
+        },
+        {
+          "inputs": [],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "latestTime",
+          "outputs": [
+            {
+              "internalType": "uint32",
+              "name": "",
+              "type": "uint32"
+            }
+          ]
+        },
+        {
+          "inputs": [],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "log2NumPowersOfTau",
+          "outputs": [
+            {
+              "internalType": "uint48",
+              "name": "",
+              "type": "uint48"
+            }
+          ]
+        },
+        {
+          "inputs": [],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "numPowersOfTau",
+          "outputs": [
+            {
+              "internalType": "uint48",
+              "name": "",
+              "type": "uint48"
+            }
+          ]
+        },
+        {
+          "inputs": [],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "owner",
+          "outputs": [
+            {
+              "internalType": "address",
+              "name": "",
+              "type": "address"
+            }
+          ]
+        },
+        {
+          "inputs": [],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "taskNumber",
+          "outputs": [
+            {
+              "internalType": "uint32",
+              "name": "",
+              "type": "uint32"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "uint8",
+              "name": "duration",
+              "type": "uint8"
+            },
+            {
+              "internalType": "uint256",
+              "name": "timestamp",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint32",
+              "name": "index",
+              "type": "uint32"
+            },
+            {
+              "internalType": "struct IDataLayrServiceManager.DataStoreMetadata",
+              "name": "metadata",
+              "type": "tuple",
+              "components": [
+                {
+                  "internalType": "bytes32",
+                  "name": "headerHash",
+                  "type": "bytes32"
+                },
+                {
+                  "internalType": "uint32",
+                  "name": "durationDataStoreId",
+                  "type": "uint32"
+                },
+                {
+                  "internalType": "uint32",
+                  "name": "globalDataStoreId",
+                  "type": "uint32"
+                },
+                {
+                  "internalType": "uint32",
+                  "name": "referenceBlockNumber",
+                  "type": "uint32"
+                },
+                {
+                  "internalType": "uint32",
+                  "name": "blockNumber",
+                  "type": "uint32"
+                },
+                {
+                  "internalType": "uint96",
+                  "name": "fee",
+                  "type": "uint96"
+                },
+                {
+                  "internalType": "address",
+                  "name": "confirmer",
+                  "type": "address"
+                },
+                {
+                  "internalType": "bytes32",
+                  "name": "signatoryRecordHash",
+                  "type": "bytes32"
+                }
+              ]
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "verifyDataStoreMetadata",
+          "outputs": [
+            {
+              "internalType": "bool",
+              "name": "",
+              "type": "bool"
+            }
+          ]
+        }
+      ],
+      "devdoc": {
+        "kind": "dev",
+        "methods": {
+          "confirmDataStore(bytes,((bytes32,uint32,uint32,uint32,uint32,uint96,address,bytes32),uint8,uint256,uint32))": {
+            "params": {
+              "data": "Input to the `checkSignatures` function, which is of the format: < bytes32 msgHash, uint48 index of the totalStake corresponding to the dataStoreId in the 'totalStakeHistory' array of the BLSRegistry uint32 numberOfNonSigners, uint256[numberOfSigners][4] pubkeys of nonsigners, uint32 apkIndex, uint256[4] apk, uint256[2] sigma >"
+            }
+          },
+          "initDataStore(address,address,uint8,uint32,uint32,bytes)": {
+            "params": {
+              "blockNumber": "is the block number in Ethereum for which the confirmation will consult total + operator stake amounts. -- must not be more than 'BLOCK_STALE_MEASURE' (defined in DataLayr) blocks in past",
+              "confirmer": "is the address that must confirm the datastore",
+              "duration": "for which the data has to be stored by the DataLayr operators. This is a quantized parameter that describes how many factors of DURATION_SCALE does this data blob needs to be stored. The quantization process comes from ease of implementation in DataLayrBombVerifier.sol.",
+              "header": "is the summary of the data that is being asserted into DataLayr,  type DataStoreHeader struct {   KzgCommit      [64]byte   Degree         uint32   NumSys         uint32   NumPar         uint32   OrigDataSize   uint32   Disperser      [20]byte   LowDegreeProof [64]byte  }"
+            },
+            "returns": {
+              "_0": "index The index in the array `dataStoreHashesForDurationAtTimestamp[duration][block.timestamp]` at which the DataStore's hash was stored."
+            }
+          }
+        },
+        "version": 1
+      },
+      "userdoc": {
+        "kind": "user",
+        "methods": {
+          "BLOCK_STALE_MEASURE()": {
+            "notice": "The maximum amount of blocks in the past that the service will consider stake amounts to still be 'valid'."
+          },
+          "DURATION_SCALE()": {
+            "notice": "Unit of measure (in time) for the duration of DataStores"
+          },
+          "MAX_DATASTORE_DURATION()": {
+            "notice": "The longest allowed duation of a DataStore, measured in `DURATION_SCALE`"
+          },
+          "collateralToken()": {
+            "notice": "Collateral token used for placing collateral on challenges & payment commits"
+          },
+          "eigenLayrDelegation()": {
+            "notice": "The Delegation contract of EigenLayer."
+          },
+          "getDataStoreHashesForDurationAtTimestamp(uint8,uint256,uint32)": {
+            "notice": "Returns the hash of the `index`th DataStore with the specified `duration` at the specified UTC `timestamp`."
+          },
+          "getNumDataStoresForDuration(uint8)": {
+            "notice": "returns the number of data stores for the @param duration"
+          },
+          "latestTime()": {
+            "notice": "Returns the `latestTime` until which operators must serve."
+          },
+          "log2NumPowersOfTau()": {
+            "notice": "number of layers in the root tree"
+          },
+          "numPowersOfTau()": {
+            "notice": "number of leaves in the root tree"
+          },
+          "taskNumber()": {
+            "notice": "Returns the current 'taskNumber' for the middleware"
+          },
+          "verifyDataStoreMetadata(uint8,uint256,uint32,(bytes32,uint32,uint32,uint32,uint32,uint96,address,bytes32))": {
+            "notice": "Checks that the hash of the `index`th DataStore with the specified `duration` at the specified UTC `timestamp` matches the supplied `metadata`. Returns 'true' if the metadata matches the hash, and 'false' otherwise."
+          }
+        },
+        "version": 1
+      }
+    },
+    "settings": {
+      "remappings": [
+        ":@eigenlayer/=../eignlayr-contracts/src/",
+        ":@openzeppelin-upgrades/=lib/openzeppelin-contracts-upgradeable/",
+        ":@openzeppelin/=lib/openzeppelin-contracts/",
+        ":ds-test/=lib/eignlayr-contracts/lib/ds-test/src/",
+        ":eignlayr-contracts/=lib/eignlayr-contracts/src/",
+        ":forge-std/=lib/forge-std/src/",
+        ":openzeppelin-contracts-upgradeable/=lib/eignlayr-contracts/lib/openzeppelin-contracts-upgradeable/",
+        ":openzeppelin-contracts/=lib/eignlayr-contracts/lib/openzeppelin-contracts/contracts/"
+      ],
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "metadata": {
+        "bytecodeHash": "ipfs"
+      },
+      "compilationTarget": {
+        "src/contracts/interfaces/IDataLayrServiceManager.sol": "IDataLayrServiceManager"
+      },
+      "libraries": {}
+    },
+    "sources": {
+      "../eignlayr-contracts/src/contracts/interfaces/IDelayedService.sol": {
+        "keccak256": "0x4c9c1d5de05ad392b45244c373d137c7f49436618492ba165b2e3a241dee25cc",
+        "urls": [
+          "bzz-raw://1675794f6a64068df5d2362d85793b9c61c4ccffa6829bbb7cc0cc843fa3a359",
+          "dweb:/ipfs/QmdZyC2W5rrEX2fSkF6YxsWCt3HgaAdm4HSpss8T9oVAJn"
+        ],
+        "license": "UNLICENSED"
+      },
+      "../eignlayr-contracts/src/contracts/interfaces/IEigenLayrDelegation.sol": {
+        "keccak256": "0x9f11c0becde4111ac7d060dc11b9461888129076740cf78e07f292eefc92955e",
+        "urls": [
+          "bzz-raw://53bef92f10fd142e6b0af0f4f77a958c96ebea145492aa5328757e10fffd9c21",
+          "dweb:/ipfs/QmUHG67pTyGxu6whsk95JNwevDJ7ooQMyeNT4kfwJtEzU5"
+        ],
+        "license": "UNLICENSED"
+      },
+      "../eignlayr-contracts/src/contracts/interfaces/IInvestmentStrategy.sol": {
+        "keccak256": "0x69eb667cc856ee1fe783243b6db21a43a9dadd29bf6761727b334fca4366bceb",
+        "urls": [
+          "bzz-raw://224e8f6def4e53a1065f0c4ce26d8ffff15276944e2351753065aeb5bd265f52",
+          "dweb:/ipfs/QmSu8iUPCnwza4SdE5jVSZLnQjMRXJg3VAGc8pHqbaMLob"
+        ],
+        "license": "UNLICENSED"
+      },
+      "../eignlayr-contracts/src/contracts/interfaces/IServiceManager.sol": {
+        "keccak256": "0xded81693805764888f8d1daa8afb600969d4286f3d5ecfa92e99b9446b400ad4",
+        "urls": [
+          "bzz-raw://8e0d0704fa8e64543abce318eaf99c53f75215db76cf873e6a6311a4eb5274b2",
+          "dweb:/ipfs/Qmd96t8WrNFRY5fqsPtkCaz28j3mvZj3fpc4qp6xXe9wgb"
+        ],
+        "license": "UNLICENSED"
+      },
+      "lib/openzeppelin-contracts/contracts/token/ERC20/IERC20.sol": {
+        "keccak256": "0x9750c6b834f7b43000631af5cc30001c5f547b3ceb3635488f140f60e897ea6b",
+        "urls": [
+          "bzz-raw://5a7d5b1ef5d8d5889ad2ed89d8619c09383b80b72ab226e0fe7bde1636481e34",
+          "dweb:/ipfs/QmebXWgtEfumQGBdVeM6c71McLixYXQP5Bk6kKXuoY4Bmr"
+        ],
+        "license": "MIT"
+      },
+      "src/contracts/interfaces/IDataLayrServiceManager.sol": {
+        "keccak256": "0x5d49a50c80b5a38ff6d8ae09494793d52fd05c4233b4c55940da54202a4dfe89",
+        "urls": [
+          "bzz-raw://a5a1d28d3217eb8154bb62c58d97beec073bffdcff779000390ca0af7dc5bf88",
+          "dweb:/ipfs/QmR9aHtgFsyMTZZu86dPyZbP3QE88L8g6e6N2iZDvdUiZA"
+        ],
+        "license": "UNLICENSED"
+      }
+    },
+    "version": 1
+  },
+  "ast": {
+    "absolutePath": "src/contracts/interfaces/IDataLayrServiceManager.sol",
+    "id": 48673,
+    "exportedSymbols": {
+      "IDataLayrServiceManager": [
+        48672
+      ],
+      "IDelayedService": [
+        9
+      ],
+      "IERC20": [
+        40863
+      ],
+      "IEigenLayrDelegation": [
+        121
+      ],
+      "IInvestmentStrategy": [
+        323
+      ],
+      "IServiceManager": [
+        577
+      ]
+    },
+    "nodeType": "SourceUnit",
+    "src": "39:6418:116",
+    "nodes": [
+      {
+        "id": 48502,
+        "nodeType": "PragmaDirective",
+        "src": "39:23:116",
+        "nodes": [],
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".9"
+        ]
+      },
+      {
+        "id": 48503,
+        "nodeType": "ImportDirective",
+        "src": "64:56:116",
+        "nodes": [],
+        "absolutePath": "lib/openzeppelin-contracts/contracts/token/ERC20/IERC20.sol",
+        "file": "@openzeppelin/contracts/token/ERC20/IERC20.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 48673,
+        "sourceUnit": 40864,
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "id": 48504,
+        "nodeType": "ImportDirective",
+        "src": "121:62:116",
+        "nodes": [],
+        "absolutePath": "../eignlayr-contracts/src/contracts/interfaces/IServiceManager.sol",
+        "file": "@eigenlayer/contracts/interfaces/IServiceManager.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 48673,
+        "sourceUnit": 578,
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "id": 48505,
+        "nodeType": "ImportDirective",
+        "src": "184:62:116",
+        "nodes": [],
+        "absolutePath": "../eignlayr-contracts/src/contracts/interfaces/IDelayedService.sol",
+        "file": "@eigenlayer/contracts/interfaces/IDelayedService.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 48673,
+        "sourceUnit": 10,
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "id": 48506,
+        "nodeType": "ImportDirective",
+        "src": "247:67:116",
+        "nodes": [],
+        "absolutePath": "../eignlayr-contracts/src/contracts/interfaces/IEigenLayrDelegation.sol",
+        "file": "@eigenlayer/contracts/interfaces/IEigenLayrDelegation.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 48673,
+        "sourceUnit": 122,
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "id": 48672,
+        "nodeType": "ContractDefinition",
+        "src": "317:6139:116",
+        "nodes": [
+          {
+            "id": 48527,
+            "nodeType": "StructDefinition",
+            "src": "439:779:116",
+            "nodes": [],
+            "canonicalName": "IDataLayrServiceManager.DataStoreMetadata",
+            "members": [
+              {
+                "constant": false,
+                "id": 48512,
+                "mutability": "mutable",
+                "name": "headerHash",
+                "nameLocation": "482:10:116",
+                "nodeType": "VariableDeclaration",
+                "scope": 48527,
+                "src": "474:18:116",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_bytes32",
+                  "typeString": "bytes32"
+                },
+                "typeName": {
+                  "id": 48511,
+                  "name": "bytes32",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "474:7:116",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 48514,
+                "mutability": "mutable",
+                "name": "durationDataStoreId",
+                "nameLocation": "562:19:116",
+                "nodeType": "VariableDeclaration",
+                "scope": 48527,
+                "src": "555:26:116",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint32",
+                  "typeString": "uint32"
+                },
+                "typeName": {
+                  "id": 48513,
+                  "name": "uint32",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "555:6:116",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint32",
+                    "typeString": "uint32"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 48516,
+                "mutability": "mutable",
+                "name": "globalDataStoreId",
+                "nameLocation": "679:17:116",
+                "nodeType": "VariableDeclaration",
+                "scope": 48527,
+                "src": "672:24:116",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint32",
+                  "typeString": "uint32"
+                },
+                "typeName": {
+                  "id": 48515,
+                  "name": "uint32",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "672:6:116",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint32",
+                    "typeString": "uint32"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 48518,
+                "mutability": "mutable",
+                "name": "referenceBlockNumber",
+                "nameLocation": "773:20:116",
+                "nodeType": "VariableDeclaration",
+                "scope": 48527,
+                "src": "766:27:116",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint32",
+                  "typeString": "uint32"
+                },
+                "typeName": {
+                  "id": 48517,
+                  "name": "uint32",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "766:6:116",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint32",
+                    "typeString": "uint32"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 48520,
+                "mutability": "mutable",
+                "name": "blockNumber",
+                "nameLocation": "881:11:116",
+                "nodeType": "VariableDeclaration",
+                "scope": 48527,
+                "src": "874:18:116",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint32",
+                  "typeString": "uint32"
+                },
+                "typeName": {
+                  "id": 48519,
+                  "name": "uint32",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "874:6:116",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint32",
+                    "typeString": "uint32"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 48522,
+                "mutability": "mutable",
+                "name": "fee",
+                "nameLocation": "959:3:116",
+                "nodeType": "VariableDeclaration",
+                "scope": 48527,
+                "src": "952:10:116",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint96",
+                  "typeString": "uint96"
+                },
+                "typeName": {
+                  "id": 48521,
+                  "name": "uint96",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "952:6:116",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint96",
+                    "typeString": "uint96"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 48524,
+                "mutability": "mutable",
+                "name": "confirmer",
+                "nameLocation": "1033:9:116",
+                "nodeType": "VariableDeclaration",
+                "scope": 48527,
+                "src": "1025:17:116",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_address",
+                  "typeString": "address"
+                },
+                "typeName": {
+                  "id": 48523,
+                  "name": "address",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "1025:7:116",
+                  "stateMutability": "nonpayable",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 48526,
+                "mutability": "mutable",
+                "name": "signatoryRecordHash",
+                "nameLocation": "1116:19:116",
+                "nodeType": "VariableDeclaration",
+                "scope": 48527,
+                "src": "1108:27:116",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_bytes32",
+                  "typeString": "bytes32"
+                },
+                "typeName": {
+                  "id": 48525,
+                  "name": "bytes32",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "1108:7:116",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  }
+                },
+                "visibility": "internal"
+              }
+            ],
+            "name": "DataStoreMetadata",
+            "nameLocation": "446:17:116",
+            "scope": 48672,
+            "visibility": "public"
+          },
+          {
+            "id": 48537,
+            "nodeType": "StructDefinition",
+            "src": "1293:143:116",
+            "nodes": [],
+            "canonicalName": "IDataLayrServiceManager.DataStoreSearchData",
+            "members": [
+              {
+                "constant": false,
+                "id": 48530,
+                "mutability": "mutable",
+                "name": "metadata",
+                "nameLocation": "1348:8:116",
+                "nodeType": "VariableDeclaration",
+                "scope": 48537,
+                "src": "1330:26:116",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_struct$_DataStoreMetadata_$48527_storage_ptr",
+                  "typeString": "struct IDataLayrServiceManager.DataStoreMetadata"
+                },
+                "typeName": {
+                  "id": 48529,
+                  "nodeType": "UserDefinedTypeName",
+                  "pathNode": {
+                    "id": 48528,
+                    "name": "DataStoreMetadata",
+                    "nodeType": "IdentifierPath",
+                    "referencedDeclaration": 48527,
+                    "src": "1330:17:116"
+                  },
+                  "referencedDeclaration": 48527,
+                  "src": "1330:17:116",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_struct$_DataStoreMetadata_$48527_storage_ptr",
+                    "typeString": "struct IDataLayrServiceManager.DataStoreMetadata"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 48532,
+                "mutability": "mutable",
+                "name": "duration",
+                "nameLocation": "1372:8:116",
+                "nodeType": "VariableDeclaration",
+                "scope": 48537,
+                "src": "1366:14:116",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint8",
+                  "typeString": "uint8"
+                },
+                "typeName": {
+                  "id": 48531,
+                  "name": "uint8",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "1366:5:116",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint8",
+                    "typeString": "uint8"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 48534,
+                "mutability": "mutable",
+                "name": "timestamp",
+                "nameLocation": "1398:9:116",
+                "nodeType": "VariableDeclaration",
+                "scope": 48537,
+                "src": "1390:17:116",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 48533,
+                  "name": "uint256",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "1390:7:116",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 48536,
+                "mutability": "mutable",
+                "name": "index",
+                "nameLocation": "1424:5:116",
+                "nodeType": "VariableDeclaration",
+                "scope": 48537,
+                "src": "1417:12:116",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint32",
+                  "typeString": "uint32"
+                },
+                "typeName": {
+                  "id": 48535,
+                  "name": "uint32",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "1417:6:116",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint32",
+                    "typeString": "uint32"
+                  }
+                },
+                "visibility": "internal"
+              }
+            ],
+            "name": "DataStoreSearchData",
+            "nameLocation": "1300:19:116",
+            "scope": 48672,
+            "visibility": "public"
+          },
+          {
+            "id": 48545,
+            "nodeType": "StructDefinition",
+            "src": "1442:168:116",
+            "nodes": [],
+            "canonicalName": "IDataLayrServiceManager.SignatoryRecordMinusDataStoreId",
+            "members": [
+              {
+                "constant": false,
+                "id": 48540,
+                "mutability": "mutable",
+                "name": "nonSignerPubkeyHashes",
+                "nameLocation": "1501:21:116",
+                "nodeType": "VariableDeclaration",
+                "scope": 48545,
+                "src": "1491:31:116",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_array$_t_bytes32_$dyn_storage_ptr",
+                  "typeString": "bytes32[]"
+                },
+                "typeName": {
+                  "baseType": {
+                    "id": 48538,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1491:7:116",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "id": 48539,
+                  "nodeType": "ArrayTypeName",
+                  "src": "1491:9:116",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_bytes32_$dyn_storage_ptr",
+                    "typeString": "bytes32[]"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 48542,
+                "mutability": "mutable",
+                "name": "signedStakeFirstQuorum",
+                "nameLocation": "1540:22:116",
+                "nodeType": "VariableDeclaration",
+                "scope": 48545,
+                "src": "1532:30:116",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 48541,
+                  "name": "uint256",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "1532:7:116",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 48544,
+                "mutability": "mutable",
+                "name": "signedStakeSecondQuorum",
+                "nameLocation": "1580:23:116",
+                "nodeType": "VariableDeclaration",
+                "scope": 48545,
+                "src": "1572:31:116",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 48543,
+                  "name": "uint256",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "1572:7:116",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "visibility": "internal"
+              }
+            ],
+            "name": "SignatoryRecordMinusDataStoreId",
+            "nameLocation": "1449:31:116",
+            "scope": 48672,
+            "visibility": "public"
+          },
+          {
+            "id": 48564,
+            "nodeType": "StructDefinition",
+            "src": "1616:300:116",
+            "nodes": [],
+            "canonicalName": "IDataLayrServiceManager.DataStoresForDuration",
+            "members": [
+              {
+                "constant": false,
+                "id": 48547,
+                "mutability": "mutable",
+                "name": "one_duration",
+                "nameLocation": "1662:12:116",
+                "nodeType": "VariableDeclaration",
+                "scope": 48564,
+                "src": "1655:19:116",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint32",
+                  "typeString": "uint32"
+                },
+                "typeName": {
+                  "id": 48546,
+                  "name": "uint32",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "1655:6:116",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint32",
+                    "typeString": "uint32"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 48549,
+                "mutability": "mutable",
+                "name": "two_duration",
+                "nameLocation": "1691:12:116",
+                "nodeType": "VariableDeclaration",
+                "scope": 48564,
+                "src": "1684:19:116",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint32",
+                  "typeString": "uint32"
+                },
+                "typeName": {
+                  "id": 48548,
+                  "name": "uint32",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "1684:6:116",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint32",
+                    "typeString": "uint32"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 48551,
+                "mutability": "mutable",
+                "name": "three_duration",
+                "nameLocation": "1720:14:116",
+                "nodeType": "VariableDeclaration",
+                "scope": 48564,
+                "src": "1713:21:116",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint32",
+                  "typeString": "uint32"
+                },
+                "typeName": {
+                  "id": 48550,
+                  "name": "uint32",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "1713:6:116",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint32",
+                    "typeString": "uint32"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 48553,
+                "mutability": "mutable",
+                "name": "four_duration",
+                "nameLocation": "1751:13:116",
+                "nodeType": "VariableDeclaration",
+                "scope": 48564,
+                "src": "1744:20:116",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint32",
+                  "typeString": "uint32"
+                },
+                "typeName": {
+                  "id": 48552,
+                  "name": "uint32",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "1744:6:116",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint32",
+                    "typeString": "uint32"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 48555,
+                "mutability": "mutable",
+                "name": "five_duration",
+                "nameLocation": "1781:13:116",
+                "nodeType": "VariableDeclaration",
+                "scope": 48564,
+                "src": "1774:20:116",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint32",
+                  "typeString": "uint32"
+                },
+                "typeName": {
+                  "id": 48554,
+                  "name": "uint32",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "1774:6:116",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint32",
+                    "typeString": "uint32"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 48557,
+                "mutability": "mutable",
+                "name": "six_duration",
+                "nameLocation": "1811:12:116",
+                "nodeType": "VariableDeclaration",
+                "scope": 48564,
+                "src": "1804:19:116",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint32",
+                  "typeString": "uint32"
+                },
+                "typeName": {
+                  "id": 48556,
+                  "name": "uint32",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "1804:6:116",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint32",
+                    "typeString": "uint32"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 48559,
+                "mutability": "mutable",
+                "name": "seven_duration",
+                "nameLocation": "1840:14:116",
+                "nodeType": "VariableDeclaration",
+                "scope": 48564,
+                "src": "1833:21:116",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint32",
+                  "typeString": "uint32"
+                },
+                "typeName": {
+                  "id": 48558,
+                  "name": "uint32",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "1833:6:116",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint32",
+                    "typeString": "uint32"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 48561,
+                "mutability": "mutable",
+                "name": "dataStoreId",
+                "nameLocation": "1871:11:116",
+                "nodeType": "VariableDeclaration",
+                "scope": 48564,
+                "src": "1864:18:116",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint32",
+                  "typeString": "uint32"
+                },
+                "typeName": {
+                  "id": 48560,
+                  "name": "uint32",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "1864:6:116",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint32",
+                    "typeString": "uint32"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 48563,
+                "mutability": "mutable",
+                "name": "latestTime",
+                "nameLocation": "1899:10:116",
+                "nodeType": "VariableDeclaration",
+                "scope": 48564,
+                "src": "1892:17:116",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint32",
+                  "typeString": "uint32"
+                },
+                "typeName": {
+                  "id": 48562,
+                  "name": "uint32",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "1892:6:116",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint32",
+                    "typeString": "uint32"
+                  }
+                },
+                "visibility": "internal"
+              }
+            ],
+            "name": "DataStoresForDuration",
+            "nameLocation": "1623:21:116",
+            "scope": 48672,
+            "visibility": "public"
+          },
+          {
+            "id": 48573,
+            "nodeType": "StructDefinition",
+            "src": "1922:139:116",
+            "nodes": [],
+            "canonicalName": "IDataLayrServiceManager.DataStoreHashInputs",
+            "members": [
+              {
+                "constant": false,
+                "id": 48566,
+                "mutability": "mutable",
+                "name": "headerHash",
+                "nameLocation": "1967:10:116",
+                "nodeType": "VariableDeclaration",
+                "scope": 48573,
+                "src": "1959:18:116",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_bytes32",
+                  "typeString": "bytes32"
+                },
+                "typeName": {
+                  "id": 48565,
+                  "name": "bytes32",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "1959:7:116",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 48568,
+                "mutability": "mutable",
+                "name": "dataStoreId",
+                "nameLocation": "1994:11:116",
+                "nodeType": "VariableDeclaration",
+                "scope": 48573,
+                "src": "1987:18:116",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint32",
+                  "typeString": "uint32"
+                },
+                "typeName": {
+                  "id": 48567,
+                  "name": "uint32",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "1987:6:116",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint32",
+                    "typeString": "uint32"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 48570,
+                "mutability": "mutable",
+                "name": "blockNumber",
+                "nameLocation": "2022:11:116",
+                "nodeType": "VariableDeclaration",
+                "scope": 48573,
+                "src": "2015:18:116",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint32",
+                  "typeString": "uint32"
+                },
+                "typeName": {
+                  "id": 48569,
+                  "name": "uint32",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "2015:6:116",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint32",
+                    "typeString": "uint32"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 48572,
+                "mutability": "mutable",
+                "name": "fee",
+                "nameLocation": "2051:3:116",
+                "nodeType": "VariableDeclaration",
+                "scope": 48573,
+                "src": "2043:11:116",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 48571,
+                  "name": "uint256",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "2043:7:116",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "visibility": "internal"
+              }
+            ],
+            "name": "DataStoreHashInputs",
+            "nameLocation": "1929:19:116",
+            "scope": 48672,
+            "visibility": "public"
+          },
+          {
+            "id": 48591,
+            "nodeType": "FunctionDefinition",
+            "src": "3749:243:116",
+            "nodes": [],
+            "documentation": {
+              "id": 48574,
+              "nodeType": "StructuredDocumentation",
+              "src": "2609:1135:116",
+              "text": " @param confirmer is the address that must confirm the datastore\n @param header is the summary of the data that is being asserted into DataLayr,\n  type DataStoreHeader struct {\n   KzgCommit      [64]byte\n   Degree         uint32\n   NumSys         uint32\n   NumPar         uint32\n   OrigDataSize   uint32\n   Disperser      [20]byte\n   LowDegreeProof [64]byte\n  }\n @param duration for which the data has to be stored by the DataLayr operators.\n This is a quantized parameter that describes how many factors of DURATION_SCALE\n does this data blob needs to be stored. The quantization process comes from ease of\n implementation in DataLayrBombVerifier.sol.\n @param blockNumber is the block number in Ethereum for which the confirmation will\n consult total + operator stake amounts.\n -- must not be more than 'BLOCK_STALE_MEASURE' (defined in DataLayr) blocks in past\n @return index The index in the array `dataStoreHashesForDurationAtTimestamp[duration][block.timestamp]` at which the DataStore's hash was stored."
+            },
+            "functionSelector": "dcf49ea7",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "initDataStore",
+            "nameLocation": "3758:13:116",
+            "parameters": {
+              "id": 48587,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 48576,
+                  "mutability": "mutable",
+                  "name": "feePayer",
+                  "nameLocation": "3789:8:116",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 48591,
+                  "src": "3781:16:116",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 48575,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "3781:7:116",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 48578,
+                  "mutability": "mutable",
+                  "name": "confirmer",
+                  "nameLocation": "3815:9:116",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 48591,
+                  "src": "3807:17:116",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 48577,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "3807:7:116",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 48580,
+                  "mutability": "mutable",
+                  "name": "duration",
+                  "nameLocation": "3840:8:116",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 48591,
+                  "src": "3834:14:116",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint8",
+                    "typeString": "uint8"
+                  },
+                  "typeName": {
+                    "id": 48579,
+                    "name": "uint8",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "3834:5:116",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint8",
+                      "typeString": "uint8"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 48582,
+                  "mutability": "mutable",
+                  "name": "blockNumber",
+                  "nameLocation": "3865:11:116",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 48591,
+                  "src": "3858:18:116",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint32",
+                    "typeString": "uint32"
+                  },
+                  "typeName": {
+                    "id": 48581,
+                    "name": "uint32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "3858:6:116",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint32",
+                      "typeString": "uint32"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 48584,
+                  "mutability": "mutable",
+                  "name": "totalOperatorsIndex",
+                  "nameLocation": "3893:19:116",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 48591,
+                  "src": "3886:26:116",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint32",
+                    "typeString": "uint32"
+                  },
+                  "typeName": {
+                    "id": 48583,
+                    "name": "uint32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "3886:6:116",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint32",
+                      "typeString": "uint32"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 48586,
+                  "mutability": "mutable",
+                  "name": "header",
+                  "nameLocation": "3937:6:116",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 48591,
+                  "src": "3922:21:116",
+                  "stateVariable": false,
+                  "storageLocation": "calldata",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes_calldata_ptr",
+                    "typeString": "bytes"
+                  },
+                  "typeName": {
+                    "id": 48585,
+                    "name": "bytes",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "3922:5:116",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes_storage_ptr",
+                      "typeString": "bytes"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "3771:178:116"
+            },
+            "returnParameters": {
+              "id": 48590,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 48589,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 48591,
+                  "src": "3984:6:116",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint32",
+                    "typeString": "uint32"
+                  },
+                  "typeName": {
+                    "id": 48588,
+                    "name": "uint32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "3984:6:116",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint32",
+                      "typeString": "uint32"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "3983:8:116"
+            },
+            "scope": 48672,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 48600,
+            "nodeType": "FunctionDefinition",
+            "src": "4749:95:116",
+            "nodes": [],
+            "documentation": {
+              "id": 48592,
+              "nodeType": "StructuredDocumentation",
+              "src": "4321:423:116",
+              "text": " @param data Input to the `checkSignatures` function, which is of the format:\n <\n bytes32 msgHash,\n uint48 index of the totalStake corresponding to the dataStoreId in the 'totalStakeHistory' array of the BLSRegistry\n uint32 numberOfNonSigners,\n uint256[numberOfSigners][4] pubkeys of nonsigners,\n uint32 apkIndex,\n uint256[4] apk,\n uint256[2] sigma\n >"
+            },
+            "functionSelector": "58942e73",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "confirmDataStore",
+            "nameLocation": "4758:16:116",
+            "parameters": {
+              "id": 48598,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 48594,
+                  "mutability": "mutable",
+                  "name": "data",
+                  "nameLocation": "4790:4:116",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 48600,
+                  "src": "4775:19:116",
+                  "stateVariable": false,
+                  "storageLocation": "calldata",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes_calldata_ptr",
+                    "typeString": "bytes"
+                  },
+                  "typeName": {
+                    "id": 48593,
+                    "name": "bytes",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "4775:5:116",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes_storage_ptr",
+                      "typeString": "bytes"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 48597,
+                  "mutability": "mutable",
+                  "name": "searchData",
+                  "nameLocation": "4823:10:116",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 48600,
+                  "src": "4796:37:116",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_struct$_DataStoreSearchData_$48537_memory_ptr",
+                    "typeString": "struct IDataLayrServiceManager.DataStoreSearchData"
+                  },
+                  "typeName": {
+                    "id": 48596,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 48595,
+                      "name": "DataStoreSearchData",
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 48537,
+                      "src": "4796:19:116"
+                    },
+                    "referencedDeclaration": 48537,
+                    "src": "4796:19:116",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_DataStoreSearchData_$48537_storage_ptr",
+                      "typeString": "struct IDataLayrServiceManager.DataStoreSearchData"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "4774:60:116"
+            },
+            "returnParameters": {
+              "id": 48599,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "4843:0:116"
+            },
+            "scope": 48672,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 48606,
+            "nodeType": "FunctionDefinition",
+            "src": "4900:57:116",
+            "nodes": [],
+            "documentation": {
+              "id": 48601,
+              "nodeType": "StructuredDocumentation",
+              "src": "4850:45:116",
+              "text": "@notice number of leaves in the root tree"
+            },
+            "functionSelector": "046bf4a6",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "numPowersOfTau",
+            "nameLocation": "4909:14:116",
+            "parameters": {
+              "id": 48602,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "4923:2:116"
+            },
+            "returnParameters": {
+              "id": 48605,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 48604,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 48606,
+                  "src": "4949:6:116",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint48",
+                    "typeString": "uint48"
+                  },
+                  "typeName": {
+                    "id": 48603,
+                    "name": "uint48",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "4949:6:116",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint48",
+                      "typeString": "uint48"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "4948:8:116"
+            },
+            "scope": 48672,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 48612,
+            "nodeType": "FunctionDefinition",
+            "src": "5013:61:116",
+            "nodes": [],
+            "documentation": {
+              "id": 48607,
+              "nodeType": "StructuredDocumentation",
+              "src": "4963:45:116",
+              "text": "@notice number of layers in the root tree"
+            },
+            "functionSelector": "a50017a1",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "log2NumPowersOfTau",
+            "nameLocation": "5022:18:116",
+            "parameters": {
+              "id": 48608,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "5040:2:116"
+            },
+            "returnParameters": {
+              "id": 48611,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 48610,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 48612,
+                  "src": "5066:6:116",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint48",
+                    "typeString": "uint48"
+                  },
+                  "typeName": {
+                    "id": 48609,
+                    "name": "uint48",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "5066:6:116",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint48",
+                      "typeString": "uint48"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "5065:8:116"
+            },
+            "scope": 48672,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 48618,
+            "nodeType": "FunctionDefinition",
+            "src": "5153:58:116",
+            "nodes": [],
+            "documentation": {
+              "id": 48613,
+              "nodeType": "StructuredDocumentation",
+              "src": "5080:68:116",
+              "text": "@notice Unit of measure (in time) for the duration of DataStores"
+            },
+            "functionSelector": "31a219c5",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "DURATION_SCALE",
+            "nameLocation": "5162:14:116",
+            "parameters": {
+              "id": 48614,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "5176:2:116"
+            },
+            "returnParameters": {
+              "id": 48617,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 48616,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 48618,
+                  "src": "5202:7:116",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 48615,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "5202:7:116",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "5201:9:116"
+            },
+            "scope": 48672,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 48624,
+            "nodeType": "FunctionDefinition",
+            "src": "5306:64:116",
+            "nodes": [],
+            "documentation": {
+              "id": 48619,
+              "nodeType": "StructuredDocumentation",
+              "src": "5217:84:116",
+              "text": "@notice The longest allowed duation of a DataStore, measured in `DURATION_SCALE`"
+            },
+            "functionSelector": "578ae5a1",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "MAX_DATASTORE_DURATION",
+            "nameLocation": "5315:22:116",
+            "parameters": {
+              "id": 48620,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "5337:2:116"
+            },
+            "returnParameters": {
+              "id": 48623,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 48622,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 48624,
+                  "src": "5363:5:116",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint8",
+                    "typeString": "uint8"
+                  },
+                  "typeName": {
+                    "id": 48621,
+                    "name": "uint8",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "5363:5:116",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint8",
+                      "typeString": "uint8"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "5362:7:116"
+            },
+            "scope": 48672,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 48636,
+            "nodeType": "FunctionDefinition",
+            "src": "5500:155:116",
+            "nodes": [],
+            "documentation": {
+              "id": 48625,
+              "nodeType": "StructuredDocumentation",
+              "src": "5376:119:116",
+              "text": "@notice Returns the hash of the `index`th DataStore with the specified `duration` at the specified UTC `timestamp`."
+            },
+            "functionSelector": "ed82c0ee",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getDataStoreHashesForDurationAtTimestamp",
+            "nameLocation": "5509:40:116",
+            "parameters": {
+              "id": 48632,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 48627,
+                  "mutability": "mutable",
+                  "name": "duration",
+                  "nameLocation": "5556:8:116",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 48636,
+                  "src": "5550:14:116",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint8",
+                    "typeString": "uint8"
+                  },
+                  "typeName": {
+                    "id": 48626,
+                    "name": "uint8",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "5550:5:116",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint8",
+                      "typeString": "uint8"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 48629,
+                  "mutability": "mutable",
+                  "name": "timestamp",
+                  "nameLocation": "5574:9:116",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 48636,
+                  "src": "5566:17:116",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 48628,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "5566:7:116",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 48631,
+                  "mutability": "mutable",
+                  "name": "index",
+                  "nameLocation": "5592:5:116",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 48636,
+                  "src": "5585:12:116",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint32",
+                    "typeString": "uint32"
+                  },
+                  "typeName": {
+                    "id": 48630,
+                    "name": "uint32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "5585:6:116",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint32",
+                      "typeString": "uint32"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "5549:49:116"
+            },
+            "returnParameters": {
+              "id": 48635,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 48634,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 48636,
+                  "src": "5646:7:116",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 48633,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "5646:7:116",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "5645:9:116"
+            },
+            "scope": 48672,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 48644,
+            "nodeType": "FunctionDefinition",
+            "src": "5750:84:116",
+            "nodes": [],
+            "documentation": {
+              "id": 48637,
+              "nodeType": "StructuredDocumentation",
+              "src": "5661:84:116",
+              "text": " @notice returns the number of data stores for the @param duration"
+            },
+            "functionSelector": "73441c4e",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getNumDataStoresForDuration",
+            "nameLocation": "5759:27:116",
+            "parameters": {
+              "id": 48640,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 48639,
+                  "mutability": "mutable",
+                  "name": "duration",
+                  "nameLocation": "5793:8:116",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 48644,
+                  "src": "5787:14:116",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint8",
+                    "typeString": "uint8"
+                  },
+                  "typeName": {
+                    "id": 48638,
+                    "name": "uint8",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "5787:5:116",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint8",
+                      "typeString": "uint8"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "5786:16:116"
+            },
+            "returnParameters": {
+              "id": 48643,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 48642,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 48644,
+                  "src": "5826:6:116",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint32",
+                    "typeString": "uint32"
+                  },
+                  "typeName": {
+                    "id": 48641,
+                    "name": "uint32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "5826:6:116",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint32",
+                      "typeString": "uint32"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "5825:8:116"
+            },
+            "scope": 48672,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 48651,
+            "nodeType": "FunctionDefinition",
+            "src": "5933:58:116",
+            "nodes": [],
+            "documentation": {
+              "id": 48645,
+              "nodeType": "StructuredDocumentation",
+              "src": "5840:88:116",
+              "text": "@notice Collateral token used for placing collateral on challenges & payment commits"
+            },
+            "functionSelector": "b2016bd4",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "collateralToken",
+            "nameLocation": "5942:15:116",
+            "parameters": {
+              "id": 48646,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "5957:2:116"
+            },
+            "returnParameters": {
+              "id": 48650,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 48649,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 48651,
+                  "src": "5983:6:116",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_contract$_IERC20_$40863",
+                    "typeString": "contract IERC20"
+                  },
+                  "typeName": {
+                    "id": 48648,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 48647,
+                      "name": "IERC20",
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 40863,
+                      "src": "5983:6:116"
+                    },
+                    "referencedDeclaration": 40863,
+                    "src": "5983:6:116",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_IERC20_$40863",
+                      "typeString": "contract IERC20"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "5982:8:116"
+            },
+            "scope": 48672,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 48656,
+            "nodeType": "FunctionDefinition",
+            "src": "5998:51:116",
+            "nodes": [],
+            "functionSelector": "38c8ee64",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "freezeOperator",
+            "nameLocation": "6007:14:116",
+            "parameters": {
+              "id": 48654,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 48653,
+                  "mutability": "mutable",
+                  "name": "operator",
+                  "nameLocation": "6030:8:116",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 48656,
+                  "src": "6022:16:116",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 48652,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "6022:7:116",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "6021:18:116"
+            },
+            "returnParameters": {
+              "id": 48655,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "6048:0:116"
+            },
+            "scope": 48672,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 48671,
+            "nodeType": "FunctionDefinition",
+            "src": "6308:146:116",
+            "nodes": [],
+            "documentation": {
+              "id": 48657,
+              "nodeType": "StructuredDocumentation",
+              "src": "6055:249:116",
+              "text": " @notice Checks that the hash of the `index`th DataStore with the specified `duration` at the specified UTC `timestamp` matches the supplied `metadata`.\n Returns 'true' if the metadata matches the hash, and 'false' otherwise."
+            },
+            "functionSelector": "ba4994b1",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "verifyDataStoreMetadata",
+            "nameLocation": "6317:23:116",
+            "parameters": {
+              "id": 48667,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 48659,
+                  "mutability": "mutable",
+                  "name": "duration",
+                  "nameLocation": "6347:8:116",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 48671,
+                  "src": "6341:14:116",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint8",
+                    "typeString": "uint8"
+                  },
+                  "typeName": {
+                    "id": 48658,
+                    "name": "uint8",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "6341:5:116",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint8",
+                      "typeString": "uint8"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 48661,
+                  "mutability": "mutable",
+                  "name": "timestamp",
+                  "nameLocation": "6365:9:116",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 48671,
+                  "src": "6357:17:116",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 48660,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "6357:7:116",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 48663,
+                  "mutability": "mutable",
+                  "name": "index",
+                  "nameLocation": "6383:5:116",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 48671,
+                  "src": "6376:12:116",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint32",
+                    "typeString": "uint32"
+                  },
+                  "typeName": {
+                    "id": 48662,
+                    "name": "uint32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "6376:6:116",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint32",
+                      "typeString": "uint32"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 48666,
+                  "mutability": "mutable",
+                  "name": "metadata",
+                  "nameLocation": "6415:8:116",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 48671,
+                  "src": "6390:33:116",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_struct$_DataStoreMetadata_$48527_memory_ptr",
+                    "typeString": "struct IDataLayrServiceManager.DataStoreMetadata"
+                  },
+                  "typeName": {
+                    "id": 48665,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 48664,
+                      "name": "DataStoreMetadata",
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 48527,
+                      "src": "6390:17:116"
+                    },
+                    "referencedDeclaration": 48527,
+                    "src": "6390:17:116",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_DataStoreMetadata_$48527_storage_ptr",
+                      "typeString": "struct IDataLayrServiceManager.DataStoreMetadata"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "6340:84:116"
+            },
+            "returnParameters": {
+              "id": 48670,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 48669,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 48671,
+                  "src": "6448:4:116",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  },
+                  "typeName": {
+                    "id": 48668,
+                    "name": "bool",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "6448:4:116",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "6447:6:116"
+            },
+            "scope": 48672,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "abstract": false,
+        "baseContracts": [
+          {
+            "baseName": {
+              "id": 48507,
+              "name": "IServiceManager",
+              "nodeType": "IdentifierPath",
+              "referencedDeclaration": 577,
+              "src": "354:15:116"
+            },
+            "id": 48508,
+            "nodeType": "InheritanceSpecifier",
+            "src": "354:15:116"
+          },
+          {
+            "baseName": {
+              "id": 48509,
+              "name": "IDelayedService",
+              "nodeType": "IdentifierPath",
+              "referencedDeclaration": 9,
+              "src": "371:15:116"
+            },
+            "id": 48510,
+            "nodeType": "InheritanceSpecifier",
+            "src": "371:15:116"
+          }
+        ],
+        "canonicalName": "IDataLayrServiceManager",
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "fullyImplemented": false,
+        "linearizedBaseContracts": [
+          48672,
+          9,
+          577
+        ],
+        "name": "IDataLayrServiceManager",
+        "nameLocation": "327:23:116",
+        "scope": 48673,
+        "usedErrors": []
+      }
+    ],
+    "license": "UNLICENSED"
+  },
+  "id": 116
+}

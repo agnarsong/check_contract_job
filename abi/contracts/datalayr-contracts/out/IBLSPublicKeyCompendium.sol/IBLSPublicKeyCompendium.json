@@ -1,0 +1,719 @@
+{
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "operator",
+          "type": "address"
+        }
+      ],
+      "name": "operatorToPubkeyHash",
+      "outputs": [
+        {
+          "internalType": "bytes32",
+          "name": "",
+          "type": "bytes32"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "pubkeyHash",
+          "type": "bytes32"
+        }
+      ],
+      "name": "pubkeyHashToOperator",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "s",
+          "type": "uint256"
+        },
+        {
+          "components": [
+            {
+              "internalType": "uint256",
+              "name": "X",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "Y",
+              "type": "uint256"
+            }
+          ],
+          "internalType": "struct BN254.G1Point",
+          "name": "rPoint",
+          "type": "tuple"
+        },
+        {
+          "components": [
+            {
+              "internalType": "uint256",
+              "name": "X",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "Y",
+              "type": "uint256"
+            }
+          ],
+          "internalType": "struct BN254.G1Point",
+          "name": "pubkeyG1",
+          "type": "tuple"
+        },
+        {
+          "components": [
+            {
+              "internalType": "uint256[2]",
+              "name": "X",
+              "type": "uint256[2]"
+            },
+            {
+              "internalType": "uint256[2]",
+              "name": "Y",
+              "type": "uint256[2]"
+            }
+          ],
+          "internalType": "struct BN254.G2Point",
+          "name": "pubkeyG2",
+          "type": "tuple"
+        }
+      ],
+      "name": "registerBLSPublicKey",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "bytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "methodIdentifiers": {
+    "operatorToPubkeyHash(address)": "de29fac0",
+    "pubkeyHashToOperator(bytes32)": "e8bb9ae6",
+    "registerBLSPublicKey(uint256,(uint256,uint256),(uint256,uint256),(uint256[2],uint256[2]))": "c4d0751e"
+  },
+  "rawMetadata": "{\"compiler\":{\"version\":\"0.8.12+commit.f00d7308\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"address\",\"name\":\"operator\",\"type\":\"address\"}],\"name\":\"operatorToPubkeyHash\",\"outputs\":[{\"internalType\":\"bytes32\",\"name\":\"\",\"type\":\"bytes32\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"pubkeyHash\",\"type\":\"bytes32\"}],\"name\":\"pubkeyHashToOperator\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"s\",\"type\":\"uint256\"},{\"components\":[{\"internalType\":\"uint256\",\"name\":\"X\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"Y\",\"type\":\"uint256\"}],\"internalType\":\"struct BN254.G1Point\",\"name\":\"rPoint\",\"type\":\"tuple\"},{\"components\":[{\"internalType\":\"uint256\",\"name\":\"X\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"Y\",\"type\":\"uint256\"}],\"internalType\":\"struct BN254.G1Point\",\"name\":\"pubkeyG1\",\"type\":\"tuple\"},{\"components\":[{\"internalType\":\"uint256[2]\",\"name\":\"X\",\"type\":\"uint256[2]\"},{\"internalType\":\"uint256[2]\",\"name\":\"Y\",\"type\":\"uint256[2]\"}],\"internalType\":\"struct BN254.G2Point\",\"name\":\"pubkeyG2\",\"type\":\"tuple\"}],\"name\":\"registerBLSPublicKey\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"author\":\"Layr Labs, Inc.\",\"kind\":\"dev\",\"methods\":{\"registerBLSPublicKey(uint256,(uint256,uint256),(uint256,uint256),(uint256[2],uint256[2]))\":{\"params\":{\"pubkeyG1\":\"is the the G1 pubkey of the operator\",\"pubkeyG2\":\"is the G2 with the same private key as the pubkeyG1\",\"rPoint\":\"is the group element of the operator's Schnorr signature\",\"s\":\"is the field element of the operator's Schnorr signature\"}}},\"title\":\"Minimal interface for the `BLSPublicKeyCompendium` contract.\",\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{\"operatorToPubkeyHash(address)\":{\"notice\":\"mapping from operator address to pubkey hash. Returns *zero* if the `operator` has never registered, and otherwise returns the hash of the public key of the operator.\"},\"pubkeyHashToOperator(bytes32)\":{\"notice\":\"mapping from pubkey hash to operator address. Returns *zero* if no operator has ever registered the public key corresponding to `pubkeyHash`, and otherwise returns the (unique) registered operator who owns the BLS public key that is the preimage of `pubkeyHash`.\"},\"registerBLSPublicKey(uint256,(uint256,uint256),(uint256,uint256),(uint256[2],uint256[2]))\":{\"notice\":\"Called by an operator to register themselves as the owner of a BLS public key and reveal their G1 and G2 public key.\"}},\"version\":1}},\"settings\":{\"compilationTarget\":{\"/Users/dl00038ml/PKG/projects/blockChain/e_Tools/rde/mantle/datalayr/contracts/eignlayr-contracts/src/contracts/interfaces/IBLSPublicKeyCompendium.sol\":\"IBLSPublicKeyCompendium\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[\":@eigenlayer/=../eignlayr-contracts/src/\",\":@openzeppelin-upgrades/=lib/openzeppelin-contracts-upgradeable/\",\":@openzeppelin/=lib/openzeppelin-contracts/\",\":ds-test/=lib/eignlayr-contracts/lib/ds-test/src/\",\":eignlayr-contracts/=lib/eignlayr-contracts/src/\",\":forge-std/=lib/forge-std/src/\",\":openzeppelin-contracts-upgradeable/=lib/eignlayr-contracts/lib/openzeppelin-contracts-upgradeable/\",\":openzeppelin-contracts/=lib/eignlayr-contracts/lib/openzeppelin-contracts/contracts/\"]},\"sources\":{\"/Users/dl00038ml/PKG/projects/blockChain/e_Tools/rde/mantle/datalayr/contracts/eignlayr-contracts/src/contracts/interfaces/IBLSPublicKeyCompendium.sol\":{\"keccak256\":\"0x8a3aedab5a42ccfdc1d7e6c9891c57814b59d89d98b349a1c35acec3c22a7153\",\"license\":\"UNLICENSED\",\"urls\":[\"bzz-raw://da9d6630ead44cc554d6c93c34fb7cce3c3ec03245273665b3bca13103edb171\",\"dweb:/ipfs/QmVvKgak1Cy1sjz6qhL7uhaueApFzZDgTyc5oWiM2boRH9\"]},\"/Users/dl00038ml/PKG/projects/blockChain/e_Tools/rde/mantle/datalayr/contracts/eignlayr-contracts/src/contracts/libraries/BN254.sol\":{\"keccak256\":\"0xf677d6de3e5b3688eb08ac23e116f4d926d2ccc39039571e7c90aabe8bd5fccb\",\"license\":\"UNLICENSED AND MIT\",\"urls\":[\"bzz-raw://0d0bfb10bc9b677311b0de35005549a8b772b38ce84b011115eb30466cc92646\",\"dweb:/ipfs/QmSA4yYCaoB1V6n1PYEJ3PEnd8Yi6xrKdihMJtqyGPfWJL\"]}},\"version\":1}",
+  "metadata": {
+    "compiler": {
+      "version": "0.8.12+commit.f00d7308"
+    },
+    "language": "Solidity",
+    "output": {
+      "abi": [
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "operator",
+              "type": "address"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "operatorToPubkeyHash",
+          "outputs": [
+            {
+              "internalType": "bytes32",
+              "name": "",
+              "type": "bytes32"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "bytes32",
+              "name": "pubkeyHash",
+              "type": "bytes32"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "pubkeyHashToOperator",
+          "outputs": [
+            {
+              "internalType": "address",
+              "name": "",
+              "type": "address"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "uint256",
+              "name": "s",
+              "type": "uint256"
+            },
+            {
+              "internalType": "struct BN254.G1Point",
+              "name": "rPoint",
+              "type": "tuple",
+              "components": [
+                {
+                  "internalType": "uint256",
+                  "name": "X",
+                  "type": "uint256"
+                },
+                {
+                  "internalType": "uint256",
+                  "name": "Y",
+                  "type": "uint256"
+                }
+              ]
+            },
+            {
+              "internalType": "struct BN254.G1Point",
+              "name": "pubkeyG1",
+              "type": "tuple",
+              "components": [
+                {
+                  "internalType": "uint256",
+                  "name": "X",
+                  "type": "uint256"
+                },
+                {
+                  "internalType": "uint256",
+                  "name": "Y",
+                  "type": "uint256"
+                }
+              ]
+            },
+            {
+              "internalType": "struct BN254.G2Point",
+              "name": "pubkeyG2",
+              "type": "tuple",
+              "components": [
+                {
+                  "internalType": "uint256[2]",
+                  "name": "X",
+                  "type": "uint256[2]"
+                },
+                {
+                  "internalType": "uint256[2]",
+                  "name": "Y",
+                  "type": "uint256[2]"
+                }
+              ]
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "registerBLSPublicKey"
+        }
+      ],
+      "devdoc": {
+        "kind": "dev",
+        "methods": {
+          "registerBLSPublicKey(uint256,(uint256,uint256),(uint256,uint256),(uint256[2],uint256[2]))": {
+            "params": {
+              "pubkeyG1": "is the the G1 pubkey of the operator",
+              "pubkeyG2": "is the G2 with the same private key as the pubkeyG1",
+              "rPoint": "is the group element of the operator's Schnorr signature",
+              "s": "is the field element of the operator's Schnorr signature"
+            }
+          }
+        },
+        "version": 1
+      },
+      "userdoc": {
+        "kind": "user",
+        "methods": {
+          "operatorToPubkeyHash(address)": {
+            "notice": "mapping from operator address to pubkey hash. Returns *zero* if the `operator` has never registered, and otherwise returns the hash of the public key of the operator."
+          },
+          "pubkeyHashToOperator(bytes32)": {
+            "notice": "mapping from pubkey hash to operator address. Returns *zero* if no operator has ever registered the public key corresponding to `pubkeyHash`, and otherwise returns the (unique) registered operator who owns the BLS public key that is the preimage of `pubkeyHash`."
+          },
+          "registerBLSPublicKey(uint256,(uint256,uint256),(uint256,uint256),(uint256[2],uint256[2]))": {
+            "notice": "Called by an operator to register themselves as the owner of a BLS public key and reveal their G1 and G2 public key."
+          }
+        },
+        "version": 1
+      }
+    },
+    "settings": {
+      "remappings": [
+        ":@eigenlayer/=../eignlayr-contracts/src/",
+        ":@openzeppelin-upgrades/=lib/openzeppelin-contracts-upgradeable/",
+        ":@openzeppelin/=lib/openzeppelin-contracts/",
+        ":ds-test/=lib/eignlayr-contracts/lib/ds-test/src/",
+        ":eignlayr-contracts/=lib/eignlayr-contracts/src/",
+        ":forge-std/=lib/forge-std/src/",
+        ":openzeppelin-contracts-upgradeable/=lib/eignlayr-contracts/lib/openzeppelin-contracts-upgradeable/",
+        ":openzeppelin-contracts/=lib/eignlayr-contracts/lib/openzeppelin-contracts/contracts/"
+      ],
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "metadata": {
+        "bytecodeHash": "ipfs"
+      },
+      "compilationTarget": {
+        "/Users/dl00038ml/PKG/projects/blockChain/e_Tools/rde/mantle/datalayr/contracts/eignlayr-contracts/src/contracts/interfaces/IBLSPublicKeyCompendium.sol": "IBLSPublicKeyCompendium"
+      },
+      "libraries": {}
+    },
+    "sources": {
+      "/Users/dl00038ml/PKG/projects/blockChain/e_Tools/rde/mantle/datalayr/contracts/eignlayr-contracts/src/contracts/interfaces/IBLSPublicKeyCompendium.sol": {
+        "keccak256": "0x8a3aedab5a42ccfdc1d7e6c9891c57814b59d89d98b349a1c35acec3c22a7153",
+        "urls": [
+          "bzz-raw://da9d6630ead44cc554d6c93c34fb7cce3c3ec03245273665b3bca13103edb171",
+          "dweb:/ipfs/QmVvKgak1Cy1sjz6qhL7uhaueApFzZDgTyc5oWiM2boRH9"
+        ],
+        "license": "UNLICENSED"
+      },
+      "/Users/dl00038ml/PKG/projects/blockChain/e_Tools/rde/mantle/datalayr/contracts/eignlayr-contracts/src/contracts/libraries/BN254.sol": {
+        "keccak256": "0xf677d6de3e5b3688eb08ac23e116f4d926d2ccc39039571e7c90aabe8bd5fccb",
+        "urls": [
+          "bzz-raw://0d0bfb10bc9b677311b0de35005549a8b772b38ce84b011115eb30466cc92646",
+          "dweb:/ipfs/QmSA4yYCaoB1V6n1PYEJ3PEnd8Yi6xrKdihMJtqyGPfWJL"
+        ],
+        "license": "UNLICENSED AND MIT"
+      }
+    },
+    "version": 1
+  },
+  "ast": {
+    "absolutePath": "/Users/dl00038ml/PKG/projects/blockChain/e_Tools/rde/mantle/datalayr/contracts/eignlayr-contracts/src/contracts/interfaces/IBLSPublicKeyCompendium.sol",
+    "id": 7098,
+    "exportedSymbols": {
+      "BN254": [
+        8550
+      ],
+      "IBLSPublicKeyCompendium": [
+        7097
+      ]
+    },
+    "nodeType": "SourceUnit",
+    "src": "39:1470:39",
+    "nodes": [
+      {
+        "id": 7063,
+        "nodeType": "PragmaDirective",
+        "src": "39:23:39",
+        "nodes": [],
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".9"
+        ]
+      },
+      {
+        "id": 7064,
+        "nodeType": "ImportDirective",
+        "src": "64:32:39",
+        "nodes": [],
+        "absolutePath": "/Users/dl00038ml/PKG/projects/blockChain/e_Tools/rde/mantle/datalayr/contracts/eignlayr-contracts/src/contracts/libraries/BN254.sol",
+        "file": "../libraries/BN254.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 7098,
+        "sourceUnit": 8551,
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "id": 7097,
+        "nodeType": "ContractDefinition",
+        "src": "204:1304:39",
+        "nodes": [
+          {
+            "id": 7073,
+            "nodeType": "FunctionDefinition",
+            "src": "449:80:39",
+            "nodes": [],
+            "documentation": {
+              "id": 7066,
+              "nodeType": "StructuredDocumentation",
+              "src": "244:200:39",
+              "text": " @notice mapping from operator address to pubkey hash.\n Returns *zero* if the `operator` has never registered, and otherwise returns the hash of the public key of the operator."
+            },
+            "functionSelector": "de29fac0",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "operatorToPubkeyHash",
+            "nameLocation": "458:20:39",
+            "parameters": {
+              "id": 7069,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 7068,
+                  "mutability": "mutable",
+                  "name": "operator",
+                  "nameLocation": "487:8:39",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 7073,
+                  "src": "479:16:39",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 7067,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "479:7:39",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "478:18:39"
+            },
+            "returnParameters": {
+              "id": 7072,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 7071,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 7073,
+                  "src": "520:7:39",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 7070,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "520:7:39",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "519:9:39"
+            },
+            "scope": 7097,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 7081,
+            "nodeType": "FunctionDefinition",
+            "src": "843:82:39",
+            "nodes": [],
+            "documentation": {
+              "id": 7074,
+              "nodeType": "StructuredDocumentation",
+              "src": "535:303:39",
+              "text": " @notice mapping from pubkey hash to operator address.\n Returns *zero* if no operator has ever registered the public key corresponding to `pubkeyHash`,\n and otherwise returns the (unique) registered operator who owns the BLS public key that is the preimage of `pubkeyHash`."
+            },
+            "functionSelector": "e8bb9ae6",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "pubkeyHashToOperator",
+            "nameLocation": "852:20:39",
+            "parameters": {
+              "id": 7077,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 7076,
+                  "mutability": "mutable",
+                  "name": "pubkeyHash",
+                  "nameLocation": "881:10:39",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 7081,
+                  "src": "873:18:39",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 7075,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "873:7:39",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "872:20:39"
+            },
+            "returnParameters": {
+              "id": 7080,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 7079,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 7081,
+                  "src": "916:7:39",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 7078,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "916:7:39",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "915:9:39"
+            },
+            "scope": 7097,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 7096,
+            "nodeType": "FunctionDefinition",
+            "src": "1365:141:39",
+            "nodes": [],
+            "documentation": {
+              "id": 7082,
+              "nodeType": "StructuredDocumentation",
+              "src": "931:429:39",
+              "text": " @notice Called by an operator to register themselves as the owner of a BLS public key and reveal their G1 and G2 public key.\n @param s is the field element of the operator's Schnorr signature\n @param rPoint is the group element of the operator's Schnorr signature\n @param pubkeyG1 is the the G1 pubkey of the operator\n @param pubkeyG2 is the G2 with the same private key as the pubkeyG1"
+            },
+            "functionSelector": "c4d0751e",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "registerBLSPublicKey",
+            "nameLocation": "1374:20:39",
+            "parameters": {
+              "id": 7094,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 7084,
+                  "mutability": "mutable",
+                  "name": "s",
+                  "nameLocation": "1403:1:39",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 7096,
+                  "src": "1395:9:39",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 7083,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1395:7:39",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 7087,
+                  "mutability": "mutable",
+                  "name": "rPoint",
+                  "nameLocation": "1427:6:39",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 7096,
+                  "src": "1406:27:39",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_struct$_G1Point_$7785_memory_ptr",
+                    "typeString": "struct BN254.G1Point"
+                  },
+                  "typeName": {
+                    "id": 7086,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 7085,
+                      "name": "BN254.G1Point",
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 7785,
+                      "src": "1406:13:39"
+                    },
+                    "referencedDeclaration": 7785,
+                    "src": "1406:13:39",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_G1Point_$7785_storage_ptr",
+                      "typeString": "struct BN254.G1Point"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 7090,
+                  "mutability": "mutable",
+                  "name": "pubkeyG1",
+                  "nameLocation": "1456:8:39",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 7096,
+                  "src": "1435:29:39",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_struct$_G1Point_$7785_memory_ptr",
+                    "typeString": "struct BN254.G1Point"
+                  },
+                  "typeName": {
+                    "id": 7089,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 7088,
+                      "name": "BN254.G1Point",
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 7785,
+                      "src": "1435:13:39"
+                    },
+                    "referencedDeclaration": 7785,
+                    "src": "1435:13:39",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_G1Point_$7785_storage_ptr",
+                      "typeString": "struct BN254.G1Point"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 7093,
+                  "mutability": "mutable",
+                  "name": "pubkeyG2",
+                  "nameLocation": "1487:8:39",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 7096,
+                  "src": "1466:29:39",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_struct$_G2Point_$7794_memory_ptr",
+                    "typeString": "struct BN254.G2Point"
+                  },
+                  "typeName": {
+                    "id": 7092,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 7091,
+                      "name": "BN254.G2Point",
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 7794,
+                      "src": "1466:13:39"
+                    },
+                    "referencedDeclaration": 7794,
+                    "src": "1466:13:39",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_G2Point_$7794_storage_ptr",
+                      "typeString": "struct BN254.G2Point"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1394:102:39"
+            },
+            "returnParameters": {
+              "id": 7095,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1505:0:39"
+            },
+            "scope": 7097,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "IBLSPublicKeyCompendium",
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "documentation": {
+          "id": 7065,
+          "nodeType": "StructuredDocumentation",
+          "src": "98:105:39",
+          "text": " @title Minimal interface for the `BLSPublicKeyCompendium` contract.\n @author Layr Labs, Inc."
+        },
+        "fullyImplemented": false,
+        "linearizedBaseContracts": [
+          7097
+        ],
+        "name": "IBLSPublicKeyCompendium",
+        "nameLocation": "214:23:39",
+        "scope": 7098,
+        "usedErrors": []
+      }
+    ],
+    "license": "UNLICENSED"
+  },
+  "id": 39
+}

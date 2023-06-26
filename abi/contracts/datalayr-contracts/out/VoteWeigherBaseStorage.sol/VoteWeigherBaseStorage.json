@@ -1,0 +1,1607 @@
+{
+  "abi": [
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "uint8",
+          "name": "version",
+          "type": "uint8"
+        }
+      ],
+      "name": "Initialized",
+      "type": "event"
+    },
+    {
+      "inputs": [],
+      "name": "NUMBER_OF_QUORUMS",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "delegation",
+      "outputs": [
+        {
+          "internalType": "contract IEigenLayrDelegation",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "investmentManager",
+      "outputs": [
+        {
+          "internalType": "contract IInvestmentManager",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "name": "quorumBips",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "serviceManager",
+      "outputs": [
+        {
+          "internalType": "contract IServiceManager",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "name": "strategiesConsideredAndMultipliers",
+      "outputs": [
+        {
+          "internalType": "contract IInvestmentStrategy",
+          "name": "strategy",
+          "type": "address"
+        },
+        {
+          "internalType": "uint96",
+          "name": "multiplier",
+          "type": "uint96"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "operator",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "quorumNumber",
+          "type": "uint256"
+        }
+      ],
+      "name": "weightOfOperator",
+      "outputs": [
+        {
+          "internalType": "uint96",
+          "name": "",
+          "type": "uint96"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "bytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "methodIdentifiers": {
+    "NUMBER_OF_QUORUMS()": "e21ade6d",
+    "delegation()": "df5cf723",
+    "investmentManager()": "4b31bb10",
+    "quorumBips(uint256)": "28420dfa",
+    "serviceManager()": "3998fdd3",
+    "strategiesConsideredAndMultipliers(uint256,uint256)": "1ea1afe1",
+    "weightOfOperator(address,uint256)": "891f28a5"
+  },
+  "rawMetadata": "{\"compiler\":{\"version\":\"0.8.12+commit.f00d7308\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"uint8\",\"name\":\"version\",\"type\":\"uint8\"}],\"name\":\"Initialized\",\"type\":\"event\"},{\"inputs\":[],\"name\":\"NUMBER_OF_QUORUMS\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"delegation\",\"outputs\":[{\"internalType\":\"contract IEigenLayrDelegation\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"investmentManager\",\"outputs\":[{\"internalType\":\"contract IInvestmentManager\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"name\":\"quorumBips\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"serviceManager\",\"outputs\":[{\"internalType\":\"contract IServiceManager\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"name\":\"strategiesConsideredAndMultipliers\",\"outputs\":[{\"internalType\":\"contract IInvestmentStrategy\",\"name\":\"strategy\",\"type\":\"address\"},{\"internalType\":\"uint96\",\"name\":\"multiplier\",\"type\":\"uint96\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"operator\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"quorumNumber\",\"type\":\"uint256\"}],\"name\":\"weightOfOperator\",\"outputs\":[{\"internalType\":\"uint96\",\"name\":\"\",\"type\":\"uint96\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"author\":\"Layr Labs, Inc.\",\"kind\":\"dev\",\"methods\":{\"weightOfOperator(address,uint256)\":{\"details\":\"returns zero in the case that `quorumNumber` is greater than or equal to `NUMBER_OF_QUORUMS`\"}},\"stateVariables\":{\"quorumBips\":{\"details\":\"The sum of all entries, i.e. sum(quorumBips[0] through quorumBips[NUMBER_OF_QUORUMS - 1]) should *always* be 10,000!\"}},\"title\":\"Storage variables for the `VoteWeigherBase` contract.\",\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{\"NUMBER_OF_QUORUMS()\":{\"notice\":\"Number of quorums that are being used by the middleware.\"},\"delegation()\":{\"notice\":\"The address of the Delegation contract for EigenLayr.\"},\"investmentManager()\":{\"notice\":\"The address of the InvestmentManager contract for EigenLayr.\"},\"quorumBips(uint256)\":{\"notice\":\"This defines the earnings split between different quorums. Mapping is quorumNumber => BIPS which the quorum earns, out of the total earnings.\"},\"serviceManager()\":{\"notice\":\"The ServiceManager contract for this middleware, where tasks are created / initiated.\"},\"strategiesConsideredAndMultipliers(uint256,uint256)\":{\"notice\":\"mapping from quorum number to the list of strategies considered and their corresponding multipliers for that specific quorum\"},\"weightOfOperator(address,uint256)\":{\"notice\":\"This function computes the total weight of the @param operator in the quorum @param quorumNumber.\"}},\"notice\":\"This storage contract is separate from the logic to simplify the upgrade process.\",\"version\":1}},\"settings\":{\"compilationTarget\":{\"/Users/dl00038ml/PKG/projects/blockChain/e_Tools/rde/mantle/datalayr/contracts/eignlayr-contracts/src/contracts/middleware/VoteWeigherBaseStorage.sol\":\"VoteWeigherBaseStorage\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[\":@eigenlayer/=../eignlayr-contracts/src/\",\":@openzeppelin-upgrades/=lib/openzeppelin-contracts-upgradeable/\",\":@openzeppelin/=lib/openzeppelin-contracts/\",\":ds-test/=lib/eignlayr-contracts/lib/ds-test/src/\",\":eignlayr-contracts/=lib/eignlayr-contracts/src/\",\":forge-std/=lib/forge-std/src/\",\":openzeppelin-contracts-upgradeable/=lib/eignlayr-contracts/lib/openzeppelin-contracts-upgradeable/\",\":openzeppelin-contracts/=lib/eignlayr-contracts/lib/openzeppelin-contracts/contracts/\"]},\"sources\":{\"/Users/dl00038ml/PKG/projects/blockChain/e_Tools/rde/mantle/datalayr/contracts/eignlayr-contracts/src/contracts/interfaces/IEigenLayrDelegation.sol\":{\"keccak256\":\"0x9f11c0becde4111ac7d060dc11b9461888129076740cf78e07f292eefc92955e\",\"license\":\"UNLICENSED\",\"urls\":[\"bzz-raw://53bef92f10fd142e6b0af0f4f77a958c96ebea145492aa5328757e10fffd9c21\",\"dweb:/ipfs/QmUHG67pTyGxu6whsk95JNwevDJ7ooQMyeNT4kfwJtEzU5\"]},\"/Users/dl00038ml/PKG/projects/blockChain/e_Tools/rde/mantle/datalayr/contracts/eignlayr-contracts/src/contracts/interfaces/IInvestmentManager.sol\":{\"keccak256\":\"0xed8f5ee05ffbedbfe649dc7547339b3bc118edfe02825074341b0c474f776100\",\"license\":\"UNLICENSED\",\"urls\":[\"bzz-raw://44e9b0705f113e63a867b59bc292c7d5287968017b39ade9ef4c2b90d7f7dd34\",\"dweb:/ipfs/Qmc46ncEfH6wXKRz7zYKvkTGRhQSSDh6traUrttRFcP2tw\"]},\"/Users/dl00038ml/PKG/projects/blockChain/e_Tools/rde/mantle/datalayr/contracts/eignlayr-contracts/src/contracts/interfaces/IInvestmentStrategy.sol\":{\"keccak256\":\"0x69eb667cc856ee1fe783243b6db21a43a9dadd29bf6761727b334fca4366bceb\",\"license\":\"UNLICENSED\",\"urls\":[\"bzz-raw://224e8f6def4e53a1065f0c4ce26d8ffff15276944e2351753065aeb5bd265f52\",\"dweb:/ipfs/QmSu8iUPCnwza4SdE5jVSZLnQjMRXJg3VAGc8pHqbaMLob\"]},\"/Users/dl00038ml/PKG/projects/blockChain/e_Tools/rde/mantle/datalayr/contracts/eignlayr-contracts/src/contracts/interfaces/IServiceManager.sol\":{\"keccak256\":\"0xded81693805764888f8d1daa8afb600969d4286f3d5ecfa92e99b9446b400ad4\",\"license\":\"UNLICENSED\",\"urls\":[\"bzz-raw://8e0d0704fa8e64543abce318eaf99c53f75215db76cf873e6a6311a4eb5274b2\",\"dweb:/ipfs/Qmd96t8WrNFRY5fqsPtkCaz28j3mvZj3fpc4qp6xXe9wgb\"]},\"/Users/dl00038ml/PKG/projects/blockChain/e_Tools/rde/mantle/datalayr/contracts/eignlayr-contracts/src/contracts/interfaces/IVoteWeigher.sol\":{\"keccak256\":\"0x4d8068106dc1bc924e15cb4f8ae1c2f1b86bd3c6de1ce947081774225da63ad0\",\"license\":\"UNLICENSED\",\"urls\":[\"bzz-raw://b252272b18e9a9480568a2f96cbf17e41d7d61e42e30edaef9633ca4e7149fef\",\"dweb:/ipfs/QmSh9uPEpkT4QbT83vHgXuXCE8DhJpCZh1typa97tD4zZ4\"]},\"/Users/dl00038ml/PKG/projects/blockChain/e_Tools/rde/mantle/datalayr/contracts/eignlayr-contracts/src/contracts/middleware/VoteWeigherBaseStorage.sol\":{\"keccak256\":\"0xd28f150aaaf2729ea4e4fe389bebcb7289ca7516f93bb0f293f20dcd24d7ac19\",\"license\":\"UNLICENSED\",\"urls\":[\"bzz-raw://37ea656b2d8788ae4392a58b60b8617eae3bc70187f3d8493593ef7981a94ee0\",\"dweb:/ipfs/QmRvQzewqFBPigQv76LDfq1MY6ECFL7FpVwwJATnAFVHHS\"]},\"lib/openzeppelin-contracts-upgradeable/contracts/proxy/utils/Initializable.sol\":{\"keccak256\":\"0xe798cadb41e2da274913e4b3183a80f50fb057a42238fe8467e077268100ec27\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://899f850f7df5a270bccfb765d70069959ca1c20d3a7381c1c3bda8a3ffee1935\",\"dweb:/ipfs/QmVdnAqwyX2L3nX2HDA5WKGtVBFyH1nKE9A1k7fZnPBkhP\"]},\"lib/openzeppelin-contracts-upgradeable/contracts/utils/AddressUpgradeable.sol\":{\"keccak256\":\"0x2edcb41c121abc510932e8d83ff8b82cf9cdde35e7c297622f5c29ef0af25183\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://72460c66cd1c3b1c11b863e0d8df0a1c56f37743019e468dc312c754f43e3b06\",\"dweb:/ipfs/QmPExYKiNb9PUsgktQBupPaM33kzDHxaYoVeJdLhv8s879\"]},\"lib/openzeppelin-contracts/contracts/token/ERC20/IERC20.sol\":{\"keccak256\":\"0x9750c6b834f7b43000631af5cc30001c5f547b3ceb3635488f140f60e897ea6b\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://5a7d5b1ef5d8d5889ad2ed89d8619c09383b80b72ab226e0fe7bde1636481e34\",\"dweb:/ipfs/QmebXWgtEfumQGBdVeM6c71McLixYXQP5Bk6kKXuoY4Bmr\"]}},\"version\":1}",
+  "metadata": {
+    "compiler": {
+      "version": "0.8.12+commit.f00d7308"
+    },
+    "language": "Solidity",
+    "output": {
+      "abi": [
+        {
+          "inputs": [
+            {
+              "internalType": "uint8",
+              "name": "version",
+              "type": "uint8",
+              "indexed": false
+            }
+          ],
+          "type": "event",
+          "name": "Initialized",
+          "anonymous": false
+        },
+        {
+          "inputs": [],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "NUMBER_OF_QUORUMS",
+          "outputs": [
+            {
+              "internalType": "uint256",
+              "name": "",
+              "type": "uint256"
+            }
+          ]
+        },
+        {
+          "inputs": [],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "delegation",
+          "outputs": [
+            {
+              "internalType": "contract IEigenLayrDelegation",
+              "name": "",
+              "type": "address"
+            }
+          ]
+        },
+        {
+          "inputs": [],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "investmentManager",
+          "outputs": [
+            {
+              "internalType": "contract IInvestmentManager",
+              "name": "",
+              "type": "address"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "uint256",
+              "name": "",
+              "type": "uint256"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "quorumBips",
+          "outputs": [
+            {
+              "internalType": "uint256",
+              "name": "",
+              "type": "uint256"
+            }
+          ]
+        },
+        {
+          "inputs": [],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "serviceManager",
+          "outputs": [
+            {
+              "internalType": "contract IServiceManager",
+              "name": "",
+              "type": "address"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "uint256",
+              "name": "",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "",
+              "type": "uint256"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "strategiesConsideredAndMultipliers",
+          "outputs": [
+            {
+              "internalType": "contract IInvestmentStrategy",
+              "name": "strategy",
+              "type": "address"
+            },
+            {
+              "internalType": "uint96",
+              "name": "multiplier",
+              "type": "uint96"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "operator",
+              "type": "address"
+            },
+            {
+              "internalType": "uint256",
+              "name": "quorumNumber",
+              "type": "uint256"
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "weightOfOperator",
+          "outputs": [
+            {
+              "internalType": "uint96",
+              "name": "",
+              "type": "uint96"
+            }
+          ]
+        }
+      ],
+      "devdoc": {
+        "kind": "dev",
+        "methods": {
+          "weightOfOperator(address,uint256)": {
+            "details": "returns zero in the case that `quorumNumber` is greater than or equal to `NUMBER_OF_QUORUMS`"
+          }
+        },
+        "version": 1
+      },
+      "userdoc": {
+        "kind": "user",
+        "methods": {
+          "NUMBER_OF_QUORUMS()": {
+            "notice": "Number of quorums that are being used by the middleware."
+          },
+          "delegation()": {
+            "notice": "The address of the Delegation contract for EigenLayr."
+          },
+          "investmentManager()": {
+            "notice": "The address of the InvestmentManager contract for EigenLayr."
+          },
+          "quorumBips(uint256)": {
+            "notice": "This defines the earnings split between different quorums. Mapping is quorumNumber => BIPS which the quorum earns, out of the total earnings."
+          },
+          "serviceManager()": {
+            "notice": "The ServiceManager contract for this middleware, where tasks are created / initiated."
+          },
+          "strategiesConsideredAndMultipliers(uint256,uint256)": {
+            "notice": "mapping from quorum number to the list of strategies considered and their corresponding multipliers for that specific quorum"
+          },
+          "weightOfOperator(address,uint256)": {
+            "notice": "This function computes the total weight of the @param operator in the quorum @param quorumNumber."
+          }
+        },
+        "version": 1
+      }
+    },
+    "settings": {
+      "remappings": [
+        ":@eigenlayer/=../eignlayr-contracts/src/",
+        ":@openzeppelin-upgrades/=lib/openzeppelin-contracts-upgradeable/",
+        ":@openzeppelin/=lib/openzeppelin-contracts/",
+        ":ds-test/=lib/eignlayr-contracts/lib/ds-test/src/",
+        ":eignlayr-contracts/=lib/eignlayr-contracts/src/",
+        ":forge-std/=lib/forge-std/src/",
+        ":openzeppelin-contracts-upgradeable/=lib/eignlayr-contracts/lib/openzeppelin-contracts-upgradeable/",
+        ":openzeppelin-contracts/=lib/eignlayr-contracts/lib/openzeppelin-contracts/contracts/"
+      ],
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "metadata": {
+        "bytecodeHash": "ipfs"
+      },
+      "compilationTarget": {
+        "/Users/dl00038ml/PKG/projects/blockChain/e_Tools/rde/mantle/datalayr/contracts/eignlayr-contracts/src/contracts/middleware/VoteWeigherBaseStorage.sol": "VoteWeigherBaseStorage"
+      },
+      "libraries": {}
+    },
+    "sources": {
+      "/Users/dl00038ml/PKG/projects/blockChain/e_Tools/rde/mantle/datalayr/contracts/eignlayr-contracts/src/contracts/interfaces/IEigenLayrDelegation.sol": {
+        "keccak256": "0x9f11c0becde4111ac7d060dc11b9461888129076740cf78e07f292eefc92955e",
+        "urls": [
+          "bzz-raw://53bef92f10fd142e6b0af0f4f77a958c96ebea145492aa5328757e10fffd9c21",
+          "dweb:/ipfs/QmUHG67pTyGxu6whsk95JNwevDJ7ooQMyeNT4kfwJtEzU5"
+        ],
+        "license": "UNLICENSED"
+      },
+      "/Users/dl00038ml/PKG/projects/blockChain/e_Tools/rde/mantle/datalayr/contracts/eignlayr-contracts/src/contracts/interfaces/IInvestmentManager.sol": {
+        "keccak256": "0xed8f5ee05ffbedbfe649dc7547339b3bc118edfe02825074341b0c474f776100",
+        "urls": [
+          "bzz-raw://44e9b0705f113e63a867b59bc292c7d5287968017b39ade9ef4c2b90d7f7dd34",
+          "dweb:/ipfs/Qmc46ncEfH6wXKRz7zYKvkTGRhQSSDh6traUrttRFcP2tw"
+        ],
+        "license": "UNLICENSED"
+      },
+      "/Users/dl00038ml/PKG/projects/blockChain/e_Tools/rde/mantle/datalayr/contracts/eignlayr-contracts/src/contracts/interfaces/IInvestmentStrategy.sol": {
+        "keccak256": "0x69eb667cc856ee1fe783243b6db21a43a9dadd29bf6761727b334fca4366bceb",
+        "urls": [
+          "bzz-raw://224e8f6def4e53a1065f0c4ce26d8ffff15276944e2351753065aeb5bd265f52",
+          "dweb:/ipfs/QmSu8iUPCnwza4SdE5jVSZLnQjMRXJg3VAGc8pHqbaMLob"
+        ],
+        "license": "UNLICENSED"
+      },
+      "/Users/dl00038ml/PKG/projects/blockChain/e_Tools/rde/mantle/datalayr/contracts/eignlayr-contracts/src/contracts/interfaces/IServiceManager.sol": {
+        "keccak256": "0xded81693805764888f8d1daa8afb600969d4286f3d5ecfa92e99b9446b400ad4",
+        "urls": [
+          "bzz-raw://8e0d0704fa8e64543abce318eaf99c53f75215db76cf873e6a6311a4eb5274b2",
+          "dweb:/ipfs/Qmd96t8WrNFRY5fqsPtkCaz28j3mvZj3fpc4qp6xXe9wgb"
+        ],
+        "license": "UNLICENSED"
+      },
+      "/Users/dl00038ml/PKG/projects/blockChain/e_Tools/rde/mantle/datalayr/contracts/eignlayr-contracts/src/contracts/interfaces/IVoteWeigher.sol": {
+        "keccak256": "0x4d8068106dc1bc924e15cb4f8ae1c2f1b86bd3c6de1ce947081774225da63ad0",
+        "urls": [
+          "bzz-raw://b252272b18e9a9480568a2f96cbf17e41d7d61e42e30edaef9633ca4e7149fef",
+          "dweb:/ipfs/QmSh9uPEpkT4QbT83vHgXuXCE8DhJpCZh1typa97tD4zZ4"
+        ],
+        "license": "UNLICENSED"
+      },
+      "/Users/dl00038ml/PKG/projects/blockChain/e_Tools/rde/mantle/datalayr/contracts/eignlayr-contracts/src/contracts/middleware/VoteWeigherBaseStorage.sol": {
+        "keccak256": "0xd28f150aaaf2729ea4e4fe389bebcb7289ca7516f93bb0f293f20dcd24d7ac19",
+        "urls": [
+          "bzz-raw://37ea656b2d8788ae4392a58b60b8617eae3bc70187f3d8493593ef7981a94ee0",
+          "dweb:/ipfs/QmRvQzewqFBPigQv76LDfq1MY6ECFL7FpVwwJATnAFVHHS"
+        ],
+        "license": "UNLICENSED"
+      },
+      "lib/openzeppelin-contracts-upgradeable/contracts/proxy/utils/Initializable.sol": {
+        "keccak256": "0xe798cadb41e2da274913e4b3183a80f50fb057a42238fe8467e077268100ec27",
+        "urls": [
+          "bzz-raw://899f850f7df5a270bccfb765d70069959ca1c20d3a7381c1c3bda8a3ffee1935",
+          "dweb:/ipfs/QmVdnAqwyX2L3nX2HDA5WKGtVBFyH1nKE9A1k7fZnPBkhP"
+        ],
+        "license": "MIT"
+      },
+      "lib/openzeppelin-contracts-upgradeable/contracts/utils/AddressUpgradeable.sol": {
+        "keccak256": "0x2edcb41c121abc510932e8d83ff8b82cf9cdde35e7c297622f5c29ef0af25183",
+        "urls": [
+          "bzz-raw://72460c66cd1c3b1c11b863e0d8df0a1c56f37743019e468dc312c754f43e3b06",
+          "dweb:/ipfs/QmPExYKiNb9PUsgktQBupPaM33kzDHxaYoVeJdLhv8s879"
+        ],
+        "license": "MIT"
+      },
+      "lib/openzeppelin-contracts/contracts/token/ERC20/IERC20.sol": {
+        "keccak256": "0x9750c6b834f7b43000631af5cc30001c5f547b3ceb3635488f140f60e897ea6b",
+        "urls": [
+          "bzz-raw://5a7d5b1ef5d8d5889ad2ed89d8619c09383b80b72ab226e0fe7bde1636481e34",
+          "dweb:/ipfs/QmebXWgtEfumQGBdVeM6c71McLixYXQP5Bk6kKXuoY4Bmr"
+        ],
+        "license": "MIT"
+      }
+    },
+    "version": 1
+  },
+  "ast": {
+    "absolutePath": "/Users/dl00038ml/PKG/projects/blockChain/e_Tools/rde/mantle/datalayr/contracts/eignlayr-contracts/src/contracts/middleware/VoteWeigherBaseStorage.sol",
+    "id": 12162,
+    "exportedSymbols": {
+      "AddressUpgradeable": [
+        39135
+      ],
+      "IERC20": [
+        40863
+      ],
+      "IEigenLayrDelegation": [
+        7256
+      ],
+      "IInvestmentManager": [
+        7364
+      ],
+      "IInvestmentStrategy": [
+        7458
+      ],
+      "IServiceManager": [
+        7740
+      ],
+      "IVoteWeigher": [
+        7768
+      ],
+      "Initializable": [
+        38778
+      ],
+      "VoteWeigherBaseStorage": [
+        12161
+      ]
+    },
+    "nodeType": "SourceUnit",
+    "src": "39:3097:58",
+    "nodes": [
+      {
+        "id": 12065,
+        "nodeType": "PragmaDirective",
+        "src": "39:23:58",
+        "nodes": [],
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".9"
+        ]
+      },
+      {
+        "id": 12066,
+        "nodeType": "ImportDirective",
+        "src": "64:48:58",
+        "nodes": [],
+        "absolutePath": "/Users/dl00038ml/PKG/projects/blockChain/e_Tools/rde/mantle/datalayr/contracts/eignlayr-contracts/src/contracts/interfaces/IEigenLayrDelegation.sol",
+        "file": "../interfaces/IEigenLayrDelegation.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 12162,
+        "sourceUnit": 7257,
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "id": 12067,
+        "nodeType": "ImportDirective",
+        "src": "113:47:58",
+        "nodes": [],
+        "absolutePath": "/Users/dl00038ml/PKG/projects/blockChain/e_Tools/rde/mantle/datalayr/contracts/eignlayr-contracts/src/contracts/interfaces/IInvestmentStrategy.sol",
+        "file": "../interfaces/IInvestmentStrategy.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 12162,
+        "sourceUnit": 7459,
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "id": 12068,
+        "nodeType": "ImportDirective",
+        "src": "161:46:58",
+        "nodes": [],
+        "absolutePath": "/Users/dl00038ml/PKG/projects/blockChain/e_Tools/rde/mantle/datalayr/contracts/eignlayr-contracts/src/contracts/interfaces/IInvestmentManager.sol",
+        "file": "../interfaces/IInvestmentManager.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 12162,
+        "sourceUnit": 7365,
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "id": 12069,
+        "nodeType": "ImportDirective",
+        "src": "208:40:58",
+        "nodes": [],
+        "absolutePath": "/Users/dl00038ml/PKG/projects/blockChain/e_Tools/rde/mantle/datalayr/contracts/eignlayr-contracts/src/contracts/interfaces/IVoteWeigher.sol",
+        "file": "../interfaces/IVoteWeigher.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 12162,
+        "sourceUnit": 7769,
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "id": 12070,
+        "nodeType": "ImportDirective",
+        "src": "250:72:58",
+        "nodes": [],
+        "absolutePath": "lib/openzeppelin-contracts-upgradeable/contracts/proxy/utils/Initializable.sol",
+        "file": "@openzeppelin-upgrades/contracts/proxy/utils/Initializable.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 12162,
+        "sourceUnit": 38779,
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "id": 12161,
+        "nodeType": "ContractDefinition",
+        "src": "516:2619:58",
+        "nodes": [
+          {
+            "id": 12081,
+            "nodeType": "StructDefinition",
+            "src": "794:110:58",
+            "nodes": [],
+            "canonicalName": "VoteWeigherBaseStorage.StrategyAndWeightingMultiplier",
+            "members": [
+              {
+                "constant": false,
+                "id": 12078,
+                "mutability": "mutable",
+                "name": "strategy",
+                "nameLocation": "862:8:58",
+                "nodeType": "VariableDeclaration",
+                "scope": 12081,
+                "src": "842:28:58",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_contract$_IInvestmentStrategy_$7458",
+                  "typeString": "contract IInvestmentStrategy"
+                },
+                "typeName": {
+                  "id": 12077,
+                  "nodeType": "UserDefinedTypeName",
+                  "pathNode": {
+                    "id": 12076,
+                    "name": "IInvestmentStrategy",
+                    "nodeType": "IdentifierPath",
+                    "referencedDeclaration": 7458,
+                    "src": "842:19:58"
+                  },
+                  "referencedDeclaration": 7458,
+                  "src": "842:19:58",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_contract$_IInvestmentStrategy_$7458",
+                    "typeString": "contract IInvestmentStrategy"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 12080,
+                "mutability": "mutable",
+                "name": "multiplier",
+                "nameLocation": "887:10:58",
+                "nodeType": "VariableDeclaration",
+                "scope": 12081,
+                "src": "880:17:58",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint96",
+                  "typeString": "uint96"
+                },
+                "typeName": {
+                  "id": 12079,
+                  "name": "uint96",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "880:6:58",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint96",
+                    "typeString": "uint96"
+                  }
+                },
+                "visibility": "internal"
+              }
+            ],
+            "name": "StrategyAndWeightingMultiplier",
+            "nameLocation": "801:30:58",
+            "scope": 12161,
+            "visibility": "public"
+          },
+          {
+            "id": 12085,
+            "nodeType": "VariableDeclaration",
+            "src": "977:50:58",
+            "nodes": [],
+            "constant": true,
+            "documentation": {
+              "id": 12082,
+              "nodeType": "StructuredDocumentation",
+              "src": "910:62:58",
+              "text": "@notice Constant used as a divisor in calculating weights."
+            },
+            "mutability": "constant",
+            "name": "WEIGHTING_DIVISOR",
+            "nameLocation": "1003:17:58",
+            "scope": 12161,
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 12083,
+              "name": "uint256",
+              "nodeType": "ElementaryTypeName",
+              "src": "977:7:58",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": {
+              "hexValue": "31653138",
+              "id": 12084,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "kind": "number",
+              "lValueRequested": false,
+              "nodeType": "Literal",
+              "src": "1023:4:58",
+              "typeDescriptions": {
+                "typeIdentifier": "t_rational_1000000000000000000_by_1",
+                "typeString": "int_const 1000000000000000000"
+              },
+              "value": "1e18"
+            },
+            "visibility": "internal"
+          },
+          {
+            "id": 12089,
+            "nodeType": "VariableDeclaration",
+            "src": "1135:57:58",
+            "nodes": [],
+            "constant": true,
+            "documentation": {
+              "id": 12086,
+              "nodeType": "StructuredDocumentation",
+              "src": "1033:97:58",
+              "text": "@notice Maximum length of dynamic arrays in the `strategiesConsideredAndMultipliers` mapping."
+            },
+            "mutability": "constant",
+            "name": "MAX_WEIGHING_FUNCTION_LENGTH",
+            "nameLocation": "1159:28:58",
+            "scope": 12161,
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint8",
+              "typeString": "uint8"
+            },
+            "typeName": {
+              "id": 12087,
+              "name": "uint8",
+              "nodeType": "ElementaryTypeName",
+              "src": "1135:5:58",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint8",
+                "typeString": "uint8"
+              }
+            },
+            "value": {
+              "hexValue": "3332",
+              "id": 12088,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "kind": "number",
+              "lValueRequested": false,
+              "nodeType": "Literal",
+              "src": "1190:2:58",
+              "typeDescriptions": {
+                "typeIdentifier": "t_rational_32_by_1",
+                "typeString": "int_const 32"
+              },
+              "value": "32"
+            },
+            "visibility": "internal"
+          },
+          {
+            "id": 12093,
+            "nodeType": "VariableDeclaration",
+            "src": "1271:42:58",
+            "nodes": [],
+            "constant": true,
+            "documentation": {
+              "id": 12090,
+              "nodeType": "StructuredDocumentation",
+              "src": "1198:68:58",
+              "text": "@notice Constant used as a divisor in dealing with BIPS amounts."
+            },
+            "mutability": "constant",
+            "name": "MAX_BIPS",
+            "nameLocation": "1297:8:58",
+            "scope": 12161,
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 12091,
+              "name": "uint256",
+              "nodeType": "ElementaryTypeName",
+              "src": "1271:7:58",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": {
+              "hexValue": "3130303030",
+              "id": 12092,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "kind": "number",
+              "lValueRequested": false,
+              "nodeType": "Literal",
+              "src": "1308:5:58",
+              "typeDescriptions": {
+                "typeIdentifier": "t_rational_10000_by_1",
+                "typeString": "int_const 10000"
+              },
+              "value": "10000"
+            },
+            "visibility": "internal"
+          },
+          {
+            "id": 12097,
+            "nodeType": "VariableDeclaration",
+            "src": "1390:48:58",
+            "nodes": [],
+            "constant": false,
+            "documentation": {
+              "id": 12094,
+              "nodeType": "StructuredDocumentation",
+              "src": "1320:65:58",
+              "text": "@notice The address of the Delegation contract for EigenLayr."
+            },
+            "functionSelector": "df5cf723",
+            "mutability": "immutable",
+            "name": "delegation",
+            "nameLocation": "1428:10:58",
+            "scope": 12161,
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_contract$_IEigenLayrDelegation_$7256",
+              "typeString": "contract IEigenLayrDelegation"
+            },
+            "typeName": {
+              "id": 12096,
+              "nodeType": "UserDefinedTypeName",
+              "pathNode": {
+                "id": 12095,
+                "name": "IEigenLayrDelegation",
+                "nodeType": "IdentifierPath",
+                "referencedDeclaration": 7256,
+                "src": "1390:20:58"
+              },
+              "referencedDeclaration": 7256,
+              "src": "1390:20:58",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_IEigenLayrDelegation_$7256",
+                "typeString": "contract IEigenLayrDelegation"
+              }
+            },
+            "visibility": "public"
+          },
+          {
+            "id": 12101,
+            "nodeType": "VariableDeclaration",
+            "src": "1522:53:58",
+            "nodes": [],
+            "constant": false,
+            "documentation": {
+              "id": 12098,
+              "nodeType": "StructuredDocumentation",
+              "src": "1445:72:58",
+              "text": "@notice The address of the InvestmentManager contract for EigenLayr."
+            },
+            "functionSelector": "4b31bb10",
+            "mutability": "immutable",
+            "name": "investmentManager",
+            "nameLocation": "1558:17:58",
+            "scope": 12161,
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_contract$_IInvestmentManager_$7364",
+              "typeString": "contract IInvestmentManager"
+            },
+            "typeName": {
+              "id": 12100,
+              "nodeType": "UserDefinedTypeName",
+              "pathNode": {
+                "id": 12099,
+                "name": "IInvestmentManager",
+                "nodeType": "IdentifierPath",
+                "referencedDeclaration": 7364,
+                "src": "1522:18:58"
+              },
+              "referencedDeclaration": 7364,
+              "src": "1522:18:58",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_IInvestmentManager_$7364",
+                "typeString": "contract IInvestmentManager"
+              }
+            },
+            "visibility": "public"
+          },
+          {
+            "id": 12105,
+            "nodeType": "VariableDeclaration",
+            "src": "1684:47:58",
+            "nodes": [],
+            "constant": false,
+            "documentation": {
+              "id": 12102,
+              "nodeType": "StructuredDocumentation",
+              "src": "1582:97:58",
+              "text": "@notice The ServiceManager contract for this middleware, where tasks are created / initiated."
+            },
+            "functionSelector": "3998fdd3",
+            "mutability": "immutable",
+            "name": "serviceManager",
+            "nameLocation": "1717:14:58",
+            "scope": 12161,
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_contract$_IServiceManager_$7740",
+              "typeString": "contract IServiceManager"
+            },
+            "typeName": {
+              "id": 12104,
+              "nodeType": "UserDefinedTypeName",
+              "pathNode": {
+                "id": 12103,
+                "name": "IServiceManager",
+                "nodeType": "IdentifierPath",
+                "referencedDeclaration": 7740,
+                "src": "1684:15:58"
+              },
+              "referencedDeclaration": 7740,
+              "src": "1684:15:58",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_IServiceManager_$7740",
+                "typeString": "contract IServiceManager"
+              }
+            },
+            "visibility": "public"
+          },
+          {
+            "id": 12108,
+            "nodeType": "VariableDeclaration",
+            "src": "1811:42:58",
+            "nodes": [],
+            "baseFunctions": [
+              7759
+            ],
+            "constant": false,
+            "documentation": {
+              "id": 12106,
+              "nodeType": "StructuredDocumentation",
+              "src": "1738:68:58",
+              "text": "@notice Number of quorums that are being used by the middleware."
+            },
+            "functionSelector": "e21ade6d",
+            "mutability": "immutable",
+            "name": "NUMBER_OF_QUORUMS",
+            "nameLocation": "1836:17:58",
+            "scope": 12161,
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 12107,
+              "name": "uint256",
+              "nodeType": "ElementaryTypeName",
+              "src": "1811:7:58",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "visibility": "public"
+          },
+          {
+            "id": 12115,
+            "nodeType": "VariableDeclaration",
+            "src": "2023:94:58",
+            "nodes": [],
+            "constant": false,
+            "documentation": {
+              "id": 12109,
+              "nodeType": "StructuredDocumentation",
+              "src": "1860:158:58",
+              "text": " @notice mapping from quorum number to the list of strategies considered and their\n corresponding multipliers for that specific quorum"
+            },
+            "functionSelector": "1ea1afe1",
+            "mutability": "mutable",
+            "name": "strategiesConsideredAndMultipliers",
+            "nameLocation": "2083:34:58",
+            "scope": 12161,
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_mapping$_t_uint256_$_t_array$_t_struct$_StrategyAndWeightingMultiplier_$12081_storage_$dyn_storage_$",
+              "typeString": "mapping(uint256 => struct VoteWeigherBaseStorage.StrategyAndWeightingMultiplier[])"
+            },
+            "typeName": {
+              "id": 12114,
+              "keyType": {
+                "id": 12110,
+                "name": "uint256",
+                "nodeType": "ElementaryTypeName",
+                "src": "2031:7:58",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                }
+              },
+              "nodeType": "Mapping",
+              "src": "2023:52:58",
+              "typeDescriptions": {
+                "typeIdentifier": "t_mapping$_t_uint256_$_t_array$_t_struct$_StrategyAndWeightingMultiplier_$12081_storage_$dyn_storage_$",
+                "typeString": "mapping(uint256 => struct VoteWeigherBaseStorage.StrategyAndWeightingMultiplier[])"
+              },
+              "valueType": {
+                "baseType": {
+                  "id": 12112,
+                  "nodeType": "UserDefinedTypeName",
+                  "pathNode": {
+                    "id": 12111,
+                    "name": "StrategyAndWeightingMultiplier",
+                    "nodeType": "IdentifierPath",
+                    "referencedDeclaration": 12081,
+                    "src": "2042:30:58"
+                  },
+                  "referencedDeclaration": 12081,
+                  "src": "2042:30:58",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_struct$_StrategyAndWeightingMultiplier_$12081_storage_ptr",
+                    "typeString": "struct VoteWeigherBaseStorage.StrategyAndWeightingMultiplier"
+                  }
+                },
+                "id": 12113,
+                "nodeType": "ArrayTypeName",
+                "src": "2042:32:58",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_array$_t_struct$_StrategyAndWeightingMultiplier_$12081_storage_$dyn_storage_ptr",
+                  "typeString": "struct VoteWeigherBaseStorage.StrategyAndWeightingMultiplier[]"
+                }
+              }
+            },
+            "visibility": "public"
+          },
+          {
+            "id": 12120,
+            "nodeType": "VariableDeclaration",
+            "src": "2426:45:58",
+            "nodes": [],
+            "baseFunctions": [
+              7767
+            ],
+            "constant": false,
+            "documentation": {
+              "id": 12116,
+              "nodeType": "StructuredDocumentation",
+              "src": "2124:297:58",
+              "text": " @notice This defines the earnings split between different quorums. Mapping is quorumNumber => BIPS which the quorum earns, out of the total earnings.\n @dev The sum of all entries, i.e. sum(quorumBips[0] through quorumBips[NUMBER_OF_QUORUMS - 1]) should *always* be 10,000!"
+            },
+            "functionSelector": "28420dfa",
+            "mutability": "mutable",
+            "name": "quorumBips",
+            "nameLocation": "2461:10:58",
+            "scope": 12161,
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_mapping$_t_uint256_$_t_uint256_$",
+              "typeString": "mapping(uint256 => uint256)"
+            },
+            "typeName": {
+              "id": 12119,
+              "keyType": {
+                "id": 12117,
+                "name": "uint256",
+                "nodeType": "ElementaryTypeName",
+                "src": "2434:7:58",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                }
+              },
+              "nodeType": "Mapping",
+              "src": "2426:27:58",
+              "typeDescriptions": {
+                "typeIdentifier": "t_mapping$_t_uint256_$_t_uint256_$",
+                "typeString": "mapping(uint256 => uint256)"
+              },
+              "valueType": {
+                "id": 12118,
+                "name": "uint256",
+                "nodeType": "ElementaryTypeName",
+                "src": "2445:7:58",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                }
+              }
+            },
+            "visibility": "public"
+          },
+          {
+            "id": 12160,
+            "nodeType": "FunctionDefinition",
+            "src": "2478:655:58",
+            "nodes": [],
+            "body": {
+              "id": 12159,
+              "nodeType": "Block",
+              "src": "2618:515:58",
+              "nodes": [],
+              "statements": [
+                {
+                  "expression": {
+                    "arguments": [
+                      {
+                        "commonType": {
+                          "typeIdentifier": "t_uint8",
+                          "typeString": "uint8"
+                        },
+                        "id": 12134,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "leftExpression": {
+                          "id": 12132,
+                          "name": "_NUMBER_OF_QUORUMS",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 12128,
+                          "src": "2725:18:58",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_uint8",
+                            "typeString": "uint8"
+                          }
+                        },
+                        "nodeType": "BinaryOperation",
+                        "operator": "!=",
+                        "rightExpression": {
+                          "hexValue": "30",
+                          "id": 12133,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": true,
+                          "kind": "number",
+                          "lValueRequested": false,
+                          "nodeType": "Literal",
+                          "src": "2747:1:58",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_rational_0_by_1",
+                            "typeString": "int_const 0"
+                          },
+                          "value": "0"
+                        },
+                        "src": "2725:23:58",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        }
+                      },
+                      {
+                        "hexValue": "566f7465576569676865724261736553746f726167652e636f6e7374727563746f723a205f4e554d4245525f4f465f51554f52554d53203d3d2030",
+                        "id": 12135,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "string",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "2750:61:58",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_stringliteral_e9d19c00249fbb0072afaa9988db726adca769137d4199706faff43b7a5bad26",
+                          "typeString": "literal_string \"VoteWeigherBaseStorage.constructor: _NUMBER_OF_QUORUMS == 0\""
+                        },
+                        "value": "VoteWeigherBaseStorage.constructor: _NUMBER_OF_QUORUMS == 0"
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        },
+                        {
+                          "typeIdentifier": "t_stringliteral_e9d19c00249fbb0072afaa9988db726adca769137d4199706faff43b7a5bad26",
+                          "typeString": "literal_string \"VoteWeigherBaseStorage.constructor: _NUMBER_OF_QUORUMS == 0\""
+                        }
+                      ],
+                      "id": 12131,
+                      "name": "require",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [
+                        -18,
+                        -18
+                      ],
+                      "referencedDeclaration": -18,
+                      "src": "2717:7:58",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
+                        "typeString": "function (bool,string memory) pure"
+                      }
+                    },
+                    "id": 12136,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "2717:95:58",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 12137,
+                  "nodeType": "ExpressionStatement",
+                  "src": "2717:95:58"
+                },
+                {
+                  "expression": {
+                    "id": 12140,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "id": 12138,
+                      "name": "investmentManager",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 12101,
+                      "src": "2822:17:58",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_contract$_IInvestmentManager_$7364",
+                        "typeString": "contract IInvestmentManager"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "id": 12139,
+                      "name": "_investmentManager",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 12123,
+                      "src": "2842:18:58",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_contract$_IInvestmentManager_$7364",
+                        "typeString": "contract IInvestmentManager"
+                      }
+                    },
+                    "src": "2822:38:58",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_IInvestmentManager_$7364",
+                      "typeString": "contract IInvestmentManager"
+                    }
+                  },
+                  "id": 12141,
+                  "nodeType": "ExpressionStatement",
+                  "src": "2822:38:58"
+                },
+                {
+                  "expression": {
+                    "id": 12146,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "id": 12142,
+                      "name": "delegation",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 12097,
+                      "src": "2870:10:58",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_contract$_IEigenLayrDelegation_$7256",
+                        "typeString": "contract IEigenLayrDelegation"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "arguments": [],
+                      "expression": {
+                        "argumentTypes": [],
+                        "expression": {
+                          "id": 12143,
+                          "name": "_investmentManager",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 12123,
+                          "src": "2883:18:58",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_contract$_IInvestmentManager_$7364",
+                            "typeString": "contract IInvestmentManager"
+                          }
+                        },
+                        "id": 12144,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "memberName": "delegation",
+                        "nodeType": "MemberAccess",
+                        "referencedDeclaration": 7363,
+                        "src": "2883:29:58",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_function_external_view$__$returns$_t_contract$_IEigenLayrDelegation_$7256_$",
+                          "typeString": "function () view external returns (contract IEigenLayrDelegation)"
+                        }
+                      },
+                      "id": 12145,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "kind": "functionCall",
+                      "lValueRequested": false,
+                      "names": [],
+                      "nodeType": "FunctionCall",
+                      "src": "2883:31:58",
+                      "tryCall": false,
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_contract$_IEigenLayrDelegation_$7256",
+                        "typeString": "contract IEigenLayrDelegation"
+                      }
+                    },
+                    "src": "2870:44:58",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_IEigenLayrDelegation_$7256",
+                      "typeString": "contract IEigenLayrDelegation"
+                    }
+                  },
+                  "id": 12147,
+                  "nodeType": "ExpressionStatement",
+                  "src": "2870:44:58"
+                },
+                {
+                  "expression": {
+                    "id": 12150,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "id": 12148,
+                      "name": "serviceManager",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 12105,
+                      "src": "2924:14:58",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_contract$_IServiceManager_$7740",
+                        "typeString": "contract IServiceManager"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "id": 12149,
+                      "name": "_serviceManager",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 12126,
+                      "src": "2941:15:58",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_contract$_IServiceManager_$7740",
+                        "typeString": "contract IServiceManager"
+                      }
+                    },
+                    "src": "2924:32:58",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_IServiceManager_$7740",
+                      "typeString": "contract IServiceManager"
+                    }
+                  },
+                  "id": 12151,
+                  "nodeType": "ExpressionStatement",
+                  "src": "2924:32:58"
+                },
+                {
+                  "expression": {
+                    "id": 12154,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "id": 12152,
+                      "name": "NUMBER_OF_QUORUMS",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 12108,
+                      "src": "2966:17:58",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "id": 12153,
+                      "name": "_NUMBER_OF_QUORUMS",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 12128,
+                      "src": "2986:18:58",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint8",
+                        "typeString": "uint8"
+                      }
+                    },
+                    "src": "2966:38:58",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "id": 12155,
+                  "nodeType": "ExpressionStatement",
+                  "src": "2966:38:58"
+                },
+                {
+                  "expression": {
+                    "arguments": [],
+                    "expression": {
+                      "argumentTypes": [],
+                      "id": 12156,
+                      "name": "_disableInitializers",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 38759,
+                      "src": "3104:20:58",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_nonpayable$__$returns$__$",
+                        "typeString": "function ()"
+                      }
+                    },
+                    "id": 12157,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "3104:22:58",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 12158,
+                  "nodeType": "ExpressionStatement",
+                  "src": "3104:22:58"
+                }
+              ]
+            },
+            "implemented": true,
+            "kind": "constructor",
+            "modifiers": [],
+            "name": "",
+            "nameLocation": "-1:-1:-1",
+            "parameters": {
+              "id": 12129,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 12123,
+                  "mutability": "mutable",
+                  "name": "_investmentManager",
+                  "nameLocation": "2518:18:58",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 12160,
+                  "src": "2499:37:58",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_contract$_IInvestmentManager_$7364",
+                    "typeString": "contract IInvestmentManager"
+                  },
+                  "typeName": {
+                    "id": 12122,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 12121,
+                      "name": "IInvestmentManager",
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 7364,
+                      "src": "2499:18:58"
+                    },
+                    "referencedDeclaration": 7364,
+                    "src": "2499:18:58",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_IInvestmentManager_$7364",
+                      "typeString": "contract IInvestmentManager"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 12126,
+                  "mutability": "mutable",
+                  "name": "_serviceManager",
+                  "nameLocation": "2562:15:58",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 12160,
+                  "src": "2546:31:58",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_contract$_IServiceManager_$7740",
+                    "typeString": "contract IServiceManager"
+                  },
+                  "typeName": {
+                    "id": 12125,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 12124,
+                      "name": "IServiceManager",
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 7740,
+                      "src": "2546:15:58"
+                    },
+                    "referencedDeclaration": 7740,
+                    "src": "2546:15:58",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_IServiceManager_$7740",
+                      "typeString": "contract IServiceManager"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 12128,
+                  "mutability": "mutable",
+                  "name": "_NUMBER_OF_QUORUMS",
+                  "nameLocation": "2593:18:58",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 12160,
+                  "src": "2587:24:58",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint8",
+                    "typeString": "uint8"
+                  },
+                  "typeName": {
+                    "id": 12127,
+                    "name": "uint8",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2587:5:58",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint8",
+                      "typeString": "uint8"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "2489:128:58"
+            },
+            "returnParameters": {
+              "id": 12130,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "2618:0:58"
+            },
+            "scope": 12161,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "internal"
+          }
+        ],
+        "abstract": true,
+        "baseContracts": [
+          {
+            "baseName": {
+              "id": 12072,
+              "name": "Initializable",
+              "nodeType": "IdentifierPath",
+              "referencedDeclaration": 38778,
+              "src": "560:13:58"
+            },
+            "id": 12073,
+            "nodeType": "InheritanceSpecifier",
+            "src": "560:13:58"
+          },
+          {
+            "baseName": {
+              "id": 12074,
+              "name": "IVoteWeigher",
+              "nodeType": "IdentifierPath",
+              "referencedDeclaration": 7768,
+              "src": "575:12:58"
+            },
+            "id": 12075,
+            "nodeType": "InheritanceSpecifier",
+            "src": "575:12:58"
+          }
+        ],
+        "canonicalName": "VoteWeigherBaseStorage",
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": {
+          "id": 12071,
+          "nodeType": "StructuredDocumentation",
+          "src": "324:191:58",
+          "text": " @title Storage variables for the `VoteWeigherBase` contract.\n @author Layr Labs, Inc.\n @notice This storage contract is separate from the logic to simplify the upgrade process."
+        },
+        "fullyImplemented": false,
+        "linearizedBaseContracts": [
+          12161,
+          7768,
+          38778
+        ],
+        "name": "VoteWeigherBaseStorage",
+        "nameLocation": "534:22:58",
+        "scope": 12162,
+        "usedErrors": []
+      }
+    ],
+    "license": "UNLICENSED"
+  },
+  "id": 58
+}
