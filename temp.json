@@ -162,7 +162,7 @@
         "expects": {
             "messenger": "contractAddress.Proxy__BVM_L1CrossDomainMessenger",
             "l1MantleAddress": "contractAddress.Proxy__L1MantleToken",
-            "l2TokenBridge": "contractAddress.L2TokenBridge"
+            "L2StandardBridge": "contractAddress.L2StandardBridge"
         }
     },
     {

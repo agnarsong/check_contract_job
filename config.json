@@ -65,6 +65,53 @@
                 "symbol": "MNT",
                 "totalSupply": 0
             }
+        },
+        {
+            "name": "BVM_SequencerFeeVault",
+            "type": "l2",
+            "path": "L2/predeploys/BVM_SequencerFeeVault.sol/BVM_SequencerFeeVault.json",
+            "expects": {
+                "owner": "eoaAddress.GasOracle",
+                "burner": "0x000000000000000000000000000000000000dEaD",
+                "bvmGasPriceOracleAddress": "contractAddress.BVM_GasPriceOracle",
+                "l1FeeWallet": "0x018E08C754018fe54D1CE86b27120052bFe07273",
+                "L1Gas": 200000,
+                "symbol": "MNT",
+                "minWithdrawalAmount": 15
+            }
+        },
+        {
+            "name": "TssRewardContract",
+            "type": "l2",
+            "path": "L2/predeploys/TssRewardContract.sol/TssRewardContract.json",
+            "expects": {
+                "owner": "eoaAddress.GasOracle",
+                "messenger": "contractAddress.L2CrossDomainMessenger",
+                "bvmGasPriceOracleAddress": "contractAddress.BVM_GasPriceOracle",
+                "deadAddress": "0x0000000000000000000000000000000000000000",
+                "sccAddress": "contractAddress.StateCommitmentChain",
+                "stakeSlashAddress": "contractAddress.Proxy__TSS_StakingSlashing",
+                "bestBlockID": 0,
+                "dust": 0,
+                "dustBlock": 0,
+                "lastBatchTime": 0,
+                "sendAmountPerYear": 0,
+                "totalAmount": 0,
+                "waitingTime": 86400,
+                "queryReward": 0,
+                "querySendAmountPerSecond": 0
+            }
+        },
+        {
+            "name": "wmantle",
+            "type": "l2",
+            "path": "L2/tokens/wmantle.sol/WMANTLE9.json",
+            "expects": {
+                "name": "Wrapped BIT",
+                "symbol": "WBIT",
+                "totalSupply": 0,
+                "decimals": 18
+            }
         }
     ],
     "contractAddress": {
@@ -131,7 +178,8 @@
         "callOpVerifier": "0x37a8Ec77328Bbab9018B48B4AD561e12582376F3",
         "invalidOpVerifier": "0x51F4A2Af938Dd6dAeA156Bf885629394aef3B558",
         "L2CrossDomainMessenger": "0x4200000000000000000000000000000000000007",
-        "L2TokenBridge": "0x4200000000000000000000000000000000000010"
+        "L2StandardBridge": "0x4200000000000000000000000000000000000010",
+        "BVM_GasPriceOracle": "0x420000000000000000000000000000000000000F"
     },
     "eoaAddress": {
         "MantleWallet": "0xbF5cF0628428e6bc4a1F6ADD14560fdaAB1409ab",
