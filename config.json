@@ -9,7 +9,61 @@
             "expects": {
                 "l1CrossDomainMessenger": "contractAddress.Proxy__BVM_L1CrossDomainMessenger",
                 "messageNonce": 0,
-                "xDomainMessageSender": "execution reverted: xDomainMessageSender is not set"
+                "xDomainMessageSender": "execution reverted"
+            }
+        },
+        {
+            "name": "L2StandardBridge",
+            "type": "l2",
+            "path": "L2/messaging/L2StandardBridge.sol/L2StandardBridge.json",
+            "expects": {
+                "l1TokenBridge": "contractAddress.Proxy__BVM_L1StandardBridge"
+            }
+        },
+        {
+            "name": "BVM_ETH",
+            "type": "l2",
+            "path": "L2/predeploys/BVM_ETH.sol/BVM_ETH.json",
+            "expects": {
+                "l1Token": "0x0000000000000000000000000000000000000000",
+                "l2Bridge": "contractAddress.L2StandardBridge",
+                "decimal": 18,
+                "decimals": 18,
+                "name": "Ether",
+                "symbol": "WETH",
+                "totalSupply": "23584214977928049194466"
+            }
+        },
+        {
+            "name": "BVM_GasPriceOracle",
+            "type": "l2",
+            "path": "L2/predeploys/BVM_GasPriceOracle.sol/BVM_GasPriceOracle.json",
+            "expects": {
+                "owner": "eoaAddress.GasOracle",
+                "sccAddress": "contractAddress.StateCommitmentChain",
+                "IsBurning": true,
+                "charge": 0,
+                "daGasPrice": 0,
+                "daSwitch": 1,
+                "decimals": 6,
+                "gasPrice": 1,
+                "l1BaseFee": 6748000,
+                "overhead": 2750,
+                "scalar": 1500000
+            }
+        },
+        {
+            "name": "BVM_MANTLE",
+            "type": "l2",
+            "path": "L2/predeploys/BVM_MANTLE.sol/BVM_MANTLE.json",
+            "expects": {
+                "l1Token": "contractAddress.Proxy__L1MantleToken",
+                "l2Bridge": "contractAddress.L2StandardBridge",
+                "decimal": 18,
+                "decimals": 18,
+                "name": "Mantle Token",
+                "symbol": "MNT",
+                "totalSupply": 0
             }
         }
     ],
