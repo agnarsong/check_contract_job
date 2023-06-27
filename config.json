@@ -31,7 +31,7 @@
                 "decimals": 18,
                 "name": "Ether",
                 "symbol": "WETH",
-                "totalSupply": "23584214977928049194466"
+                "totalSupply": 0
             }
         },
         {
@@ -39,15 +39,15 @@
             "type": "l2",
             "path": "L2/predeploys/BVM_GasPriceOracle.sol/BVM_GasPriceOracle.json",
             "expects": {
-                "owner": "eoaAddress.GasOracle",
+                "owner": "eoaAddress.gas-oracle-owner",
                 "sccAddress": "contractAddress.StateCommitmentChain",
                 "IsBurning": true,
                 "charge": 0,
                 "daGasPrice": 0,
-                "daSwitch": 1,
+                "daSwitch": 0,
                 "decimals": 6,
                 "gasPrice": 1,
-                "l1BaseFee": 6748000,
+                "l1BaseFee": 0,
                 "overhead": 2750,
                 "scalar": 1500000
             }
@@ -61,7 +61,7 @@
                 "l2Bridge": "contractAddress.L2StandardBridge",
                 "decimal": 18,
                 "decimals": 18,
-                "name": "Mantle Token",
+                "name": "Mantle",
                 "symbol": "MNT",
                 "totalSupply": 0
             }
@@ -71,12 +71,11 @@
             "type": "l2",
             "path": "L2/predeploys/BVM_SequencerFeeVault.sol/BVM_SequencerFeeVault.json",
             "expects": {
-                "owner": "eoaAddress.GasOracle",
-                "burner": "0x000000000000000000000000000000000000dEaD",
+                "owner": "eoaAddress.RaymondLedger",
+                "burner": "eoaAddress.RaymondLedger",
                 "bvmGasPriceOracleAddress": "contractAddress.BVM_GasPriceOracle",
-                "l1FeeWallet": "0x018E08C754018fe54D1CE86b27120052bFe07273",
+                "l1FeeWallet": "eoaAddress.RaymondLedger",
                 "L1Gas": 200000,
-                "symbol": "MNT",
                 "minWithdrawalAmount": 15
             }
         },
@@ -85,7 +84,7 @@
             "type": "l2",
             "path": "L2/predeploys/TssRewardContract.sol/TssRewardContract.json",
             "expects": {
-                "owner": "eoaAddress.GasOracle",
+                "owner": "eoaAddress.RaymondLedger",
                 "messenger": "contractAddress.L2CrossDomainMessenger",
                 "bvmGasPriceOracleAddress": "contractAddress.BVM_GasPriceOracle",
                 "deadAddress": "0x0000000000000000000000000000000000000000",
@@ -95,22 +94,11 @@
                 "dust": 0,
                 "dustBlock": 0,
                 "lastBatchTime": 0,
-                "sendAmountPerYear": 0,
+                "sendAmountPerYear": 1000000,
                 "totalAmount": 0,
                 "waitingTime": 86400,
                 "queryReward": 0,
                 "querySendAmountPerSecond": 0
-            }
-        },
-        {
-            "name": "wmantle",
-            "type": "l2",
-            "path": "L2/tokens/wmantle.sol/WMANTLE9.json",
-            "expects": {
-                "name": "Wrapped BIT",
-                "symbol": "WBIT",
-                "totalSupply": 0,
-                "decimals": 18
             }
         }
     ],
@@ -188,6 +176,7 @@
         "wmantle": "0x69ac69b272f96f5f17ddd9da3832ad9dc86d1d8a"
     },
     "eoaAddress": {
+        "RaymondLedger": "0x1eadE258f43BD5Ab3263306BC2A58878Af176855",
         "MantleWallet": "0xbF5cF0628428e6bc4a1F6ADD14560fdaAB1409ab",
         "EngineerWallet": "0x3aB27Dc0E3f136B90fe277ac01314304F19c91d9",
         "deployer": "0x655beb7F712E308A634a77d0C1BCe53cea95DfC8",
