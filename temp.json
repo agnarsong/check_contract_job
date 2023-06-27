@@ -162,7 +162,7 @@
         "expects": {
             "messenger": "contractAddress.Proxy__BVM_L1CrossDomainMessenger",
             "l1MantleAddress": "contractAddress.Proxy__L1MantleToken",
-            "L2StandardBridge": "contractAddress.L2StandardBridge"
+            "l2TokenBridge": "contractAddress.L2StandardBridge"
         }
     },
     {
@@ -334,7 +334,7 @@
         "type": "l1",
         "path": "L1/fraud-proof/Rollup.sol/Rollup.json",
         "expects": {
-            "owner": "eoaAddress.EngineerWallet",
+            "owner": "eoaAddress.Proposer",
             "libAddressManager": "contractAddress.Lib_AddressManager",
             "assertions": "contractAddress.Proxy__AssertionMap",
             "stakeToken": "contractAddress.Proxy__L1MantleToken",

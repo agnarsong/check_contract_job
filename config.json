@@ -165,7 +165,7 @@
             "expects": {
                 "messenger": "contractAddress.Proxy__BVM_L1CrossDomainMessenger",
                 "l1MantleAddress": "contractAddress.Proxy__L1MantleToken",
-                "L2StandardBridge": "contractAddress.L2StandardBridge"
+                "l2TokenBridge": "contractAddress.L2StandardBridge"
             }
         },
         {
@@ -337,7 +337,7 @@
             "type": "l1",
             "path": "L1/fraud-proof/Rollup.sol/Rollup.json",
             "expects": {
-                "owner": "eoaAddress.EngineerWallet",
+                "owner": "eoaAddress.Proposer",
                 "libAddressManager": "contractAddress.Lib_AddressManager",
                 "assertions": "contractAddress.Proxy__AssertionMap",
                 "stakeToken": "contractAddress.Proxy__L1MantleToken",
@@ -410,11 +410,11 @@
                 "owner": "eoaAddress.MantleWallet",
                 "investmentManager": "contractAddress.investmentManager",
                 "registry": "contractAddress.dlReg",
-                "feeSetter": "contractAddress.investmentManager",
-                "pauserRegistry": "contractAddress.investmentManager",
+                "feeSetter": "eoaAddress.EngineerWallet",
+                "pauserRegistry": "eoaAddress.EngineerWallet",
                 "eigenLayrDelegation": "contractAddress.delegation",
-                "dataLayrBombVerifier": "0x0000000000000000000000000000000000000000",
-                "dataLayrChallenge": "contractAddress.investmentManager",
+                "dataLayrBombVerifier": "eoaAddress.EngineerWallet",
+                "dataLayrChallenge": "eoaAddress.EngineerWallet",
                 "dataPermissionManager": "contractAddress.rgPermission",
                 "collateralToken": "contractAddress.Proxy__L1MantleToken",
                 "BIP_MULTIPLIER": 10000,
@@ -551,7 +551,7 @@
                 "owner": "eoaAddress.RaymondLedger",
                 "messenger": "contractAddress.L2CrossDomainMessenger",
                 "bvmGasPriceOracleAddress": "contractAddress.BVM_GasPriceOracle",
-                "deadAddress": "0x0000000000000000000000000000000000000000",
+                "deadAddress": "eoaAddress.deadAddress",
                 "sccAddress": "contractAddress.StateCommitmentChain",
                 "stakeSlashAddress": "contractAddress.Proxy__TSS_StakingSlashing",
                 "bestBlockID": 0,
@@ -669,6 +669,7 @@
         "mt-challenger": "0x85921F62fF9F02C999F98bc108FbD4a81b817B36",
         "mt-batcher-sequencer": "0x375323d8d49507181983D3FfDA6F2F980F1b215c",
         "mt-batcher-fee": "0xC9a647169477233f531B39388F0bc56292e5cb8C",
-        "gas-oracle-owner": "0x26AFdA56F0093E767CC6Fd245C8169c3B88fE249"
+        "gas-oracle-owner": "0x26AFdA56F0093E767CC6Fd245C8169c3B88fE249",
+        "deadAddress": "0xdeaDDeADDEaDdeaDdEAddEADDEAdDeadDEADDEaD"
     }
 }
