@@ -5,7 +5,7 @@
         {
             "name": "L2CrossDomainMessenger",
             "type": "l2",
-            "path": "eignlayr-contracts/out/RegistryPermission.sol/RegistryPermission.json",
+            "path": "L2/messaging/L2CrossDomainMessenger.sol/L2CrossDomainMessenger.json",
             "expects": {
                 "l1CrossDomainMessenger": "contractAddress.Proxy__BVM_L1CrossDomainMessenger",
                 "messageNonce": 0,
