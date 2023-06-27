@@ -3,6 +3,470 @@
     "l2rpc": "https://rpc4blockscout.mainnet.gomantle.org",
     "contractMsgs": [
         {
+            "name": "AddressDictator",
+            "type": "l1",
+            "path": "L1/deployment/AddressDictator.sol/AddressDictator.json",
+            "expects": {
+                "finalOwner": "eoaAddress.MantleWallet",
+                "manager": "contractAddress.Lib_AddressManager",
+                "getNamedAddresses": "length|17"
+            }
+        },
+        {
+            "name": "Lib_AddressManager",
+            "type": "l1",
+            "path": "libraries/resolver/Lib_AddressManager.sol/Lib_AddressManager.json",
+            "expects": {
+                "owner": "eoaAddress.MantleWallet",
+                "getAddress,ChainStorageContainer-CTC-batches": "contractAddress.ChainStorageContainer-CTC-batches",
+                "getAddress,ChainStorageContainer-SCC-batches": "contractAddress.ChainStorageContainer-SCC-batches",
+                "getAddress,CanonicalTransactionChain": "contractAddress.CanonicalTransactionChain",
+                "getAddress,StateCommitmentChain": "contractAddress.StateCommitmentChain",
+                "getAddress,BondManager": "contractAddress.BondManager",
+                "getAddress,BVM_L1CrossDomainMessenger": "contractAddress.BVM_L1CrossDomainMessenger",
+                "getAddress,Proxy__BVM_L1CrossDomainMessenger": "contractAddress.Proxy__BVM_L1CrossDomainMessenger",
+                "getAddress,TssGroupManager": "contractAddress.TssGroupManager",
+                "getAddress,TssStakingSlashing": "contractAddress.TssStakingSlashing",
+                "getAddress,Proxy__BVM_L1StandardBridge": "contractAddress.Proxy__BVM_L1StandardBridge",
+                "getAddress,Proxy__TSS_GroupManager": "contractAddress.Proxy__TSS_GroupManager",
+                "getAddress,Proxy__TSS_StakingSlashing": "contractAddress.Proxy__TSS_StakingSlashing",
+                "getAddress,L2CrossDomainMessenger": "contractAddress.L2CrossDomainMessenger",
+                "getAddress,BVM_Sequencer": "eoaAddress.Sequencer",
+                "getAddress,BVM_Proposer": "contractAddress.Proxy__Rollup",
+                "getAddress,BVM_Rolluper": "eoaAddress.Proposer",
+                "getAddress,L1_MantleAddress": "contractAddress.Proxy__L1MantleToken"
+            }
+        },
+        {
+            "name": "BondManager",
+            "type": "l1",
+            "path": "L1/verification/BondManager.sol/BondManager.json",
+            "expects": {
+                "libAddressManager": "contractAddress.Lib_AddressManager",
+                "isCollateralized,$Proxy__Rollup": true,
+                "resolve,ChainStorageContainer-CTC-batches": "contractAddress.ChainStorageContainer-CTC-batches",
+                "resolve,ChainStorageContainer-SCC-batches": "contractAddress.ChainStorageContainer-SCC-batches",
+                "resolve,CanonicalTransactionChain": "contractAddress.CanonicalTransactionChain",
+                "resolve,StateCommitmentChain": "contractAddress.StateCommitmentChain",
+                "resolve,BondManager": "contractAddress.BondManager",
+                "resolve,BVM_L1CrossDomainMessenger": "contractAddress.BVM_L1CrossDomainMessenger",
+                "resolve,Proxy__BVM_L1CrossDomainMessenger": "contractAddress.Proxy__BVM_L1CrossDomainMessenger",
+                "resolve,TssGroupManager": "contractAddress.TssGroupManager",
+                "resolve,TssStakingSlashing": "contractAddress.TssStakingSlashing",
+                "resolve,Proxy__BVM_L1StandardBridge": "contractAddress.Proxy__BVM_L1StandardBridge",
+                "resolve,Proxy__TSS_GroupManager": "contractAddress.Proxy__TSS_GroupManager",
+                "resolve,Proxy__TSS_StakingSlashing": "contractAddress.Proxy__TSS_StakingSlashing",
+                "resolve,L2CrossDomainMessenger": "contractAddress.L2CrossDomainMessenger",
+                "resolve,BVM_Sequencer": "eoaAddress.Sequencer",
+                "resolve,BVM_Proposer": "contractAddress.Proxy__Rollup",
+                "resolve,BVM_Rolluper": "eoaAddress.Proposer",
+                "resolve,L1_MantleAddress": "contractAddress.Proxy__L1MantleToken"
+            }
+        },
+        {
+            "name": "ChainStorageContainer-CTC-batches",
+            "type": "l1",
+            "path": "L1/rollup/ChainStorageContainer.sol/ChainStorageContainer.json",
+            "expects": {
+                "owner": "CanonicalTransactionChain",
+                "libAddressManager": "contractAddress.Lib_AddressManager",
+                "getGlobalMetadata": "0x000000000000000000000000000000000000000000000000000000",
+                "length": 0,
+                "get,0": "Index out of bounds",
+                "resolve,ChainStorageContainer-CTC-batches": "contractAddress.ChainStorageContainer-CTC-batches",
+                "resolve,ChainStorageContainer-SCC-batches": "contractAddress.ChainStorageContainer-SCC-batches",
+                "resolve,CanonicalTransactionChain": "contractAddress.CanonicalTransactionChain",
+                "resolve,StateCommitmentChain": "contractAddress.StateCommitmentChain",
+                "resolve,BondManager": "contractAddress.BondManager",
+                "resolve,BVM_L1CrossDomainMessenger": "contractAddress.BVM_L1CrossDomainMessenger",
+                "resolve,Proxy__BVM_L1CrossDomainMessenger": "contractAddress.Proxy__BVM_L1CrossDomainMessenger",
+                "resolve,TssGroupManager": "contractAddress.TssGroupManager",
+                "resolve,TssStakingSlashing": "contractAddress.TssStakingSlashing",
+                "resolve,Proxy__BVM_L1StandardBridge": "contractAddress.Proxy__BVM_L1StandardBridge",
+                "resolve,Proxy__TSS_GroupManager": "contractAddress.Proxy__TSS_GroupManager",
+                "resolve,Proxy__TSS_StakingSlashing": "contractAddress.Proxy__TSS_StakingSlashing",
+                "resolve,L2CrossDomainMessenger": "contractAddress.L2CrossDomainMessenger",
+                "resolve,BVM_Sequencer": "eoaAddress.Sequencer",
+                "resolve,BVM_Proposer": "contractAddress.Proxy__Rollup",
+                "resolve,BVM_Rolluper": "eoaAddress.Proposer",
+                "resolve,L1_MantleAddress": "contractAddress.Proxy__L1MantleToken"
+            }
+        },
+        {
+            "name": "ChainStorageContainer-SCC-batches",
+            "type": "l1",
+            "path": "L1/rollup/ChainStorageContainer.sol/ChainStorageContainer.json",
+            "expects": {
+                "owner": "StateCommitmentChain",
+                "libAddressManager": "contractAddress.Lib_AddressManager",
+                "getGlobalMetadata": "0x000000000000000000000000000000000000000000000000000000",
+                "length": 0,
+                "get,0": "Index out of bounds",
+                "resolve,ChainStorageContainer-CTC-batches": "contractAddress.ChainStorageContainer-CTC-batches",
+                "resolve,ChainStorageContainer-SCC-batches": "contractAddress.ChainStorageContainer-SCC-batches",
+                "resolve,CanonicalTransactionChain": "contractAddress.CanonicalTransactionChain",
+                "resolve,StateCommitmentChain": "contractAddress.StateCommitmentChain",
+                "resolve,BondManager": "contractAddress.BondManager",
+                "resolve,BVM_L1CrossDomainMessenger": "contractAddress.BVM_L1CrossDomainMessenger",
+                "resolve,Proxy__BVM_L1CrossDomainMessenger": "contractAddress.Proxy__BVM_L1CrossDomainMessenger",
+                "resolve,TssGroupManager": "contractAddress.TssGroupManager",
+                "resolve,TssStakingSlashing": "contractAddress.TssStakingSlashing",
+                "resolve,Proxy__BVM_L1StandardBridge": "contractAddress.Proxy__BVM_L1StandardBridge",
+                "resolve,Proxy__TSS_GroupManager": "contractAddress.Proxy__TSS_GroupManager",
+                "resolve,Proxy__TSS_StakingSlashing": "contractAddress.Proxy__TSS_StakingSlashing",
+                "resolve,L2CrossDomainMessenger": "contractAddress.L2CrossDomainMessenger",
+                "resolve,BVM_Sequencer": "eoaAddress.Sequencer",
+                "resolve,BVM_Proposer": "contractAddress.Proxy__Rollup",
+                "resolve,BVM_Rolluper": "eoaAddress.Proposer",
+                "resolve,L1_MantleAddress": "contractAddress.Proxy__L1MantleToken"
+            }
+        },
+        {
+            "name": "CanonicalTransactionChain",
+            "type": "l1",
+            "path": "L1/rollup/CanonicalTransactionChain.sol/CanonicalTransactionChain.json",
+            "expects": {
+                "libAddressManager": "contractAddress.Lib_AddressManager",
+                "MAX_ROLLUP_TX_SIZE": 50000,
+                "MIN_ROLLUP_TX_GAS": 100000,
+                "enqueueGasCost": 60000,
+                "enqueueL2GasPrepaid": 1920000,
+                "l2GasDiscountDivisor": 32,
+                "maxTransactionGasLimit": 30000000
+            }
+        },
+        {
+            "name": "StateCommitmentChain",
+            "type": "l1",
+            "path": "L1/rollup/StateCommitmentChain.sol/StateCommitmentChain.json",
+            "expects": {
+                "libAddressManager": "contractAddress.Lib_AddressManager",
+                "messenger": "contractAddress.Proxy__BVM_L1CrossDomainMessenger",
+                "FRAUD_PROOF_WINDOW": 604800,
+                "SEQUENCER_PUBLISH_WINDOW": 12592000
+            }
+        },
+        {
+            "name": "Proxy__BVM_L1CrossDomainMessenger",
+            "type": "l1",
+            "path": "L1/messaging/L1CrossDomainMessenger.sol/L1CrossDomainMessenger.json",
+            "expects": {
+                "owner": "eoaAddress.MantleWallet",
+                "libAddressManager": "contractAddress.Lib_AddressManager",
+                "xDomainMessageSender": "execution reverted: xDomainMessageSender is not set",
+                "getPauseOwner": "0x0000000000000000000000000000000000000000",
+                "paused": false
+            }
+        },
+        {
+            "name": "Proxy__BVM_L1StandardBridge",
+            "type": "l1",
+            "path": "L1/messaging/L1StandardBridge.sol/L1StandardBridge.json",
+            "expects": {
+                "messenger": "contractAddress.Proxy__BVM_L1CrossDomainMessenger",
+                "l1MantleAddress": "contractAddress.Proxy__L1MantleToken",
+                "L2StandardBridge": "contractAddress.L2StandardBridge"
+            }
+        },
+        {
+            "name": "ChugSplashDictator",
+            "type": "l1",
+            "path": "L1/deployment/ChugSplashDictator.sol/ChugSplashDictator.json",
+            "expects": {
+                "finalOwner": "eoaAddress.MantleWallet",
+                "target": "contractAddress.Proxy__BVM_L1StandardBridge",
+                "bridgeSlotKey": "0x0000000000000000000000000000000000000000000000000000000000000001",
+                "bridgeSlotVal": "0x0000000000000000000000004200000000000000000000000000000000000010",
+                "codeHash": "0xef857e4665d7430b186c8dd89e51b9e5b62aabf601d630321e5b2041ba44d4ba",
+                "mantleAddressSlotKey": "0x0000000000000000000000000000000000000000000000000000000000000002",
+                "mantleAddressSlotVal": "0x000000000000000000000000c1dc2d65a2243c22344e725677a3e3bebd26e604",
+                "messengerSlotKey": "0x0000000000000000000000000000000000000000000000000000000000000000",
+                "messengerSlotVal": "0x000000000000000000000000be59bda17fa8786072affaa082c17d6dcd99dba0",
+                "isUpgrading": true
+            }
+        },
+        {
+            "name": "Proxy__L1MantleToken",
+            "type": "l1",
+            "path": "L1/local/TestMantleToken.sol/L1MantleToken.json",
+            "expects": {
+                "owner": "eoaAddress.MantleWallet",
+                "name": "Goerli Testnet Mantle Token",
+                "symbol": "MNT",
+                "decimals": 18,
+                "totalSupply": 10010001001001000001343084374887039140720432089733441513118023220455,
+                "MINT_CAP_DENOMINATOR": 10000,
+                "MINT_CAP_MAX_NUMERATOR": 200,
+                "MIN_MINT_INTERVAL": 31536000,
+                "DOMAIN_SEPARATOR": "0x77f18ea0999d1b75450e13e133bcb71095a5136ddb14d8a2d4881b4d356c7da3"
+            }
+        },
+        {
+            "name": "Proxy__BVM_EigenDataLayrChain",
+            "type": "l1",
+            "path": "da/BVM_EigenDataLayrChain.sol/BVM_EigenDataLayrChain.json",
+            "expects": {
+                "owner": "eoaAddress.EngineerWallet",
+                "dataManageAddress": "contractAddress.dlsm",
+                "reSubmitterAddress": "eoaAddress.mt-challenger",
+                "sequencer": "eoaAddress.mt-batcher-sequencer",
+                "BLOCK_STALE_MEASURE": 500,
+                "FRAUD_STRING": "0x2d2d5468697320697320612062616420737472696e672e204e6f626f64792073617973207468697320737472696e672e2d2d",
+                "fraudProofPeriod": 3600,
+                "reRollupIndex": 0,
+                "rollupBatchIndex": 0,
+                "getL2ConfirmedBlockNumber": 0,
+                "l2ConfirmedBlockNumber": 0,
+                "getL2StoredBlockNumber": 0,
+                "l2StoredBlockNumber": 0
+            }
+        },
+        {
+            "name": "Proxy__BVM_EigenDataLayrFee",
+            "type": "l1",
+            "path": "da/BVM_EigenDataLayrFee.sol/BVM_EigenDataLayrFee.json",
+            "expects": {
+                "owner": "eoaAddress.EngineerWallet",
+                "gasFeeAddress": "eoaAddress.mt-batcher-fee",
+                "getRollupFee": 0
+            }
+        },
+        {
+            "name": "Proxy__TSS_GroupManager",
+            "type": "l1",
+            "path": "L1/tss/TssGroupManager.sol/TssGroupManager.json",
+            "expects": {
+                "owner": "eoaAddress.EngineerWallet",
+                "stakingSlash": "contractAddress.Proxy__TSS_StakingSlashing",
+                "inActiveIsEmpty": true,
+                "getTssInactiveGroupInfo": [1,0,[]],
+                "getTssGroupMembers": [],
+                "getTssGroupUnJailMembers": []
+            }
+        },
+        {
+            "name": "Proxy__TSS_StakingSlashing",
+            "type": "l1",
+            "path": "L1/tss/TssStakingSlashing.sol/TssStakingSlashing.json",
+            "expects": {
+                "owner": "eoaAddress.EngineerWallet",
+                "messenger": "contractAddress.Proxy__BVM_L1CrossDomainMessenger",
+                "delegationManager": "contractAddress.Proxy__TssDelegationManager",
+                "tssDelegationContract": "contractAddress.Proxy__TssDelegation",
+                "tssDelegationManagerContract": "contractAddress.Proxy__TssDelegationManager",
+                "tssGroupContract": "contractAddress.Proxy__TSS_GroupManager",
+                "underlyingToken": "contractAddress.Proxy__L1MantleToken",
+                "paused": false,
+                "isSetParam": true,
+                "getSlashingParams": [1953000000000000000000,100000000000000000000000],
+                "getQuitRequestList": [],
+                "regulatoryAccount": "eoaAddress.MantleWallet",
+                "totalShares": 10000000000000000000000,
+                "explanation": "Mantle token DelegationShare implementation for submodules as an example"
+            }
+        },
+        {
+            "name": "Proxy__TssDelegation",
+            "type": "l1",
+            "path": "L1/tss/delegation/TssDelegation.sol/TssDelegation.json",
+            "expects": {
+                "owner": "eoaAddress.EngineerWallet",
+                "stakingSlash": "contractAddress.Proxy__TSS_StakingSlashing",
+                "paused": false,
+                "DELEGATION_TYPEHASH": "0xb2a21c2f78b6ef501475a2971550fe4cedb86f0dec990e23909bfb01fd61c54c",
+                "DOMAIN_SEPARATOR": "0xc2a5356ee1fd723b9d4a6c1d5c632fae3e8fad2ecd076f1e572899203f7f5dc2",
+                "DOMAIN_TYPEHASH": "0x8cad95687ba82c2ce50e74f7b754645e5117c3a5bec8151c0726d5857980a866"
+            }
+        },
+        {
+            "name": "Proxy__TssDelegationManager",
+            "type": "l1",
+            "path": "L1/tss/delegation/TssDelegationManager.sol/TssDelegationManager.json",
+            "expects": {
+                "owner": "eoaAddress.EngineerWallet",
+                "stakingSlash": "contractAddress.Proxy__TSS_StakingSlashing",
+                "tssGroupManager": "contractAddress.Proxy__TSS_GroupManager",
+                "delegation": "contractAddress.Proxy__TssDelegation",
+                "delegationSlasher": "contractAddress.Proxy__TssDelegationSlasher",
+                "paused": false,
+                "DEPOSIT_TYPEHASH": "0x0a564d4cfe5cb0d4ee082aab2ca54b8c48e129485a8f7c77766ab5ef0c3566f1",
+                "DOMAIN_SEPARATOR": "0xa5eb78db2fef2801d5b6e8bb40d6af6973f301b790d13222ce691e68a62faec9",
+                "REASONABLE_STAKES_UPDATE_PERIOD": 30,
+                "WITHDRAWAL_WAITING_PERIOD": 10,
+                "minStakeAmount": 10000
+            }
+        },
+        {
+            "name": "Proxy__TssDelegationSlasher",
+            "type": "l1",
+            "path": "L1/tss/delegation/TssDelegationSlasher.sol/TssDelegationSlasher.json",
+            "expects": {
+                "owner": "eoaAddress.EngineerWallet",
+                "delegation": "contractAddress.Proxy__TssDelegation",
+                "investmentManager": "contractAddress.Proxy__TssDelegationManager",
+                "paused": false
+            }
+        },
+        {
+            "name": "Proxy__AssertionMap",
+            "type": "l1",
+            "path": "L1/fraud-proof/AssertionMap.sol/AssertionMap.json",
+            "expects": {
+                "rollupAddress": "contractAddress.Proxy__Rollup"
+            }
+        },
+        {
+            "name": "Proxy__Verifier",
+            "type": "l1",
+            "path": "L1/fraud-proof/verifier/VerifierEntry.sol/VerifierEntry.json",
+            "expects": {
+                "owner": "eoaAddress.EngineerWallet",
+                "blockFinalizationVerifier": "0x0000000000000000000000000000000000000000",
+                "blockInitiationVerifier": "0x0000000000000000000000000000000000000000",
+                "interTxVerifier": "0x0000000000000000000000000000000000000000",
+                "environmentalOpVerifier": "0x0000000000000000000000000000000000000000",
+                "callOpVerifier": "0x0000000000000000000000000000000000000000",
+                "invalidOpVerifier": "0x0000000000000000000000000000000000000000",
+                "memoryOpVerifier": "0x0000000000000000000000000000000000000000",
+                "stackOpVerifier": "0x0000000000000000000000000000000000000000",
+                "storageOpVerifier": "0x0000000000000000000000000000000000000000"
+            }
+        },
+        {
+            "name": "Proxy__Rollup",
+            "type": "l1",
+            "path": "L1/fraud-proof/Rollup.sol/Rollup.json",
+            "expects": {
+                "owner": "eoaAddress.EngineerWallet",
+                "libAddressManager": "contractAddress.Lib_AddressManager",
+                "assertions": "contractAddress.Proxy__AssertionMap",
+                "stakeToken": "contractAddress.Proxy__L1MantleToken",
+                "verifier": "contractAddress.Proxy__Verifier",
+                "baseStakeAmount": 0,
+                "minimumAssertionPeriod": 0,
+                "numStakers": 2,
+                "currentRequiredStake": 0,
+                "confirmedInboxSize": 0,
+                "lastConfirmedAssertionID": 0,
+                "lastCreatedAssertionID": 0,
+                "lastResolvedAssertionID": 0,
+                "challengeCtx": [false,"0x0000000000000000000000000000000000000000","0x0000000000000000000000000000000000000000","0x0000000000000000000000000000000000000000",0,0]
+            }
+        },
+        {
+            "name": "delegation",
+            "type": "l1",
+            "path": "eignlayr-contracts/out/EigenLayrDelegation.sol/EigenLayrDelegation.json",
+            "expects": {
+                "owner": "eoaAddress.MantleWallet",
+                "pauserRegistry": "contractAddress.mantleLayrPauserReg",
+                "permissionManager": "contractAddress.rgPermission",
+                "investmentManager": "contractAddress.investmentManager",
+                "DELEGATION_TYPEHASH": "0xb2a21c2f78b6ef501475a2971550fe4cedb86f0dec990e23909bfb01fd61c54c",
+                "DOMAIN_SEPARATOR": "0x45f3d29aea49a148d1d673de10c9cc71c9a6a371eba695612fafef9552fc090c",
+                "DOMAIN_TYPEHASH": "0x8cad95687ba82c2ce50e74f7b754645e5117c3a5bec8151c0726d5857980a866",
+                "paused": false
+            }
+        },
+        {
+            "name": "investmentManager",
+            "type": "l1",
+            "path": "eignlayr-contracts/out/InvestmentManager.sol/InvestmentManager.json",
+            "expects": {
+                "owner": "eoaAddress.MantleWallet",
+                "delegation": "contractAddress.delegation",
+                "pauserRegistry": "contractAddress.mantleLayrPauserReg",
+                "permissionManager": "contractAddress.rgPermission",
+                "DEPOSIT_TYPEHASH": "0x0a564d4cfe5cb0d4ee082aab2ca54b8c48e129485a8f7c77766ab5ef0c3566f1",
+                "DOMAIN_SEPARATOR": "0x3f3418f0491c4fc306879fd812ff2884cbd847819c24b4c2bc9792ed1c3cb8be",
+                "DOMAIN_TYPEHASH": "0x8cad95687ba82c2ce50e74f7b754645e5117c3a5bec8151c0726d5857980a866",
+                "paused": false
+            }
+        },
+        {
+            "name": "rgPermission",
+            "type": "l1",
+            "path": "eignlayr-contracts/out/RegistryPermission.sol/RegistryPermission.json",
+            "expects": {
+                "owner": "eoaAddress.MantleWallet",
+                "permissionPerson": "eoaAddress.EngineerWallet"
+            }
+        },
+        {
+            "name": "slashRecorder",
+            "type": "l1",
+            "path": "eignlayr-contracts/out/SlashRecorder.sol/SlashRecorder.json",
+            "expects": {
+                "owner": "eoaAddress.MantleWallet",
+                "slasherManager": "eoaAddress.EngineerWallet",
+                "getSlashMemberList": []
+            }
+        },
+        {
+            "name": "dlsm",
+            "type": "l1",
+            "path": "datalayr-contracts/out/DataLayrServiceManager.sol/DataLayrServiceManager.json",
+            "expects": {
+                "owner": "eoaAddress.MantleWallet",
+                "investmentManager": "contractAddress.investmentManager",
+                "registry": "contractAddress.dlReg",
+                "feeSetter": "contractAddress.investmentManager",
+                "pauserRegistry": "contractAddress.investmentManager",
+                "eigenLayrDelegation": "contractAddress.delegation",
+                "dataLayrBombVerifier": "0x0000000000000000000000000000000000000000",
+                "dataLayrChallenge": "contractAddress.investmentManager",
+                "dataPermissionManager": "contractAddress.rgPermission",
+                "collateralToken": "contractAddress.Proxy__L1MantleToken",
+                "BIP_MULTIPLIER": 10000,
+                "BLOCK_STALE_MEASURE": 150,
+                "DURATION_SCALE": 3600,
+                "MAX_DATASTORE_DURATION": 7,
+                "MIN_DATASTORE_DURATION": 1,
+                "NUM_DS_PER_BLOCK_PER_DURATION": 20,
+                "adversaryThresholdBasisPoints": 4000,
+                "confirmDataStoreTimeout": 1800,
+                "feePerBytePerTime": 1,
+                "latestTime": 1,
+                "log2NumPowersOfTau": 0,
+                "numPowersOfTau": 0,
+                "paused": false,
+                "quorumThresholdBasisPoints": 9000,
+                "taskNumber": 1,
+                "dataStoresForDuration": [0,0,0,0,0,0,0,1,1]
+            }
+        },
+        {
+            "name": "dlReg",
+            "type": "l1",
+            "path": "datalayr-contracts/out/middleware/BLSRegistry.sol/BLSRegistry.json",
+            "expects": {
+                "owner": "eoaAddress.MantleWallet",
+                "permissionManager": "contractAddress.rgPermission",
+                "pubkeyCompendium": "contractAddress.pubkeyCompendium",
+                "serviceManager": "contractAddress.dlsm",
+                "delegation": "contractAddress.delegation",
+                "forceDeregister": "0x0000000000000000000000000000000000000000",
+                "investmentManager": "contractAddress.investmentManager",
+                "NUMBER_OF_QUORUMS": 2,
+                "apk": [0,0],
+                "getApkUpdatesLength": 1,
+                "minimumStakeFirstQuorum": 0,
+                "minimumStakeSecondQuorum": 0,
+                "numOperators": 10,
+                "totalStake": [10000000000000000000000, 0]
+            }
+        },
+        {
+            "name": "pubkeyCompendium",
+            "type": "l1",
+            "path": "eignlayr-contracts/out/BLSPublicKeyCompendium.sol/BLSPublicKeyCompendium.json",
+            "expects": {
+                "permissionManager": "contractAddress.rgPermission",
+                "IS_TEST": false,
+                "failed": false
+            }
+        },
+        {
             "name": "L2CrossDomainMessenger",
             "type": "l2",
             "path": "L2/messaging/L2CrossDomainMessenger.sol/L2CrossDomainMessenger.json",
